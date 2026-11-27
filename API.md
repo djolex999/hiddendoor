@@ -112,7 +112,7 @@ off (it starts getting 403).
 |---|---|
 | 200 | Back in. |
 | 404 | No open chat with that phrase (wrong, expired, or closed by the counselor). |
-| 429 | 5 per minute per client, and 30 per minute across everyone. |
+| 429 | More than 5 tries per minute from this client, or more than 30 **failed** tries per minute across everyone. `Retry-After` says how many seconds to wait. |
 
 ### `GET /api/chat/<session_id>/messages?after=<message_id>` : poll
 

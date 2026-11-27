@@ -3,12 +3,19 @@ from datetime import timedelta
 import pytest
 from django.utils import timezone
 
-from chat.models import ChatSession, Message
+from chat import services
+from chat.models import ChatSession, Message, ResumeFailureWindow
 from chat.words import FOOD_WORDS
 from conftest import woman_headers
 from door.signing import make_unlock_token
 
 pytestmark = pytest.mark.django_db
+
+
+@pytest.fixture(autouse=True)
+def _frozen_minute(monkeypatch):
+    """Pin the failure-counter window so no test straddles a minute boundary."""
+    monkeypatch.setattr(services, "_current_minute", lambda: 29_000_000)
 
 
 def messages_url(session_id: str) -> str:
@@ -178,16 +185,60 @@ def test_start_is_throttled(client):
     assert response.status_code == 429
 
 
-def test_resume_has_a_global_limit_across_ips(client):
-    # 30 guesses from 30 different "clients" exhaust the shared bucket.
-    for n in range(30):
-        client.post(
+def test_global_resume_cap_counts_failures_across_ips(client, started_chat, settings):
+    settings.RESUME_GLOBAL_FAILURES_PER_MINUTE = 3
+    for n in range(3):  # 3 failed guesses from 3 different clients
+        response = client.post(
             "/api/chat/resume",
             {"resume_phrase": "a-b-c-d"},
             format="json",
             REMOTE_ADDR=f"10.0.{n}.1",
         )
+        assert response.status_code == 404
+
+    # Now even the right phrase from a fresh client waits for the next minute.
     response = client.post(
-        "/api/chat/resume", {"resume_phrase": "a-b-c-d"}, format="json", REMOTE_ADDR="10.1.1.1"
+        "/api/chat/resume",
+        {"resume_phrase": started_chat["resume_phrase"]},
+        format="json",
+        REMOTE_ADDR="10.9.9.9",
     )
     assert response.status_code == 429
+    assert 1 <= int(response["Retry-After"]) <= 60
+
+
+def test_client_blocked_per_ip_does_not_use_up_the_global_cap(client, started_chat, settings):
+    settings.RESUME_GLOBAL_FAILURES_PER_MINUTE = 6
+    # One client hammers: 5 guesses reach the view (per-IP "5/min"), the
+    # other 35 are stopped by the per-IP throttle before the view runs.
+    for _ in range(40):
+        client.post(
+            "/api/chat/resume", {"resume_phrase": "a-b-c-d"}, format="json", REMOTE_ADDR="10.0.0.1"
+        )
+    assert ResumeFailureWindow.objects.get().failures == 5
+
+    response = client.post(
+        "/api/chat/resume",
+        {"resume_phrase": started_chat["resume_phrase"]},
+        format="json",
+        REMOTE_ADDR="10.0.0.2",
+    )
+    assert response.status_code == 200
+
+
+def test_successful_resume_is_not_counted(client, started_chat):
+    client.post("/api/chat/resume", {"resume_phrase": started_chat["resume_phrase"]}, format="json")
+    assert not ResumeFailureWindow.objects.exists()
+
+
+def test_record_resume_failure_increments_one_row():
+    services.record_resume_failure()  # creates the row
+    services.record_resume_failure()  # atomic UPDATE ... failures + 1
+    assert ResumeFailureWindow.objects.get().failures == 2
+
+
+def test_purge_drops_old_failure_windows():
+    ResumeFailureWindow.objects.create(minute=1, failures=9)
+    services.record_resume_failure()
+    services.purge_expired()
+    assert list(ResumeFailureWindow.objects.values_list("failures", flat=True)) == [1]

@@ -9,7 +9,7 @@ from rest_framework.request import Request
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from config.throttles import GlobalResumeThrottle, ResumeThrottle, StartThrottle
+from config.throttles import ResumeThrottle, StartThrottle
 from door.signing import is_valid_unlock_token
 
 from . import services
@@ -55,13 +55,25 @@ class ResumeChatView(APIView):
 
     authentication_classes = []
     permission_classes = [AllowAny]
-    throttle_classes = [ResumeThrottle, GlobalResumeThrottle]
+    # Per-client limit. DRF runs it before post(), so a client it blocks never
+    # reaches the global failure counter below and cannot use it up.
+    throttle_classes = [ResumeThrottle]
 
     def post(self, request: Request) -> Response:
         serializer = ResumeChatSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
+
+        # Global cap across all clients, counting only failed lookups.
+        if services.global_resume_locked():
+            return Response(
+                {"detail": "Too many attempts. Try again in a minute."},
+                status=status.HTTP_429_TOO_MANY_REQUESTS,
+                headers={"Retry-After": str(services.seconds_until_next_minute())},
+            )
+
         creds = services.resume_session(serializer.validated_data["resume_phrase"])
         if creds is None:
+            services.record_resume_failure()
             return Response({"detail": "Not found."}, status=status.HTTP_404_NOT_FOUND)
         return Response({"session_id": creds.session.id, "secret": creds.secret})
 

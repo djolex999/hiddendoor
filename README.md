@@ -103,9 +103,11 @@ Be precise about this in the demo; judges will ask.
   tunneling) logs request lines and IPs. We cannot turn that off. Anyone who
   can see her network traffic sees that she contacted our domain (HTTPS hides
   the content, not the domain).
-- **Resume phrase:** 4 of 105 words (about 121 million combinations), per
-  client and global rate limits, 24 h lifetime. Good enough here, not a
-  password.
+- **Resume phrase:** 4 of 105 words (about 121 million combinations), 5
+  tries per minute per client plus 30 failed tries per minute across all
+  clients, 24 h lifetime. Good enough here, not a password. Trade-off: an
+  attacker spread over many IPs can use up the global cap and delay real
+  resumes for up to a minute at a time.
 
 **Demo tip:** run the demo in a fresh browser profile or private window.
 Cookies on `localhost` are shared across ports, so leftovers from other local

@@ -51,6 +51,22 @@ class ChatSession(models.Model):
         return f"{self.status} {self.id}"
 
 
+class ResumeFailureWindow(models.Model):
+    """
+    Failed resume-phrase lookups per wall-clock minute, across all clients.
+
+    One row per minute that had failures. Incremented with an atomic
+    UPDATE ... SET failures = failures + 1, so parallel requests cannot lose
+    counts. Holds no client data at all.
+    """
+
+    minute = models.PositiveBigIntegerField(primary_key=True)  # unix time // 60
+    failures = models.PositiveIntegerField(default=0)
+
+    def __str__(self) -> str:
+        return f"minute {self.minute}: {self.failures}"
+
+
 class Message(models.Model):
     class Sender(models.TextChoices):
         WOMAN = "woman", "Woman"

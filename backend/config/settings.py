@@ -106,7 +106,6 @@ AUTH_PASSWORD_VALIDATORS = [
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
 ]
 
-# Cache: used only by DRF throttling. Per process, in memory, gone on restart.
 # Holds only throttle counters (keys are HMAC-hashed client idents). Lives in
 # Postgres so every gunicorn worker shares the same counts; a per-process
 # memory cache would multiply every limit by the number of workers.
@@ -115,6 +114,10 @@ CACHES = {
     "default": {
         "BACKEND": "django.core.cache.backends.db.DatabaseCache",
         "LOCATION": "throttle_cache",
+        # Past MAX_ENTRIES Django culls a third of all rows, which would wipe
+        # live throttle counters. The default is 300; a flood from many IPs
+        # could reach that. Rows are tiny, so allow far more.
+        "OPTIONS": {"MAX_ENTRIES": 100_000},
     }
 }
 
@@ -164,8 +167,6 @@ REST_FRAMEWORK = {
         "unlock": "10/min",
         "start": "5/min",
         "resume": "5/min",
-        # Across ALL clients: caps guessing from many IPs at once.
-        "resume_global": "30/min",
         "login": "5/min",
     },
     "NUM_PROXIES": NUM_PROXIES,
@@ -194,6 +195,9 @@ UNLOCK_TOKEN_MAX_AGE = 10 * 60  # seconds
 COUNSELOR_TOKEN_MAX_AGE = 12 * 60 * 60  # seconds
 CHAT_SESSION_LIFETIME_HOURS = 24
 CHAT_CLOSED_GRACE_MINUTES = 15  # after a counselor closes, data lives this long
+# Failed resume-phrase lookups allowed per minute across ALL clients
+# (chat.services.record_resume_failure). Caps guessing spread over many IPs.
+RESUME_GLOBAL_FAILURES_PER_MINUTE = 30
 
 # Logging: requests to the woman-facing endpoints never reach any log line.
 

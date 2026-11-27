@@ -10,11 +10,12 @@ from datetime import timedelta
 
 from django.conf import settings
 from django.db import IntegrityError, transaction
+from django.db.models import F
 from django.utils import timezone
 
 from config.crypto import hmac_hash
 
-from .models import ChatSession, Message
+from .models import ChatSession, Message, ResumeFailureWindow
 from .words import FOOD_WORDS
 
 SECRET_PURPOSE = "chat.secret"  # noqa: S105 (HMAC salt, not a password)
@@ -46,6 +47,8 @@ def _new_secret() -> tuple[str, str]:
 def purge_expired() -> int:
     """Delete expired sessions. Messages go with them (on_delete=CASCADE)."""
     _, per_model = ChatSession.objects.expired().delete()
+    # Old failure counters are useless after their minute; drop them too.
+    ResumeFailureWindow.objects.filter(minute__lt=_current_minute()).delete()
     return per_model.get("chat.ChatSession", 0)
 
 
@@ -65,6 +68,44 @@ def start_session() -> NewCredentials:
             continue
         return NewCredentials(session=session, secret=secret, resume_phrase=phrase)
     raise RuntimeError("Could not generate a unique resume phrase")
+
+
+def _current_minute() -> int:
+    return int(timezone.now().timestamp()) // 60
+
+
+def seconds_until_next_minute() -> int:
+    return 60 - int(timezone.now().timestamp()) % 60
+
+
+def global_resume_locked() -> bool:
+    """True when this minute already has too many failed resume lookups."""
+    failures = (
+        ResumeFailureWindow.objects.filter(minute=_current_minute())
+        .values_list("failures", flat=True)
+        .first()
+    )
+    return failures is not None and failures >= settings.RESUME_GLOBAL_FAILURES_PER_MINUTE
+
+
+def record_resume_failure() -> None:
+    """
+    Count one failed lookup in this minute's window, atomically.
+
+    The UPDATE with F() runs as a single SQL statement, so two requests at the
+    same moment both get counted. If the row does not exist yet we create it;
+    if another request created it first, the unique primary key raises
+    IntegrityError and we fall back to the increment.
+    """
+    minute = _current_minute()
+    window = ResumeFailureWindow.objects.filter(minute=minute)
+    if window.update(failures=F("failures") + 1):
+        return
+    try:
+        with transaction.atomic():
+            ResumeFailureWindow.objects.create(minute=minute, failures=1)
+    except IntegrityError:
+        window.update(failures=F("failures") + 1)
 
 
 def resume_session(raw_phrase: str) -> NewCredentials | None:
