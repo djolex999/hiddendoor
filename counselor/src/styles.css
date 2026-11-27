@@ -1,0 +1,39 @@
+/* Plain and functional on purpose. */
+* { box-sizing: border-box; }
+body { margin: 0; font: 15px/1.4 system-ui, sans-serif; color: #222; background: #f6f6f4; }
+button { font: inherit; padding: 6px 12px; cursor: pointer; }
+button:disabled { cursor: default; opacity: 0.5; }
+.muted { color: #777; }
+.small { font-size: 12px; }
+.error { color: #b00020; }
+
+.login { max-width: 320px; margin: 15vh auto; display: grid; gap: 12px; }
+.login label { display: grid; gap: 4px; }
+.login input { font: inherit; padding: 8px; }
+
+.layout { display: grid; grid-template-columns: 280px 1fr; height: 100vh; }
+.sidebar { border-right: 1px solid #ddd; background: #fff; padding: 12px; overflow-y: auto; }
+.sidebar ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.session { width: 100%; display: flex; gap: 8px; align-items: center; flex-wrap: wrap;
+  text-align: left; background: #fafafa; border: 1px solid #e3e3e3; border-radius: 6px; }
+.session.selected { border-color: #2f5d8a; background: #eef4fa; }
+.session-id { font-family: ui-monospace, monospace; }
+.badge { background: #b00020; color: #fff; border-radius: 10px; padding: 0 8px; font-size: 12px; }
+.status { font-size: 12px; padding: 0 6px; border-radius: 4px; background: #eee; }
+.status-waiting { background: #fff3cd; }
+.status-active { background: #d4edda; }
+.status-closed { background: #e2e3e5; }
+
+main { display: flex; flex-direction: column; min-height: 0; padding: 12px; }
+.topbar { display: flex; justify-content: flex-end; }
+.chat { display: flex; flex-direction: column; flex: 1; min-height: 0; }
+.chat-header { display: flex; justify-content: space-between; align-items: center; padding: 8px 0; }
+.messages { list-style: none; margin: 0; padding: 8px; flex: 1; overflow-y: auto;
+  background: #fff; border: 1px solid #ddd; border-radius: 6px; display: grid; gap: 8px;
+  align-content: start; }
+.message { max-width: 70%; padding: 6px 10px; border-radius: 8px; }
+.message p { margin: 0; white-space: pre-wrap; overflow-wrap: anywhere; }
+.from-woman { background: #f1f1f1; justify-self: start; }
+.from-counselor { background: #dbe9f6; justify-self: end; }
+.composer { display: flex; gap: 8px; margin-top: 8px; }
+.composer textarea { flex: 1; font: inherit; padding: 8px; resize: vertical; }
