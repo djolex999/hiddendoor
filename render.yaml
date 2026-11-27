@@ -1,0 +1,118 @@
+# Render Blueprint for Skrivena vrata. WRITTEN, NOT DEPLOYED.
+# Deploy later via Render dashboard: New > Blueprint > pick this repo.
+# See README.md "Deploy later (Render)" for the clicks this file cannot do.
+#
+# Service names below become URLs (https://<name>.onrender.com). If a name is
+# taken, Render picks another URL: then update ALLOWED_HOSTS,
+# CSRF_TRUSTED_ORIGINS, the two *_ORIGIN vars and both VITE_API_URL values.
+
+databases:
+  - name: hiddendoor-db
+    plan: free # free Postgres expires after 30 days; fine for the hackathon
+    databaseName: hiddendoor
+    user: hiddendoor
+    postgresMajorVersion: "16"
+    ipAllowList: [] # no public access; only Render services can connect
+
+services:
+  # Django API
+  - type: web
+    name: hiddendoor-api
+    runtime: python
+    plan: free # sleeps after 15 min idle; first request then takes ~1 min
+    rootDir: backend
+    buildCommand: >-
+      pip install uv &&
+      uv sync --frozen --no-dev &&
+      uv run python manage.py collectstatic --noinput
+    # Free plan has no pre-deploy step, so migrate on every start (it is a
+    # no-op when nothing changed). gunicorn reads backend/gunicorn.conf.py:
+    # access log off, binds to $PORT.
+    startCommand: >-
+      uv run python manage.py migrate --noinput &&
+      uv run gunicorn config.wsgi
+    healthCheckPath: /api/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.13"
+      - key: DEBUG
+        value: "false"
+      - key: SECRET_KEY
+        generateValue: true
+      - key: DATABASE_URL
+        fromDatabase:
+          name: hiddendoor-db
+          property: connectionString
+      - key: ALLOWED_HOSTS
+        value: hiddendoor-api.onrender.com
+      - key: CSRF_TRUSTED_ORIGINS
+        value: https://hiddendoor-api.onrender.com
+      - key: FRONTEND_ORIGIN
+        value: https://hiddendoor-web.onrender.com
+      - key: COUNSELOR_ORIGIN
+        value: https://hiddendoor-counselor.onrender.com
+      # Render puts exactly one proxy in front of the app.
+      - key: NUM_PROXIES
+        value: "1"
+      # Secrets: Render asks for these in the dashboard on first deploy.
+      - key: DOOR_SEQUENCE
+        sync: false
+      - key: COUNSELOR_PASSWORD
+        sync: false
+
+  # Public cover site (Milica)
+  - type: web
+    name: hiddendoor-web
+    runtime: static
+    buildCommand: >-
+      npm install -g pnpm@12.14.0 &&
+      pnpm install --frozen-lockfile &&
+      pnpm --filter frontend build
+    staticPublishPath: frontend/dist
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: VITE_API_URL
+        value: https://hiddendoor-api.onrender.com
+    headers:
+      - path: /*
+        name: Referrer-Policy
+        value: no-referrer
+      - path: /*
+        name: X-Content-Type-Options
+        value: nosniff
+      # Only our own scripts, and only our API. Blocks third-party scripts.
+      # Milica: if you add fonts or images from another host, add them here.
+      - path: /*
+        name: Content-Security-Policy
+        value: >-
+          default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';
+          img-src 'self' data:; connect-src 'self' https://hiddendoor-api.onrender.com;
+          frame-ancestors 'none'; base-uri 'none'; form-action 'self'
+
+  # Counselor app
+  - type: web
+    name: hiddendoor-counselor
+    runtime: static
+    buildCommand: >-
+      npm install -g pnpm@12.14.0 &&
+      pnpm install --frozen-lockfile &&
+      pnpm --filter counselor build
+    staticPublishPath: counselor/dist
+    envVars:
+      - key: NODE_VERSION
+        value: "22"
+      - key: VITE_API_URL
+        value: https://hiddendoor-api.onrender.com
+    headers:
+      - path: /*
+        name: X-Robots-Tag
+        value: noindex, nofollow
+      - path: /*
+        name: Referrer-Policy
+        value: no-referrer
+      - path: /*
+        name: Content-Security-Policy
+        value: >-
+          default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline';
+          connect-src 'self' https://hiddendoor-api.onrender.com; frame-ancestors 'none'
