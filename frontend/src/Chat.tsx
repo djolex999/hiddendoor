@@ -3,12 +3,19 @@ import { useEffect, useRef, useState, type SubmitEvent } from "react";
 import { ApiError, getMessages, sendMessage, type Message, type SessionStatus } from "./api";
 
 const POLL_MS = 2000;
+// How the counselor appears in the thread. Ordinary on purpose.
+const COUNSELOR_NAME = "Vesna";
 
 interface Props {
   /** Shown once right after starting a chat; null after a resume. */
   resumePhrase: string | null;
 }
 
+function timeOf(iso: string): string {
+  return new Date(iso).toLocaleTimeString("sr-Latn-RS", { hour: "2-digit", minute: "2-digit" });
+}
+
+/** The counselor chat, dressed as the comment thread under a recipe. */
 export function Chat({ resumePhrase }: Props) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [status, setStatus] = useState<SessionStatus>("waiting");
@@ -59,46 +66,82 @@ export function Chat({ resumePhrase }: Props) {
       append([await sendMessage(body)]);
       setDraft("");
     } catch (err) {
-      setError(err instanceof ApiError && err.status === 409 ? "Razgovor je završen." : "Greška.");
+      setError(
+        err instanceof ApiError && err.status === 409
+          ? "Komentari su zatvoreni."
+          : "Komentar nije poslat. Pokušaj ponovo.",
+      );
     }
   }
 
-  if (gone) return <p>Ovaj razgovor više ne postoji.</p>;
+  if (gone) {
+    return <p className="thread-status">Ovaj razgovor više ne postoji.</p>;
+  }
 
   const closed = status === "closed";
 
   return (
-    <section>
+    <div className="thread">
       {resumePhrase && (
-        <p>
-          Tvoja šifra za povratak: <strong>{resumePhrase}</strong>
-        </p>
+        <div className="shopping-list">
+          <p className="shopping-title">Lista za kupovinu</p>
+          <ul>
+            {resumePhrase.split("-").map((word) => (
+              <li key={word}>{word}</li>
+            ))}
+          </ul>
+          <p className="shopping-hint">
+            Ove četiri reči upisane u pretragu vraćaju te na ovaj razgovor.
+          </p>
+        </div>
       )}
-      <p>{status === "waiting" ? "Čekamo savetnicu..." : closed ? "Razgovor je završen." : ""}</p>
 
-      <ol>
+      <ol className="comments" aria-live="polite">
         {messages.map((m) => (
-          <li key={m.id}>
-            <strong>{m.sender === "woman" ? "Ti" : "Savetnica"}:</strong>{" "}
+          <li key={m.id} className={`comment ${m.sender === "woman" ? "is-mine" : ""}`}>
+            <p className="comment-head">
+              <span className="comment-name">{m.sender === "woman" ? "Ti" : COUNSELOR_NAME}</span>
+              <time className="comment-when">{timeOf(m.created_at)}</time>
+            </p>
             {/* Plain text: React escapes it. Never render as HTML. */}
-            <span style={{ whiteSpace: "pre-wrap" }}>{m.body}</span>
+            <p className="comment-text">{m.body}</p>
           </li>
         ))}
       </ol>
 
-      <form onSubmit={handleSend}>
+      <p className="thread-status">
+        {closed
+          ? "Komentari su zatvoreni."
+          : status === "waiting"
+            ? "Komentar je primljen. Odgovor stiže uskoro."
+            : ""}
+      </p>
+
+      <form className="composer" onSubmit={handleSend}>
+        <label className="composer-label" htmlFor="comment-box">
+          Ostavi komentar
+        </label>
         <textarea
+          id="comment-box"
           value={draft}
           onChange={(e) => setDraft(e.target.value)}
           maxLength={2000}
           rows={3}
           disabled={closed}
+          autoComplete="off"
+          spellCheck={false}
+          onKeyDown={(e) => {
+            if (e.key === "Enter" && !e.shiftKey) {
+              e.preventDefault();
+              e.currentTarget.form?.requestSubmit();
+            }
+          }}
         />
-        <button type="submit" disabled={closed || !draft.trim()}>
-          Pošalji
+        <button type="submit" className="ink-button" disabled={closed || !draft.trim()}>
+          Objavi komentar
         </button>
+        {error && <p className="form-error">{error}</p>}
       </form>
-      {error && <p>{error}</p>}
-    </section>
+    </div>
   );
 }
