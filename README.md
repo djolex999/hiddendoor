@@ -3,8 +3,15 @@
 SheSafe Online Hackathon project. Demo: Sunday 29 Nov 2026, 16:00 CET.
 
 A woman whose partner monitors her phone visits an ordinary recipe site. A
-secret tap sequence opens help in place (same URL, same title): help cards and
-an anonymous chat with a counselor. Her browser history only shows recipes.
+secret tap sequence opens help in place (same URL, same title). One question
+("What is happening to you?") leads to three paths: someone controls my phone,
+I am in danger now, someone online asks me for things. Each path has its own
+help cards, and she can chat anonymously with a counselor in what looks like
+recipe comments. Her browser history only shows recipes.
+
+The door is the product; the recipe site is one swappable cover. A teen cover
+that leads to a children's helpline instead of the chat is the next step
+(a stub exists, see [COVERS.md](COVERS.md)).
 
 **The promise:** no trace on her device and plausible deniability. Never
 "undiscoverable". The server knows nothing about her: no accounts, no cookies,
@@ -18,7 +25,13 @@ no IPs in our database or logs.
 | `counselor/` | Vite + React + TS app for counselors |
 | `frontend/` | Vite + React + TS cover site |
 | `API.md` | Every endpoint with examples and error codes |
+| `SAFETY.md` | Safety principles, counselor protocol, known limitations |
+| `PRIVACY.md` | What the server keeps and what the AI check receives |
+| `SECURITY.md` | What happens if he takes the phone |
+| `COVERS.md` | How to add a cover, or embed the door in an existing site |
+| `REVIEW.md` | Translation review checklist (all pending) |
 | `render.yaml` | Render Blueprint |
+| `scripts/check.sh` | All checks: types, lint, tests, build |
 
 ## Requirements
 
@@ -57,16 +70,18 @@ Help card text: http://localhost:8000/admin/ > Help cards.
 ### Checks
 
 ```bash
-cd backend && uv run pytest && uv run ruff check . && uv run ruff format --check .
-pnpm typecheck && pnpm lint && pnpm build     # from repo root
+scripts/check.sh all     # types, lint (JS + ruff), tests, build; prints only failures
 ```
 
-Tests need the docker Postgres running; they do not need a `.env`
-(`config/settings_test.py` provides test values).
+The test step runs the backend tests (pytest) and the frontend logic tests
+(`frontend/tests/`, Node's built-in test runner, no extra packages). Full logs
+land in `.claude/tmp/`. Tests need the docker Postgres running; they do not
+need a `.env` (`config/settings_test.py` provides test values).
 
 ### Expired chats
 
-Expired sessions are deleted lazily on every chat start. To purge by hand:
+Expired sessions are deleted on every chat start, whenever counselors load
+their chat list, and by the Render cron job in `render.yaml`. To purge by hand:
 
 ```bash
 cd backend && uv run --env-file .env python manage.py purge_expired
@@ -75,29 +90,54 @@ cd backend && uv run --env-file .env python manage.py purge_expired
 ## How the flow works
 
 1. The recipe page collects taps on ingredient lines and, after 1.5 s idle,
-   sends them to `POST /api/u/`. The right sequence exists only in the
-   server's `DOOR_SEQUENCE`. Wrong taps get an empty 204: nothing happens.
-2. Right taps return help cards and a 10 minute unlock token. Help replaces the
-   recipe in place; the URL and title never change.
-3. "Start chat" returns a session id, a secret (kept in memory only) and a
+   sends them to `POST /api/u/` with the cover's audience (`adult` here). The
+   right sequence exists only in the server's `DOOR_SEQUENCE`. Wrong taps get
+   an empty 204: nothing happens.
+2. Right taps return help cards and a 10 minute unlock token. Help opens in
+   place; the URL and title never change. Help code loads only now, as a file
+   with a meaningless name.
+3. She picks a path. "I am in danger now" shows her country's emergency number
+   first (`frontend/src/emergency.ts`, verified numbers only).
+4. "Write to us" returns a session id, a secret (kept in memory only) and a
    4-word food phrase like `kivi-bundeva-borovnica-jabuka` to resume later.
-4. Both sides poll every 2 s. The counselor app sees waiting chats with
-   unread counts.
-5. The exit button deletes the chat on the server and reloads the recipe with
-   `location.replace`, so it adds no history entry.
+   One-tap quick replies cover "I can't talk now" and "I need the police".
+5. Both sides poll every 2 s. If no counselor has opened the chat list in the
+   last 150 s, her chat says so plainly, with reply hours if the partner set
+   them, and shows her emergency number.
+6. Every message she sends goes through a danger-word list in 8 languages
+   and, if the partner enabled it, an AI check. Urgent chats jump to the top
+   of the counselor list with an "Urgent" badge. Nothing ever calls anyone
+   for her.
+7. Exit (site name, "hide tips", Escape) asks the server to delete the chat
+   and reloads the site with `location.replace`, so it adds no history entry.
+   Help also closes after a minute away or ten idle minutes (SECURITY.md).
+
+A teen unlock (`audience: teen`) gets no counselor chat: the server answers
+403 to a chat start and sends no general cards; the teen cover shows a
+children's helpline instead.
+
+## Settings a partner chooses
+
+| Setting | Where | Default | What it does |
+|---|---|---|---|
+| `AI_TRIAGE_ENABLED` | `backend/.env` | `true` | Off: only the danger-word list runs and no text leaves the server. On: message text also goes to Claude (see PRIVACY.md). |
+| `ANTHROPIC_API_KEY` | `backend/.env` | empty | Needed for the AI check; without it only the word list runs. |
+| `COUNSELOR_HOURS` | `backend/.env` | empty | When counselors usually reply, e.g. `09:00-21:00`. Empty shows no hours. |
+| `VITE_COVER` | `frontend/.env.local` | `recipes` | Which cover to build. `homework` is an unfinished teen stub; never link it publicly. |
 
 ## Languages
 
 The cover site and help cards come in 8 languages: `sr` (Serbian, default),
 `hr`, `bs`, `cnr`, `sl`, `mk`, `sq` and `en`. The API details are in `API.md`.
 
-1. **Help cards:** each card has a `language` field in the Django admin, and you
-   can filter the list by language. The same slug (for example `sos-linija`)
-   exists once per language. A data migration seeded the seven non-Serbian
-   languages with placeholder text.
-2. **SOS card outside Serbia:** it intentionally has no phone numbers, only
-   placeholders like `[upiši broj]`. Someone must verify each hotline and fill
-   it in through the admin. Never guess a hotline number.
+1. **Help cards:** each card has a `language` and a `topic` (general, control,
+   danger, grooming) in the Django admin, and you can filter by both. The same
+   slug (for example `sos-linija`) exists once per language.
+2. **SOS card outside Serbia:** it still says `[upiši broj]` (enter number), so
+   migration 0008 hides it, and a test makes sure no active card shows a
+   bracket placeholder. Her emergency card shows the verified number for her
+   language instead. Someone must verify each hotline before filling in a
+   card in the admin. Never guess a hotline number.
 3. **Resume phrase:** still 4 food words, hashed on the server in Serbian. The
    site shows the phrase in the visitor's language, using 105 food words per
    language aligned by position with the Serbian list in
@@ -122,8 +162,9 @@ The cover site and help cards come in 8 languages: `sr` (Serbian, default),
    history lists real recipes. Opening help never changes the address or the
    title. Ingredient order must be identical in every language, because the
    ingredient checklist is the secret door.
-6. **Translations are drafts** made for the demo. Native speakers must review
-   them before any real use.
+6. **Translations are drafts.** Serbian was written by the team; the other
+   seven are AI-assisted. [REVIEW.md](REVIEW.md) lists everything a native
+   speaker must review before a pilot.
 
 ## What we promise, and its limits
 
@@ -134,7 +175,11 @@ The cover site and help cards come in 8 languages: `sr` (Serbian, default),
 - **On our server:** no accounts, no IPs, no user agents. Secrets and resume
   phrases are stored only as keyed HMAC hashes. Requests to `/api/u/` and
   `/api/chat/` are filtered out of Django's logs; gunicorn's access log is off.
-  Chats are deleted when she presses exit, or 24 h after they start.
+  Chats are deleted when she uses exit (best effort: the request may not
+  arrive without signal), and always within 24 h after they start.
+- **The AI check:** optional per deployment. It receives only the text of one
+  message, never who she is. Anthropic may keep it up to 30 days, flagged
+  messages up to 2 years (PRIVACY.md).
 - **Outside our code:** the hosting edge (Render's router, Cloudflare when
   tunneling) logs request lines and IPs. We cannot turn that off. Anyone who
   can see her network traffic sees that she contacted our domain (HTTPS hides
@@ -193,8 +238,10 @@ and both frontends as static sites. Render deploys from this GitHub repo.
 What you will click in the Render dashboard:
 
 1. Render > **New > Blueprint**, connect the repo, pick `render.yaml`.
-2. When asked, fill the `sync: false` secrets: `DOOR_SEQUENCE` and
-   `COUNSELOR_PASSWORD`. (`SECRET_KEY` is generated.)
+2. When asked, fill the `sync: false` secrets: `DOOR_SEQUENCE`,
+   `COUNSELOR_PASSWORD` and, only if the partner wants the AI check,
+   `ANTHROPIC_API_KEY`. (`SECRET_KEY` is generated.) Set `COUNSELOR_HOURS` to
+   the real reply hours, or leave it empty.
 3. After the first deploy, check each service's real URL. If any differs from
    `hiddendoor-api / hiddendoor-web / hiddendoor-counselor.onrender.com`,
    update `ALLOWED_HOSTS`, `CSRF_TRUSTED_ORIGINS`, `FRONTEND_ORIGIN`,
@@ -205,9 +252,10 @@ What you will click in the Render dashboard:
    `DJANGO_SUPERUSER_PASSWORD` on the API, temporarily append
    `&& uv run python manage.py createsuperuser --noinput` to the start
    command, deploy, then remove both.
-5. Optional (paid): add a Cron Job running
-   `uv run python manage.py purge_expired` hourly. Without it, expired chats
-   are still purged on every chat start and are never readable after expiry.
+5. The Blueprint includes a cron job (`hiddendoor-purge`, every 15 minutes,
+   paid starter plan) running `purge_expired`. Without it, expired chats are
+   still purged on chat start and whenever counselors load their list, and
+   are never readable after expiry.
 
 Free-plan caveats for the demo:
 
@@ -219,11 +267,12 @@ Free-plan caveats for the demo:
 
 ## Known limitations
 
-Full detail, plus the counselor protocol, is in [SAFETY.md](SAFETY.md). The top
-five:
+Full detail, plus the counselor protocol, is in [SAFETY.md](SAFETY.md). The main
+ones:
 
 - Translations into the 8 languages are drafts that need native-speaker review.
-- Help cards are team drafts, and emergency numbers are researched from official sources but not yet test-called.
+- Help cards are team drafts, and emergency numbers are researched from official sources but not yet test-called. Children's helplines are verified for Serbia only.
+- The teen cover is a stub, and the teen audience is declared by the cover; for a pilot the server should decide it from the site address.
 - The hosting edge logs IPs, and spyware on her device defeats any website.
 - One shared counselor password, with no counselor accounts or audit log yet.
 - LLM urgency triage can miss or over-flag, so it only prioritizes and never acts. Partners can turn the AI check off (`AI_TRIAGE_ENABLED`); with it on, message text goes to Anthropic (see PRIVACY.md).
