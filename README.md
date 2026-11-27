@@ -100,7 +100,7 @@ cd backend && uv run --env-file .env python manage.py purge_expired
    first (`frontend/src/emergency.ts`, verified numbers only).
 4. "Write to us" returns a session id, a secret (kept in memory only) and a
    4-word food phrase like `kivi-bundeva-borovnica-jabuka` to resume later.
-   One-tap quick replies cover "I can't talk now" and "I need the police".
+   One-tap quick replies cover "I can't write right now" and "I need the police".
 5. Both sides poll every 2 s. If no counselor has opened the chat list in the
    last 150 s, her chat says so plainly, with reply hours if the partner set
    them, and shows her emergency number.
