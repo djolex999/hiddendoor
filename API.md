@@ -54,8 +54,14 @@ The tap sequence lives only on the server. Taps are numbered from 1.
 POST /api/u/
 Content-Type: application/json
 
-{"sequence": [3, 1, 4, 1], "language": "sq"}
+{"sequence": [3, 1, 4, 1], "language": "sq", "audience": "adult"}
 ```
+
+`audience` is optional: `adult` (default) or `teen`; anything else counts as
+`adult`. The cover declares it and the server signs it into the unlock token,
+so it cannot be changed afterwards. A teen token cannot start a chat
+(`POST /api/chat/start` answers `403 {"detail": "Chat is not available here."}`)
+and gets no `general` cards; teen covers show a children's helpline instead.
 
 `language` is optional. The help cards in the `200` response are written in that
 language. A missing or unknown `language` means Serbian (`sr`). If a language has
@@ -156,9 +162,17 @@ X-Session-Secret: Q0l19WDVH_...
   "status": "active",
   "messages": [
     {"id": 2, "sender": "counselor", "body": "Tu sam.", "created_at": "2026-11-29T15:02:11.512+01:00"}
-  ]
+  ],
+  "alert": false,
+  "counselor_online": true,
+  "reply_hours": "09:00-21:00"
 }
 ```
+
+These five keys are the whole response, on purpose (a test checks it).
+`alert`: one of her messages is urgent and no counselor has replied within
+30 seconds. `counselor_online`: a counselor loaded the chat list in the last
+60 seconds. `reply_hours`: when counselors usually reply (`COUNSELOR_HOURS`).
 
 `status` is `waiting` (nobody answered yet), `active` or `closed` (counselor
 ended the chat; it is deleted about 15 minutes later). `sender` is `woman` or

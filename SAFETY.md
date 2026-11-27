@@ -56,12 +56,12 @@ emergency card first.
   deleted whenever a chat starts, whenever counselors load their list, and by
   a 15 minute cron job on Render.
 - Urgency triage uses a danger-word list in all 8 languages. It works offline.
-  When an API key is configured, Claude also classifies each of her messages.
-  Only the message text is sent, with no identifiers, under an 8 second
-  timeout. On failure the word list decides. Note: whatever she writes (a
-  name, a school, an address) then reaches Anthropic and is kept under
-  Anthropic's retention terms, not our 24 hours. For the demo the key can stay
-  unset; for real use we need a zero data retention agreement.
+  When an API key is set and `AI_TRIAGE_ENABLED` is on (the partner
+  organization chooses), Claude also checks each of her messages. Only the
+  message text is sent, with no identifiers, under an 8 second timeout, to one
+  fixed model with no fallback. On failure the word list decides. Whatever she
+  writes (a name, a school) does reach Anthropic. What Anthropic keeps is in
+  PRIVACY.md; a real deployment should arrange zero data retention.
 - Triage only prioritizes. Urgent chats go to the top of the counselor list
   with a red badge, a banner, a one-time beep and a blinking tab title. If no
   counselor replies within 30 seconds, her side shows an "if you are in
@@ -133,9 +133,10 @@ standard. Follow your organization's protocol where it is stricter.
 - **The resume phrase is not a password.** It is 4 food words, good enough for a
   24 hour chat, with rate limits. An attacker spread over many clients can use
   up the global failure cap and delay real resumes for a short time.
-- **LLM triage sends message text to a third party.** With the API key set,
-  her messages go to Anthropic and follow its retention, not our 24 hour
-  deletion. Real use needs a zero data retention agreement.
+- **AI triage sends message text to a third party.** With it on, her messages
+  reach Anthropic (see PRIVACY.md for what Anthropic keeps). Partners can turn
+  it off with `AI_TRIAGE_ENABLED`; real use should arrange zero data
+  retention.
 - **LLM triage can miss or over-flag.** That is why it only prioritizes and
   never acts. The danger-word list is the fallback and has its own gaps.
 - **Polling, not websockets.** Both sides poll every 2 seconds. It is simple and

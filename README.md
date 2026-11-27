@@ -226,4 +226,4 @@ five:
 - Help cards are team drafts, and emergency numbers are researched from official sources but not yet test-called.
 - The hosting edge logs IPs, and spyware on her device defeats any website.
 - One shared counselor password, with no counselor accounts or audit log yet.
-- LLM urgency triage can miss or over-flag, so it only prioritizes and never acts. With the API key set, message text goes to Anthropic under its retention terms.
+- LLM urgency triage can miss or over-flag, so it only prioritizes and never acts. Partners can turn the AI check off (`AI_TRIAGE_ENABLED`); with it on, message text goes to Anthropic (see PRIVACY.md).
