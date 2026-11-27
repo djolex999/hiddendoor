@@ -7,12 +7,14 @@ import { panic } from "./panic";
 import { Recipe } from "./Recipe";
 import { HOME_RECIPE, RECIPES, type Recipe as RecipeData } from "./recipes";
 
-/** Words of a search, without fillers like "i" or "sa" (same rule as the server). */
-function wordsOf(query: string): string[] {
-  return query
-    .toLocaleLowerCase("sr-Latn")
-    .split(/[^a-zčćđšž]+/)
-    .filter((w) => w && !FILLER_WORDS.has(w));
+/** Every word typed, fillers included. */
+function allWordsOf(query: string): string[] {
+  return query.toLocaleLowerCase("sr-Latn").split(/[^a-zčćđšž]+/).filter(Boolean);
+}
+
+/** Words that count for a phrase: fillers like "i" or "sa" dropped (same rule as the server). */
+function phraseWordsOf(allWords: string[]): string[] {
+  return allWords.filter((w) => !FILLER_WORDS.has(w));
 }
 
 /**
@@ -91,8 +93,8 @@ export function App() {
     }
     // The search box is also the way back into a chat. Only a real phrase is
     // sent, so ordinary four-word searches never use up the server's limit.
-    const words = wordsOf(typed);
-    const phrase = resumeWords(words);
+    const allWords = allWordsOf(typed);
+    const phrase = resumeWords(phraseWordsOf(allWords));
     if (phrase) {
       try {
         await resumeChat(phrase.join("-"));
@@ -111,9 +113,10 @@ export function App() {
         }
       }
     }
-    // Never echo anything that could be a phrase, even a mistyped one.
+    // Never echo anything that could be a phrase, even a mistyped one. Judged
+    // on ALL typed words: "krofnee i koree" is three words, so it stays hidden.
     setSearchNote(
-      !typed || mightBePhrase(words) ? "Nema takvog recepta." : `Nema recepta za „${typed}“.`,
+      !typed || mightBePhrase(allWords) ? "Nema takvog recepta." : `Nema recepta za „${typed}“.`,
     );
   }
 
