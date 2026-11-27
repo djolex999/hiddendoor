@@ -19,7 +19,7 @@ from .words import FOOD_WORDS
 
 SECRET_PURPOSE = "chat.secret"  # noqa: S105 (HMAC salt, not a password)
 RESUME_PURPOSE = "chat.resume"
-PHRASE_WORDS = 3
+PHRASE_WORDS = 4
 
 
 @dataclass(frozen=True)

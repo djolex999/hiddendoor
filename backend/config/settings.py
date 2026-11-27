@@ -107,7 +107,16 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 # Cache: used only by DRF throttling. Per process, in memory, gone on restart.
-CACHES = {"default": {"BACKEND": "django.core.cache.backends.locmem.LocMemCache"}}
+# Holds only throttle counters (keys are HMAC-hashed client idents). Lives in
+# Postgres so every gunicorn worker shares the same counts; a per-process
+# memory cache would multiply every limit by the number of workers.
+# The table is created by door/migrations/0003_create_cache_table.py.
+CACHES = {
+    "default": {
+        "BACKEND": "django.core.cache.backends.db.DatabaseCache",
+        "LOCATION": "throttle_cache",
+    }
+}
 
 LANGUAGE_CODE = "en-us"
 TIME_ZONE = "Europe/Belgrade"
@@ -132,6 +141,17 @@ SECURE_REFERRER_POLICY = "no-referrer"
 
 # Django REST framework
 
+# How many trusted reverse proxies sit in front of Django. DRF uses it to pick
+# the client IP for throttling. 0 = use REMOTE_ADDR and ignore X-Forwarded-For
+# (plain localhost). 1 = behind Render or a cloudflared tunnel. Left unset, DRF
+# would trust the whole client-supplied X-Forwarded-For header, which lets
+# anyone fake a new identity per request and skip every throttle. So outside
+# DEBUG we refuse to boot without an explicit value.
+_num_proxies = os.environ.get("NUM_PROXIES", "").strip()
+if not _num_proxies and not DEBUG:
+    raise ImproperlyConfigured("Set NUM_PROXIES explicitly (0 = no proxy, 1 = Render/cloudflared)")
+NUM_PROXIES = int(_num_proxies or "0")
+
 REST_FRAMEWORK = {
     # No global authentication: nothing reads cookies, so no CSRF on the API.
     # Each view that needs auth names its own class explicitly.
@@ -142,12 +162,13 @@ REST_FRAMEWORK = {
     "DEFAULT_PARSER_CLASSES": ["rest_framework.parsers.JSONParser"],
     "DEFAULT_THROTTLE_RATES": {
         "unlock": "10/min",
+        "start": "5/min",
         "resume": "5/min",
+        # Across ALL clients: caps guessing from many IPs at once.
+        "resume_global": "30/min",
         "login": "5/min",
     },
-    # Behind Render or a cloudflared tunnel REMOTE_ADDR is the proxy, so set
-    # NUM_PROXIES=1 there to throttle per client instead of one shared bucket.
-    "NUM_PROXIES": int(os.environ["NUM_PROXIES"]) if os.environ.get("NUM_PROXIES") else None,
+    "NUM_PROXIES": NUM_PROXIES,
 }
 
 # CORS: only our two frontends, never with credentials (we send no cookies).

@@ -59,3 +59,15 @@ def test_unlock_token_expires_after_10_minutes():
     eleven_minutes_later = time.time() + 11 * 60
     with mock.patch("django.core.signing.time.time", return_value=eleven_minutes_later):
         assert not is_valid_unlock_token(token)
+
+
+def test_forged_x_forwarded_for_does_not_reset_the_limit(client):
+    # With NUM_PROXIES=0 the client IP is REMOTE_ADDR; a made-up header per
+    # request must not buy a fresh throttle bucket.
+    for n in range(10):
+        client.post("/api/u/", {"sequence": [9]}, format="json", HTTP_X_FORWARDED_FOR=f"10.0.0.{n}")
+
+    response = client.post(
+        "/api/u/", {"sequence": RIGHT}, format="json", HTTP_X_FORWARDED_FOR="10.9.9.9"
+    )
+    assert response.status_code == 429

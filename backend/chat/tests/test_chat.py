@@ -26,7 +26,7 @@ def test_start_needs_a_valid_unlock_token(client):
 
 def test_start_returns_credentials_and_stores_only_hashes(started_chat):
     words = started_chat["resume_phrase"].split("-")
-    assert len(words) == 3 and all(w in FOOD_WORDS for w in words)
+    assert len(words) == 4 and all(w in FOOD_WORDS for w in words)
 
     session = ChatSession.objects.get(pk=started_chat["session_id"])
     assert session.status == ChatSession.Status.WAITING
@@ -166,3 +166,28 @@ def test_end_deletes_session_and_messages(client, started_chat):
     assert ChatSession.objects.count() == 0
     assert Message.objects.count() == 0
     assert client.get(messages_url(sid), **headers).status_code == 403
+
+
+def test_start_is_throttled(client):
+    for _ in range(5):  # "start": "5/min"
+        response = client.post(
+            "/api/chat/start", {"unlock_token": make_unlock_token()}, format="json"
+        )
+        assert response.status_code == 201
+    response = client.post("/api/chat/start", {"unlock_token": make_unlock_token()}, format="json")
+    assert response.status_code == 429
+
+
+def test_resume_has_a_global_limit_across_ips(client):
+    # 30 guesses from 30 different "clients" exhaust the shared bucket.
+    for n in range(30):
+        client.post(
+            "/api/chat/resume",
+            {"resume_phrase": "a-b-c-d"},
+            format="json",
+            REMOTE_ADDR=f"10.0.{n}.1",
+        )
+    response = client.post(
+        "/api/chat/resume", {"resume_phrase": "a-b-c-d"}, format="json", REMOTE_ADDR="10.1.1.1"
+    )
+    assert response.status_code == 429

@@ -6,8 +6,8 @@ from door.signing import make_unlock_token
 
 
 @pytest.fixture(autouse=True)
-def _clear_throttle_cache():
-    """Throttle counters live in the cache; start every test with a clean slate."""
+def _clear_throttle_cache(db):
+    """Throttle counters live in the (database) cache; start every test clean."""
     cache.clear()
     yield
     cache.clear()

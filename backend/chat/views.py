@@ -9,7 +9,7 @@ from rest_framework.request import Request
 from rest_framework.response import Response
 from rest_framework.views import APIView
 
-from config.throttles import ResumeThrottle
+from config.throttles import GlobalResumeThrottle, ResumeThrottle, StartThrottle
 from door.signing import is_valid_unlock_token
 
 from . import services
@@ -29,6 +29,9 @@ class StartChatView(APIView):
 
     authentication_classes = []
     permission_classes = [AllowAny]
+    # One unlock token is reusable for 10 min; this caps how many sessions
+    # one client can open with it.
+    throttle_classes = [StartThrottle]
 
     def post(self, request: Request) -> Response:
         serializer = StartChatSerializer(data=request.data)
@@ -52,7 +55,7 @@ class ResumeChatView(APIView):
 
     authentication_classes = []
     permission_classes = [AllowAny]
-    throttle_classes = [ResumeThrottle]
+    throttle_classes = [ResumeThrottle, GlobalResumeThrottle]
 
     def post(self, request: Request) -> Response:
         serializer = ResumeChatSerializer(data=request.data)

@@ -1,10 +1,11 @@
 """
-Serbian food words for resume phrases, e.g. "cimet-pita-limun".
+Serbian food words for resume phrases, e.g. "cimet-pita-limun-med".
 
 Typed into a page, a phrase looks like a recipe search. ASCII only (no
-diacritics) so it is easy to type on any keyboard. 105 words, 3 per phrase:
-about 1.16 million phrases. That is weak on its own; the resume endpoint is
-throttled and sessions die after 24h, which is what makes guessing impractical.
+diacritics) so it is easy to type on any keyboard. 105 words, 4 per phrase:
+105**4 = about 121 million phrases. Not strong on its own; together with the
+per-IP and global resume throttles and the 24h session lifetime, guessing a
+live phrase is impractical.
 """
 
 FOOD_WORDS: tuple[str, ...] = (
