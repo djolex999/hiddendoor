@@ -1,13 +1,28 @@
 import { useEffect, useState, type SubmitEvent } from "react";
 
 import { ApiError, resumeChat, type HelpCard } from "./api";
+import { FOOD_WORDS } from "./foodWords";
 import { HelpView, type ChatState } from "./HelpView";
 import { panic } from "./panic";
 import { Recipe } from "./Recipe";
 import { HOME_RECIPE, RECIPES, type Recipe as RecipeData } from "./recipes";
 
-// A resume phrase is exactly four food words.
-const PHRASE_SHAPE = /^\s*[a-zA-Z]+(?:[\s-]+[a-zA-Z]+){3}\s*$/;
+function wordsOf(query: string): string[] {
+  return query.toLocaleLowerCase("sr-Latn").split(/[^a-zčćđšž]+/).filter(Boolean);
+}
+
+/** A real resume phrase: exactly four words, all from the server's list. */
+function isResumePhrase(words: string[]): boolean {
+  return words.length === 4 && words.every((w) => FOOD_WORDS.has(w));
+}
+
+/**
+ * Could this be a phrase, even a mistyped or partial one? Then it must never
+ * be written back onto the page.
+ */
+function mightBePhrase(words: string[]): boolean {
+  return words.length >= 3 || words.some((w) => FOOD_WORDS.has(w));
+}
 
 function findRecipe(query: string): RecipeData | undefined {
   const q = query.trim().toLocaleLowerCase("sr-Latn");
@@ -38,6 +53,15 @@ export function App() {
     return () => window.removeEventListener("keydown", onKey);
   }, [helpOpen]);
 
+  // A search note leaves the screen when the tab is hidden (app switcher).
+  useEffect(() => {
+    const onVisibility = () => {
+      if (document.hidden) setSearchNote("");
+    };
+    document.addEventListener("visibilitychange", onVisibility);
+    return () => document.removeEventListener("visibilitychange", onVisibility);
+  }, []);
+
   function showRecipe(next: RecipeData) {
     setRecipe(next);
     window.scrollTo({ top: 0 });
@@ -54,23 +78,31 @@ export function App() {
       showRecipe(match);
       return;
     }
-    // The search box is also the way back into a chat.
-    const looksLikePhrase = PHRASE_SHAPE.test(typed);
-    if (looksLikePhrase) {
+    // The search box is also the way back into a chat. Only a real phrase is
+    // sent, so ordinary four-word searches never use up the server's limit.
+    const words = wordsOf(typed);
+    if (isResumePhrase(words)) {
       try {
-        await resumeChat(typed);
+        await resumeChat(words.join("-"));
         setCards((prev) => prev ?? []);
         setChat({ kind: "open", resumePhrase: null });
         return;
       } catch (err) {
+        if (err instanceof ApiError && err.status === 429) {
+          // Busy, not wrong: she should not think she forgot her words.
+          setSearchNote("Pretraga je trenutno zauzeta. Pokušaj ponovo za minut.");
+          return;
+        }
         if (!(err instanceof ApiError)) {
           setSearchNote("Pretraga trenutno ne radi. Pokušaj ponovo.");
           return;
         }
       }
     }
-    // Never echo a phrase-shaped query back onto the page.
-    setSearchNote(looksLikePhrase || !typed ? "Nema takvog recepta." : `Nema recepta za „${typed}“.`);
+    // Never echo anything that could be a phrase, even a mistyped one.
+    setSearchNote(
+      !typed || mightBePhrase(words) ? "Nema takvog recepta." : `Nema recepta za „${typed}“.`,
+    );
   }
 
   return (
