@@ -7,6 +7,9 @@
 
 const CASE_ENDINGS: readonly string[] = ["a", "e", "i", "o", "u", "om", "em", "ama", "ima", "ovi", "ove", "ova", "evi", "eve", "eva", "eta", "etu", "etom", "ja", "ju", "jem"];
 
+/** Small words skipped between list words ("krofne, kore i maslaca"). */
+export const FILLER_WORDS: ReadonlySet<string> = new Set(["a", "i", "ili", "od", "pa", "s", "sa", "u", "uz", "za"]);
+
 const STEMS: Readonly<Record<string, readonly string[]>> = {
   "cimet": [
     "cimet"

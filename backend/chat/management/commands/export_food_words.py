@@ -15,7 +15,7 @@ from pathlib import Path
 from django.conf import settings
 from django.core.management.base import BaseCommand
 
-from chat.words import CASE_ENDINGS, FOOD_WORDS, word_stems
+from chat.words import CASE_ENDINGS, FILLER_WORDS, FOOD_WORDS, word_stems
 
 FRONTEND_FILE = Path(settings.BASE_DIR).parent / "frontend" / "src" / "foodWords.ts"
 
@@ -30,6 +30,9 @@ def render_frontend_module() -> str:
 // Not secret: the strength comes from 105^4 phrases plus rate limits.
 
 const CASE_ENDINGS: readonly string[] = {json.dumps(list(CASE_ENDINGS))};
+
+/** Small words skipped between list words ("krofne, kore i maslaca"). */
+export const FILLER_WORDS: ReadonlySet<string> = new Set({json.dumps(sorted(FILLER_WORDS))});
 
 const STEMS: Readonly<Record<string, readonly string[]>> = {json.dumps(stems, indent=2)};
 

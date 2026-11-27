@@ -174,3 +174,11 @@ def build_word_forms() -> dict[str, str]:
 
 
 WORD_FORMS: dict[str, str] = build_word_forms()
+
+
+# Small words people put between list words ("krofne, kore i maslaca"). They are
+# skipped before matching, so a phrase is still exactly four list words.
+FILLER_WORDS: frozenset[str] = frozenset({"i", "a", "pa", "sa", "s", "u", "uz", "za", "od", "ili"})
+
+if FILLER_WORDS & WORD_FORMS.keys():
+    raise ValueError("A filler word collides with a food word form")

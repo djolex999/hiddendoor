@@ -25,6 +25,8 @@ def test_no_form_means_two_words():
         ("jajeta kvasca oraha mleka", "jaje-kvasac-orah-mleko"),
         ("kivija tikve tikvice sira", "kivi-tikva-tikvica-sir"),
         ("cimet pita limun med", "cimet-pita-limun-med"),
+        ("Krofne, kore, musake i maslaca", "krofna-kora-musaka-maslac"),
+        ("jaja sa limunom ili kafa i med", "jaje-limun-kafa-med"),
         ("nepoznata rec ostaje ista", "nepoznata-rec-ostaje-ista"),
     ],
 )

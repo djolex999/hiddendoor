@@ -1,14 +1,18 @@
 import { useEffect, useState, type SubmitEvent } from "react";
 
 import { ApiError, resumeChat, type HelpCard } from "./api";
-import { FOOD_FORMS } from "./foodWords";
+import { FILLER_WORDS, FOOD_FORMS } from "./foodWords";
 import { HelpView, type ChatState } from "./HelpView";
 import { panic } from "./panic";
 import { Recipe } from "./Recipe";
 import { HOME_RECIPE, RECIPES, type Recipe as RecipeData } from "./recipes";
 
+/** Words of a search, without fillers like "i" or "sa" (same rule as the server). */
 function wordsOf(query: string): string[] {
-  return query.toLocaleLowerCase("sr-Latn").split(/[^a-zčćđšž]+/).filter(Boolean);
+  return query
+    .toLocaleLowerCase("sr-Latn")
+    .split(/[^a-zčćđšž]+/)
+    .filter((w) => w && !FILLER_WORDS.has(w));
 }
 
 /**
