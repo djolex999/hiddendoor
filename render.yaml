@@ -59,6 +59,9 @@ services:
         sync: false
       - key: COUNSELOR_PASSWORD
         sync: false
+      # Optional: enables Claude urgency triage. Empty = danger-word list only.
+      - key: ANTHROPIC_API_KEY
+        sync: false
 
   # Public cover site (Milica)
   - type: web
