@@ -122,12 +122,14 @@ standard. Follow your organization's protocol where it is stricter.
 - **Translations are drafts.** They have not been reviewed by native speakers.
 - **Help cards are team drafts**, not yet reviewed by a support organization.
   They are editable per language in the Django admin.
-- **Hotline numbers are only partly verified.** Serbia (police 192 and the SOS
-  line 0800 300 339) is team-provided and still to be confirmed. Croatia and
-  Slovenia use 112 (EU). Bosnia and Herzegovina, Montenegro, North Macedonia,
-  Albania and Kosovo are deliberately left as placeholders until verified from
-  official sources. The admin lets the team fill them in. We never guess a
-  number.
+- **Hotline numbers are researched, not called.** The emergency button uses
+  numbers checked against official or international sources on 27 Nov 2026:
+  192 (Serbia), 112 (Croatia, Slovenia, Montenegro, North Macedonia,
+  Albanian speakers) and 122 (Bosnia and Herzegovina). The site picks by
+  language, not country, so a Kosovo and an Albania user see the same number.
+  Women's SOS lines are not on the button yet; each should be called once by
+  the team before it is added. Serbia's 0800 300 339 is free but has no
+  published hours, so it is never described as 24/7.
 - **The resume phrase is not a password.** It is 4 food words, good enough for a
   24 hour chat, with rate limits. An attacker spread over many clients can use
   up the global failure cap and delay real resumes for a short time.

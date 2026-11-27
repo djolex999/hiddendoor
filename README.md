@@ -223,7 +223,7 @@ Full detail, plus the counselor protocol, is in [SAFETY.md](SAFETY.md). The top
 five:
 
 - Translations into the 8 languages are drafts that need native-speaker review.
-- Help cards are team drafts, and hotline numbers outside Serbia, Croatia and Slovenia are not yet confirmed.
+- Help cards are team drafts, and emergency numbers are researched from official sources but not yet test-called.
 - The hosting edge logs IPs, and spyware on her device defeats any website.
 - One shared counselor password, with no counselor accounts or audit log yet.
 - LLM urgency triage can miss or over-flag, so it only prioritizes and never acts. With the API key set, message text goes to Anthropic under its retention terms.

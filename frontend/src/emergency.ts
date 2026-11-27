@@ -1,11 +1,18 @@
 // Emergency numbers shown on the "immediate danger" card, per site language.
 //
-// ONLY numbers someone has verified belong here. A wrong number in this
-// product is dangerous, so a language without a verified number shows the
-// card with text only (no call button) until the team fills it in.
-// - sr: 192 (police, Serbia), given by the team.
-// - hr, sl: 112, the EU emergency number (Croatia and Slovenia are EU members).
-// TODO before real use: verify and add bs, cnr, mk, sq; decide what "en" means.
+// ONLY numbers verified from a source belong here. A wrong number in this
+// product is dangerous. Researched 27 Nov 2026, confirmed by the team:
+// - sr: 192, police (mup.gov.rs contacts). 112 is not yet live in Serbia.
+// - hr: 112, works via county centres (Croatian Ministry directory 2025-01).
+// - sl: 112, police calls are passed on (gov.si/teme/klic-v-sili).
+// - bs: 122, police. 112 does not work in Bosnia and Herzegovina
+//   (help.unhcr.org/bosniaandherzegovina; RFE).
+// - cnr: 112, Montenegro's 112 operations centre (ekip.me, 2023).
+// - mk: 112, E-112 since 2021 (mia.mk).
+// - sq: 112, works in Kosovo (ame.rks-gov.net) and is listed with police 129
+//   in Albania (UN Women). One number for both countries.
+// - en: no country, so no number; the card shows text only.
+// The language is not the country: a Kosovo or Albania user both read "sq".
 
 import type { Lang } from "./i18n";
 
@@ -13,9 +20,9 @@ export const EMERGENCY_NUMBER: Readonly<Record<Lang, string | null>> = {
   sr: "192",
   hr: "112",
   sl: "112",
-  bs: null,
-  cnr: null,
-  mk: null,
-  sq: null,
+  bs: "122",
+  cnr: "112",
+  mk: "112",
+  sq: "112",
   en: null,
 };
