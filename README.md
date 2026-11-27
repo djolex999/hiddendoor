@@ -12,14 +12,13 @@ no IPs in our database or logs.
 
 ## Layout
 
-| Path | What | Owner |
-|---|---|---|
-| `backend/` | Django 5.2 + DRF API, Postgres. Apps: `door`, `chat`, `counselor` | Djordje |
-| `counselor/` | Vite + React + TS app for counselors | Djordje |
-| `frontend/` | Vite + React + TS cover site skeleton | Milica |
-| `API.md` | Every endpoint with examples and error codes | |
-| `DJANGO_NOTES.md` | Django concepts used here, with interview Q&A | |
-| `render.yaml` | Render Blueprint, written but not deployed | |
+| Path | What |
+|---|---|
+| `backend/` | Django 5.2 + DRF API, Postgres. Apps: `door`, `chat`, `counselor` |
+| `counselor/` | Vite + React + TS app for counselors |
+| `frontend/` | Vite + React + TS cover site |
+| `API.md` | Every endpoint with examples and error codes |
+| `render.yaml` | Render Blueprint |
 
 ## Requirements
 
@@ -89,8 +88,6 @@ cd backend && uv run --env-file .env python manage.py purge_expired
 
 ## What we promise, and its limits
 
-Be precise about this in the demo; judges will ask.
-
 - **On her device:** no cookies, no web storage, no service worker; the URL
   and title never change. Closing the tab forgets everything. The browser's
   HTTP cache may still hold the site's JS bundle, which only looks like a
@@ -108,11 +105,6 @@ Be precise about this in the demo; judges will ask.
   clients, 24 h lifetime. Good enough here, not a password. Trade-off: an
   attacker spread over many IPs can use up the global cap and delay real
   resumes for up to a minute at a time.
-
-**Demo tip:** run the demo in a fresh browser profile or private window.
-Cookies on `localhost` are shared across ports, so leftovers from other local
-projects (a `csrftoken`, a `theme` key) can show up in DevTools and confuse the
-"no trace" story.
 
 ## Share with Milica (cloudflared tunnel)
 
@@ -157,26 +149,24 @@ Notes:
 ## Deploy later (Render)
 
 `render.yaml` defines the API (gunicorn + WhiteNoise), a managed Postgres 16
-and both frontends as static sites. **Nothing here has been deployed.** The
-repo has no remote yet; Render deploys from GitHub or GitLab.
+and both frontends as static sites. Render deploys from this GitHub repo.
 
 What you will click in the Render dashboard:
 
-1. Push the repo to GitHub (create the repo yourself).
-2. Render > **New > Blueprint**, connect the repo, pick `render.yaml`.
-3. When asked, fill the `sync: false` secrets: `DOOR_SEQUENCE` and
+1. Render > **New > Blueprint**, connect the repo, pick `render.yaml`.
+2. When asked, fill the `sync: false` secrets: `DOOR_SEQUENCE` and
    `COUNSELOR_PASSWORD`. (`SECRET_KEY` is generated.)
-4. After the first deploy, check each service's real URL. If any differs from
+3. After the first deploy, check each service's real URL. If any differs from
    `hiddendoor-api / hiddendoor-web / hiddendoor-counselor.onrender.com`,
    update `ALLOWED_HOSTS`, `CSRF_TRUSTED_ORIGINS`, `FRONTEND_ORIGIN`,
    `COUNSELOR_ORIGIN` (API) and `VITE_API_URL` plus the CSP `connect-src`
    (both static sites), then redeploy.
-5. Create the admin user. The free plan has no Shell, so once: add env vars
+4. Create the admin user. The free plan has no Shell, so once: add env vars
    `DJANGO_SUPERUSER_USERNAME`, `DJANGO_SUPERUSER_EMAIL`,
    `DJANGO_SUPERUSER_PASSWORD` on the API, temporarily append
    `&& uv run python manage.py createsuperuser --noinput` to the start
    command, deploy, then remove both.
-6. Optional (paid): add a Cron Job running
+5. Optional (paid): add a Cron Job running
    `uv run python manage.py purge_expired` hourly. Without it, expired chats
    are still purged on every chat start and are never readable after expiry.
 
