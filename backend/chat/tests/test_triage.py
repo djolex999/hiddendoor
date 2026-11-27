@@ -143,3 +143,79 @@ def test_no_api_key_means_no_api_call(client, started_chat):
     with mock.patch.object(triage, "_ai_client") as factory:
         send(client, started_chat, "Kako da se pripremim za sud?")
     factory.assert_not_called()
+
+
+# The off switch: AI_TRIAGE_ENABLED=False, even with a key
+
+
+def test_ai_switched_off_never_calls_the_api(client, started_chat, ai, settings):
+    # A message only the AI would flag: with the switch off it stays calm and
+    # the API is never asked.
+    settings.AI_TRIAGE_ENABLED = False
+    ai.return_value = fake_response('{"urgent": true}')
+    send(client, started_chat, "Rekao je da ovu noć neću preživeti")
+    assert ChatSession.objects.get(pk=started_chat["session_id"]).urgent_since is None
+    ai.assert_not_called()
+
+
+def test_ai_switched_off_word_list_still_flags(client, started_chat, ai, settings):
+    settings.AI_TRIAGE_ENABLED = False
+    send(client, started_chat, "Ima nož i preti mi")
+    assert ChatSession.objects.get(pk=started_chat["session_id"]).urgent_since is not None
+    ai.assert_not_called()
+
+
+def test_ai_switched_off_returns_none_directly(ai, settings):
+    settings.AI_TRIAGE_ENABLED = False
+    assert triage.ai_urgent("anything") is None
+    ai.assert_not_called()
+
+
+# API failures never break sending and never hide danger words
+
+
+# Built without __init__: the triage code only looks at the exception type.
+@pytest.mark.parametrize("error", [anthropic.APIConnectionError, anthropic.APIStatusError])
+@pytest.mark.parametrize(
+    ("body", "urgent"),
+    [("Ima nož", True), ("Kako da se pripremim za razgovor sa advokatom?", False)],
+)
+def test_api_failure_falls_back_to_the_word_list(client, started_chat, ai, error, body, urgent):
+    ai.side_effect = error.__new__(error)
+    send(client, started_chat, body)  # asserts 201: no exception reaches her
+    assert (
+        ChatSession.objects.get(pk=started_chat["session_id"]).urgent_since is not None
+    ) is urgent
+
+
+# Exactly what goes to the API
+
+
+def test_api_receives_only_the_message_text_and_fixed_instructions(client, ai):
+    ai.return_value = fake_response('{"urgent": false}')
+    chat = client.post(
+        "/api/chat/start",
+        {"unlock_token": make_unlock_token(), "topic": "grooming"},
+        format="json",
+    ).json()
+    text = "Kako da se pripremim za razgovor sa advokatom?"
+    send(client, chat, text)
+
+    ai.assert_called_once()
+    assert ai.call_args.args == ()
+    sent = ai.call_args.kwargs
+    assert set(sent) == {"model", "max_tokens", "system", "output_config", "messages"}
+    assert sent["model"] == "claude-opus-5-5"
+    assert sent["system"] == triage.SYSTEM_PROMPT
+    assert sent["messages"] == [{"role": "user", "content": text}]
+
+    everything = str(sent)
+    for private in (
+        chat["session_id"],
+        chat["secret"],
+        chat["resume_phrase"],
+        *chat["resume_phrase"].split("-"),
+        "grooming",
+        "127.0.0.1",
+    ):
+        assert private not in everything

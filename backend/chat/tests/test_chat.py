@@ -31,6 +31,35 @@ def test_start_needs_a_valid_unlock_token(client):
     assert ChatSession.objects.count() == 0
 
 
+def test_start_with_a_teen_token_is_refused_and_creates_nothing(client):
+    response = client.post(
+        "/api/chat/start", {"unlock_token": make_unlock_token("teen")}, format="json"
+    )
+    assert response.status_code == 403
+    assert response.json() == {"detail": "Chat is not available here."}
+    assert ChatSession.objects.count() == 0
+
+
+def test_start_with_an_adult_token_from_the_door_works(client):
+    unlock = client.post("/api/u/", {"sequence": [3, 1, 4, 1]}, format="json").json()
+    response = client.post(
+        "/api/chat/start", {"unlock_token": unlock["unlock_token"]}, format="json"
+    )
+    assert response.status_code == 201
+    assert ChatSession.objects.count() == 1
+
+
+def test_start_with_a_teen_token_from_the_door_is_refused(client):
+    unlock = client.post(
+        "/api/u/", {"sequence": [3, 1, 4, 1], "audience": "teen"}, format="json"
+    ).json()
+    response = client.post(
+        "/api/chat/start", {"unlock_token": unlock["unlock_token"]}, format="json"
+    )
+    assert response.status_code == 403
+    assert ChatSession.objects.count() == 0
+
+
 def test_start_returns_credentials_and_stores_only_hashes(started_chat):
     words = started_chat["resume_phrase"].split("-")
     assert len(words) == 4 and all(w in FOOD_WORDS for w in words)
@@ -242,3 +271,41 @@ def test_purge_drops_old_failure_windows():
     services.record_resume_failure()
     services.purge_expired()
     assert list(ResumeFailureWindow.objects.values_list("failures", flat=True)) == [1]
+
+
+# counselor presence and reply hours (her side)
+
+
+def test_her_poll_shows_presence_and_hours_and_nothing_else(client, started_chat, settings):
+    settings.COUNSELOR_HOURS = "10:00-18:00"
+    url = messages_url(started_chat["session_id"])
+    headers = woman_headers(started_chat["secret"])
+
+    data = client.get(url, **headers).json()
+    # Exact keys: a future counselor-only field cannot leak to her by accident.
+    assert set(data) == {"status", "messages", "alert", "counselor_online", "reply_hours"}
+    assert data["counselor_online"] is False
+    assert data["reply_hours"] == "10:00-18:00"
+
+
+def test_counselor_online_after_listing_sessions_then_offline_after_151_seconds(
+    client, counselor_client, started_chat, monkeypatch
+):
+    url = messages_url(started_chat["session_id"])
+    headers = woman_headers(started_chat["secret"])
+    assert client.get(url, **headers).json()["counselor_online"] is False
+
+    assert counselor_client.get("/api/c/sessions").status_code == 200
+    assert client.get(url, **headers).json()["counselor_online"] is True
+
+    later = timezone.now() + timedelta(seconds=151)
+    monkeypatch.setattr(services.timezone, "now", lambda: later)
+    assert services.counselor_online() is False
+    assert client.get(url, **headers).json()["counselor_online"] is False
+
+
+def test_presence_stores_only_a_timestamp(counselor_client):
+    from django.core.cache import cache
+
+    counselor_client.get("/api/c/sessions")
+    assert isinstance(cache.get(services.COUNSELOR_SEEN_KEY), float)

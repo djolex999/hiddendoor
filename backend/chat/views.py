@@ -3,6 +3,7 @@ Woman-side chat endpoints. Anonymous: no cookies, no Django session, no CSRF.
 The only credential is the X-Session-Secret header on per-session routes.
 """
 
+from django.conf import settings
 from rest_framework import status
 from rest_framework.permissions import AllowAny, IsAuthenticated
 from rest_framework.request import Request
@@ -10,7 +11,7 @@ from rest_framework.response import Response
 from rest_framework.views import APIView
 
 from config.throttles import ResumeThrottle, StartThrottle
-from door.signing import is_valid_unlock_token
+from door.signing import TEEN, unlock_token_audience
 
 from . import services
 from .authentication import SessionSecretAuthentication
@@ -36,8 +37,15 @@ class StartChatView(APIView):
     def post(self, request: Request) -> Response:
         serializer = StartChatSerializer(data=request.data)
         serializer.is_valid(raise_exception=True)
-        if not is_valid_unlock_token(serializer.validated_data["unlock_token"]):
+        audience = unlock_token_audience(serializer.validated_data["unlock_token"])
+        if audience is None:
             return Response({"detail": "Unlock expired."}, status=status.HTTP_403_FORBIDDEN)
+        # The teen site never opens a chat with adult counselors. Enforced here,
+        # not in the client: the audience is signed into the token.
+        if audience == TEEN:
+            return Response(
+                {"detail": "Chat is not available here."}, status=status.HTTP_403_FORBIDDEN
+            )
 
         creds = services.start_session(serializer.validated_data.get("topic", ""))
         return Response(
@@ -87,7 +95,8 @@ class SessionSecretView(APIView):
 
 class ChatMessagesView(SessionSecretView):
     """
-    GET  /api/chat/<id>/messages?after=<message_id> -> {status, messages[]}
+    GET  /api/chat/<id>/messages?after=<message_id>
+         -> {status, messages[], alert, counselor_online, reply_hours}
     POST /api/chat/<id>/messages {body}             -> 201 message
     """
 
@@ -102,6 +111,9 @@ class ChatMessagesView(SessionSecretView):
                 "messages": MessageSerializer(messages, many=True).data,
                 # Urgent message, no counselor reply yet: show the emergency card.
                 "alert": services.needs_emergency_card(session),
+                # Only whether anyone is looking, never who or how many.
+                "counselor_online": services.counselor_online(),
+                "reply_hours": settings.COUNSELOR_HOURS,
             }
         )
 

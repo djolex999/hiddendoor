@@ -6,9 +6,12 @@ calling the police without her consent can put her in more danger.
 Two layers:
 1. A short list of unmistakable danger words in every site language. Works
    offline and without an API key.
-2. Claude, when ANTHROPIC_API_KEY is set: one Messages API call per message,
-   structured JSON output, short timeout. Only the message text is sent (no
-   session id, nothing else). If the call fails or is declined, layer 1 decides.
+2. Claude, when AI_TRIAGE_ENABLED is on and ANTHROPIC_API_KEY is set: one
+   Messages API call per message to one fixed model, structured JSON output,
+   short timeout. Only the message text and our fixed instructions are sent
+   (no session id, nothing else). No server-side model fallback: a fallback
+   could route her text to another model with different retention terms.
+   If the call fails or is declined, layer 1 decides.
 
 Runs in a background thread after the message is saved, so sending is never
 slowed down by the AI call.
@@ -125,15 +128,13 @@ def _ai_client() -> anthropic.Anthropic:
 
 
 def ai_urgent(text: str) -> bool | None:
-    """Claude's verdict, or None when unavailable (no key, error, refusal)."""
-    if not settings.ANTHROPIC_API_KEY:
+    """Claude's verdict, or None when unavailable (off, no key, error, refusal)."""
+    if not settings.AI_TRIAGE_ENABLED or not settings.ANTHROPIC_API_KEY:
         return None
     try:
         response = _ai_client().beta.messages.create(
             model=TRIAGE_MODEL,
             max_tokens=2048,
-            betas=["server-side-fallback-2026-07-01"],
-            fallbacks="default",
             system=SYSTEM_PROMPT,
             output_config={
                 "effort": "low",

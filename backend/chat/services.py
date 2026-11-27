@@ -9,6 +9,7 @@ from dataclasses import dataclass
 from datetime import timedelta
 
 from django.conf import settings
+from django.core.cache import cache
 from django.db import IntegrityError, transaction
 from django.db.models import F
 from django.utils import timezone
@@ -165,7 +166,7 @@ def add_message(session: ChatSession, sender: str, body: str) -> Message:
 
 
 def needs_emergency_card(session: ChatSession) -> bool:
-    """Urgent message and no counselor reply for a while: show her the 192 card."""
+    """Urgent message and no counselor reply for a while: show her the emergency-number card."""
     if session.urgent_since is None:
         return False
     waited = (timezone.now() - session.urgent_since).total_seconds()
@@ -178,3 +179,22 @@ def close_session(session: ChatSession) -> None:
     session.status = ChatSession.Status.CLOSED
     session.expires_at = min(session.expires_at, grace_end)
     session.save(update_fields=["status", "expires_at"])
+
+
+COUNSELOR_SEEN_KEY = "counselor:last_seen"
+
+
+def mark_counselor_seen() -> None:
+    """Record that some counselor is looking. Only a timestamp: no identity."""
+    cache.set(
+        COUNSELOR_SEEN_KEY,
+        timezone.now().timestamp(),
+        timeout=settings.COUNSELOR_ONLINE_SECONDS * 5,
+    )
+
+
+def counselor_online() -> bool:
+    last_seen = cache.get(COUNSELOR_SEEN_KEY)
+    if last_seen is None:
+        return False
+    return timezone.now().timestamp() - last_seen <= settings.COUNSELOR_ONLINE_SECONDS

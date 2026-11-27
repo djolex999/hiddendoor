@@ -106,7 +106,8 @@ AUTH_PASSWORD_VALIDATORS = [
     {"NAME": "django.contrib.auth.password_validation.NumericPasswordValidator"},
 ]
 
-# Holds only throttle counters (keys are HMAC-hashed client idents). Lives in
+# Holds throttle counters (keys are HMAC-hashed client idents) and one
+# "a counselor was here at <time>" timestamp (chat.services). Lives in
 # Postgres so every gunicorn worker shares the same counts; a per-process
 # memory cache would multiply every limit by the number of workers.
 # The table is created by door/migrations/0003_create_cache_table.py.
@@ -203,12 +204,22 @@ CHAT_CLOSED_GRACE_MINUTES = 15  # after a counselor closes, data lives this long
 RESUME_GLOBAL_FAILURES_PER_MINUTE = 30
 
 # Urgency triage (chat/triage.py). Without a key only the danger-word list runs.
-# With a key, the text of each of her messages is sent to the Claude API.
+# With a key and AI_TRIAGE_ENABLED on, the text of each of her messages is
+# sent to the Claude API.
 ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+# Each deployment (partner organization) chooses. Off: only the danger-word list.
+AI_TRIAGE_ENABLED = env_bool("AI_TRIAGE_ENABLED", True)
 TRIAGE_IN_BACKGROUND = env_bool("TRIAGE_IN_BACKGROUND", True)
 # Seconds without a counselor reply after an urgent message before her side
 # shows the emergency-number card.
 URGENT_ALERT_AFTER_SECONDS = 30
+# When counselors usually reply, e.g. "09:00-21:00". Empty (the default) means
+# her side shows no hours: never show her a promise nobody made.
+COUNSELOR_HOURS = os.environ.get("COUNSELOR_HOURS", "")
+# A counselor counts as online if the session list was loaded this recently.
+# Longer than browser throttling of background tabs (about once a minute), so
+# a counselor working in another tab does not flicker offline.
+COUNSELOR_ONLINE_SECONDS = 150
 
 # Logging: requests to the woman-facing endpoints never reach any log line.
 

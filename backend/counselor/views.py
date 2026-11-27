@@ -56,6 +56,7 @@ class SessionListView(CounselorView, generics.ListAPIView):
         # Counselors poll this list constantly, so expired chats are deleted
         # within seconds even when nobody starts a new chat.
         services.purge_expired()
+        services.mark_counselor_seen()  # her side shows "a counselor is online"
         return super().list(request, *args, **kwargs)
 
     def get_queryset(self):

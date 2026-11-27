@@ -3,7 +3,7 @@ from unittest import mock
 
 import pytest
 
-from door.signing import is_valid_unlock_token, make_unlock_token
+from door.signing import is_valid_unlock_token, make_unlock_token, unlock_token_audience
 
 pytestmark = pytest.mark.django_db
 
@@ -83,19 +83,21 @@ def test_admin_pages_use_same_origin_referrer_policy(client):
 
 
 @pytest.mark.parametrize(
-    ("language", "first_title"),
+    ("language", "first_title", "count"),
     [
-        ("en", "You are not alone"),
-        ("mk", "Не си сама"),
-        ("sq", "Nuk je vetëm"),
-        ("sr", "Nisi sama"),
+        # Outside Serbian the SOS card still has "[enter number]" and is hidden
+        # (migration 0008); her emergency card shows the verified number.
+        ("en", "You are not alone", 6),
+        ("mk", "Не си сама", 6),
+        ("sq", "Nuk je vetëm", 6),
+        ("sr", "Nisi sama", 7),
     ],
 )
-def test_unlock_returns_cards_in_the_requested_language(client, language, first_title):
+def test_unlock_returns_cards_in_the_requested_language(client, language, first_title, count):
     response = client.post("/api/u/", {"sequence": RIGHT, "language": language}, format="json")
     assert response.status_code == 200
     cards = response.json()["cards"]
-    assert len(cards) == 7
+    assert len(cards) == count
     assert cards[0]["title"] == first_title
 
 
@@ -111,3 +113,56 @@ def test_no_invented_phone_numbers_outside_serbia():
 
     for card in HelpCard.objects.exclude(language="sr").filter(slug="sos-linija"):
         assert not any(ch.isdigit() for ch in card.body), card.language
+
+
+# Audience: adult (default) or teen, signed into the token
+
+
+def test_teen_unlock_returns_a_teen_token_and_no_general_cards(client):
+    adult = client.post("/api/u/", {"sequence": RIGHT}, format="json").json()
+    teen = client.post("/api/u/", {"sequence": RIGHT, "audience": "teen"}, format="json").json()
+
+    assert unlock_token_audience(adult["unlock_token"]) == "adult"
+    assert unlock_token_audience(teen["unlock_token"]) == "teen"
+    assert is_valid_unlock_token(teen["unlock_token"])
+    # General cards address adult women and promise the chat teens never get.
+    assert teen["cards"]
+    assert all(card["topic"] != "general" for card in teen["cards"])
+    assert any(card["topic"] == "general" for card in adult["cards"])
+    assert set(teen) == {"unlock_token", "cards"}
+
+
+def test_old_tokens_without_an_audience_count_as_adult():
+    from django.core import signing
+
+    from door.signing import UNLOCK_SALT
+
+    old = signing.TimestampSigner(salt=UNLOCK_SALT).sign("abcdef0123456789")
+    assert unlock_token_audience(old) == "adult"
+
+
+def test_no_active_help_card_shows_a_placeholder(client):
+    from door.models import HelpCard
+
+    for card in HelpCard.objects.filter(is_active=True):
+        assert "[" not in card.body, (card.language, card.slug)
+
+
+@pytest.mark.parametrize("audience", ["child", "TEEN", "", None, 1, ["teen"]])
+def test_unknown_audience_is_treated_as_adult(client, audience):
+    response = client.post("/api/u/", {"sequence": RIGHT, "audience": audience}, format="json")
+
+    assert response.status_code == 200
+    assert unlock_token_audience(response.json()["unlock_token"]) == "adult"
+
+
+def test_wrong_sequence_with_audience_is_still_204(client):
+    response = client.post("/api/u/", {"sequence": [1, 2], "audience": "teen"}, format="json")
+
+    assert response.status_code == 204
+    assert response.content == b""
+
+
+def test_tampered_audience_is_invalid():
+    token = make_unlock_token("teen")
+    assert unlock_token_audience(token.replace("teen:", "adult:", 1)) is None

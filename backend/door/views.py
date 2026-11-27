@@ -11,7 +11,7 @@ from config.throttles import UnlockThrottle
 from .languages import DEFAULT_LANGUAGE, pick_language
 from .models import HelpCard
 from .serializers import HelpCardSerializer, UnlockSerializer
-from .signing import make_unlock_token
+from .signing import ADULT, AUDIENCES, TEEN, make_unlock_token
 
 
 def _canonical(sequence: list[int] | tuple[int, ...]) -> str:
@@ -20,7 +20,7 @@ def _canonical(sequence: list[int] | tuple[int, ...]) -> str:
 
 class UnlockView(APIView):
     """
-    POST /api/u/ {sequence: number[], language?: string}
+    POST /api/u/ {sequence: number[], language?: string, audience?: "adult" | "teen"}
 
     Right sequence: 200 with an unlock token and the help cards.
     Anything else (wrong, malformed, empty): 204 with no body, so a curious
@@ -43,12 +43,20 @@ class UnlockView(APIView):
         # The site sends its language; unknown or missing means Serbian.
         # A language with no cards yet also falls back to Serbian.
         language = pick_language(request.data.get("language"))
+        # Which site opened the door. Anything unknown is treated as adult.
+        audience = request.data.get("audience")
+        if audience not in AUDIENCES:
+            audience = ADULT
         cards = HelpCard.objects.filter(is_active=True, language=language)
         if not cards.exists():
             cards = HelpCard.objects.filter(is_active=True, language=DEFAULT_LANGUAGE)
+        if audience == TEEN:
+            # "general" cards speak to adult women and promise the counselor
+            # chat, which teens never get. They see only the path cards.
+            cards = cards.exclude(topic="general")
         return Response(
             {
-                "unlock_token": make_unlock_token(),
+                "unlock_token": make_unlock_token(audience),
                 "cards": HelpCardSerializer(cards, many=True).data,
             }
         )
