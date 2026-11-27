@@ -115,3 +115,62 @@ FOOD_WORDS: tuple[str, ...] = (
     "kugla",
     "knedla",
 )
+
+
+# Case forms. People type words the way they use them in a sentence ("jaja",
+# "krastavca", "kafu"), so every common case ending on a word's stem maps back
+# to the list word. The phrase space stays 105**4: forms only map onto words.
+
+CASE_ENDINGS: tuple[str, ...] = (
+    "a",
+    "e",
+    "i",
+    "o",
+    "u",
+    "om",
+    "em",
+    "ama",
+    "ima",
+    "ovi",
+    "ove",
+    "ova",
+    "evi",
+    "eve",
+    "eva",
+    "eta",
+    "etu",
+    "etom",
+    "ja",
+    "ju",
+    "jem",
+)
+
+
+def word_stems(word: str) -> tuple[str, ...]:
+    """Stems the case endings attach to: pita -> pit, krastavac -> krastavac + krastavc."""
+    stems = {word}
+    if word[-1] in "aeou":
+        stems = {word[:-1]}  # pita -> pit(e), mleko -> mlek(a), jaje -> jaj(eta)
+    elif word.endswith("i"):
+        stems.add(word[:-1])  # kivi -> kivi(ja), brokoli -> brokoli(ja)
+    if word.endswith("ac"):
+        stems.add(word[:-2] + "c")  # krastavac -> krastavc(a), kvasac -> kvasc(a)
+    return tuple(sorted(s for s in stems if len(s) >= 2))
+
+
+def build_word_forms() -> dict[str, str]:
+    """Map every accepted form (the word itself included) to its list word.
+
+    Raises if one form could mean two words, so an ambiguous list never ships.
+    """
+    forms = {word: word for word in FOOD_WORDS}
+    for word in FOOD_WORDS:
+        for stem in word_stems(word):
+            for ending in CASE_ENDINGS:
+                owner = forms.setdefault(stem + ending, word)
+                if owner != word:
+                    raise ValueError(f"Ambiguous form {stem + ending!r}: {owner} or {word}")
+    return forms
+
+
+WORD_FORMS: dict[str, str] = build_word_forms()

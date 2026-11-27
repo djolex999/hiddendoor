@@ -1,7 +1,7 @@
 import { useEffect, useState, type SubmitEvent } from "react";
 
 import { ApiError, resumeChat, type HelpCard } from "./api";
-import { FOOD_WORDS } from "./foodWords";
+import { FOOD_FORMS } from "./foodWords";
 import { HelpView, type ChatState } from "./HelpView";
 import { panic } from "./panic";
 import { Recipe } from "./Recipe";
@@ -11,9 +11,16 @@ function wordsOf(query: string): string[] {
   return query.toLocaleLowerCase("sr-Latn").split(/[^a-zčćđšž]+/).filter(Boolean);
 }
 
-/** A real resume phrase: exactly four words, all from the server's list. */
-function isResumePhrase(words: string[]): boolean {
-  return words.length === 4 && words.every((w) => FOOD_WORDS.has(w));
+/**
+ * A real resume phrase: exactly four words, each a list word or one of its
+ * case forms ("jaja" for "jaje"). Returns the list words, or null.
+ */
+function resumeWords(words: string[]): string[] | null {
+  if (words.length !== 4) return null;
+  const canonical = words
+    .map((w) => FOOD_FORMS.get(w))
+    .filter((w): w is string => w !== undefined);
+  return canonical.length === 4 ? canonical : null;
 }
 
 /**
@@ -21,7 +28,7 @@ function isResumePhrase(words: string[]): boolean {
  * be written back onto the page.
  */
 function mightBePhrase(words: string[]): boolean {
-  return words.length >= 3 || words.some((w) => FOOD_WORDS.has(w));
+  return words.length >= 3 || words.some((w) => FOOD_FORMS.has(w));
 }
 
 function findRecipe(query: string): RecipeData | undefined {
@@ -81,9 +88,10 @@ export function App() {
     // The search box is also the way back into a chat. Only a real phrase is
     // sent, so ordinary four-word searches never use up the server's limit.
     const words = wordsOf(typed);
-    if (isResumePhrase(words)) {
+    const phrase = resumeWords(words);
+    if (phrase) {
       try {
-        await resumeChat(words.join("-"));
+        await resumeChat(phrase.join("-"));
         setCards((prev) => prev ?? []);
         setChat({ kind: "open", resumePhrase: null });
         return;

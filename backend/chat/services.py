@@ -16,7 +16,7 @@ from django.utils import timezone
 from config.crypto import hmac_hash
 
 from .models import ChatSession, Message, ResumeFailureWindow
-from .words import FOOD_WORDS
+from .words import FOOD_WORDS, WORD_FORMS
 
 SECRET_PURPOSE = "chat.secret"  # noqa: S105 (HMAC salt, not a password)
 RESUME_PURPOSE = "chat.resume"
@@ -35,8 +35,14 @@ def generate_resume_phrase() -> str:
 
 
 def normalize_resume_phrase(raw: str) -> str:
-    """'  Cimet Pita-limun ' -> 'cimet-pita-limun'. Forgiving about case and separators."""
-    return "-".join(re.findall(r"[a-z]+", raw.lower()))
+    """
+    'Jaja, KRASTAVCA kafu-limun' -> 'jaje-krastavac-kafa-limun'.
+
+    Forgiving about case, separators and grammatical case forms: each word is
+    mapped back to its list word (chat.words.WORD_FORMS) before hashing.
+    """
+    words = re.findall(r"[a-zčćđšž]+", raw.lower())
+    return "-".join(WORD_FORMS.get(word, word) for word in words)
 
 
 def _new_secret() -> tuple[str, str]:
