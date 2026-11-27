@@ -9,6 +9,7 @@ import {
 } from "./api";
 import { EmergencyCard } from "./EmergencyCard";
 import { displayPhrase } from "./foodWords";
+import { parseHours, waitingNotice } from "./helpLogic";
 import { HELP_STRINGS } from "./helpStrings";
 import { LANGUAGE_OPTIONS, useLang } from "./i18n";
 
@@ -27,6 +28,9 @@ export function Chat({ resumePhrase }: Props) {
   const [status, setStatus] = useState<SessionStatus>("waiting");
   const [gone, setGone] = useState(false);
   const [alert, setAlert] = useState(false);
+  // undefined until the first poll answers: say nothing rather than guess.
+  const [counselorOnline, setCounselorOnline] = useState<boolean | undefined>(undefined);
+  const [replyHours, setReplyHours] = useState<string | undefined>(undefined);
   // She asked about the police: show her the number to call herself, now.
   // Counselors cannot send anyone; they do not know where she is.
   const [askedPolice, setAskedPolice] = useState(false);
@@ -60,6 +64,8 @@ export function Chat({ resumePhrase }: Props) {
         const data = await getMessages(lastId.current);
         setStatus(data.status);
         setAlert(data.alert === true);
+        setCounselorOnline(data.counselor_online);
+        setReplyHours(data.reply_hours);
         append(data.messages);
       } catch (err) {
         if (err instanceof ApiError && err.status === 403) {
@@ -105,6 +111,8 @@ export function Chat({ resumePhrase }: Props) {
   }
 
   const closed = status === "closed";
+  const notice = waitingNotice(status, counselorOnline);
+  const hours = parseHours(replyHours);
   // One tap sends a whole sentence: for when typing is too slow or too risky.
   const quickReplies = [h.qrCantTalk, h.qrHeIsNear, h.qrCallPolice, h.qrLater];
 
@@ -141,11 +149,19 @@ export function Chat({ resumePhrase }: Props) {
         ))}
       </ol>
 
-      <p className="thread-status">
-        {closed ? h.closed : status === "waiting" ? h.waiting : ""}
-      </p>
+      {notice === "noCounselor" ? (
+        <div className="thread-status no-counselor">
+          <p>{h.noCounselorNow}</p>
+          {hours && <p>{h.replyHours(hours[0], hours[1])}</p>}
+          <p>{h.ifInDanger}</p>
+        </div>
+      ) : (
+        <p className="thread-status">
+          {closed ? h.closed : notice === "replySoon" ? h.waiting : ""}
+        </p>
+      )}
 
-      {(alert || askedPolice) && <EmergencyCard />}
+      {(alert || askedPolice || notice === "noCounselor") && <EmergencyCard />}
 
       {!closed && (
         <div

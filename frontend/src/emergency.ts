@@ -26,3 +26,19 @@ export const EMERGENCY_NUMBER: Readonly<Record<Lang, string | null>> = {
   sq: "112",
   en: null,
 };
+
+// Children's helplines for teen covers, per site language. Verified numbers only.
+// - sr: 116 111, NADEL national children's line, free, phone answered 24/7
+//   (116111.rs/o-nadelu.html; UNICEF Serbia; Child Helpline International).
+// TODO before a teen pilot: verify hr, bs, cnr, sl, mk, sq from official
+// sources. Until then the card points her to a trusted adult, no number.
+export const CHILD_HELPLINE: Readonly<Record<Lang, string | null>> = {
+  sr: "116 111",
+  hr: null,
+  bs: null,
+  cnr: null,
+  sl: null,
+  mk: null,
+  sq: null,
+  en: null,
+};

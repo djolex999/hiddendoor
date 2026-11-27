@@ -213,7 +213,12 @@ export function App() {
   const help = helpOpen ? (
     <HelpBoundary onFail={() => setCards(null)}>
       <Suspense fallback={null}>
-        <HelpView cards={cards} chat={chat} onChatOpened={setChat} />
+        <HelpView
+          cards={cards}
+          chat={chat}
+          onChatOpened={setChat}
+          audience="adult"
+        />
       </Suspense>
     </HelpBoundary>
   ) : null;

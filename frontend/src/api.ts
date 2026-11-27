@@ -8,6 +8,8 @@
 //   browser (cache: "no-store") and send no Referer header.
 // - Call wipe() to forget everything right now (the panic button does).
 
+import type { Audience } from "./helpLogic";
+
 const BASE_URL: string = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
 
 export type HelpTopic = "general" | "control" | "danger" | "grooming";
@@ -40,6 +42,10 @@ export interface MessagesResponse {
   messages: Message[];
   /** One of her messages signals immediate danger and no counselor has replied yet. */
   alert?: boolean;
+  /** A counselor has looked at the chat list in the last minute. */
+  counselor_online?: boolean;
+  /** When counselors usually reply, as set by the partner ("09:00-21:00"). */
+  reply_hours?: string;
 }
 
 export interface StartedChat {
@@ -115,9 +121,16 @@ function chatRequest(suffix: string, init: RequestInit = {}): Request {
  * door, or null if not (wrong sequence: the server answers 204 with nothing).
  * Throws ApiError 429 when rate limited.
  */
-export async function unlock(sequence: number[], language = "sr"): Promise<HelpCard[] | null> {
+export async function unlock(
+  sequence: number[],
+  language = "sr",
+  audience: Audience = "adult",
+): Promise<HelpCard[] | null> {
   const response = await fetch(
-    buildRequest("/api/u/", { method: "POST", body: JSON.stringify({ sequence, language }) }),
+    buildRequest("/api/u/", {
+      method: "POST",
+      body: JSON.stringify({ sequence, language, audience }),
+    }),
   );
   if (response.status === 204) return null;
   if (!response.ok) throw new ApiError(response.status, `Request failed (${response.status})`);

@@ -2,7 +2,9 @@ import { useEffect, useRef, useState } from "react";
 
 import { ApiError, startChat, type ChatTopic, type HelpCard } from "./api";
 import { Chat } from "./Chat";
+import { ChildHelplineCard } from "./ChildHelplineCard";
 import { EmergencyCard } from "./EmergencyCard";
+import { helpLayout, type Audience } from "./helpLogic";
 import { HELP_STRINGS } from "./helpStrings";
 import { useLang } from "./i18n";
 import { panic } from "./panic";
@@ -16,6 +18,9 @@ interface Props {
   cards: HelpCard[];
   chat: ChatState;
   onChatOpened: (chat: ChatState) => void;
+  /** Set by the cover (required). Teen covers show a children's helpline,
+   *  never the chat. */
+  audience: Audience;
 }
 
 // Admin-written markdown, shown as plain text: drop the bold markers only.
@@ -29,7 +34,7 @@ function plain(markdown: string): string {
  * Everything inside carries .help-only so it disappears when the tab hides.
  * Loaded lazily: none of this is in the recipe page's main bundle.
  */
-export function HelpView({ cards, chat, onChatOpened }: Props) {
+export function HelpView({ cards, chat, onChatOpened, audience }: Props) {
   const { lang } = useLang();
   const h = HELP_STRINGS[lang];
   const [path, setPath] = useState<Path | null>(null);
@@ -42,6 +47,7 @@ export function HelpView({ cards, chat, onChatOpened }: Props) {
 
   // Back via the search box (resume): she already chose before, go straight in.
   const resumed = chat.kind === "open" && cards.length === 0;
+  const layout = helpLayout(path ?? "all", audience);
   const visibleCards =
     path === null || path === "all"
       ? cards
@@ -90,7 +96,8 @@ export function HelpView({ cards, chat, onChatOpened }: Props) {
       ) : (
         <>
           {/* She said she is in danger: the emergency number comes first. */}
-          {path === "danger" && <EmergencyCard />}
+          {layout.emergencyFirst && <EmergencyCard />}
+          {layout.childHelpline && <ChildHelplineCard />}
 
           {visibleCards.length > 0 && (
             <div className="notes">
@@ -103,7 +110,7 @@ export function HelpView({ cards, chat, onChatOpened }: Props) {
             </div>
           )}
 
-          {chat.kind === "open" ? (
+          {!layout.chat ? null : chat.kind === "open" ? (
             <Chat resumePhrase={chat.resumePhrase} />
           ) : (
             <div className="start">

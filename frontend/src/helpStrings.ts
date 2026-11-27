@@ -35,6 +35,13 @@ export interface HelpStrings {
   qrHeIsNear: string;
   qrCallPolice: string;
   qrLater: string;
+  childHelplineTitle: string;
+  childHelplineText: string;
+  childHelplineCall: (number: string) => string;
+  childHelplineNone: string;
+  noCounselorNow: string;
+  replyHours: (from: string, to: string) => string;
+  ifInDanger: string;
 }
 
 export const HELP_STRINGS: Record<Lang, HelpStrings> = {
@@ -68,6 +75,13 @@ export const HELP_STRINGS: Record<Lang, HelpStrings> = {
     qrHeIsNear: "On je pored mene.",
     qrCallPolice: "Treba mi policija, šta da radim?",
     qrLater: "Javiću se kasnije.",
+    childHelplineTitle: "Dečja linija",
+    childHelplineText: "Možeš besplatno i anonimno da razgovaraš sa nekim ko pomaže deci i mladima.",
+    childHelplineCall: (n) => `Pozovi ${n}`,
+    childHelplineNone: "Razgovaraj sa odraslom osobom kojoj veruješ, na primer sa nastavnikom ili školskim psihologom.",
+    noCounselorNow: "Trenutno nijedna savetnica nije na vezi.",
+    replyHours: (from, to) => `Savetnice obično odgovaraju od ${from} do ${to}.`,
+    ifInDanger: "Ako si u opasnosti, pozovi broj za hitne slučajeve.",
   },
   hr: {
     helpTitle: "Savjeti iz bilježnice",
@@ -99,6 +113,13 @@ export const HELP_STRINGS: Record<Lang, HelpStrings> = {
     qrHeIsNear: "On je pored mene.",
     qrCallPolice: "Trebam policiju, što da radim?",
     qrLater: "Javit ću se kasnije.",
+    childHelplineTitle: "Dječja linija",
+    childHelplineText: "Možeš besplatno i anonimno razgovarati s nekim tko pomaže djeci i mladima.",
+    childHelplineCall: (n) => `Nazovi ${n}`,
+    childHelplineNone: "Razgovaraj s odraslom osobom kojoj vjeruješ, na primjer s nastavnikom ili školskim psihologom.",
+    noCounselorNow: "Trenutačno nijedna savjetnica nije na vezi.",
+    replyHours: (from, to) => `Savjetnice obično odgovaraju od ${from} do ${to}.`,
+    ifInDanger: "Ako si u opasnosti, nazovi broj za hitne slučajeve.",
   },
   bs: {
     helpTitle: "Savjeti iz sveske",
@@ -130,6 +151,13 @@ export const HELP_STRINGS: Record<Lang, HelpStrings> = {
     qrHeIsNear: "On je pored mene.",
     qrCallPolice: "Treba mi policija, šta da radim?",
     qrLater: "Javit ću se kasnije.",
+    childHelplineTitle: "Dječija linija",
+    childHelplineText: "Možeš besplatno i anonimno razgovarati s nekim ko pomaže djeci i mladima.",
+    childHelplineCall: (n) => `Pozovi ${n}`,
+    childHelplineNone: "Razgovaraj s odraslom osobom kojoj vjeruješ, na primjer s nastavnikom ili školskim pedagogom.",
+    noCounselorNow: "Trenutno nijedna savjetnica nije na vezi.",
+    replyHours: (from, to) => `Savjetnice obično odgovaraju od ${from} do ${to}.`,
+    ifInDanger: "Ako si u opasnosti, pozovi broj za hitne slučajeve.",
   },
   cnr: {
     helpTitle: "Savjeti iz sveske",
@@ -161,6 +189,13 @@ export const HELP_STRINGS: Record<Lang, HelpStrings> = {
     qrHeIsNear: "On je pored mene.",
     qrCallPolice: "Treba mi policija, šta da radim?",
     qrLater: "Javiću se kasnije.",
+    childHelplineTitle: "Dječja linija",
+    childHelplineText: "Možeš besplatno i anonimno razgovarati s nekim ko pomaže djeci i mladima.",
+    childHelplineCall: (n) => `Pozovi ${n}`,
+    childHelplineNone: "Razgovaraj s odraslom osobom kojoj vjeruješ, na primjer s nastavnikom ili školskim psihologom.",
+    noCounselorNow: "Trenutno nijedna savjetnica nije na vezi.",
+    replyHours: (from, to) => `Savjetnice obično odgovaraju od ${from} do ${to}.`,
+    ifInDanger: "Ako si u opasnosti, pozovi broj za hitne slučajeve.",
   },
   sl: {
     helpTitle: "Nasveti iz zvezka",
@@ -192,6 +227,13 @@ export const HELP_STRINGS: Record<Lang, HelpStrings> = {
     qrHeIsNear: "On je ob meni.",
     qrCallPolice: "Potrebujem policijo, kaj naj naredim?",
     qrLater: "Oglasila se bom pozneje.",
+    childHelplineTitle: "Otroška linija",
+    childHelplineText: "Brezplačno in anonimno se lahko pogovoriš z nekom, ki pomaga otrokom in mladim.",
+    childHelplineCall: (n) => `Pokliči ${n}`,
+    childHelplineNone: "Pogovori se z odraslo osebo, ki ji zaupaš, na primer z učiteljem ali šolsko svetovalno delavko.",
+    noCounselorNow: "Trenutno ni na voljo nobena svetovalka.",
+    replyHours: (from, to) => `Svetovalke običajno odgovarjajo od ${from} do ${to}.`,
+    ifInDanger: "Če si v nevarnosti, pokliči številko za nujne primere.",
   },
   mk: {
     helpTitle: "Совети од тетратката",
@@ -223,6 +265,13 @@ export const HELP_STRINGS: Record<Lang, HelpStrings> = {
     qrHeIsNear: "Тој е до мене.",
     qrCallPolice: "Ми треба полиција, што да правам?",
     qrLater: "Ќе се јавам подоцна.",
+    childHelplineTitle: "Детска линија",
+    childHelplineText: "Можеш бесплатно и анонимно да разговараш со некој што им помага на децата и младите.",
+    childHelplineCall: (n) => `Повикај ${n}`,
+    childHelplineNone: "Разговарај со возрасен на кого му веруваш, на пример наставник или училишен психолог.",
+    noCounselorNow: "Во моментов ниедна советничка не е достапна.",
+    replyHours: (from, to) => `Советничките обично одговараат од ${from} до ${to}.`,
+    ifInDanger: "Ако си во опасност, повикај го бројот за итни случаи.",
   },
   sq: {
     helpTitle: "Këshilla nga fletorja",
@@ -254,6 +303,13 @@ export const HELP_STRINGS: Record<Lang, HelpStrings> = {
     qrHeIsNear: "Ai është pranë meje.",
     qrCallPolice: "Më duhet policia, çfarë të bëj?",
     qrLater: "Do të shkruaj më vonë.",
+    childHelplineTitle: "Linja për fëmijë",
+    childHelplineText: "Mund të flasësh falas dhe në mënyrë anonime me dikë që ndihmon fëmijët dhe të rinjtë.",
+    childHelplineCall: (n) => `Telefono ${n}`,
+    childHelplineNone: "Fol me një të rritur që i beson, për shembull një mësues ose psikologun e shkollës.",
+    noCounselorNow: "Tani për tani asnjë këshilltare nuk është në linjë.",
+    replyHours: (from, to) => `Këshilltaret zakonisht përgjigjen nga ${from} deri në ${to}.`,
+    ifInDanger: "Nëse je në rrezik, telefono numrin e urgjencës.",
   },
   en: {
     helpTitle: "Tips from the notebook",
@@ -285,5 +341,12 @@ export const HELP_STRINGS: Record<Lang, HelpStrings> = {
     qrHeIsNear: "He is next to me.",
     qrCallPolice: "I need the police. What do I do?",
     qrLater: "I'll write later.",
+    childHelplineTitle: "Children's helpline",
+    childHelplineText: "You can talk for free and anonymously to someone who helps children and young people.",
+    childHelplineCall: (n) => `Call ${n}`,
+    childHelplineNone: "Talk to an adult you trust, like a teacher or the school counselor.",
+    noCounselorNow: "No counselor is online right now.",
+    replyHours: (from, to) => `Counselors usually reply between ${from} and ${to}.`,
+    ifInDanger: "If you are in danger, call the emergency number.",
   },
 };

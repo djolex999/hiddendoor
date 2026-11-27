@@ -48,7 +48,12 @@ export function Recipe({ recipe, onUnlocked, help }: Props) {
         <h2>{t.ingredients}</h2>
         <p className="hint">{t.ingredientsHint}</p>
         {/* key resets the checklist (and pending taps) when the recipe changes */}
-        <TapDoor key={recipe.id} items={recipe.ingredients} onUnlocked={onUnlocked} />
+        <TapDoor
+          key={recipe.id}
+          items={recipe.ingredients}
+          onUnlocked={onUnlocked}
+          audience="adult"
+        />
       </section>
 
       {help}

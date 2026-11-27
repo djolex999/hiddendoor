@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
 import { unlock, type HelpCard } from "./api";
+import type { Audience } from "./helpLogic";
 import { useLang } from "./i18n";
 
 // After the last tap, wait this long, then send what was collected.
@@ -11,6 +12,9 @@ const MIN_TAPS = 3;
 interface Props {
   items: string[];
   onUnlocked: (cards: HelpCard[]) => void;
+  /** Which help the cover leads to. Required, so a new cover cannot forget it.
+   *  Teen covers never get the adult chat. */
+  audience: Audience;
 }
 
 /**
@@ -19,7 +23,7 @@ interface Props {
  * Taps are numbered from 1 and sent after a pause; the right sequence is
  * known only to the server. A wrong sequence does nothing visible.
  */
-export function TapDoor({ items, onUnlocked }: Props) {
+export function TapDoor({ items, onUnlocked, audience }: Props) {
   const { lang } = useLang();
   const [checked, setChecked] = useState<ReadonlySet<number>>(new Set());
   const taps = useRef<number[]>([]);
@@ -31,7 +35,7 @@ export function TapDoor({ items, onUnlocked }: Props) {
     const sequence = taps.current;
     taps.current = [];
     if (sequence.length < MIN_TAPS) return;
-    unlock(sequence, lang)
+    unlock(sequence, lang, audience)
       .then((cards) => {
         if (cards) onUnlocked(cards);
       })

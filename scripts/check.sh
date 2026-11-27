@@ -31,7 +31,7 @@ for s in "${steps[@]}"; do
       run_step lint-js '^/|[0-9]+:[0-9]+ +error' pnpm -r lint || fail=1
       run_step lint-py '^[^ ].*:[0-9]+:[0-9]+:|would reformat' \
         bash -c 'cd backend && uv run ruff check . && uv run ruff format --check .' || fail=1 ;;
-    test) run_step test 'FAILED|Error|assert' bash -c 'cd backend && uv run pytest -q' || fail=1 ;;
+    test) run_step test 'FAILED|Error|assert|not ok' bash -c 'cd backend && uv run pytest -q && cd ../frontend && node --test tests/*.test.mjs' || fail=1 ;;
     build) run_step build '[Ee]rror|[Ff]ailed' pnpm -r build || fail=1 ;;
     *) echo "unknown step: $s (use types, lint, test, build or all)"; fail=1 ;;
   esac
