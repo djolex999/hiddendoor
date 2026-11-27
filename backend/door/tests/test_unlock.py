@@ -71,3 +71,10 @@ def test_forged_x_forwarded_for_does_not_reset_the_limit(client):
         "/api/u/", {"sequence": RIGHT}, format="json", HTTP_X_FORWARDED_FOR="10.9.9.9"
     )
     assert response.status_code == 429
+
+
+def test_admin_pages_use_same_origin_referrer_policy(client):
+    # "no-referrer" here made browsers send "Origin: null" and broke the
+    # admin login's CSRF check. The API keeps "no-referrer" (tested above).
+    response = client.get("/admin/login/")
+    assert response["Referrer-Policy"] == "same-origin"

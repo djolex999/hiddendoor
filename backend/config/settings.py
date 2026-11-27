@@ -140,7 +140,10 @@ SECURE_SSL_REDIRECT = env_bool("SECURE_SSL_REDIRECT", not DEBUG)
 SESSION_COOKIE_SECURE = not DEBUG
 CSRF_COOKIE_SECURE = not DEBUG
 SECURE_HSTS_SECONDS = 0 if DEBUG else 60 * 60 * 24 * 30
-SECURE_REFERRER_POLICY = "no-referrer"
+# Site-wide (admin pages): same-origin. With "no-referrer" browsers send
+# "Origin: null" on form POSTs and Django's CSRF check rejects the admin login.
+# Every /api/ response still gets "no-referrer" from ApiPrivacyMiddleware.
+SECURE_REFERRER_POLICY = "same-origin"
 
 # Django REST framework
 
