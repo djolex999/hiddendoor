@@ -1,0 +1,2346 @@
+[
+  {
+    "id": "pita-sa-jabukama",
+    "category": "kolaci-i-torte",
+    "title": "Pita s jabukama",
+    "intro": "Ovo je pita koju je moja baka pekla svake jeseni, čim se jabuke obiru. Tajna su kisele jabuke, sa slatkima nikad nije isto.",
+    "time": "75 min",
+    "yields": "8 komada",
+    "difficulty": "lako",
+    "ingredients": [
+      "500 g kora za pitu",
+      "1 kg kiselih jabuka",
+      "150 g šećera",
+      "1 žličica cimeta",
+      "100 ml ulja",
+      "50 g mljevenih oraha"
+    ],
+    "steps": [
+      "Zagrij pećnicu na 200 °C i premaži uljem lim srednje veličine.",
+      "Jabuke oguli, krupno ih naribaj i lagano ocijedi rukama da ne puste previše soka.",
+      "Naribane jabuke pomiješaj sa šećerom, cimetom i mljevenim orasima.",
+      "Na lim stavi dvije kore, poprskaj ih uljem i rasporedi dio nadjeva. Ponavljaj dok ne potrošiš nadjev, a završi s dvije kore.",
+      "Gornju koru premaži uljem i nareži pitu na komade prije pečenja, tako se kore neće lomiti.",
+      "Peci oko 40 minuta, dok kore ne porumene. Ostavi pitu da se prohladi prije nego što je poslužiš."
+    ],
+    "comments": [
+      {
+        "name": "Ivana",
+        "when": "prije 2 dana",
+        "text": "Radila sam s Jonagoldom, ispala je odlična. Sljedeći put stavljam malo više cimeta."
+      },
+      {
+        "name": "Marko",
+        "when": "prije 2 tjedna",
+        "text": "Rezanje prije pečenja je pun pogodak, komadi su ispali lijepi i ravni."
+      },
+      {
+        "name": "Katarina",
+        "when": "prije mjesec dana",
+        "text": "Moja mama u nadjev doda i malo griza da upije sok. Vrijedi probati i tako."
+      }
+    ]
+  },
+  {
+    "id": "proja-sa-sirom",
+    "category": "hleb-i-peciva",
+    "title": "Proja sa sirom",
+    "intro": "Proja nam je uvijek bila vikend doručak, topla, uz čašu jogurta. Gotova je za manje od sat vremena i uvijek nestane.",
+    "time": "45 min",
+    "yields": "6 komada",
+    "difficulty": "lako",
+    "ingredients": [
+      "300 g kukuruznog brašna",
+      "3 jaja",
+      "200 ml jogurta",
+      "100 ml ulja",
+      "200 g bijelog sira",
+      "1 vrećica praška za pecivo",
+      "1 žličica soli"
+    ],
+    "steps": [
+      "Zagrij pećnicu na 200 °C i obloži lim od oko 20 x 30 cm papirom za pečenje.",
+      "U većoj zdjeli umuti jaja, pa dodaj jogurt i ulje i dobro promiješaj.",
+      "Kukuruzno brašno pomiješaj s praškom za pecivo i soli, pa ga postupno umiješaj u tekuću smjesu.",
+      "Izmrvi sir i umiješaj veći dio u tijesto, a ostatak sačuvaj za vrh.",
+      "Izlij smjesu na lim, poravnaj je i pospi preostalim sirom.",
+      "Peci 30 do 35 minuta, dok proja ne porumeni i dok čačkalica ne izađe suha."
+    ],
+    "comments": [
+      {
+        "name": "Draga",
+        "when": "jučer",
+        "text": "Stavila sam pola jogurta i pola gazirane vode, ispala je baš rastresita."
+      },
+      {
+        "name": "Tomislav",
+        "when": "prije 3 dana",
+        "text": "Najbolja je dok je još mlaka. Djeca su pojela pola lima za doručak."
+      }
+    ]
+  },
+  {
+    "id": "prebranac",
+    "category": "glavna-jela",
+    "title": "Prebranac",
+    "intro": "Prebranac je posno jelo koje se kod nas spremalo petkom i za Badnjak. Grah potopi dan prije, ostalo je samo strpljenje.",
+    "time": "3 sata",
+    "yields": "6 porcija",
+    "difficulty": "srednje",
+    "ingredients": [
+      "500 g bijelog graha",
+      "1 kg luka",
+      "2 žlice mljevene paprike",
+      "150 ml ulja",
+      "3 lovorova lista",
+      "sol i papar"
+    ],
+    "steps": [
+      "Grah preberi, operi i potopi u hladnu vodu preko noći.",
+      "Ocijedi grah, nalij ga svježom vodom i prokuhaj, pa prvu vodu izlij. Ponovno nalij vodom, dodaj lovor i kuhaj oko sat i pol, dok ne omekša, ali da se ne raspadne.",
+      "Dok se grah kuha, luk nareži na tanke polumjesece i pirjaj ga na ulju na laganoj vatri oko 30 minuta, dok ne postane mekan i zlatan.",
+      "Skini luk s vatre, umiješaj mljevenu papriku, posoli i popapri.",
+      "Ocijedi grah, a jednu šalicu vode od kuhanja sačuvaj. U zemljanu ili vatrostalnu posudu slaži slojeve graha i luka, tako da luk bude i na vrhu.",
+      "Prelij s malo vode od kuhanja i peci u pećnici zagrijanoj na 200 °C oko 40 minuta, dok se odozgo ne uhvati korica."
+    ],
+    "comments": [
+      {
+        "name": "Ljiljana",
+        "when": "prije 2 tjedna",
+        "text": "Luk sam pirjala skoro sat vremena, ne treba žuriti. Okus je kao kod moje svekrve."
+      },
+      {
+        "name": "Zvonimir",
+        "when": "prije mjesec dana",
+        "text": "Sutradan je još bolji. Pravim duplu količinu i pola zamrznem."
+      }
+    ]
+  },
+  {
+    "id": "sarma",
+    "category": "glavna-jela",
+    "title": "Sarma",
+    "intro": "Bez sarme nema zime u našoj kući. Radim je u velikom loncu, jer se uvijek nađe netko tko svrati baš kad se kuha.",
+    "time": "4 sata",
+    "yields": "20 komada",
+    "difficulty": "zahtjevno",
+    "ingredients": [
+      "1 glavica kiselog kupusa",
+      "600 g miješanog mljevenog mesa",
+      "100 g riže",
+      "1 glavica luka",
+      "1 žlica mljevene paprike",
+      "200 g suhih svinjskih rebara",
+      "3 lovorova lista",
+      "4 žlice ulja",
+      "1 žlica brašna",
+      "sol i papar"
+    ],
+    "steps": [
+      "Odvoji listove kiselog kupusa i nožem stanji debele žile. Ako je kupus preslan, isperi listove hladnom vodom.",
+      "Na dvije žlice ulja popirjaj sitno sjeckan luk, dodaj meso i prži ga dok ne promijeni boju. Umiješaj opranu rižu, pola žlice mljevene paprike, papar i malo soli.",
+      "Na svaki list stavi žlicu nadjeva, preklopi bočne strane i čvrsto zamotaj sarmu.",
+      "Ostatak kupusa nasjeckaj i stavi na dno velikog lonca. Poslaži sarme jednu uz drugu, a između njih stavi rebra i lovor.",
+      "Nalij vodom toliko da sarme budu pokrivene, pritisni ih tanjurom i kuhaj na laganoj vatri dva i pol do tri sata.",
+      "Na kraju na preostalom ulju napravi zapršku od brašna i ostatka mljevene paprike, razmuti je s malo soka iz lonca i prelij preko sarmi. Kuhaj još desetak minuta."
+    ],
+    "comments": [
+      {
+        "name": "Gordana",
+        "when": "prije 3 dana",
+        "text": "Ja je nakon kuhanja stavim još pola sata u pećnicu, odozgo se lijepo zapeče."
+      },
+      {
+        "name": "Stjepan",
+        "when": "prije 2 tjedna",
+        "text": "Prvi put sam radio sam i uspjelo je. Tanjur odozgo je bitan, inače se odmotaju."
+      },
+      {
+        "name": "Vesna",
+        "when": "prije mjesec dana",
+        "text": "U nadjev dodajem i malo dimljene slanine, puno je mirisnija."
+      }
+    ]
+  },
+  {
+    "id": "svinjski-gulas",
+    "category": "glavna-jela",
+    "title": "Svinjski gulaš",
+    "intro": "Gulaš je jelo koje se ne može pokvariti ako mu daš vremena. Ja ga uvijek poslužujem uz pire ili domaći kruh za umakanje.",
+    "time": "2 sata",
+    "yields": "5 porcija",
+    "difficulty": "srednje",
+    "ingredients": [
+      "800 g svinjskog buta",
+      "3 glavice luka",
+      "2 mrkve",
+      "1 crvena paprika",
+      "2 češnja češnjaka",
+      "2 žlice mljevene paprike",
+      "1 žlica koncentrata rajčice",
+      "3 žlice ulja",
+      "2 lovorova lista",
+      "sol i papar"
+    ],
+    "steps": [
+      "Meso nareži na kocke od oko 3 cm, a luk sitno nasjeckaj.",
+      "Na ulju pirjaj luk desetak minuta, dok ne omekša i ne požuti.",
+      "Dodaj meso i prži ga uz miješanje dok ne promijeni boju sa svih strana.",
+      "Ubaci sjeckanu mrkvu, papriku i češnjak, pa skini lonac s vatre i umiješaj mljevenu papriku i koncentrat rajčice.",
+      "Vrati na vatru, nalij toplom vodom da prekrije meso, dodaj lovor, sol i papar.",
+      "Kuhaj poklopljeno na laganoj vatri oko sat i pol, uz povremeno miješanje i dolijevanje vode, dok meso ne postane mekano a umak gust."
+    ],
+    "comments": [
+      {
+        "name": "Marko",
+        "when": "jučer",
+        "text": "Uzeo sam svinjski vrat umjesto buta i meso je bilo baš sočno."
+      },
+      {
+        "name": "Tamara",
+        "when": "prije 2 tjedna",
+        "text": "Mljevena paprika obavezno van vatre, jednom sam je zagorjela i cijeli gulaš je bio gorak."
+      }
+    ]
+  },
+  {
+    "id": "punjene-paprike",
+    "category": "glavna-jela",
+    "title": "Punjene paprike",
+    "intro": "Ljeti, kad su paprike najslađe, ovo kuham barem jednom tjedno. Najbolje su sutradan, kad se umak lijepo slegne.",
+    "time": "2 sata",
+    "yields": "10 komada",
+    "difficulty": "srednje",
+    "ingredients": [
+      "10 paprika babura",
+      "500 g mljevenog mesa",
+      "100 g riže",
+      "1 glavica luka",
+      "1 jaje",
+      "1 žlica mljevene paprike",
+      "700 ml soka od rajčice",
+      "2 žlice brašna",
+      "3 žlice ulja",
+      "1 vezica peršina",
+      "sol i papar"
+    ],
+    "steps": [
+      "Paprikama odreži vrh sa peteljkom i izvadi sjemenke.",
+      "Na žlici ulja kratko popirjaj sitno sjeckan luk. Kad se ohladi, pomiješaj ga s mesom, opranom rižom, jajetom, sjeckanim peršinom, polovicom mljevene paprike, soli i paprom.",
+      "Napuni paprike, ali ne do vrha, jer riža nabubri. Zatvori ih odrezanim vrhom.",
+      "Poslaži paprike uspravno u lonac, nalij sok od rajčice i toliko vode da budu skoro pokrivene.",
+      "Kuhaj poklopljeno na laganoj vatri oko sat i pol.",
+      "Na preostalom ulju napravi zapršku od brašna i ostatka mljevene paprike, razmuti je s malo soka i umiješaj u lonac. Kuhaj još desetak minuta da se umak zgusne."
+    ],
+    "comments": [
+      {
+        "name": "Marija",
+        "when": "prije 3 dana",
+        "text": "Ja ih poslije prebacim u pećnicu na pola sata, dobiju lijepu boju."
+      },
+      {
+        "name": "Dario",
+        "when": "prije mjesec dana",
+        "text": "Poslužujem ih uz kiselo vrhnje, tako ih je baka posluživala."
+      }
+    ]
+  },
+  {
+    "id": "musaka-od-krompira",
+    "category": "glavna-jela",
+    "title": "Musaka od krumpira",
+    "intro": "Musaka je kod nas nedjeljni ručak kad svi dođu. Nije komplicirana, samo traži malo rezanja i strpljenja dok se peče.",
+    "time": "90 min",
+    "yields": "6 porcija",
+    "difficulty": "srednje",
+    "ingredients": [
+      "1,5 kg krumpira",
+      "500 g mljevenog mesa",
+      "1 glavica luka",
+      "3 jaja",
+      "300 ml mlijeka",
+      "100 ml ulja",
+      "1 žličica mljevene paprike",
+      "1 žličica soli",
+      "papar"
+    ],
+    "steps": [
+      "Zagrij pećnicu na 200 °C i naulji lim.",
+      "Na malo ulja popirjaj sitno sjeckan luk, dodaj meso i prži dok ne promijeni boju. Začini mljevenom paprikom, soli i paprom.",
+      "Krumpir oguli i nareži na tanke kolutove, pa ga posoli i prelij s malo ulja.",
+      "Na lim poslaži sloj krumpira, pa sloj mesa, i ponavljaj dok ne potrošiš sve, s tim da je krumpir na vrhu.",
+      "Nalij pola šalice vode, pokrij lim folijom i peci 30 minuta.",
+      "Umuti jaja s mlijekom i prstohvatom soli, skini foliju i prelij musaku. Peci još 25 do 30 minuta, dok preljev ne porumeni."
+    ],
+    "comments": [
+      {
+        "name": "Sanja",
+        "when": "prije 2 dana",
+        "text": "Krumpir režem na ribežu za kolutove, ide brzo i svi su iste debljine."
+      },
+      {
+        "name": "Petar",
+        "when": "prije 2 tjedna",
+        "text": "Treba je ostaviti deset minuta da odstoji prije rezanja, ljepše se reže."
+      }
+    ]
+  },
+  {
+    "id": "pasulj-sa-kobasicom",
+    "category": "glavna-jela",
+    "title": "Grah s kobasicom",
+    "intro": "Grah je četvrtkom bio obavezan kod mojih roditelja, i ta navika je ostala. S domaćom kobasicom je pravo zimsko jelo.",
+    "time": "3 sata",
+    "yields": "6 porcija",
+    "difficulty": "lako",
+    "ingredients": [
+      "500 g bijelog graha",
+      "300 g dimljene kobasice",
+      "1 glavica luka",
+      "1 mrkva",
+      "2 češnja češnjaka",
+      "1 žlica mljevene paprike",
+      "2 žlice brašna",
+      "3 žlice ulja",
+      "2 lovorova lista",
+      "sol i papar"
+    ],
+    "steps": [
+      "Grah potopi u hladnu vodu preko noći.",
+      "Ocijedi ga, nalij svježom vodom, prokuhaj i prvu vodu izlij.",
+      "Nalij ponovno oko dvije litre vode, dodaj cijeli oguljeni luk, mrkvu, češnjak i lovor, pa kuhaj na laganoj vatri oko dva sata.",
+      "Kobasicu nareži na kolutove i ubaci je u grah posljednjih pola sata kuhanja.",
+      "Na ulju napravi zapršku od brašna, skini je s vatre, umiješaj mljevenu papriku i razmuti s malo tekućine od graha.",
+      "Zaprešku izlij u grah, posoli, popapri i kuhaj još desetak minuta."
+    ],
+    "comments": [
+      {
+        "name": "Biljana",
+        "when": "prije 3 dana",
+        "text": "Ja kuham sa suhim rebrima umjesto kobasice, isto je odlično."
+      },
+      {
+        "name": "Aleksandar",
+        "when": "prije mjesec dana",
+        "text": "Na kraju dodam malo sjeckanog peršina, osvježi ga."
+      }
+    ]
+  },
+  {
+    "id": "domaci-cevapi",
+    "category": "glavna-jela",
+    "title": "Domaći ćevapi",
+    "intro": "Ćevapi iz roštiljnice su jedno, ali ovi iz tave kod kuće uopće ne zaostaju. Bitno je da meso nekoliko sati odstoji u hladnjaku.",
+    "time": "3 sata",
+    "yields": "4 porcije",
+    "difficulty": "srednje",
+    "ingredients": [
+      "500 g mljevene junetine",
+      "300 g mljevene svinjetine",
+      "2 češnja češnjaka",
+      "100 ml gazirane vode",
+      "1 žličica sode bikarbone",
+      "1 žličica mljevene paprike",
+      "2 žličice soli",
+      "1 žličica mljevenog papra",
+      "2 glavice luka za posluživanje"
+    ],
+    "steps": [
+      "U zdjelu stavi obje vrste mesa, zgnječen češnjak, sol, papar i mljevenu papriku.",
+      "Sodu bikarbonu razmuti u gaziranoj vodi i izlij u meso.",
+      "Mijesi rukama barem deset minuta, dok smjesa ne postane glatka i ljepljiva.",
+      "Pokrij zdjelu i ostavi u hladnjaku najmanje dva sata, a najbolje preko noći.",
+      "Navlaženim rukama oblikuj valjčiće duljine oko 7 cm.",
+      "Peci ih u jako zagrijanoj grill tavi ili na roštilju oko 8 minuta, okrećući ih da se ravnomjerno ispeku. Poslužuj sa sitno sjeckanim lukom."
+    ],
+    "comments": [
+      {
+        "name": "Nikola",
+        "when": "jučer",
+        "text": "Ostavio sam preko noći i razlika je ogromna, puno su sočniji."
+      },
+      {
+        "name": "Jelena",
+        "when": "prije 2 tjedna",
+        "text": "Napravila sam lepinje uz njih i bilo je kao u Sarajevu."
+      },
+      {
+        "name": "Davor",
+        "when": "prije mjesec dana",
+        "text": "Ja dodam i malo mljevene janjetine, ali i ovako su odlični."
+      }
+    ]
+  },
+  {
+    "id": "piletina-iz-rerne-sa-krompirom",
+    "category": "glavna-jela",
+    "title": "Piletina iz pećnice s krumpirom",
+    "intro": "Ovo mi je spas radnim danima: sve ide na jedan lim, a pećnica odradi ostalo. Kuća poslije miriše na ružmarin.",
+    "time": "75 min",
+    "yields": "4 porcije",
+    "difficulty": "lako",
+    "ingredients": [
+      "1 kg pilećih bataka i zabataka",
+      "1 kg krumpira",
+      "4 žlice ulja",
+      "3 češnja češnjaka",
+      "1 žličica mljevene paprike",
+      "1 žličica suhog ružmarina",
+      "1 limun",
+      "sol i papar"
+    ],
+    "steps": [
+      "Zagrij pećnicu na 200 °C.",
+      "Pomiješaj ulje, zgnječen češnjak, mljevenu papriku, ružmarin, sok od pola limuna, sol i papar.",
+      "Krumpir oguli i nareži na kriške, pa ga rasporedi po limu.",
+      "Piletinu dobro premaži marinadom, poslaži je preko krumpira, a ostatak marinade prelij po krumpiru.",
+      "Nalij pola šalice vode, pokrij folijom i peci 30 minuta.",
+      "Skini foliju i peci još 30 do 35 minuta, dok koža ne postane hrskava a krumpir mekan. Prije posluživanja iscijedi preostali limun preko piletine."
+    ],
+    "comments": [
+      {
+        "name": "Ivana",
+        "when": "prije 2 dana",
+        "text": "Dodala sam i nekoliko glavica crvenog luka na četvrtine, karamelizirale su se, divno."
+      },
+      {
+        "name": "Vladimir",
+        "when": "prije 3 dana",
+        "text": "Jednostavno i ukusno. Folija na početku je pravi trik da meso ne bude suho."
+      }
+    ]
+  },
+  {
+    "id": "spageti-bolonjeze",
+    "category": "glavna-jela",
+    "title": "Špageti bolognese",
+    "intro": "Kad nitko ne zna što bi za ručak, napravim bolognese i svi su zadovoljni. Umak se može spremiti i dan prije.",
+    "time": "1 sat",
+    "yields": "4 porcije",
+    "difficulty": "lako",
+    "ingredients": [
+      "400 g špageta",
+      "400 g mljevene junetine",
+      "1 glavica luka",
+      "1 mrkva",
+      "2 češnja češnjaka",
+      "700 ml passate od rajčice",
+      "2 žlice maslinovog ulja",
+      "1 žličica origana",
+      "50 g naribanog parmezana",
+      "sol i papar"
+    ],
+    "steps": [
+      "Na maslinovom ulju pirjaj sitno sjeckan luk i naribanu mrkvu oko pet minuta.",
+      "Dodaj češnjak, pa meso, i prži uz miješanje dok se ne razlomi i ne promijeni boju.",
+      "Nalij passatu, dodaj origano, sol i papar i kuhaj na laganoj vatri oko 40 minuta, uz povremeno miješanje.",
+      "U međuvremenu skuhaj špagete u dosta posoljene vode prema uputi na pakiranju.",
+      "Ocijedi tjesteninu, a malo vode od kuhanja sačuvaj ako umak treba razrijediti.",
+      "Pomiješaj špagete s umakom i poslužuj posuto parmezanom."
+    ],
+    "comments": [
+      {
+        "name": "Petra",
+        "when": "prije 2 tjedna",
+        "text": "Ja dodam i žličicu šećera u umak, skida kiselost rajčice."
+      },
+      {
+        "name": "Marko",
+        "when": "prije mjesec dana",
+        "text": "Umak se odlično zamrzava, uvijek pravim duplu količinu."
+      }
+    ]
+  },
+  {
+    "id": "podvarak",
+    "category": "glavna-jela",
+    "title": "Podvarak",
+    "intro": "Podvarak je jelo koje se dugo peče i zato je savršen za hladne vikende. Kiseli kupus iz bačve mu daje pravi okus.",
+    "time": "3 sata",
+    "yields": "6 porcija",
+    "difficulty": "srednje",
+    "ingredients": [
+      "1,5 kg kiselog kupusa",
+      "800 g svinjske lopatice",
+      "2 glavice luka",
+      "100 g dimljene slanine",
+      "1 žlica mljevene paprike",
+      "4 žlice ulja",
+      "3 lovorova lista",
+      "1 žličica papra u zrnu"
+    ],
+    "steps": [
+      "Zagrij pećnicu na 180 °C. Kupus nasjeckaj na tanke rezance, a ako je preslan, isperi ga.",
+      "Meso nareži na veće komade, posoli ga i ispeci na ulju sa svih strana, pa ga izvadi.",
+      "Na istoj masnoći popirjaj sjeckan luk i slaninu, skini s vatre i umiješaj mljevenu papriku.",
+      "Dodaj kupus, lovor i papar, promiješaj i prebaci u veću vatrostalnu posudu.",
+      "Poslaži meso preko kupusa, nalij oko 300 ml vode i pokrij folijom.",
+      "Peci oko dva sata, a posljednjih pola sata bez folije, da se kupus odozgo zapeče."
+    ],
+    "comments": [
+      {
+        "name": "Mirjana",
+        "when": "prije 3 dana",
+        "text": "Radila sam s puretinom za Božić, ispalo je prekrasno."
+      },
+      {
+        "name": "Zvonimir",
+        "when": "prije 2 tjedna",
+        "text": "Uz proju i kiselo mlijeko, nema bolje."
+      }
+    ]
+  },
+  {
+    "id": "djuvec",
+    "category": "glavna-jela",
+    "title": "Đuveč",
+    "intro": "Đuveč je kod nas ljeto u tepsiji. Kad je povrće svježe s placa, ne treba mu ni meso.",
+    "time": "90 min",
+    "yields": "6 porcija",
+    "difficulty": "lako",
+    "ingredients": [
+      "2 glavice luka",
+      "3 paprike babure",
+      "1 patlidžan",
+      "1 tikvica",
+      "4 rajčice",
+      "150 g riže",
+      "100 ml ulja",
+      "1 žlica mljevene paprike",
+      "1 vezica peršina",
+      "sol i papar"
+    ],
+    "steps": [
+      "Zagrij pećnicu na 180 °C.",
+      "Na ulju popirjaj luk narezan na polumjesece, pa dodaj papriku narezanu na trake i pirjaj još pet minuta.",
+      "Dodaj patlidžan i tikvicu narezane na kocke, posoli i pirjaj desetak minuta.",
+      "Umiješaj opranu rižu i mljevenu papriku, pa sve prebaci u tepsiju.",
+      "Rajčice nareži na kolutove i poslaži ih preko povrća. Nalij oko 400 ml tople vode.",
+      "Peci oko sat vremena, dok riža ne omekša i rajčica ne zapeče. Posipaj sjeckanim peršinom prije posluživanja."
+    ],
+    "comments": [
+      {
+        "name": "Mirjana",
+        "when": "jučer",
+        "text": "Ubacila sam i šaku mahuna, baš se slaže."
+      },
+      {
+        "name": "Olja",
+        "when": "prije mjesec dana",
+        "text": "Poslužila sam ga uz pečenu piletinu, svi su tražili još."
+      }
+    ]
+  },
+  {
+    "id": "pileci-paprikas",
+    "category": "glavna-jela",
+    "title": "Pileći paprikaš",
+    "intro": "Pileći paprikaš bio je prvo jelo koje sam naučila kuhati od mame. Najljepši je uz domaću tjesteninu ili pire.",
+    "time": "75 min",
+    "yields": "4 porcije",
+    "difficulty": "lako",
+    "ingredients": [
+      "1 kg pilećih bataka",
+      "3 glavice luka",
+      "1 paprika babura",
+      "1 rajčica",
+      "2 žlice mljevene paprike",
+      "1 žlica brašna",
+      "3 žlice ulja",
+      "sol i papar"
+    ],
+    "steps": [
+      "Na ulju pirjaj sitno sjeckan luk oko deset minuta, dok ne postane proziran.",
+      "Dodaj piletinu i prži je nekoliko minuta sa svih strana.",
+      "Ubaci sjeckanu papriku i oguljenu, nasjeckanu rajčicu.",
+      "Skini lonac s vatre, pospi mljevenu papriku i brašno i dobro promiješaj.",
+      "Nalij oko 500 ml tople vode, posoli, popapri i kuhaj poklopljeno na laganoj vatri oko 45 minuta, dok meso ne omekša.",
+      "Pred kraj otklopi lonac da se umak zgusne."
+    ],
+    "comments": [
+      {
+        "name": "Katarina",
+        "when": "prije 3 dana",
+        "text": "Na kraju sam umiješala žlicu kiselog vrhnja, umak je bio svilenkast."
+      },
+      {
+        "name": "Bojana",
+        "when": "prije 2 tjedna",
+        "text": "Brz i siguran ručak, uvijek uspije."
+      }
+    ]
+  },
+  {
+    "id": "domaca-pileca-supa",
+    "category": "supe-i-corbe",
+    "title": "Domaća pileća juha",
+    "intro": "Ova juha se kod nas kuhala nedjeljom i kad se netko razboli. Kuhaj je polako, nikako da jako kipi, i bit će bistra kao suza.",
+    "time": "2 sata",
+    "yields": "6 porcija",
+    "difficulty": "lako",
+    "ingredients": [
+      "1 kg pilećih leđa i krilaca",
+      "2 mrkve",
+      "1 korijen peršina",
+      "1 komad celera",
+      "1 glavica luka",
+      "10 zrna papra",
+      "100 g domaćih rezanaca",
+      "1 vezica peršina",
+      "sol"
+    ],
+    "steps": [
+      "Piletinu operi, stavi u lonac i nalij s oko dvije i pol litre hladne vode.",
+      "Stavi na vatru i, kad počne ključati, žlicom skidaj pjenu.",
+      "Dodaj očišćeno povrće u cijelim komadima, luk s ljuskom radi boje i papar u zrnu.",
+      "Kuhaj na laganoj vatri, tek da lagano krčka, oko sat i pol. Posoli pred kraj.",
+      "Procijedi juhu, a meso i mrkvu nasjeckaj i vrati u nju.",
+      "Ubaci rezance i kuhaj ih nekoliko minuta. Poslužuj posuto sjeckanim peršinom."
+    ],
+    "comments": [
+      {
+        "name": "Svjetlana",
+        "when": "prije 2 dana",
+        "text": "Luk s ljuskom daje divnu zlatnu boju, nisam to znala."
+      },
+      {
+        "name": "Nataša",
+        "when": "prije mjesec dana",
+        "text": "Od mesa poslije napravim pileću salatu, ništa ne propada."
+      }
+    ]
+  },
+  {
+    "id": "teleca-corba",
+    "category": "supe-i-corbe",
+    "title": "Teleća juha",
+    "intro": "Teleća juha sa žumanjkom i vrhnjem kod nas je svečani predjelo. Nije teška, samo treba pažljivo zakuhati na kraju.",
+    "time": "90 min",
+    "yields": "6 porcija",
+    "difficulty": "srednje",
+    "ingredients": [
+      "500 g teletine",
+      "2 mrkve",
+      "1 korijen peršina",
+      "1/4 celera",
+      "1 glavica luka",
+      "2 žlice ulja",
+      "2 žlice brašna",
+      "1 žumanjak",
+      "100 ml kiselog vrhnja",
+      "1 žlica limunova soka",
+      "sol i papar"
+    ],
+    "steps": [
+      "Teletinu nareži na sitne kocke, a povrće na kockice.",
+      "Na ulju popirjaj luk, pa dodaj meso i prži ga dok ne promijeni boju.",
+      "Dodaj povrće, pirjaj još pet minuta, pa pospi brašnom i promiješaj.",
+      "Nalij oko dvije litre tople vode, posoli, popapri i kuhaj na laganoj vatri oko sat vremena.",
+      "U šalici umuti žumanjak s vrhnjem i limunovim sokom, pa postupno dodaj nekoliko žlica vruće juhe, stalno miješajući.",
+      "Skini juhu s vatre i umiješaj zakuhu. Ne vraćaj je da kuha, da se žumanjak ne zgruša."
+    ],
+    "comments": [
+      {
+        "name": "Branka",
+        "when": "prije 2 tjedna",
+        "text": "Postupno dodavanje juhe u žumanjak je ključ, prvi put mi se zgrušalo jer sam žurila."
+      },
+      {
+        "name": "Dario",
+        "when": "prije mjesec dana",
+        "text": "Dodao sam i malo sjeckanog peršina na kraju. Odlična."
+      }
+    ]
+  },
+  {
+    "id": "paradajz-corba",
+    "category": "supe-i-corbe",
+    "title": "Juha od rajčice",
+    "intro": "Ovo je juha koju sam kao dijete obožavala, s malo riže i puno peršina. Ljeti je pravim od svježe rajčice, zimi od soka iz staklenke.",
+    "time": "40 min",
+    "yields": "4 porcije",
+    "difficulty": "lako",
+    "ingredients": [
+      "1 kg zrele rajčice",
+      "1 glavica luka",
+      "2 žlice ulja",
+      "1 žlica brašna",
+      "50 g riže",
+      "1 žličica šećera",
+      "1 vezica peršina",
+      "sol"
+    ],
+    "steps": [
+      "Rajčicu prelij vrelom vodom, oguli je i nasjeckaj.",
+      "Na ulju popirjaj sitno sjeckan luk, pa pospi brašnom i kratko promiješaj.",
+      "Dodaj rajčicu i kuhaj desetak minuta, dok se ne raspadne. Ako želiš glatku juhu, izblendaj je.",
+      "Nalij oko litru vode, dodaj opranu rižu, šećer i sol.",
+      "Kuhaj još 15 minuta, dok riža ne omekša.",
+      "Poslužuj posuto sitno sjeckanim peršinom."
+    ],
+    "comments": [
+      {
+        "name": "Maja",
+        "when": "jučer",
+        "text": "Radila sam sa sokom iz staklenke, za pola sata gotovo. Djeca je vole."
+      },
+      {
+        "name": "Ksenija",
+        "when": "prije 3 dana",
+        "text": "Umjesto riže stavila sam sitne rezance, isto lijepo."
+      }
+    ]
+  },
+  {
+    "id": "corba-od-povrca",
+    "category": "supe-i-corbe",
+    "title": "Juha od povrća",
+    "intro": "Kad u hladnjaku ostane po malo od svakog povrća, nastane ova juha. Svaki put je malo drugačija, a uvijek dobra.",
+    "time": "50 min",
+    "yields": "6 porcija",
+    "difficulty": "lako",
+    "ingredients": [
+      "1 glavica luka",
+      "2 mrkve",
+      "2 krumpira",
+      "1 tikvica",
+      "150 g mahuna",
+      "100 g graška",
+      "3 žlice ulja",
+      "1 žlica brašna",
+      "1 žličica mljevene paprike",
+      "1 vezica peršina",
+      "sol i papar"
+    ],
+    "steps": [
+      "Svo povrće očisti i nareži na sitne kockice, a mahune na komadiće.",
+      "Na ulju popirjaj luk i mrkvu oko pet minuta.",
+      "Dodaj ostalo povrće i pirjaj još pet minuta, pa pospi brašnom i mljevenom paprikom i promiješaj.",
+      "Nalij oko dvije litre tople vode, posoli i popapri.",
+      "Kuhaj na laganoj vatri oko pola sata, dok povrće ne omekša.",
+      "Pospi sjeckanim peršinom i poslužuj."
+    ],
+    "comments": [
+      {
+        "name": "Danijela",
+        "when": "prije 2 tjedna",
+        "text": "Dodala sam i malo cvjetače, odlično se uklopila."
+      },
+      {
+        "name": "Petar",
+        "when": "prije mjesec dana",
+        "text": "Sa žlicom kiselog vrhnja u tanjuru je savršena."
+      }
+    ]
+  },
+  {
+    "id": "riblja-corba",
+    "category": "supe-i-corbe",
+    "title": "Riblja juha",
+    "intro": "Pravu riblju juhu moj je tata kuhao u kotliću na Dunavu, a ovo je verzija za štednjak. Puno luka i ljute paprike, to je cijela tajna.",
+    "time": "2 sata",
+    "yields": "6 porcija",
+    "difficulty": "srednje",
+    "ingredients": [
+      "1,5 kg riječne ribe (šaran i som)",
+      "1 kg luka",
+      "2 žlice mljevene paprike",
+      "2 žlice koncentrata rajčice",
+      "1 ljuta papričica",
+      "2 lovorova lista",
+      "sol"
+    ],
+    "steps": [
+      "Ribu očisti, nareži na veće komade, posoli i ostavi u hladnjaku dok spremaš osnovu.",
+      "Luk sitno nasjeckaj, stavi ga u veliki lonac, nalij oko dvije i pol litre vode i kuhaj oko sat vremena, dok se luk potpuno ne raskuha.",
+      "Umiješaj mljevenu papriku, koncentrat rajčice, lovor i ljutu papričicu.",
+      "Pažljivo ubaci ribu, posoli i kuhaj na umjerenoj vatri oko 30 minuta.",
+      "Ne miješaj žlicom da se riba ne raspadne, već samo povremeno protresi lonac."
+    ],
+    "comments": [
+      {
+        "name": "Željka",
+        "when": "prije 3 dana",
+        "text": "Dodala sam i glave od ribe radi okusa, poslije ih izvadila. Gusta i mirisna."
+      },
+      {
+        "name": "Vladimir",
+        "when": "prije 2 tjedna",
+        "text": "Protresanje umjesto miješanja, kao kod mog djeda. Svaka čast na receptu."
+      }
+    ]
+  },
+  {
+    "id": "krem-supa-od-bundeve",
+    "category": "supe-i-corbe",
+    "title": "Krem juha od bundeve",
+    "intro": "Kad počne sezona bundeve, ovo je prva stvar koju skuham. Gusta je, slatkasta i grije kao deka.",
+    "time": "45 min",
+    "yields": "4 porcije",
+    "difficulty": "lako",
+    "ingredients": [
+      "800 g bundeve",
+      "1 glavica luka",
+      "2 mrkve",
+      "1 krumpir",
+      "30 g maslaca",
+      "800 ml povrtnog temeljca ili vode",
+      "100 ml slatkog vrhnja",
+      "1 prstohvat muškatnog oraščića",
+      "sol i papar"
+    ],
+    "steps": [
+      "Bundevu oguli, očisti od sjemenki i nareži na kocke. Isto napravi s mrkvom i krumpirom.",
+      "Na maslacu popirjaj sjeckan luk, pa dodaj povrće i pirjaj nekoliko minuta.",
+      "Nalij temeljac ili vodu, posoli i kuhaj oko 25 minuta, dok sve ne omekša.",
+      "Izblendaj štapnim mikserom dok ne dobiješ glatku juhu.",
+      "Umiješaj vrhnje, muškatni oraščić i papar i kratko zagrij, ali ne daj da prokuha."
+    ],
+    "comments": [
+      {
+        "name": "Tihana",
+        "when": "prije 2 dana",
+        "text": "Popržila sam sjemenke bundeve i posula po vrhu, fenomenalno."
+      },
+      {
+        "name": "Ana",
+        "when": "prije mjesec dana",
+        "text": "Bez vrhnja je posna i jednako dobra."
+      }
+    ]
+  },
+  {
+    "id": "jagnjeca-corba",
+    "category": "supe-i-corbe",
+    "title": "Janjeća juha",
+    "intro": "Janjeća juha se kod nas kuha za Jurjevo, ali je radimo i kad god nabavimo dobro janjeće meso. Pomalo je kiselkasta i vrlo osvježavajuća.",
+    "time": "2 sata",
+    "yields": "6 porcija",
+    "difficulty": "srednje",
+    "ingredients": [
+      "600 g janjetine",
+      "1 glavica luka",
+      "2 mrkve",
+      "1 korijen peršina",
+      "2 žlice ulja",
+      "1 žlica brašna",
+      "1 žličica mljevene paprike",
+      "1 žumanjak",
+      "100 ml kiselog vrhnja",
+      "1 žlica octa",
+      "1 vezica peršina",
+      "sol i papar"
+    ],
+    "steps": [
+      "Janjetinu nareži na manje komade, a povrće na kockice.",
+      "Na ulju popirjaj luk, dodaj meso i prži ga dok ne promijeni boju.",
+      "Dodaj povrće, pa pospi brašnom i mljevenom paprikom i promiješaj.",
+      "Nalij oko dvije litre tople vode, posoli i kuhaj na laganoj vatri oko sat i pol, dok meso ne omekša.",
+      "Umuti žumanjak s vrhnjem i octom, pa postupno dodaj nekoliko žlica vruće juhe.",
+      "Skini juhu s vatre, umiješaj zakuhu i pospi sjeckanim peršinom."
+    ],
+    "comments": [
+      {
+        "name": "Slađana",
+        "when": "prije 2 tjedna",
+        "text": "Kuhala sam s janjećim vratom, meso je bilo jako mekano."
+      },
+      {
+        "name": "Nikola",
+        "when": "prije mjesec dana",
+        "text": "Ocat na kraju joj daje onaj pravi okus. Odlična."
+      }
+    ]
+  },
+  {
+    "id": "corba-od-sociva",
+    "category": "supe-i-corbe",
+    "title": "Juha od leće",
+    "intro": "Leća se ne mora potapati, pa je ova juha moj brzi posni ručak. Zasitna je i jeftina, a ukusna kao da se kuhala cijeli dan.",
+    "time": "1 sat",
+    "yields": "5 porcija",
+    "difficulty": "lako",
+    "ingredients": [
+      "300 g smeđe leće",
+      "1 glavica luka",
+      "1 mrkva",
+      "2 češnja češnjaka",
+      "2 žlice ulja",
+      "1 žlica koncentrata rajčice",
+      "1 žličica mljevene paprike",
+      "2 lovorova lista",
+      "sol i papar"
+    ],
+    "steps": [
+      "Leću preberi i dobro isperi hladnom vodom.",
+      "Na ulju popirjaj sjeckan luk i mrkvu, pa dodaj češnjak.",
+      "Skini s vatre, umiješaj mljevenu papriku i koncentrat rajčice.",
+      "Dodaj leću i lovor, nalij oko 1,5 litru vode i kuhaj na laganoj vatri oko 40 minuta, dok leća ne omekša.",
+      "Posoli i popapri pred kraj. Ako je pregusta, dolij malo vode."
+    ],
+    "comments": [
+      {
+        "name": "Mirjana",
+        "when": "jučer",
+        "text": "Dodala sam žličicu kima, baš se lijepo slaže s lećom."
+      },
+      {
+        "name": "Stjepan",
+        "when": "prije 3 dana",
+        "text": "Sutradan se zgusne pa je jedem kao varivo. Super recept."
+      }
+    ]
+  },
+  {
+    "id": "sopska-salata",
+    "category": "salate-i-prilozi",
+    "title": "Šopska salata",
+    "intro": "Šopska je salata bez koje kod nas ne prolazi nijedan ljetni ručak. Bitno je da rajčica bude zrela, a sir dobar i masan.",
+    "time": "15 min",
+    "yields": "4 porcije",
+    "difficulty": "lako",
+    "ingredients": [
+      "4 zrele rajčice",
+      "2 krastavca",
+      "2 paprike babure",
+      "1 glavica luka",
+      "200 g bijelog sira",
+      "3 žlice ulja",
+      "1 žlica octa",
+      "sol"
+    ],
+    "steps": [
+      "Rajčice, krastavce i paprike operi i nareži na kocke.",
+      "Luk nareži na tanke polumjesece ili sitno nasjeckaj.",
+      "Stavi povrće u zdjelu, posoli, prelij uljem i octom i promiješaj.",
+      "Preko salate naribaj ili izmrvi bijeli sir u debelom sloju i odmah poslužuj."
+    ],
+    "comments": [
+      {
+        "name": "Gordana",
+        "when": "prije 2 dana",
+        "text": "Ja peršin dodam preko sira, lijepo izgleda i miriše."
+      },
+      {
+        "name": "Aleksandar",
+        "when": "prije 2 tjedna",
+        "text": "S pečenim paprikama umjesto svježih je još bolja."
+      }
+    ]
+  },
+  {
+    "id": "srpska-salata",
+    "category": "salate-i-prilozi",
+    "title": "Srpska salata",
+    "intro": "Najjednostavnija salata na svijetu, ali samo ako je povrće pravo, s placa. Ljuta papričica je obavezna.",
+    "time": "15 min",
+    "yields": "4 porcije",
+    "difficulty": "lako",
+    "ingredients": [
+      "4 rajčice",
+      "1 krastavac",
+      "2 paprike babure",
+      "1 glavica luka",
+      "1 ljuta papričica",
+      "3 žlice ulja",
+      "1 žlica octa",
+      "sol"
+    ],
+    "steps": [
+      "Operi povrće i nareži rajčicu i krastavac na kriške, a paprike na kolutove.",
+      "Luk nareži na tanke kolutove, a ljutu papričicu sitno nasjeckaj.",
+      "Sve stavi u zdjelu i posoli.",
+      "Prelij uljem i octom, promiješaj i ostavi pet minuta da povrće pusti sok prije posluživanja."
+    ],
+    "comments": [
+      {
+        "name": "Zorica",
+        "when": "prije 3 dana",
+        "text": "Najbolja je uz roštilj, a sok iz zdjele se pokupi kruhom."
+      },
+      {
+        "name": "Marko",
+        "when": "prije mjesec dana",
+        "text": "Stavio sam crveni luk, blaži je i ljepši u salati."
+      }
+    ]
+  },
+  {
+    "id": "salata-od-kiselog-kupusa",
+    "category": "salate-i-prilozi",
+    "title": "Salata od kiselog kupusa",
+    "intro": "Zimi je ovo salata uz svaki ručak. Ako imaš kupus iz domaće bačve, ne treba mu skoro ništa.",
+    "time": "10 min",
+    "yields": "4 porcije",
+    "difficulty": "lako",
+    "ingredients": [
+      "500 g kiselog kupusa",
+      "3 žlice ulja",
+      "1 žličica mljevene paprike",
+      "1 prstohvat mljevenog papra",
+      "2 vlati mladog luka"
+    ],
+    "steps": [
+      "Kupus nareži na tanke rezance. Ako je prekiseo, kratko ga isperi hladnom vodom i dobro ocijedi.",
+      "Mladi luk nareži na kolutiće.",
+      "Pomiješaj kupus i luk u zdjeli, prelij uljem i promiješaj.",
+      "Pospi mljevenom paprikom i paprom tek pred posluživanje."
+    ],
+    "comments": [
+      {
+        "name": "Draga",
+        "when": "prije 2 tjedna",
+        "text": "Uz grah ne može bez ove salate."
+      },
+      {
+        "name": "Olja",
+        "when": "prije mjesec dana",
+        "text": "Dodam i malo naribane mrkve zbog boje."
+      }
+    ]
+  },
+  {
+    "id": "krompir-salata",
+    "category": "salate-i-prilozi",
+    "title": "Krumpir salata",
+    "intro": "Krumpir salata mi je omiljeni prilog uz pohanu ribu i šnicle. Prelij je dok je krumpir još topao, pa će upiti sav okus.",
+    "time": "40 min",
+    "yields": "4 porcije",
+    "difficulty": "lako",
+    "ingredients": [
+      "1 kg krumpira",
+      "1 glavica crvenog luka",
+      "4 žlice ulja",
+      "2 žlice octa",
+      "1 vezica peršina",
+      "sol i papar"
+    ],
+    "steps": [
+      "Krumpir operi i skuhaj u ljusci u posoljenoj vodi oko 25 minuta, dok ne omekša.",
+      "Ocijedi ga, kratko ohladi, oguli i nareži na kolutove.",
+      "Luk nareži na tanke polumjesece, a peršin sitno nasjeckaj.",
+      "Dok je krumpir još topao, prelij ga uljem i octom, dodaj luk, sol i papar i lagano promiješaj.",
+      "Pospi peršinom i ostavi barem 15 minuta da se prožme prije posluživanja."
+    ],
+    "comments": [
+      {
+        "name": "Jelena",
+        "when": "prije 3 dana",
+        "text": "Prelijevanje dok je topao pravi ogromnu razliku, hvala na savjetu."
+      },
+      {
+        "name": "Biljana",
+        "when": "prije 2 tjedna",
+        "text": "Ja dodam malo senfa u preljev, djeci se jako sviđa."
+      }
+    ]
+  },
+  {
+    "id": "salata-od-pecenih-paprika",
+    "category": "salate-i-prilozi",
+    "title": "Salata od pečenih paprika",
+    "intro": "Miris pečenih paprika u kuhinji je za mene miris rujna. Ova salata stoji u hladnjaku nekoliko dana i samo postaje bolja.",
+    "time": "1 sat",
+    "yields": "6 porcija",
+    "difficulty": "lako",
+    "ingredients": [
+      "1 kg crvenih paprika babura",
+      "3 češnja češnjaka",
+      "4 žlice ulja",
+      "2 žlice octa",
+      "1 vezica peršina",
+      "sol"
+    ],
+    "steps": [
+      "Paprike operi, osuši i peci u pećnici zagrijanoj na 220 °C oko 30 minuta, uz okretanje, dok kožica mjestimično ne pocrni.",
+      "Pečene paprike stavi u zdjelu, pokrij je i ostavi 15 minuta da se ispare.",
+      "Oguli paprike i očisti ih od sjemenki.",
+      "Poslaži ih u posudu, posoli i pospi sitno sjeckanim češnjakom i peršinom.",
+      "Prelij uljem i octom i ostavi barem pola sata prije posluživanja."
+    ],
+    "comments": [
+      {
+        "name": "Katarina",
+        "when": "jučer",
+        "text": "Pokrivanje zdjele da se ispare je zlata vrijedno, kožica sama spadne."
+      },
+      {
+        "name": "Tomislav",
+        "when": "prije mjesec dana",
+        "text": "Uz bijeli sir i proju, to je cijeli obrok."
+      }
+    ]
+  },
+  {
+    "id": "mladi-krompir-iz-rerne",
+    "category": "salate-i-prilozi",
+    "title": "Mladi krumpir iz pećnice",
+    "intro": "Čim se mladi krumpir pojavi na placu, ovo nam je prilog uz sve. Ne moraš ga ni guliti, samo ga dobro očetkaj.",
+    "time": "50 min",
+    "yields": "4 porcije",
+    "difficulty": "lako",
+    "ingredients": [
+      "1 kg mladog krumpira",
+      "4 žlice ulja",
+      "3 češnja češnjaka",
+      "1 žličica suhog ružmarina",
+      "3 vlati mladog luka",
+      "sol i papar"
+    ],
+    "steps": [
+      "Zagrij pećnicu na 200 °C.",
+      "Krumpir dobro operi četkom, a veće komade prereži na pola.",
+      "Pomiješaj ga s uljem, zgnječenim češnjakom, ružmarinom, soli i paprom.",
+      "Rasporedi krumpir na lim u jednom sloju i peci oko 40 minuta, uz jedno okretanje, dok ne postane zlatan i hrskav.",
+      "Pospi sjeckanim mladim lukom i poslužuj toplo."
+    ],
+    "comments": [
+      {
+        "name": "Petra",
+        "when": "prije 2 dana",
+        "text": "Jedan sloj je bitan, kad ga natrpam ne bude hrskav."
+      },
+      {
+        "name": "Petar",
+        "when": "prije 2 tjedna",
+        "text": "Prije posluživanja sam dodao malo kiselog vrhnja s češnjakom, odlično."
+      }
+    ]
+  },
+  {
+    "id": "grcka-salata",
+    "category": "salate-i-prilozi",
+    "title": "Grčka salata",
+    "intro": "Ovu salatu sam zavoljela na ljetovanju i od tada je pravim kad god je vruće. Uz komad kruha dovoljna je i kao lagana večera.",
+    "time": "15 min",
+    "yields": "4 porcije",
+    "difficulty": "lako",
+    "ingredients": [
+      "4 rajčice",
+      "1 krastavac",
+      "1 zelena paprika",
+      "1 glavica crvenog luka",
+      "150 g feta sira",
+      "50 g crnih maslina",
+      "4 žlice maslinovog ulja",
+      "1 žličica suhog origana",
+      "sol"
+    ],
+    "steps": [
+      "Rajčice i krastavac nareži na veće komade, a papriku i luk na kolutove.",
+      "Stavi povrće u zdjelu, dodaj masline i lagano posoli.",
+      "Prelij maslinovim uljem i promiješaj.",
+      "Na vrh stavi feta sir u jednom komadu ili krupno izmrvljen i pospi origanom."
+    ],
+    "comments": [
+      {
+        "name": "Ivana",
+        "when": "prije 3 dana",
+        "text": "S našim bijelim sirom je također odlična, ako nema fete."
+      },
+      {
+        "name": "Katarina",
+        "when": "prije mjesec dana",
+        "text": "Kap limunova soka i savršena je."
+      }
+    ]
+  },
+  {
+    "id": "salata-od-cvekle",
+    "category": "salate-i-prilozi",
+    "title": "Salata od cikle",
+    "intro": "Cikla je zimska salata moje bake, koja ju je uvijek pravila uz pečenje. Napravi je dan prije, bit će još ukusnija.",
+    "time": "1 sat",
+    "yields": "6 porcija",
+    "difficulty": "lako",
+    "ingredients": [
+      "1 kg cikle",
+      "3 žlice octa",
+      "2 žlice ulja",
+      "1 žličica šećera",
+      "1 žličica kima",
+      "sol"
+    ],
+    "steps": [
+      "Ciklu operi i skuhaj u ljusci oko 45 minuta, dok nož lako ne prođe kroz nju.",
+      "Ocijedi je, ohladi i oguli, najbolje u rukavicama.",
+      "Nareži je na tanke kolutove ili rezance.",
+      "Pomiješaj ocat, ulje, šećer, sol i kim s malo vode i prelij ciklu.",
+      "Ostavi u hladnjaku barem nekoliko sati prije posluživanja."
+    ],
+    "comments": [
+      {
+        "name": "Ljiljana",
+        "when": "prije 2 tjedna",
+        "text": "Ja je pečem u foliji umjesto da je kuham, slađa je."
+      },
+      {
+        "name": "Sanja",
+        "when": "prije mjesec dana",
+        "text": "Malo naribanog hrena preko i to je to."
+      }
+    ]
+  },
+  {
+    "id": "pogaca",
+    "category": "hleb-i-peciva",
+    "title": "Pogača",
+    "intro": "Mekana pogača je kod nas bila na stolu za svako slavlje i svaki rođendan. Tijesto voli toplu kuhinju i malo strpljenja.",
+    "time": "2 sata",
+    "yields": "1 velika pogača",
+    "difficulty": "srednje",
+    "ingredients": [
+      "1 kg brašna T-400",
+      "1 kockica svježeg kvasca",
+      "600 ml mlakog mlijeka",
+      "100 ml ulja",
+      "2 žličice soli",
+      "1 žličica šećera",
+      "1 jaje za premazivanje"
+    ],
+    "steps": [
+      "Kvasac razmuti u malo mlakog mlijeka sa šećerom i ostavi desetak minuta da se zapjeni.",
+      "U brašno dodaj sol, nadošli kvasac, ostatak mlijeka i ulje, pa mijesi desetak minuta dok tijesto ne postane glatko i mekano.",
+      "Pokrij tijesto i ostavi ga na toplom oko sat vremena, da udvostruči volumen.",
+      "Kratko prominjesi tijesto, oblikuj okruglu pogaču i stavi je u nauljenu okruglu tepsiju. Ostavi još 20 minuta da naraste.",
+      "Premaži je umućenim jajetom.",
+      "Peci u pećnici zagrijanoj na 200 °C oko 35 minuta, dok ne porumeni. Pokrij je čistom krpom dok se hladi, da kora ostane mekana."
+    ],
+    "comments": [
+      {
+        "name": "Mirjana",
+        "when": "prije 3 dana",
+        "text": "Krpa preko vruće pogače je stari trik, kora bude kao pamuk."
+      },
+      {
+        "name": "Bojana",
+        "when": "prije mjesec dana",
+        "text": "Prije pečenja sam je pospala sezamom, prekrasna je bila."
+      }
+    ]
+  },
+  {
+    "id": "kiflice-sa-sirom",
+    "category": "hleb-i-peciva",
+    "title": "Kiflice sa sirom",
+    "intro": "Kiflice su prvo što sam naučila mijesiti i uvijek nestanu za jedno poslijepodne. Radim ih duplo, pa pola zamrznem.",
+    "time": "2 sata",
+    "yields": "32 komada",
+    "difficulty": "srednje",
+    "ingredients": [
+      "500 g brašna",
+      "20 g svježeg kvasca",
+      "250 ml mlakog mlijeka",
+      "100 ml ulja",
+      "1 žličica šećera",
+      "1 žličica soli",
+      "200 g mekog bijelog sira",
+      "1 jaje"
+    ],
+    "steps": [
+      "Kvasac razmuti u mlakom mlijeku sa šećerom i ostavi da se zapjeni.",
+      "Dodaj brašno, sol i ulje i zamijesi mekano tijesto, pa ga ostavi pokrivenog na toplom oko 45 minuta.",
+      "Podijeli tijesto na četiri dijela i svaki razvuci u krug, pa ga nareži na osam trokuta.",
+      "Na širi kraj svakog trokuta stavi malo sira i zamotaj kiflicu prema vrhu.",
+      "Poslaži kiflice na lim obložen papirom, premaži ih umućenim jajetom i ostavi još 15 minuta.",
+      "Peci u pećnici zagrijanoj na 200 °C oko 20 minuta, dok ne porumene."
+    ],
+    "comments": [
+      {
+        "name": "Milica",
+        "when": "jučer",
+        "text": "Pola sam napunila sirom, a pola marmeladom. Nestale su za sat vremena."
+      },
+      {
+        "name": "Danijela",
+        "when": "prije 2 tjedna",
+        "text": "Zamrznute pa podgrijane su kao svježe."
+      }
+    ]
+  },
+  {
+    "id": "domaci-hleb",
+    "category": "hleb-i-peciva",
+    "title": "Domaći kruh",
+    "intro": "Otkad pečem kruh kod kuće, rijetko ga kupujem. Ovaj recept je jednostavan i prašta greške, savršen za početak.",
+    "time": "3 sata",
+    "yields": "1 štruca",
+    "difficulty": "srednje",
+    "ingredients": [
+      "500 g bijelog brašna T-500",
+      "7 g suhog kvasca",
+      "330 ml mlake vode",
+      "10 g soli",
+      "1 žličica šećera",
+      "1 žlica ulja"
+    ],
+    "steps": [
+      "U zdjeli pomiješaj brašno, suhi kvasac, šećer i sol.",
+      "Dodaj mlaku vodu i ulje i mijesi desetak minuta, dok tijesto ne postane glatko i elastično.",
+      "Pokrij zdjelu i ostavi tijesto na toplom oko sat i pol, dok ne udvostruči volumen.",
+      "Prebaci tijesto na pobrašnjenu površinu, kratko ga prominjesi i oblikuj štrucu. Stavi je na lim ili u kalup i ostavi još 40 minuta.",
+      "Zagrij pećnicu na 220 °C, a na dno stavi posudu s vodom radi pare.",
+      "Zareži vrh kruha nožem i peci oko 35 minuta. Kruh je gotov kad zvuči šuplje kad kucneš po dnu."
+    ],
+    "comments": [
+      {
+        "name": "Vesna",
+        "when": "prije 3 dana",
+        "text": "Posuda s vodom je napravila prekrasnu koricu. Prvi put mi je uspio kruh."
+      },
+      {
+        "name": "Davor",
+        "when": "prije mjesec dana",
+        "text": "Stavio sam pola integralnog brašna, samo sam dodao malo više vode."
+      }
+    ]
+  },
+  {
+    "id": "pogacice-sa-cvarcima",
+    "category": "hleb-i-peciva",
+    "title": "Pogačice sa čvarcima",
+    "intro": "Ove pogačice su specijalitet moje svekrve i bez njih nema slavlja. Malo su posla, ali lisnato tijesto nagradi trud.",
+    "time": "3 sata",
+    "yields": "30 komada",
+    "difficulty": "zahtjevno",
+    "ingredients": [
+      "500 g brašna",
+      "20 g svježeg kvasca",
+      "250 ml mlakog mlijeka",
+      "100 g kiselog vrhnja",
+      "1 jaje",
+      "1 žličica soli",
+      "1 žličica šećera",
+      "200 g mljevenih čvaraka"
+    ],
+    "steps": [
+      "Kvasac razmuti u mlijeku sa šećerom i ostavi da se zapjeni.",
+      "Dodaj brašno, sol, vrhnje i bjelanjak, a žumanjak sačuvaj za premazivanje. Zamijesi mekano tijesto i ostavi ga pola sata da odmori.",
+      "Razvuci tijesto u pravokutnik, premaži trećinom čvaraka, preklopi kao pismo i ostavi 20 minuta.",
+      "Ponovi razvlačenje, premazivanje i preklapanje još dva puta, dok ne potrošiš čvarke.",
+      "Posljednji put razvuci tijesto na debljinu od 2 cm, zareži površinu mrežasto i vadi pogačice čašom ili kalupom.",
+      "Poslaži ih na lim, premaži žumanjkom i ostavi 20 minuta. Peci u pećnici zagrijanoj na 200 °C oko 25 minuta."
+    ],
+    "comments": [
+      {
+        "name": "Mirjana",
+        "when": "prije 2 tjedna",
+        "text": "Tijesto je bilo baš lisnato, kao iz pekare. Vrijedilo je čekati."
+      },
+      {
+        "name": "Zvonimir",
+        "when": "prije mjesec dana",
+        "text": "Najbolje su mlake, uz čašu jogurta."
+      },
+      {
+        "name": "Branka",
+        "when": "prije mjesec dana",
+        "text": "Ja dodam i malo papra u čvarke, daje im nešto posebno."
+      }
+    ]
+  },
+  {
+    "id": "gibanica",
+    "category": "hleb-i-peciva",
+    "title": "Gibanica",
+    "intro": "Gibanica je jelo kojim se kod nas dočekuju gosti, za doručak ili uz ručak. Ova je sočna i lagana, s puno sira.",
+    "time": "1 sat",
+    "yields": "12 komada",
+    "difficulty": "lako",
+    "ingredients": [
+      "500 g kora za pitu",
+      "500 g mladog sira",
+      "4 jaja",
+      "200 ml jogurta",
+      "150 ml ulja",
+      "200 ml gazirane vode",
+      "1 žličica soli"
+    ],
+    "steps": [
+      "Zagrij pećnicu na 200 °C i naulji veći lim.",
+      "Umuti jaja, dodaj jogurt, gaziranu vodu, pola ulja i sol, pa umiješaj izmrvljen sir.",
+      "Stavi dvije kore na dno lima i poprskaj ih uljem.",
+      "Svaku sljedeću koru umoči u nadjev, lagano je naboraj i slaži na lim, dok ne potrošiš sve kore.",
+      "Preostali nadjev prelij preko vrha i poprskaj s malo ulja.",
+      "Peci oko 40 minuta, dok gibanica ne porumeni i ne naraste."
+    ],
+    "comments": [
+      {
+        "name": "Svjetlana",
+        "when": "jučer",
+        "text": "Gazirana voda je tajna, ispala je mekana i zračasta."
+      },
+      {
+        "name": "Tamara",
+        "when": "prije 3 dana",
+        "text": "Ostavila sam je pola sata da odstoji prije rezanja i komadi su bili savršeni."
+      }
+    ]
+  },
+  {
+    "id": "zeljanica",
+    "category": "hleb-i-peciva",
+    "title": "Zeljanica",
+    "intro": "U proljeće, čim stigne prvi špinat, pravim zeljanicu. Lagana je, mirisna i jednako dobra topla i hladna.",
+    "time": "75 min",
+    "yields": "10 komada",
+    "difficulty": "lako",
+    "ingredients": [
+      "500 g kora za pitu",
+      "500 g špinata",
+      "300 g bijelog sira",
+      "3 jaja",
+      "200 ml jogurta",
+      "100 ml ulja",
+      "1 vezica mladog luka",
+      "sol"
+    ],
+    "steps": [
+      "Špinat operi, kratko ga blanširaj u kipućoj vodi, ocijedi i nasjeckaj. Dobro ga iscijedi rukama.",
+      "Mladi luk nasjeckaj i pomiješaj sa špinatom, izmrvljenim sirom, jajima i malo soli.",
+      "Zagrij pećnicu na 200 °C i naulji lim.",
+      "Na lim stavi dvije kore, poprskaj ih uljem i rasporedi dio nadjeva. Ponavljaj dok ne potrošiš nadjev, a završi s dvije kore.",
+      "Umuti jogurt s preostalim uljem i prelij preko pite.",
+      "Peci oko 40 minuta, dok ne porumeni."
+    ],
+    "comments": [
+      {
+        "name": "Maja",
+        "when": "prije 2 tjedna",
+        "text": "Radila sam s matovilcem, također odlično."
+      },
+      {
+        "name": "Slađana",
+        "when": "prije mjesec dana",
+        "text": "Cijeđenje špinata je bitno, inače kore budu gnjecave."
+      }
+    ]
+  },
+  {
+    "id": "pita-sa-mesom",
+    "category": "hleb-i-peciva",
+    "title": "Pita s mesom",
+    "intro": "Ovo je naša kućna verzija pite s mesom, savijene u puža. Nije burek iz pekare, ali obitelj je voli više.",
+    "time": "75 min",
+    "yields": "8 komada",
+    "difficulty": "srednje",
+    "ingredients": [
+      "500 g debljih kora za pitu",
+      "500 g mljevenog mesa",
+      "2 glavice luka",
+      "100 ml ulja",
+      "1 žličica mljevene paprike",
+      "200 ml gazirane vode",
+      "1 žličica soli",
+      "papar"
+    ],
+    "steps": [
+      "Na malo ulja popirjaj sitno sjeckan luk, dodaj meso i prži dok se ne razlomi. Začini soli, paprom i mljevenom paprikom i ostavi da se ohladi.",
+      "Zagrij pećnicu na 200 °C i naulji okruglu tepsiju.",
+      "Raširi jednu koru, poprskaj je uljem, preko nje stavi drugu i duž duljeg ruba rasporedi dio nadjeva.",
+      "Zamotaj kore u rolu i savij je u puža u sredini tepsije. Ponavljaj, nastavljajući spiralu, dok ne potrošiš kore i nadjev.",
+      "Prelij pitu gaziranom vodom pomiješanom s preostalim uljem.",
+      "Peci oko 40 minuta, dok ne postane zlatna i hrskava."
+    ],
+    "comments": [
+      {
+        "name": "Nikola",
+        "when": "prije 3 dana",
+        "text": "Poslužio sam je uz jogurt, kao pravi doručak."
+      },
+      {
+        "name": "Željka",
+        "when": "prije 2 tjedna",
+        "text": "Gazirana voda preko je odlična ideja, kore su ostale mekane iznutra."
+      }
+    ]
+  },
+  {
+    "id": "palacinke",
+    "category": "dorucak",
+    "title": "Palačinke",
+    "intro": "Palačinke su nedjeljni doručak u našoj kući, a djeca se uvijek svađaju oko posljednje. Ovo tijesto daje tanke i mekane palačinke.",
+    "time": "40 min",
+    "yields": "15 komada",
+    "difficulty": "lako",
+    "ingredients": [
+      "250 g brašna",
+      "2 jaja",
+      "500 ml mlijeka",
+      "100 ml gazirane vode",
+      "1 žlica šećera",
+      "1 prstohvat soli",
+      "2 žlice ulja"
+    ],
+    "steps": [
+      "Umuti jaja sa šećerom i soli, pa dodaj mlijeko.",
+      "Postupno umiješaj brašno, muteći žicom da ne ostanu grudice.",
+      "Dodaj gaziranu vodu i ulje i ostavi tijesto da odmori 15 minuta.",
+      "Zagrij tavu i premaži je s nekoliko kapi ulja.",
+      "Izlij malo tijesta, nagni tavu da se ravnomjerno razlije i peci palačinku oko minutu sa svake strane.",
+      "Nadjev po želji: marmelada, Eurokrem, orasi sa šećerom ili sir."
+    ],
+    "comments": [
+      {
+        "name": "Jelena",
+        "when": "prije 3 dana",
+        "text": "Gazirana voda ih čini puno mekšima, od tada ih nikad nisam radila bez nje."
+      },
+      {
+        "name": "Aleksandar",
+        "when": "prije 2 tjedna",
+        "text": "Napunio sam ih sirom i vrhnjem i zapekao u pećnici, za ručak."
+      }
+    ]
+  },
+  {
+    "id": "popara",
+    "category": "dorucak",
+    "title": "Popara",
+    "intro": "Popara je doručak mog djetinjstva, nastao od starog kruha koji nitko nije htio baciti. I danas je spremam kad mi zatreba nešto toplo i jednostavno.",
+    "time": "15 min",
+    "yields": "2 porcije",
+    "difficulty": "lako",
+    "ingredients": [
+      "300 g starog kruha",
+      "500 ml mlijeka",
+      "40 g maslaca",
+      "150 g bijelog sira",
+      "1 prstohvat soli"
+    ],
+    "steps": [
+      "Kruh nareži na kocke.",
+      "Mlijeko zagrij s malo soli dok ne počne ključati.",
+      "Ubaci kruh u mlijeko, skini s vatre i ostavi nekoliko minuta da nabubri.",
+      "Umiješaj maslac i izmrvljen sir.",
+      "Poslužuj odmah, dok je toplo."
+    ],
+    "comments": [
+      {
+        "name": "Zorica",
+        "when": "jučer",
+        "text": "Moja baka je radila s vodom i masti, ali ova s mlijekom je puno bolja."
+      },
+      {
+        "name": "Dario",
+        "when": "prije mjesec dana",
+        "text": "Djeca vole slatku verziju, bez sira a s malo šećera."
+      }
+    ]
+  },
+  {
+    "id": "kacamak",
+    "category": "dorucak",
+    "title": "Kačamak",
+    "intro": "Kačamak s kajmakom i kiselim mlijekom je doručak koji drži do ručka. Miješaj ga snažno, to je pola uspjeha.",
+    "time": "40 min",
+    "yields": "4 porcije",
+    "difficulty": "srednje",
+    "ingredients": [
+      "250 g kukuruznog brašna",
+      "1 l vode",
+      "1 žličica soli",
+      "50 g maslaca",
+      "200 g kajmaka",
+      "400 ml kiselog mlijeka"
+    ],
+    "steps": [
+      "U loncu zagrij posoljenu vodu i, kad počne ključati, usipaj kukuruzno brašno u gomilicu na sredinu. Ne miješaj.",
+      "Kuhačom napravi rupu u sredini gomilice i kuhaj na laganoj vatri 20 minuta.",
+      "Odlij dio vode u šalicu, pa kačamak snažno izmiješaj i izgnječi kuhačom.",
+      "Po potrebi vrati malo odlivene vode i miješaj dok ne dobiješ glatku, gustu masu.",
+      "Žlicom umočenom u maslac vadi kačamak u tanjure, a preko stavi kajmak. Poslužuj uz kiselo mlijeko."
+    ],
+    "comments": [
+      {
+        "name": "Mirjana",
+        "when": "prije 2 tjedna",
+        "text": "Točno ovako ga je kuhala moja mama u Slavoniji. Hvala na uspomeni."
+      },
+      {
+        "name": "Petar",
+        "when": "prije mjesec dana",
+        "text": "Ja ga prelijem čvarcima i malo masti, za hladne dane."
+      }
+    ]
+  },
+  {
+    "id": "ustipci",
+    "category": "dorucak",
+    "title": "Uštipci",
+    "intro": "Kad se uštipci prže, cijela zgrada zna da je kod nas subota ujutro. Mekani su iznutra i hrskavi izvana.",
+    "time": "90 min",
+    "yields": "30 komada",
+    "difficulty": "srednje",
+    "ingredients": [
+      "500 g brašna",
+      "20 g svježeg kvasca",
+      "400 ml mlake vode",
+      "1 jaje",
+      "1 žličica soli",
+      "1 žličica šećera",
+      "500 ml ulja za prženje"
+    ],
+    "steps": [
+      "Kvasac razmuti u malo mlake vode sa šećerom i ostavi da se zapjeni.",
+      "U brašno dodaj sol, jaje, kvasac i ostatak vode i umuti žlicom u gusto, ljepljivo tijesto.",
+      "Pokrij zdjelu i ostavi na toplom oko sat vremena, dok tijesto ne naraste i ne postane mjehurasto.",
+      "Zagrij ulje u dubljem loncu na srednjoj vatri.",
+      "Žlicom umočenom u ulje vadi tijesto i spuštaj ga u vruće ulje. Prži uštipke dok ne porumene sa svih strana.",
+      "Vadi ih na kuhinjski papir da se ocijede. Poslužuj sa sirom i kajmakom ili s marmeladom."
+    ],
+    "comments": [
+      {
+        "name": "Katarina",
+        "when": "prije 3 dana",
+        "text": "Žlica umočena u ulje je trik koji mi je falio, tijesto se više ne lijepi."
+      },
+      {
+        "name": "Marija",
+        "when": "prije 2 tjedna",
+        "text": "Ulje ne smije biti prevruće, inače su sirovi u sredini. Na srednjoj vatri su savršeni."
+      }
+    ]
+  },
+  {
+    "id": "przenice",
+    "category": "dorucak",
+    "title": "Prženice",
+    "intro": "Prženice su najbrži način da stari kruh postane omiljeni doručak. Kod nas idu uz sir i jogurt, a djeca ih vole s marmeladom.",
+    "time": "20 min",
+    "yields": "6 komada",
+    "difficulty": "lako",
+    "ingredients": [
+      "6 kriški starijeg kruha",
+      "3 jaja",
+      "100 ml mlijeka",
+      "1 prstohvat soli",
+      "100 ml ulja za prženje",
+      "150 g bijelog sira za posluživanje"
+    ],
+    "steps": [
+      "U dubljem tanjuru umuti jaja s mlijekom i soli.",
+      "Zagrij ulje u tavi na srednjoj vatri.",
+      "Umoči kriške kruha u jaja s obje strane, da se dobro natope.",
+      "Prži ih po dvije minute sa svake strane, dok ne porumene.",
+      "Vadi ih na kuhinjski papir i poslužuj tople, sa sirom."
+    ],
+    "comments": [
+      {
+        "name": "Nataša",
+        "when": "jučer",
+        "text": "Za djecu dodam malo cimeta i šećera u jaja, obožavaju."
+      },
+      {
+        "name": "Stjepan",
+        "when": "prije 2 tjedna",
+        "text": "Kruh od prije dva dana je najbolji, ne raspada se."
+      }
+    ]
+  },
+  {
+    "id": "kajgana-sa-paprikom-i-sirom",
+    "category": "dorucak",
+    "title": "Kajgana s paprikom i sirom",
+    "intro": "Kajgana mi je doručak kad nemam vremena, a želim nešto toplo. Paprika i sir pretvaraju je u pravi mali obrok.",
+    "time": "15 min",
+    "yields": "2 porcije",
+    "difficulty": "lako",
+    "ingredients": [
+      "4 jaja",
+      "1 crvena paprika",
+      "1 vlat mladog luka",
+      "100 g bijelog sira",
+      "20 g maslaca",
+      "sol i papar"
+    ],
+    "steps": [
+      "Papriku nareži na sitne kockice, a mladi luk na kolutiće.",
+      "Na maslacu pirjaj papriku i luk oko pet minuta, dok ne omekšaju.",
+      "Umuti jaja s malo soli i papra i izlij ih u tavu.",
+      "Lagano miješaj na laganoj vatri dok se jaja ne stegnu, ali da ostanu sočna.",
+      "Na kraju umiješaj izmrvljen sir i odmah poslužuj."
+    ],
+    "comments": [
+      {
+        "name": "Ivana",
+        "when": "prije 3 dana",
+        "text": "Dodala sam i rajčicu bez sjemenki, odlično."
+      },
+      {
+        "name": "Vladimir",
+        "when": "prije mjesec dana",
+        "text": "Lagana vatra je ključ, nikad više suha kajgana."
+      }
+    ]
+  },
+  {
+    "id": "mekike",
+    "category": "dorucak",
+    "title": "Mekike",
+    "intro": "Mekike s jogurtom su mekane kao jastuk, otud im i ime. Uz kajmak i sir, nedjeljni doručak je riješen.",
+    "time": "90 min",
+    "yields": "20 komada",
+    "difficulty": "srednje",
+    "ingredients": [
+      "500 g brašna",
+      "7 g suhog kvasca",
+      "250 ml jogurta",
+      "200 ml mlake vode",
+      "1 žličica soli",
+      "1 žličica šećera",
+      "500 ml ulja za prženje"
+    ],
+    "steps": [
+      "Pomiješaj brašno, suhi kvasac, šećer i sol.",
+      "Dodaj jogurt i mlaku vodu i zamijesi mekano tijesto koje se blago lijepi za ruke.",
+      "Pokrij tijesto i ostavi ga na toplom oko sat vremena da naraste.",
+      "Nauljenim rukama otkidaj komade tijesta veličine oraha i razvlači ih u tanke pločice.",
+      "Prži ih u zagrijanom ulju dok ne porumene s obje strane, pa ih vadi na kuhinjski papir."
+    ],
+    "comments": [
+      {
+        "name": "Biljana",
+        "when": "prije 2 tjedna",
+        "text": "Nauljene ruke su spas, tako sam ih prvi put lijepo oblikovala."
+      },
+      {
+        "name": "Tomislav",
+        "when": "prije mjesec dana",
+        "text": "Najbolje su uz kajmak, dok su još vruće."
+      }
+    ]
+  },
+  {
+    "id": "ovsena-kasa-sa-jabukom",
+    "category": "dorucak",
+    "title": "Zobena kaša s jabukom i cimetom",
+    "intro": "Zobena kaša mi je jesenski doručak radnim danima. Gotova je za deset minuta, a miriše kao pita od jabuka.",
+    "time": "15 min",
+    "yields": "1 porcija",
+    "difficulty": "lako",
+    "ingredients": [
+      "60 g zobenih pahuljica",
+      "250 ml mlijeka",
+      "1 jabuka",
+      "1/2 žličice cimeta",
+      "1 žlica meda",
+      "20 g oraha"
+    ],
+    "steps": [
+      "Jabuku oguli i naribaj ili nareži na sitne kockice.",
+      "U manjem loncu pomiješaj pahuljice, mlijeko, jabuku i cimet.",
+      "Kuhaj na laganoj vatri oko pet minuta, uz miješanje, dok kaša ne postane gusta i kremasta.",
+      "Prebaci u zdjelicu, prelij medom i pospi krupno sjeckanim orasima."
+    ],
+    "comments": [
+      {
+        "name": "Tihana",
+        "when": "jučer",
+        "text": "Pravim je s kruškom kad nemam jabuku, isto je odlična."
+      },
+      {
+        "name": "Ana",
+        "when": "prije 3 dana",
+        "text": "Orahe popržim na suhoj tavi par minuta, razlika je velika."
+      }
+    ]
+  },
+  {
+    "id": "vanilice",
+    "category": "kolaci-i-torte",
+    "title": "Vanilice",
+    "intro": "Vanilice su prvi kolač koji sam radila s bakom, kad sam bila toliko mala da sam samo slagala marmeladu. Bez njih nema blagdana ni Nove godine.",
+    "time": "90 min",
+    "yields": "40 komada",
+    "difficulty": "srednje",
+    "ingredients": [
+      "500 g brašna",
+      "250 g svinjske masti",
+      "150 g šećera",
+      "100 g mljevenih oraha",
+      "1 jaje",
+      "1 vrećica vanilin šećera",
+      "1 žličica naribane limunove korice",
+      "200 g marmelade od marelica",
+      "100 g šećera u prahu"
+    ],
+    "steps": [
+      "Mast umuti sa šećerom i vanilin šećerom, pa dodaj jaje i limunovu koricu.",
+      "Umiješaj orahe i postupno brašno, pa zamijesi glatko tijesto. Ostavi ga u hladnjaku pola sata.",
+      "Zagrij pećnicu na 180 °C.",
+      "Razvuci tijesto na debljinu od oko 5 mm i vadi male kolačiće kalupom.",
+      "Peci ih oko 12 minuta, tako da ostanu svijetli i ne porumene.",
+      "Kad se ohlade, po dva spoji marmeladom i uvaljaj u šećer u prahu. Ostavi ih dan da omekšaju prije posluživanja."
+    ],
+    "comments": [
+      {
+        "name": "Gordana",
+        "when": "prije 2 tjedna",
+        "text": "Sutradan su stvarno mekše i ljepše. Strpljenje se isplati."
+      },
+      {
+        "name": "Milica",
+        "when": "prije mjesec dana",
+        "text": "Radila sam s maslacem umjesto masti, malo su krhkije ali odlične."
+      },
+      {
+        "name": "Sanja",
+        "when": "prije mjesec dana",
+        "text": "Svijetle vanilice su prave vanilice, dobro je što je to naglašeno."
+      }
+    ]
+  },
+  {
+    "id": "krofne",
+    "category": "kolaci-i-torte",
+    "title": "Krafne",
+    "intro": "Krafne su bile praznik kad sam bila dijete, a mama ih je radila samo za posebne prilike. Sada ih radim ja, i uvijek ih je premalo.",
+    "time": "2 sata",
+    "yields": "20 komada",
+    "difficulty": "srednje",
+    "ingredients": [
+      "500 g brašna",
+      "25 g svježeg kvasca",
+      "250 ml mlakog mlijeka",
+      "2 žumanjka",
+      "50 g šećera",
+      "50 g otopljenog maslaca",
+      "1 vrećica vanilin šećera",
+      "1 prstohvat soli",
+      "700 ml ulja za prženje",
+      "200 g pekmeza"
+    ],
+    "steps": [
+      "Kvasac razmuti u malo mlijeka sa žličicom šećera i ostavi da se zapjeni.",
+      "U brašno dodaj ostatak šećera, vanilin šećer, sol, žumanjke, maslac, kvasac i mlijeko, pa mijesi desetak minuta dok tijesto ne postane glatko.",
+      "Pokrij ga i ostavi na toplom oko sat vremena da udvostruči volumen.",
+      "Razvuci tijesto na debljinu od 1,5 cm i vadi krugove čašom. Ostavi ih pokrivene još 20 minuta.",
+      "Prži krafne u ulju zagrijanom na srednjoj vatri, prvo poklopljene s gornje strane, pa otklopljene s donje, dok ne porumene.",
+      "Ocijedi ih na kuhinjskom papiru, napuni pekmezom pomoću vrećice za ukrašavanje i pospi šećerom u prahu po želji."
+    ],
+    "comments": [
+      {
+        "name": "Jelena",
+        "when": "prije 3 dana",
+        "text": "Poklapanje prve strane napravi onaj bijeli pojas oko krafne, baš kao iz slastičarnice."
+      },
+      {
+        "name": "Marko",
+        "when": "prije 2 tjedna",
+        "text": "Napunio sam ih Eurokremom, nestale su za pola sata."
+      }
+    ]
+  },
+  {
+    "id": "strudla-sa-makom",
+    "category": "kolaci-i-torte",
+    "title": "Štrudla s makom",
+    "intro": "Štrudla s makom je kod nas obavezna za Božić i Uskrs. Ovo je tijesto s kvascem, mekano i tanko, s puno nadjeva.",
+    "time": "3 sata",
+    "yields": "2 štrudle",
+    "difficulty": "zahtjevno",
+    "ingredients": [
+      "500 g brašna",
+      "20 g svježeg kvasca",
+      "250 ml mlakog mlijeka",
+      "80 g otopljenog maslaca",
+      "2 žumanjka",
+      "50 g šećera za tijesto",
+      "1 prstohvat soli",
+      "250 g mljevenog maka",
+      "150 g šećera za nadjev",
+      "200 ml mlijeka za nadjev",
+      "1 žličica naribane limunove korice"
+    ],
+    "steps": [
+      "Kvasac razmuti u malo mlakog mlijeka sa žličicom šećera i ostavi da se zapjeni.",
+      "Od brašna, šećera, soli, jednog žumanjka, maslaca, kvasca i mlijeka zamijesi mekano tijesto i ostavi ga na toplom sat vremena.",
+      "Za nadjev zagrij mlijeko sa šećerom, skini s vatre, umiješaj mak i limunovu koricu i ostavi da se ohladi.",
+      "Podijeli tijesto na dva dijela i svaki razvuci u pravokutnik debljine oko 5 mm.",
+      "Rasporedi nadjev, ostavi slobodne rubove i čvrsto zamotaj štrudle. Stavi ih na lim spojem prema dolje i ostavi još 30 minuta.",
+      "Premaži ih umućenim drugim žumanjkom i peci u pećnici zagrijanoj na 180 °C oko 35 minuta. Reži tek kad se ohlade."
+    ],
+    "comments": [
+      {
+        "name": "Mirjana",
+        "when": "prije 2 tjedna",
+        "text": "Izbola sam štrudlu vilicom na par mjesta i nije pukla. Prekrasna je."
+      },
+      {
+        "name": "Ljiljana",
+        "when": "prije mjesec dana",
+        "text": "U nadjev stavim i žlicu pekmeza od šljiva, daje sočnost."
+      }
+    ]
+  },
+  {
+    "id": "reform-torta",
+    "category": "kolaci-i-torte",
+    "title": "Reform torta",
+    "intro": "Reform torta je kraljica svečanih torti u mojoj obitelji. Jest posao, ali kad je narežeš, vidiš da se svaka minuta isplatila.",
+    "time": "3 sata",
+    "yields": "12 komada",
+    "difficulty": "zahtjevno",
+    "ingredients": [
+      "8 bjelanjaka",
+      "200 g šećera za kore",
+      "200 g mljevenih oraha",
+      "1 žlica brašna",
+      "8 žumanjaka",
+      "150 g šećera za nadjev",
+      "200 g tamne čokolade za kuhanje",
+      "250 g maslaca"
+    ],
+    "steps": [
+      "Zagrij pećnicu na 170 °C. Bjelanjke umuti u čvrst snijeg, pa postupno dodaj šećer i muti dok ne postane sjajan.",
+      "Orahe pomiješaj s brašnom i lagano umiješaj u snijeg kuhačom.",
+      "Podijeli smjesu na četiri dijela i peci svaku koru na papiru za pečenje, u kalupu promjera 26 cm, oko 15 minuta.",
+      "Za nadjev umuti žumanjke sa šećerom i kuhaj na pari uz stalno miješanje oko deset minuta, dok se ne zgusne. Dodaj nasjeckanu čokoladu da se otopi i ostavi da se potpuno ohladi.",
+      "Maslac umuti pjenasto i postupno dodaj ohlađenu kremu, muteći cijelo vrijeme.",
+      "Nadjev rasporedi između kora i preko torte. Ostavi tortu u hladnjaku barem nekoliko sati, najbolje preko noći."
+    ],
+    "comments": [
+      {
+        "name": "Olja",
+        "when": "prije 3 dana",
+        "text": "Maslac i krema moraju biti iste temperature, inače se nadjev zgruša. Naučila sam na teži način."
+      },
+      {
+        "name": "Bojana",
+        "when": "prije 2 tjedna",
+        "text": "Radila sam za kćerin rođendan, svi su pitali za recept."
+      }
+    ]
+  },
+  {
+    "id": "tufahije",
+    "category": "kolaci-i-torte",
+    "title": "Tufahije",
+    "intro": "Tufahije su stari, jednostavni kolač od jabuka kuhanih u sirupu, punjenih orasima. Mene uvijek podsjete na baku i njezinu kuhinju.",
+    "time": "1 sat",
+    "yields": "8 komada",
+    "difficulty": "srednje",
+    "ingredients": [
+      "8 srednjih kiselkastih jabuka",
+      "500 g šećera",
+      "1 l vode",
+      "1 limun",
+      "150 g mljevenih oraha",
+      "2 žlice šećera za nadjev",
+      "200 ml slatkog vrhnja za šlag"
+    ],
+    "steps": [
+      "Jabuke oguli i nožem ili vadilicom izvadi im sredinu, tako da ostanu cijele.",
+      "U širokom loncu zakuhaj vodu, šećer i sok od limuna.",
+      "Spusti jabuke u sirup i kuhaj ih oko deset minuta, okrećući ih, dok ne omekšaju ali da se ne raspadnu.",
+      "Pažljivo izvadi jabuke, a sirup kuhaj još desetak minuta da se zgusne.",
+      "Orahe pomiješaj sa šećerom i s par žlica sirupa i napuni jabuke.",
+      "Poslaži ih u zdjelu, prelij gustim sirupom, ohladi i poslužuj sa šlagom."
+    ],
+    "comments": [
+      {
+        "name": "Sanja",
+        "when": "prije 2 tjedna",
+        "text": "Uzela sam jabuke budimke i držale su oblik savršeno."
+      },
+      {
+        "name": "Davor",
+        "when": "prije mjesec dana",
+        "text": "Moja žena u sirup doda štapić cimeta, preporučujem."
+      }
+    ]
+  },
+  {
+    "id": "cupavci",
+    "category": "kolaci-i-torte",
+    "title": "Čupavci",
+    "intro": "Čupavci su kolač oko kojeg su djeca u mojoj kući najviše voljela pomagati, jer se svi uljepe od čokolade. Uvijek ih nestane prvih.",
+    "time": "2 sata",
+    "yields": "30 komada",
+    "difficulty": "srednje",
+    "ingredients": [
+      "4 jaja",
+      "200 g šećera",
+      "250 ml mlijeka",
+      "100 ml ulja",
+      "300 g brašna",
+      "1 vrećica praška za pecivo",
+      "200 g tamne čokolade za kuhanje",
+      "100 g maslaca",
+      "200 ml mlijeka za preljev",
+      "250 g kokosa"
+    ],
+    "steps": [
+      "Zagrij pećnicu na 180 °C i obloži lim od oko 25 x 35 cm papirom za pečenje.",
+      "Umuti jaja sa šećerom, pa dodaj mlijeko i ulje. Umiješaj brašno s praškom za pecivo.",
+      "Izlij smjesu na lim i peci oko 25 minuta. Ostavi biskvit da se potpuno ohladi, pa ga nareži na kocke.",
+      "Za preljev otopi čokoladu, maslac i mlijeko na laganoj vatri, uz miješanje.",
+      "Svaku kocku umoči u topli preljev, pa je uvaljaj u kokos.",
+      "Poslaži čupavce na pladanj i ostavi ih da se stegnu."
+    ],
+    "comments": [
+      {
+        "name": "Danijela",
+        "when": "jučer",
+        "text": "Biskvit od dan prije se puno lakše umače, ne mrvi se."
+      },
+      {
+        "name": "Petra",
+        "when": "prije 3 dana",
+        "text": "Koristim dvije vilice za umakanje, ide brže i čišće."
+      }
+    ]
+  },
+  {
+    "id": "urmasice",
+    "category": "kolaci-i-torte",
+    "title": "Urmašice",
+    "intro": "Urmašice su sitan kolač natopljen šećernim sirupom, kakav se nosi na svako slavlje. Moja teta ih radi najbolje, a ovo je njezin recept.",
+    "time": "90 min",
+    "yields": "35 komada",
+    "difficulty": "srednje",
+    "ingredients": [
+      "400 g brašna",
+      "200 g maslaca",
+      "2 jaja",
+      "180 g kiselog vrhnja",
+      "50 g šećera",
+      "50 g mljevenih oraha",
+      "1 vrećica praška za pecivo",
+      "500 g šećera za sirup",
+      "500 ml vode",
+      "1 limun"
+    ],
+    "steps": [
+      "Prvo skuhaj sirup: vodu, šećer i limun narezan na kolutove kuhaj desetak minuta, pa ostavi da se potpuno ohladi.",
+      "Zagrij pećnicu na 200 °C.",
+      "Umuti omekšali maslac sa šećerom, dodaj jaja i vrhnje, pa umiješaj orahe i brašno s praškom za pecivo.",
+      "Od tijesta oblikuj valjčiće veličine prsta i svaki pritisni preko sitnog ribeža da dobiju šare.",
+      "Poslaži ih na lim i peci oko 20 minuta, dok lagano ne porumene.",
+      "Vruće urmašice prelij hladnim sirupom i ostavi ih nekoliko sati da upiju sirup."
+    ],
+    "comments": [
+      {
+        "name": "Mirjana",
+        "when": "prije 2 tjedna",
+        "text": "Hladan sirup na vruć kolač, to je pravilo. Ispale su sočne kao kod tete."
+      },
+      {
+        "name": "Nataša",
+        "when": "prije mjesec dana",
+        "text": "Ja ih radim i s malo kokosa u tijestu, isto lijepo."
+      }
+    ]
+  },
+  {
+    "id": "plazma-torta",
+    "category": "kolaci-i-torte",
+    "title": "Plazma torta",
+    "intro": "Ovo je torta koja se ne peče, a izgleda kao da si se mučila cijeli dan. Moja kći je traži za svaki rođendan.",
+    "time": "4 sata",
+    "yields": "12 komada",
+    "difficulty": "lako",
+    "ingredients": [
+      "300 g mljevenih Plazma keksa",
+      "1 l mlijeka",
+      "2 vrećice pudinga od vanilije",
+      "200 g šećera",
+      "250 g maslaca",
+      "100 g mljevenih oraha",
+      "200 ml slatkog vrhnja",
+      "100 g čokolade"
+    ],
+    "steps": [
+      "Od mlijeka, pudinga i šećera skuhaj gust puding prema uputi na vrećici, pa ga ostavi da se potpuno ohladi, uz povremeno miješanje.",
+      "Umuti maslac pjenasto i postupno dodaj ohlađen puding.",
+      "Mljeveni keks pomiješaj s orasima.",
+      "U kalup slaži slojeve: smjesa od keksa, pa krema, i ponavljaj dok ne potrošiš sve, s tim da krema bude na vrhu.",
+      "Umuti slatko vrhnje i premaži tortu, pa preko naribaj čokoladu.",
+      "Ostavi tortu u hladnjaku najmanje tri sata prije rezanja."
+    ],
+    "comments": [
+      {
+        "name": "Maja",
+        "when": "prije 3 dana",
+        "text": "Najlakša torta koju sam ikad radila, a svi misle da je iz slastičarnice."
+      },
+      {
+        "name": "Ksenija",
+        "when": "prije 2 tjedna",
+        "text": "Keks sam malo pokvasila mlijekom, bila je još sočnija."
+      }
+    ]
+  },
+  {
+    "id": "kolac-sa-visnjama",
+    "category": "kolaci-i-torte",
+    "title": "Kolač s višnjama",
+    "intro": "Ovo je moj brzi kolač za goste koji najave dolazak sat vremena ranije. Višnje iz zamrzivača rade posao jednako dobro kao svježe.",
+    "time": "1 sat",
+    "yields": "16 komada",
+    "difficulty": "lako",
+    "ingredients": [
+      "4 jaja",
+      "200 g šećera",
+      "1 vrećica vanilin šećera",
+      "200 ml jogurta",
+      "100 ml ulja",
+      "300 g brašna",
+      "1 vrećica praška za pecivo",
+      "400 g očišćenih višanja"
+    ],
+    "steps": [
+      "Zagrij pećnicu na 180 °C i obloži lim od oko 25 x 35 cm papirom za pečenje.",
+      "Umuti jaja sa šećerom i vanilin šećerom dok ne postanu pjenasta.",
+      "Dodaj jogurt i ulje, pa umiješaj brašno s praškom za pecivo.",
+      "Izlij smjesu na lim i ravnomjerno rasporedi višnje po vrhu. Ako su zamrznute, prethodno ih ocijedi i uvaljaj u malo brašna.",
+      "Peci 35 do 40 minuta, dok čačkalica ne izađe suha.",
+      "Ohlađen kolač pospi šećerom u prahu i nareži na kocke."
+    ],
+    "comments": [
+      {
+        "name": "Tamara",
+        "when": "jučer",
+        "text": "Višnje uvaljane u brašno nisu potonule na dno, baš je lijep presjek."
+      },
+      {
+        "name": "Zorica",
+        "when": "prije mjesec dana",
+        "text": "Radila sam i s marelicama, odličan je."
+      }
+    ]
+  },
+  {
+    "id": "ajvar",
+    "category": "zimnica",
+    "title": "Ajvar",
+    "intro": "Pravljenje ajvara je kod nas obiteljski dan, svi pečemo, guljimo i miješamo. Posla je cijeli dan, ali zima bez njega ne dolazi u obzir.",
+    "time": "6 sati",
+    "yields": "8 manjih staklenki",
+    "difficulty": "zahtjevno",
+    "ingredients": [
+      "5 kg crvenih paprika roga",
+      "1 kg patlidžana",
+      "400 ml ulja",
+      "100 ml octa",
+      "4 češnja češnjaka",
+      "2 žlice soli",
+      "1 žlica šećera"
+    ],
+    "steps": [
+      "Paprike i patlidžane operi i peci na štednjaku, roštilju ili u pećnici na 220 °C, dok kožica ne pocrni i ne odvoji se.",
+      "Pečeno povrće stavi u posudu, pokrij i ostavi da se ispari, pa ga oguli i očisti od sjemenki. Ostavi da se ocijedi u cjedilu.",
+      "Povrće samelji u stroju za mljevenje mesa ili sitno nasjeckaj.",
+      "U širokom loncu s debelim dnom zagrij pola ulja, dodaj samljeveno povrće i kuhaj na umjerenoj vatri uz stalno miješanje.",
+      "Postupno dodavaj ostatak ulja i kuhaj dva do tri sata, dok ajvar ne postane gust i dok ulje ne počne izlaziti.",
+      "Pred kraj dodaj sol, šećer, ocat i zgnječen češnjak i kuhaj još desetak minuta.",
+      "Vrući ajvar stavi u vruće, čiste staklenke, odozgo dolij malo vrućeg ulja i odmah zatvori. Umotaj staklenke u deku i ostavi ih da se polako ohlade."
+    ],
+    "comments": [
+      {
+        "name": "Branka",
+        "when": "prije mjesec dana",
+        "text": "Cijeđenje paprika preko noći mi je skratilo kuhanje za sat vremena."
+      },
+      {
+        "name": "Tomislav",
+        "when": "prije mjesec dana",
+        "text": "Mi ga pravimo bez češnjaka, ali sve ostalo isto. Dobar recept."
+      },
+      {
+        "name": "Ana",
+        "when": "prije 2 tjedna",
+        "text": "Kuhača s dugom drškom je obavezna, ajvar prska kao lud."
+      }
+    ]
+  },
+  {
+    "id": "pindjur",
+    "category": "zimnica",
+    "title": "Pinđur",
+    "intro": "Pinđur je brži rođak ajvara, s rajčicom i više češnjaka. Ja ga volim čak i više, posebno uz proju i sir.",
+    "time": "4 sata",
+    "yields": "6 staklenki",
+    "difficulty": "srednje",
+    "ingredients": [
+      "2 kg crvenih paprika babura",
+      "1 kg patlidžana",
+      "1 kg zrele rajčice",
+      "1 glavica češnjaka",
+      "250 ml ulja",
+      "50 ml octa",
+      "1 žlica soli",
+      "1 žlica šećera"
+    ],
+    "steps": [
+      "Paprike i patlidžane ispeci, ostavi da se ispare, pa ih oguli i očisti.",
+      "Rajčicu prelij vrelom vodom, oguli je i nasjeckaj.",
+      "Paprike i patlidžane sitno nasjeckaj ili kratko izblendaj, da ostane malo komadića.",
+      "U loncu zagrij ulje, dodaj rajčicu i kuhaj je desetak minuta, pa dodaj ostalo povrće.",
+      "Kuhaj na laganoj vatri oko sat i pol, uz često miješanje, dok se ne zgusne.",
+      "Dodaj sol, šećer, ocat i zgnječen češnjak i kuhaj još deset minuta. Vrući pinđur stavi u vruće staklenke, zatvori i umotaj u deku."
+    ],
+    "comments": [
+      {
+        "name": "Svjetlana",
+        "when": "prije mjesec dana",
+        "text": "Dodala sam i jednu ljutu papričicu, savršen je."
+      },
+      {
+        "name": "Milica",
+        "when": "prije 2 tjedna",
+        "text": "Prvi put sam radila zimnicu i uspjelo je. Hvala na jasnim uputama."
+      }
+    ]
+  },
+  {
+    "id": "mesana-tursija",
+    "category": "zimnica",
+    "title": "Miješana turšija",
+    "intro": "Šarena turšija na polici u ostavi je za mene najljepši prizor jeseni. Uz pečenje i sarmu je nezamjenjiva.",
+    "time": "3 sata",
+    "yields": "6 staklenki",
+    "difficulty": "srednje",
+    "ingredients": [
+      "1 kg paprika šilja",
+      "1 kg zelene rajčice",
+      "1 glavica cvjetače",
+      "500 g mrkve",
+      "500 g krastavčića",
+      "1 l octa (9%)",
+      "2 l vode",
+      "150 g šećera",
+      "2 žlice soli",
+      "1 žlica papra u zrnu",
+      "5 lovorovih listova"
+    ],
+    "steps": [
+      "Povrće operi. Paprike probodi vilicom, rajčice nareži na četvrtine, cvjetaču razdvoji na cvjetiće, a mrkvu nareži na kolutove.",
+      "Staklenke i poklopce dobro operi i osuši u pećnici na 100 °C.",
+      "Povrće slaži u staklenke u šarenim slojevima, a između stavi papar u zrnu i lovor.",
+      "Za zalijevanje prokuhaj vodu s octom, šećerom i soli, pa ga ostavi da se malo ohladi.",
+      "Prelij povrće tekućinom tako da bude potpuno pokriveno i zatvori staklenke.",
+      "Pasteriziraj staklenke u loncu s vodom oko 15 minuta od trenutka kad voda proključa. Ostavi ih da se ohlade u vodi i čuvaj na hladnom mjestu."
+    ],
+    "comments": [
+      {
+        "name": "Gordana",
+        "when": "prije mjesec dana",
+        "text": "Cvjetača je ostala hrskava do proljeća. Odlična proporcija zalijevke."
+      },
+      {
+        "name": "Dario",
+        "when": "prije mjesec dana",
+        "text": "Dodao sam i kolutove ljute paprike u svaku staklenku."
+      }
+    ]
+  },
+  {
+    "id": "kiseli-kupus",
+    "category": "zimnica",
+    "title": "Kiseli kupus",
+    "intro": "Kiseljenje kupusa je kod nas jesenski ritual koji smo naslijedili od djeda. Iz jedne bačve ima kupusa za sarmu, podvarak i salatu do proljeća.",
+    "time": "5 tjedana",
+    "yields": "1 bačva od 30 l",
+    "difficulty": "zahtjevno",
+    "ingredients": [
+      "15 kg glavica kupusa",
+      "600 g krupne nejodirane soli",
+      "oko 12 l vode",
+      "5 lovorovih listova",
+      "1 žlica papra u zrnu"
+    ],
+    "steps": [
+      "Glavicama skini vanjske listove, operi ih i izdubi košt nožem, ostavljajući rupu.",
+      "Rupu svake glavice napuni žlicom soli i slaži glavice u bačvu, rupom prema gore, a između dodaj lovor i papar.",
+      "Ostatak soli otopi u vodi i prelij kupus tako da bude potpuno pokriven.",
+      "Preko glavica stavi čistu dasku i težak kamen, da kupus stalno bude ispod vode.",
+      "Prvih tjedana pretači vodu svakih nekoliko dana: ispusti je kroz slavinu na dnu i ponovno prelij odozgo, da se kupus ravnomjerno kiseli.",
+      "Kupus je gotov za četiri do šest tjedana, ovisno o temperaturi. Čuvaj bačvu na hladnom mjestu."
+    ],
+    "comments": [
+      {
+        "name": "Zvonimir",
+        "when": "prije 2 tjedna",
+        "text": "Mi dodajemo i nekoliko dunja u bačvu, kupus dobije divan miris."
+      },
+      {
+        "name": "Mirjana",
+        "when": "prije mjesec dana",
+        "text": "Nejodirana sol je obavezna, s običnom kupus omekša."
+      }
+    ]
+  },
+  {
+    "id": "dzem-od-sljiva",
+    "category": "zimnica",
+    "title": "Pekmez od šljiva",
+    "intro": "Kad dođe vrijeme požegača, kuća mi danima miriše na cimet i šljive. Ovaj je pekmez gust i nije preslatak, baš kakav volim.",
+    "time": "2 sata",
+    "yields": "5 staklenki",
+    "difficulty": "lako",
+    "ingredients": [
+      "2 kg šljiva požegača",
+      "800 g šećera",
+      "1 limun",
+      "1 žličica cimeta",
+      "3 klinčića"
+    ],
+    "steps": [
+      "Šljive operi, očisti od koštica i nareži na četvrtine.",
+      "Pospi ih šećerom i ostavi sat vremena da puste sok.",
+      "Kuhaj na umjerenoj vatri uz često miješanje oko sat vremena, dok se pekmez ne zgusne.",
+      "Pred kraj dodaj limunov sok, cimet i klinčiće. Gustoću provjeri tako da kapneš malo pekmeza na hladan tanjur: ako se ne razlijeva, gotov je.",
+      "Izvadi klinčiće, stavi vruć pekmez u vruće staklenke, zatvori ih i okreni naopako dok se ne ohlade."
+    ],
+    "comments": [
+      {
+        "name": "Vesna",
+        "when": "prije 3 dana",
+        "text": "Proba na hladnom tanjuru nikad ne vara. Odličan pekmez."
+      },
+      {
+        "name": "Olja",
+        "when": "prije mjesec dana",
+        "text": "Stavila sam malo manje šećera i dobro je stajao do zime."
+      }
+    ]
+  },
+  {
+    "id": "slatko-od-jagoda",
+    "category": "zimnica",
+    "title": "Slatko od jagoda",
+    "intro": "Slatko od jagoda se kod nas služilo gostima uz čašu hladne vode, kako red nalaže. Biraj sitne, čvrste jagode da ostanu cijele.",
+    "time": "1 sat",
+    "yields": "4 staklenke",
+    "difficulty": "srednje",
+    "ingredients": [
+      "1 kg sitnih čvrstih jagoda",
+      "1 kg šećera",
+      "200 ml vode",
+      "1 limun",
+      "1 vrećica vanilin šećera"
+    ],
+    "steps": [
+      "Jagode operi prije nego što im skineš peteljke, pa ih ocijedi.",
+      "Od vode i šećera skuhaj sirup, dok kap sirupa među prstima ne počne ljepiti.",
+      "Spusti jagode u sirup i kuhaj ih na umjerenoj vatri bez miješanja, samo povremeno protresi lonac i skidaj pjenu.",
+      "Kad se sirup ponovno zgusne, nakon petnaestak minuta, dodaj limunov sok i vanilin šećer.",
+      "Skini slatko s vatre, pokrij ga vlažnom krpom i ostavi preko noći.",
+      "Sutradan ga stavi u čiste, suhe staklenke i zatvori."
+    ],
+    "comments": [
+      {
+        "name": "Ljiljana",
+        "when": "prije 2 tjedna",
+        "text": "Krpa preko noći je baš ona stara tajna, jagode su ostale cijele i sjajne."
+      },
+      {
+        "name": "Katarina",
+        "when": "prije mjesec dana",
+        "text": "Moja baka je ovako radila i od višanja. Hvala na receptu."
+      }
+    ]
+  }
+]

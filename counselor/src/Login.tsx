@@ -1,8 +1,11 @@
 import { useState, type SubmitEvent } from "react";
 
 import { ApiError, login } from "./api";
+import { useLang } from "./i18n";
+import { LanguageSelect } from "./LanguageSelect";
 
 export function Login({ onLoggedIn }: { onLoggedIn: () => void }) {
+  const { t } = useLang();
   const [password, setPassword] = useState("");
   const [error, setError] = useState("");
   const [busy, setBusy] = useState(false);
@@ -17,11 +20,11 @@ export function Login({ onLoggedIn }: { onLoggedIn: () => void }) {
       onLoggedIn();
     } catch (err) {
       if (err instanceof ApiError && err.status === 429) {
-        setError("Too many attempts. Wait a minute.");
+        setError(t.tooManyAttempts);
       } else if (err instanceof ApiError && err.status === 401) {
-        setError("Wrong password.");
+        setError(t.wrongPassword);
       } else {
-        setError("Cannot reach the server.");
+        setError(t.cannotReachServer);
       }
     } finally {
       setBusy(false);
@@ -30,9 +33,10 @@ export function Login({ onLoggedIn }: { onLoggedIn: () => void }) {
 
   return (
     <form className="login" onSubmit={handleSubmit}>
-      <h1>Skrivena vrata: counselor</h1>
+      <LanguageSelect />
+      <h1>{t.title}</h1>
       <label>
-        Password
+        {t.password}
         <input
           type="password"
           autoComplete="current-password"
@@ -42,7 +46,7 @@ export function Login({ onLoggedIn }: { onLoggedIn: () => void }) {
         />
       </label>
       <button type="submit" disabled={busy || !password}>
-        {busy ? "Signing in..." : "Sign in"}
+        {busy ? t.signingIn : t.signIn}
       </button>
       {error && <p className="error">{error}</p>}
     </form>

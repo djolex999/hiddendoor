@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 
 import { unlock, type HelpCard } from "./api";
+import { useLang } from "./i18n";
 
 // After the last tap, wait this long, then send what was collected.
 const IDLE_MS = 1500;
@@ -19,6 +20,7 @@ interface Props {
  * known only to the server. A wrong sequence does nothing visible.
  */
 export function TapDoor({ items, onUnlocked }: Props) {
+  const { lang } = useLang();
   const [checked, setChecked] = useState<ReadonlySet<number>>(new Set());
   const taps = useRef<number[]>([]);
   const timer = useRef<ReturnType<typeof setTimeout> | undefined>(undefined);
@@ -29,7 +31,7 @@ export function TapDoor({ items, onUnlocked }: Props) {
     const sequence = taps.current;
     taps.current = [];
     if (sequence.length < MIN_TAPS) return;
-    unlock(sequence)
+    unlock(sequence, lang)
       .then((cards) => {
         if (cards) onUnlocked(cards);
       })

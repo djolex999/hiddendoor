@@ -13,6 +13,10 @@ export interface CounselorSession {
   last_activity: string;
   expires_at: string;
   unread: number;
+  /** Set when one of her messages signals immediate danger; null otherwise. */
+  urgent_since: string | null;
+  /** Private nickname set by counselors; empty when unset. */
+  counselor_label: string;
 }
 
 export interface Message {
@@ -25,6 +29,15 @@ export interface Message {
 export interface MessagesResponse {
   status: SessionStatus;
   messages: Message[];
+  /** Counselor view only: the chat is flagged urgent until a counselor replies. */
+  urgent?: boolean;
+  /** Private counselor nickname and notes for this chat. */
+  notes?: CounselorNotes;
+}
+
+export interface CounselorNotes {
+  counselor_label: string;
+  counselor_notes: string;
 }
 
 export class ApiError extends Error {
@@ -103,4 +116,14 @@ export function sendMessage(sessionId: string, body: string): Promise<Message> {
 
 export function closeSession(sessionId: string): Promise<void> {
   return request(`/api/c/sessions/${sessionId}/close`, { method: "POST" });
+}
+
+export function saveNotes(
+  sessionId: string,
+  notes: Partial<CounselorNotes>,
+): Promise<CounselorNotes> {
+  return request(`/api/c/sessions/${sessionId}/notes`, {
+    method: "PATCH",
+    body: JSON.stringify(notes),
+  });
 }

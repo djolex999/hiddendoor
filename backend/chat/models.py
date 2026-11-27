@@ -44,6 +44,14 @@ class ChatSession(models.Model):
     )
     # Highest message id the counselor has seen; drives the unread count.
     counselor_last_read_id = models.PositiveBigIntegerField(default=0)
+    # Set by chat.triage when one of her messages signals immediate danger;
+    # cleared when a counselor replies. Drives the counselor's HITNO badge and
+    # the "call 192" card on her side.
+    urgent_since = models.DateTimeField(null=True, blank=True, db_index=True)
+    # Counselor-only working notes. Never returned to her endpoints. Deleted
+    # with the session (exit, close + 15 min, or 24h): a nickname, not her name.
+    counselor_label = models.CharField(max_length=60, blank=True)
+    counselor_notes = models.TextField(max_length=4000, blank=True)
 
     objects = ChatSessionQuerySet.as_manager()
 

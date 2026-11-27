@@ -15,7 +15,7 @@ from config.throttles import LoginThrottle
 
 from .authentication import CounselorTokenAuthentication, make_counselor_token
 from .permissions import IsCounselor
-from .serializers import CounselorSessionSerializer, LoginSerializer
+from .serializers import CounselorSessionSerializer, LoginSerializer, SessionNotesSerializer
 
 
 class LoginView(APIView):
@@ -63,7 +63,8 @@ class SessionListView(CounselorView, generics.ListAPIView):
             ChatSession.objects.live()
             .exclude(status=ChatSession.Status.CLOSED)
             .annotate(unread=Count("messages", filter=unread_filter))
-            .order_by("-created_at")
+            # Urgent chats first (oldest alarm on top), then newest.
+            .order_by(F("urgent_since").asc(nulls_last=True), "-created_at")
         )
 
 
@@ -85,7 +86,12 @@ class SessionMessagesView(CounselorView):
                 pk=session.pk, counselor_last_read_id__lt=messages[-1].id
             ).update(counselor_last_read_id=messages[-1].id)
         return Response(
-            {"status": session.status, "messages": MessageSerializer(messages, many=True).data}
+            {
+                "status": session.status,
+                "messages": MessageSerializer(messages, many=True).data,
+                "urgent": session.urgent_since is not None,
+                "notes": SessionNotesSerializer(session).data,
+            }
         )
 
     def post(self, request: Request, session_id: str) -> Response:
@@ -106,3 +112,18 @@ class CloseSessionView(CounselorView):
     def post(self, request: Request, session_id: str) -> Response:
         services.close_session(get_live_session(session_id))
         return Response(status=status.HTTP_204_NO_CONTENT)
+
+
+class SessionNotesView(CounselorView):
+    """
+    PATCH /api/c/sessions/<id>/notes {counselor_label?, counselor_notes?} -> 200 both
+
+    Counselor-only. Never exposed on her endpoints; deleted with the session.
+    """
+
+    def patch(self, request: Request, session_id: str) -> Response:
+        session = get_live_session(session_id)
+        serializer = SessionNotesSerializer(session, data=request.data, partial=True)
+        serializer.is_valid(raise_exception=True)
+        serializer.save()
+        return Response(serializer.data)

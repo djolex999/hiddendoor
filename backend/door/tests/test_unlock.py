@@ -78,3 +78,34 @@ def test_admin_pages_use_same_origin_referrer_policy(client):
     # admin login's CSRF check. The API keeps "no-referrer" (tested above).
     response = client.get("/admin/login/")
     assert response["Referrer-Policy"] == "same-origin"
+
+
+@pytest.mark.parametrize(
+    ("language", "first_title"),
+    [
+        ("en", "You are not alone"),
+        ("mk", "Не си сама"),
+        ("sq", "Nuk je vetëm"),
+        ("sr", "Nisi sama"),
+    ],
+)
+def test_unlock_returns_cards_in_the_requested_language(client, language, first_title):
+    response = client.post("/api/u/", {"sequence": RIGHT, "language": language}, format="json")
+    assert response.status_code == 200
+    cards = response.json()["cards"]
+    assert len(cards) == 3
+    assert cards[0]["title"] == first_title
+
+
+@pytest.mark.parametrize("language", ["xx", "", None, 42])
+def test_unknown_language_falls_back_to_serbian(client, language):
+    response = client.post("/api/u/", {"sequence": RIGHT, "language": language}, format="json")
+    assert response.status_code == 200
+    assert response.json()["cards"][0]["title"] == "Nisi sama"
+
+
+def test_no_invented_phone_numbers_outside_serbia():
+    from door.models import HelpCard
+
+    for card in HelpCard.objects.exclude(language="sr").filter(slug="sos-linija"):
+        assert not any(ch.isdigit() for ch in card.body), card.language

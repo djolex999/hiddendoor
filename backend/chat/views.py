@@ -97,7 +97,12 @@ class ChatMessagesView(SessionSecretView):
         query.is_valid(raise_exception=True)
         messages = services.messages_after(session, query.validated_data["after"])
         return Response(
-            {"status": session.status, "messages": MessageSerializer(messages, many=True).data}
+            {
+                "status": session.status,
+                "messages": MessageSerializer(messages, many=True).data,
+                # Urgent message, no counselor reply yet: show the emergency card.
+                "alert": services.needs_emergency_card(session),
+            }
         )
 
     def post(self, request: Request, session_id: str) -> Response:

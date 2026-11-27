@@ -202,6 +202,14 @@ CHAT_CLOSED_GRACE_MINUTES = 15  # after a counselor closes, data lives this long
 # (chat.services.record_resume_failure). Caps guessing spread over many IPs.
 RESUME_GLOBAL_FAILURES_PER_MINUTE = 30
 
+# Urgency triage (chat/triage.py). Without a key only the danger-word list runs.
+# With a key, the text of each of her messages is sent to the Claude API.
+ANTHROPIC_API_KEY = os.environ.get("ANTHROPIC_API_KEY", "")
+TRIAGE_IN_BACKGROUND = env_bool("TRIAGE_IN_BACKGROUND", True)
+# Seconds without a counselor reply after an urgent message before her side
+# shows the emergency-number card.
+URGENT_ALERT_AFTER_SECONDS = 30
+
 # Logging: requests to the woman-facing endpoints never reach any log line.
 
 LOGGING = {

@@ -1,0 +1,2346 @@
+[
+  {
+    "id": "pita-sa-jabukama",
+    "category": "kolaci-i-torte",
+    "title": "Apple Pie (Pita sa jabukama)",
+    "intro": "This is the pie my grandmother made every autumn, as soon as the apples were picked. The secret is tart apples; it is never the same with sweet ones.",
+    "time": "75 min",
+    "yields": "8 pieces",
+    "difficulty": "easy",
+    "ingredients": [
+      "500 g phyllo sheets for pie",
+      "1 kg tart apples",
+      "150 g sugar",
+      "1 tsp cinnamon",
+      "100 ml oil",
+      "50 g ground walnuts"
+    ],
+    "steps": [
+      "Preheat the oven to 200 °C and brush a medium baking pan with oil.",
+      "Peel the apples, grate them coarsely and squeeze them lightly with your hands so they don't release too much juice.",
+      "Mix the grated apples with the sugar, cinnamon and ground walnuts.",
+      "Lay two sheets in the pan, sprinkle them with oil and spread over some of the filling. Repeat until the filling is used up, finishing with two sheets.",
+      "Brush the top sheet with oil and cut the pie into pieces before baking, so the layers won't break.",
+      "Bake for about 40 minutes, until the pastry turns golden. Let the pie cool a little before serving."
+    ],
+    "comments": [
+      {
+        "name": "Jelena",
+        "when": "2 days ago",
+        "text": "I made it with Idared apples and it came out great. Next time I'll add a little more cinnamon."
+      },
+      {
+        "name": "Miloš",
+        "when": "2 weeks ago",
+        "text": "Cutting before baking is spot on, the pieces came out nice and even."
+      },
+      {
+        "name": "Snežana",
+        "when": "a month ago",
+        "text": "My mom adds a little semolina to the filling to soak up the juice. Worth trying that way too."
+      }
+    ]
+  },
+  {
+    "id": "proja-sa-sirom",
+    "category": "hleb-i-peciva",
+    "title": "Proja (cornbread with cheese)",
+    "intro": "Proja was always our weekend breakfast, served warm with a glass of yogurt. It is ready in under an hour and it always disappears.",
+    "time": "45 min",
+    "yields": "6 pieces",
+    "difficulty": "easy",
+    "ingredients": [
+      "300 g cornmeal",
+      "3 eggs",
+      "200 ml yogurt",
+      "100 ml oil",
+      "200 g white cheese",
+      "1 sachet baking powder",
+      "1 tsp salt"
+    ],
+    "steps": [
+      "Preheat the oven to 200 °C and line a baking pan of about 20 x 30 cm with baking paper.",
+      "In a large bowl whisk the eggs, then add the yogurt and oil and mix well.",
+      "Mix the cornmeal with the baking powder and salt, then gradually stir it into the wet mixture.",
+      "Crumble the cheese and stir most of it into the batter, saving the rest for the top.",
+      "Pour the batter into the pan, level it and sprinkle with the remaining cheese.",
+      "Bake for 30 to 35 minutes, until the proja is golden and a toothpick comes out dry."
+    ],
+    "comments": [
+      {
+        "name": "Dragana",
+        "when": "yesterday",
+        "text": "I used half yogurt and half sparkling water, and it was really fluffy."
+      },
+      {
+        "name": "Nenad",
+        "when": "3 days ago",
+        "text": "It's best while it's still warm. The kids ate half the pan for breakfast."
+      }
+    ]
+  },
+  {
+    "id": "prebranac",
+    "category": "glavna-jela",
+    "title": "Prebranac (baked beans with onions)",
+    "intro": "Prebranac is a fasting dish that we cooked on Fridays and on Christmas Eve. Soak the beans the night before; the rest is just patience.",
+    "time": "3 hours",
+    "yields": "6 servings",
+    "difficulty": "medium",
+    "ingredients": [
+      "500 g white beans",
+      "1 kg onions",
+      "2 tbsp sweet paprika",
+      "150 ml oil",
+      "3 bay leaves",
+      "salt and pepper"
+    ],
+    "steps": [
+      "Pick over and rinse the beans, then soak them in cold water overnight.",
+      "Drain the beans, cover them with fresh water, bring to a boil and pour off the first water. Cover with water again, add the bay leaves and cook for about an hour and a half, until tender but not falling apart.",
+      "While the beans cook, slice the onions into thin half moons and sauté them in the oil over low heat for about 30 minutes, until soft and golden.",
+      "Take the onions off the heat, stir in the paprika, then season with salt and pepper.",
+      "Drain the beans, keeping one cup of the cooking water. In a clay or ovenproof dish, layer the beans and onions, finishing with onions on top.",
+      "Pour over a little of the cooking water and bake in an oven preheated to 200 °C for about 40 minutes, until a crust forms on top."
+    ],
+    "comments": [
+      {
+        "name": "Ljiljana",
+        "when": "2 weeks ago",
+        "text": "I sautéed the onions for almost an hour, there's no rushing it. It tastes just like my mother-in-law's."
+      },
+      {
+        "name": "Zoran",
+        "when": "a month ago",
+        "text": "It's even better the next day. I make a double batch and freeze half."
+      }
+    ]
+  },
+  {
+    "id": "sarma",
+    "category": "glavna-jela",
+    "title": "Sarma (stuffed cabbage rolls)",
+    "intro": "There is no winter in our house without sarma. I make it in a big pot, because someone always drops by just as it's cooking.",
+    "time": "4 hours",
+    "yields": "20 pieces",
+    "difficulty": "challenging",
+    "ingredients": [
+      "1 head of sauerkraut",
+      "600 g mixed ground meat",
+      "100 g rice",
+      "1 onion",
+      "1 tbsp sweet paprika",
+      "200 g smoked pork ribs",
+      "3 bay leaves",
+      "4 tbsp oil",
+      "1 tbsp flour",
+      "salt and pepper"
+    ],
+    "steps": [
+      "Separate the sauerkraut leaves and thin out the thick ribs with a knife. If the cabbage is too salty, rinse the leaves in cold water.",
+      "Sauté the finely chopped onion in two tablespoons of the oil, add the meat and fry until it changes color. Stir in the rinsed rice, half a tablespoon of the paprika, pepper and a little salt.",
+      "Put a spoonful of filling on each leaf, fold in the sides and roll up the sarma tightly.",
+      "Chop the rest of the cabbage and put it on the bottom of a large pot. Arrange the rolls side by side, and tuck the ribs and bay leaves in between them.",
+      "Add enough water to cover the rolls, weigh them down with a plate and simmer over low heat for two and a half to three hours.",
+      "At the end, make a roux in the remaining oil with the flour and the rest of the paprika, stir in a little of the liquid from the pot and pour it over the sarma. Cook for another ten minutes or so."
+    ],
+    "comments": [
+      {
+        "name": "Gordana",
+        "when": "3 days ago",
+        "text": "After cooking I put mine in the oven for another half hour, it browns nicely on top."
+      },
+      {
+        "name": "Stefan",
+        "when": "2 weeks ago",
+        "text": "I made it on my own for the first time and it worked. The plate on top matters, otherwise they unroll."
+      },
+      {
+        "name": "Vesna",
+        "when": "a month ago",
+        "text": "I also add a little smoked bacon to the filling, it smells so much better."
+      }
+    ]
+  },
+  {
+    "id": "svinjski-gulas",
+    "category": "glavna-jela",
+    "title": "Pork Goulash (Svinjski gulaš)",
+    "intro": "Goulash is a dish you can't ruin if you give it time. I always serve it with mashed potatoes or homemade bread for dipping.",
+    "time": "2 hours",
+    "yields": "5 servings",
+    "difficulty": "medium",
+    "ingredients": [
+      "800 g pork leg",
+      "3 onions",
+      "2 carrots",
+      "1 red pepper",
+      "2 garlic cloves",
+      "2 tbsp sweet paprika",
+      "1 tbsp tomato paste",
+      "3 tbsp oil",
+      "2 bay leaves",
+      "salt and pepper"
+    ],
+    "steps": [
+      "Cut the meat into cubes of about 3 cm and chop the onions finely.",
+      "Sauté the onions in the oil for about ten minutes, until soft and lightly golden.",
+      "Add the meat and fry, stirring, until it changes color on all sides.",
+      "Add the chopped carrots, pepper and garlic, then take the pot off the heat and stir in the paprika and tomato paste.",
+      "Return to the heat, pour in enough warm water to cover the meat, and add the bay leaves, salt and pepper.",
+      "Simmer covered over low heat for about an hour and a half, stirring now and then and adding water as needed, until the meat is tender and the sauce is thick."
+    ],
+    "comments": [
+      {
+        "name": "Marko",
+        "when": "yesterday",
+        "text": "I used pork neck instead of leg and the meat was really juicy."
+      },
+      {
+        "name": "Tamara",
+        "when": "2 weeks ago",
+        "text": "Always take the paprika off the heat. I scorched it once and the whole goulash turned bitter."
+      }
+    ]
+  },
+  {
+    "id": "punjene-paprike",
+    "category": "glavna-jela",
+    "title": "Stuffed Peppers (Punjene paprike)",
+    "intro": "In summer, when the peppers are at their sweetest, I cook this at least once a week. They are best the next day, once the sauce has settled.",
+    "time": "2 hours",
+    "yields": "10 pieces",
+    "difficulty": "medium",
+    "ingredients": [
+      "10 bell peppers",
+      "500 g ground meat",
+      "100 g rice",
+      "1 onion",
+      "1 egg",
+      "1 tbsp sweet paprika",
+      "700 ml tomato juice",
+      "2 tbsp flour",
+      "3 tbsp oil",
+      "1 bunch of parsley",
+      "salt and pepper"
+    ],
+    "steps": [
+      "Cut the tops off the peppers, stems attached, and remove the seeds.",
+      "Briefly sauté the finely chopped onion in a tablespoon of the oil. Once cooled, mix it with the meat, rinsed rice, egg, chopped parsley, half of the paprika, salt and pepper.",
+      "Fill the peppers, but not to the top, because the rice will swell. Close them with the cut-off tops.",
+      "Stand the peppers upright in a pot, pour in the tomato juice and enough water to almost cover them.",
+      "Simmer covered over low heat for about an hour and a half.",
+      "Make a roux in the remaining oil with the flour and the rest of the paprika, thin it with a little of the sauce and stir it into the pot. Cook for another ten minutes or so to thicken the sauce."
+    ],
+    "comments": [
+      {
+        "name": "Marija",
+        "when": "3 days ago",
+        "text": "Afterwards I move them to the oven for half an hour, they get a lovely color."
+      },
+      {
+        "name": "Dejan",
+        "when": "a month ago",
+        "text": "I serve them with sour cream, the way my grandmother did."
+      }
+    ]
+  },
+  {
+    "id": "musaka-od-krompira",
+    "category": "glavna-jela",
+    "title": "Potato Moussaka (Musaka od krompira)",
+    "intro": "Moussaka is our Sunday lunch when everyone comes over. It isn't complicated, it just takes a bit of slicing and some patience while it bakes.",
+    "time": "90 min",
+    "yields": "6 servings",
+    "difficulty": "medium",
+    "ingredients": [
+      "1.5 kg potatoes",
+      "500 g ground meat",
+      "1 onion",
+      "3 eggs",
+      "300 ml milk",
+      "100 ml oil",
+      "1 tsp sweet paprika",
+      "1 tsp salt",
+      "pepper"
+    ],
+    "steps": [
+      "Preheat the oven to 200 °C and grease a baking pan.",
+      "Sauté the finely chopped onion in a little oil, add the meat and fry until it changes color. Season with the paprika, salt and pepper.",
+      "Peel the potatoes and slice them into thin rounds, then salt them and drizzle with a little oil.",
+      "Layer potatoes in the pan, then meat, and repeat until everything is used, with potatoes on top.",
+      "Pour in half a cup of water, cover the pan with foil and bake for 30 minutes.",
+      "Whisk the eggs with the milk and a pinch of salt, remove the foil and pour it over the moussaka. Bake for another 25 to 30 minutes, until the topping is golden."
+    ],
+    "comments": [
+      {
+        "name": "Sanja",
+        "when": "2 days ago",
+        "text": "I slice the potatoes on a mandoline, it's quick and they're all the same thickness."
+      },
+      {
+        "name": "Petar",
+        "when": "2 weeks ago",
+        "text": "You should let it rest for ten minutes before cutting, it slices more neatly."
+      }
+    ]
+  },
+  {
+    "id": "pasulj-sa-kobasicom",
+    "category": "glavna-jela",
+    "title": "Beans with Sausage (Pasulj sa kobasicom)",
+    "intro": "Beans were a must on Thursdays at my parents' house, and that habit stuck. With a homemade sausage it's a proper winter dish.",
+    "time": "3 hours",
+    "yields": "6 servings",
+    "difficulty": "easy",
+    "ingredients": [
+      "500 g white beans",
+      "300 g smoked sausage",
+      "1 onion",
+      "1 carrot",
+      "2 garlic cloves",
+      "1 tbsp sweet paprika",
+      "2 tbsp flour",
+      "3 tbsp oil",
+      "2 bay leaves",
+      "salt and pepper"
+    ],
+    "steps": [
+      "Soak the beans in cold water overnight.",
+      "Drain them, cover with fresh water, bring to a boil and pour off the first water.",
+      "Add about two liters of fresh water, then the peeled whole onion, carrot, garlic and bay leaves, and simmer over low heat for about two hours.",
+      "Slice the sausage into rounds and add it to the beans for the last half hour of cooking.",
+      "Make a roux in the oil with the flour, take it off the heat, stir in the paprika and thin it with a little of the bean broth.",
+      "Pour the roux into the beans, season with salt and pepper and cook for another ten minutes or so."
+    ],
+    "comments": [
+      {
+        "name": "Biljana",
+        "when": "3 days ago",
+        "text": "I cook mine with smoked ribs instead of sausage, it's just as good."
+      },
+      {
+        "name": "Aleksandar",
+        "when": "a month ago",
+        "text": "At the end I add a little chopped parsley, it freshens it up."
+      }
+    ]
+  },
+  {
+    "id": "domaci-cevapi",
+    "category": "glavna-jela",
+    "title": "Homemade Ćevapi (Domaći ćevapi)",
+    "intro": "Ćevapi from a grill house are one thing, but these made at home in a pan hold their own. What matters is letting the meat rest in the fridge for a few hours.",
+    "time": "3 hours",
+    "yields": "4 servings",
+    "difficulty": "medium",
+    "ingredients": [
+      "500 g ground beef",
+      "300 g ground pork",
+      "2 garlic cloves",
+      "100 ml sparkling water",
+      "1 tsp baking soda",
+      "1 tsp sweet paprika",
+      "2 tsp salt",
+      "1 tsp ground pepper",
+      "2 onions for serving"
+    ],
+    "steps": [
+      "Put both kinds of meat in a bowl with the crushed garlic, salt, pepper and paprika.",
+      "Dissolve the baking soda in the sparkling water and pour it into the meat.",
+      "Knead with your hands for at least ten minutes, until the mixture is smooth and sticky.",
+      "Cover the bowl and leave it in the fridge for at least two hours, ideally overnight.",
+      "With wet hands, shape small sausages about 7 cm long.",
+      "Cook them in a very hot grill pan or on a barbecue for about 8 minutes, turning them so they cook evenly. Serve with finely chopped onion."
+    ],
+    "comments": [
+      {
+        "name": "Nikola",
+        "when": "yesterday",
+        "text": "I left it overnight and the difference is huge, they are so much juicier."
+      },
+      {
+        "name": "Jovana",
+        "when": "2 weeks ago",
+        "text": "I made flatbread to go with them and it was just like Sarajevo."
+      },
+      {
+        "name": "Dušan",
+        "when": "a month ago",
+        "text": "I add a little ground lamb too, but they're great like this as well."
+      }
+    ]
+  },
+  {
+    "id": "piletina-iz-rerne-sa-krompirom",
+    "category": "glavna-jela",
+    "title": "Oven-Roasted Chicken with Potatoes (Piletina iz rerne sa krompirom)",
+    "intro": "This is my weekday lifesaver: everything goes into one pan and the oven does the rest. The house smells of rosemary afterwards.",
+    "time": "75 min",
+    "yields": "4 servings",
+    "difficulty": "easy",
+    "ingredients": [
+      "1 kg chicken drumsticks and thighs",
+      "1 kg potatoes",
+      "4 tbsp oil",
+      "3 garlic cloves",
+      "1 tsp sweet paprika",
+      "1 tsp dried rosemary",
+      "1 lemon",
+      "salt and pepper"
+    ],
+    "steps": [
+      "Preheat the oven to 200 °C.",
+      "Mix the oil, crushed garlic, paprika, rosemary, the juice of half a lemon, salt and pepper.",
+      "Peel the potatoes, cut them into wedges and spread them over the pan.",
+      "Coat the chicken well with the marinade, arrange it over the potatoes and pour any leftover marinade over the potatoes.",
+      "Add half a cup of water, cover with foil and bake for 30 minutes.",
+      "Remove the foil and bake for another 30 to 35 minutes, until the skin is crisp and the potatoes are tender. Squeeze the remaining lemon over the chicken before serving."
+    ],
+    "comments": [
+      {
+        "name": "Ivana",
+        "when": "2 days ago",
+        "text": "I added a few red onions cut into quarters, they caramelized beautifully."
+      },
+      {
+        "name": "Vladimir",
+        "when": "3 days ago",
+        "text": "Simple and tasty. The foil at the start is the real trick to keeping the meat from drying out."
+      }
+    ]
+  },
+  {
+    "id": "spageti-bolonjeze",
+    "category": "glavna-jela",
+    "title": "Spaghetti Bolognese (Špageti bolonjeze)",
+    "intro": "When nobody knows what to have for lunch, I make bolognese and everyone is happy. The sauce can also be made a day ahead.",
+    "time": "1 hour",
+    "yields": "4 servings",
+    "difficulty": "easy",
+    "ingredients": [
+      "400 g spaghetti",
+      "400 g ground beef",
+      "1 onion",
+      "1 carrot",
+      "2 garlic cloves",
+      "700 ml tomato passata",
+      "2 tbsp olive oil",
+      "1 tsp oregano",
+      "50 g grated Parmesan",
+      "salt and pepper"
+    ],
+    "steps": [
+      "Sauté the finely chopped onion and grated carrot in the olive oil for about five minutes.",
+      "Add the garlic, then the meat, and fry, stirring, until it breaks up and changes color.",
+      "Pour in the passata, add the oregano, salt and pepper and simmer over low heat for about 40 minutes, stirring now and then.",
+      "Meanwhile cook the spaghetti in plenty of salted water according to the package directions.",
+      "Drain the pasta, saving a little cooking water in case the sauce needs thinning.",
+      "Toss the spaghetti with the sauce and serve sprinkled with Parmesan."
+    ],
+    "comments": [
+      {
+        "name": "Teodora",
+        "when": "2 weeks ago",
+        "text": "I add a teaspoon of sugar to the sauce, it takes away the acidity of the tomatoes."
+      },
+      {
+        "name": "Marko",
+        "when": "a month ago",
+        "text": "The sauce freezes really well, I always make a double batch."
+      }
+    ]
+  },
+  {
+    "id": "podvarak",
+    "category": "glavna-jela",
+    "title": "Podvarak (baked sauerkraut with pork)",
+    "intro": "Podvarak is a dish that bakes for a long time, which makes it perfect for cold weekends. Sauerkraut straight from the barrel gives it the right flavor.",
+    "time": "3 hours",
+    "yields": "6 servings",
+    "difficulty": "medium",
+    "ingredients": [
+      "1.5 kg sauerkraut",
+      "800 g pork shoulder",
+      "2 onions",
+      "100 g smoked bacon",
+      "1 tbsp sweet paprika",
+      "4 tbsp oil",
+      "3 bay leaves",
+      "1 tsp whole black peppercorns"
+    ],
+    "steps": [
+      "Preheat the oven to 180 °C. Shred the cabbage into thin strands, and rinse it if it's too salty.",
+      "Cut the meat into larger pieces, salt it and brown it in the oil on all sides, then remove it.",
+      "In the same fat sauté the chopped onion and bacon, take it off the heat and stir in the paprika.",
+      "Add the cabbage, bay leaves and peppercorns, mix and transfer to a larger ovenproof dish.",
+      "Arrange the meat over the cabbage, pour in about 300 ml of water and cover with foil.",
+      "Bake for about two hours, removing the foil for the last half hour so the cabbage browns on top."
+    ],
+    "comments": [
+      {
+        "name": "Radmila",
+        "when": "3 days ago",
+        "text": "I made it with turkey for Christmas and it came out beautifully."
+      },
+      {
+        "name": "Zoran",
+        "when": "2 weeks ago",
+        "text": "With proja and sour milk, there's nothing better."
+      }
+    ]
+  },
+  {
+    "id": "djuvec",
+    "category": "glavna-jela",
+    "title": "Đuveč (baked vegetable and rice casserole)",
+    "intro": "Đuveč is summer in a baking dish for us. When the vegetables are fresh from the market, it doesn't even need meat.",
+    "time": "90 min",
+    "yields": "6 servings",
+    "difficulty": "easy",
+    "ingredients": [
+      "2 onions",
+      "3 bell peppers",
+      "1 eggplant",
+      "1 zucchini",
+      "4 tomatoes",
+      "150 g rice",
+      "100 ml oil",
+      "1 tbsp sweet paprika",
+      "1 bunch of parsley",
+      "salt and pepper"
+    ],
+    "steps": [
+      "Preheat the oven to 180 °C.",
+      "Sauté the onions cut into half moons in the oil, then add the peppers cut into strips and cook for another five minutes.",
+      "Add the diced eggplant and zucchini, salt, and cook for about ten minutes.",
+      "Stir in the rinsed rice and the paprika, then transfer everything to a baking dish.",
+      "Slice the tomatoes into rounds and arrange them over the vegetables. Pour in about 400 ml of warm water.",
+      "Bake for about an hour, until the rice is tender and the tomatoes have browned. Sprinkle with chopped parsley before serving."
+    ],
+    "comments": [
+      {
+        "name": "Mirjana",
+        "when": "yesterday",
+        "text": "I added a handful of green beans too, they go really well."
+      },
+      {
+        "name": "Olivera",
+        "when": "a month ago",
+        "text": "I served it with roast chicken and everyone asked for more."
+      }
+    ]
+  },
+  {
+    "id": "pileci-paprikas",
+    "category": "glavna-jela",
+    "title": "Chicken Paprikash (Pileći paprikaš)",
+    "intro": "Chicken paprikash was the first dish I learned to cook from my mom. It is best with homemade noodles or mashed potatoes.",
+    "time": "75 min",
+    "yields": "4 servings",
+    "difficulty": "easy",
+    "ingredients": [
+      "1 kg chicken drumsticks",
+      "3 onions",
+      "1 bell pepper",
+      "1 tomato",
+      "2 tbsp sweet paprika",
+      "1 tbsp flour",
+      "3 tbsp oil",
+      "salt and pepper"
+    ],
+    "steps": [
+      "Sauté the finely chopped onion in the oil for about ten minutes, until translucent.",
+      "Add the chicken and brown it for a few minutes on all sides.",
+      "Add the chopped pepper and the peeled, chopped tomato.",
+      "Take the pot off the heat, sprinkle in the paprika and flour and stir well.",
+      "Pour in about 500 ml of warm water, season with salt and pepper and simmer covered over low heat for about 45 minutes, until the meat is tender.",
+      "Toward the end, remove the lid so the sauce thickens."
+    ],
+    "comments": [
+      {
+        "name": "Katarina",
+        "when": "3 days ago",
+        "text": "At the end I stirred in a spoonful of sour cream, the sauce was silky."
+      },
+      {
+        "name": "Bojana",
+        "when": "2 weeks ago",
+        "text": "A quick, reliable lunch, it always works."
+      }
+    ]
+  },
+  {
+    "id": "domaca-pileca-supa",
+    "category": "supe-i-corbe",
+    "title": "Homemade Chicken Soup (Domaća pileća supa)",
+    "intro": "We cooked this soup on Sundays and whenever someone fell ill. Cook it slowly, never at a hard boil, and it will be clear as a tear.",
+    "time": "2 hours",
+    "yields": "6 servings",
+    "difficulty": "easy",
+    "ingredients": [
+      "1 kg chicken backs and wings",
+      "2 carrots",
+      "1 parsley root",
+      "1 piece of celery root",
+      "1 onion",
+      "10 peppercorns",
+      "100 g homemade noodles",
+      "1 bunch of parsley",
+      "salt"
+    ],
+    "steps": [
+      "Rinse the chicken, put it in a pot and cover with about two and a half liters of cold water.",
+      "Put it on the heat and, once it starts to boil, skim off the foam with a spoon.",
+      "Add the cleaned vegetables in whole pieces, the onion with its skin on for color, and the peppercorns.",
+      "Simmer over low heat, just barely bubbling, for about an hour and a half. Add salt near the end.",
+      "Strain the soup, then chop the meat and carrots and return them to it.",
+      "Add the noodles and cook them for a few minutes. Serve sprinkled with chopped parsley."
+    ],
+    "comments": [
+      {
+        "name": "Svetlana",
+        "when": "2 days ago",
+        "text": "The onion skin gives such a lovely golden color, I didn't know that."
+      },
+      {
+        "name": "Nataša",
+        "when": "a month ago",
+        "text": "I make a chicken salad from the leftover meat, nothing goes to waste."
+      }
+    ]
+  },
+  {
+    "id": "teleca-corba",
+    "category": "supe-i-corbe",
+    "title": "Veal Soup (Teleća čorba)",
+    "intro": "Veal soup finished with an egg yolk and sour cream liaison is our festive starter. It isn't heavy, you just have to add the liaison carefully at the end.",
+    "time": "90 min",
+    "yields": "6 servings",
+    "difficulty": "medium",
+    "ingredients": [
+      "500 g veal",
+      "2 carrots",
+      "1 parsley root",
+      "1/4 celery root",
+      "1 onion",
+      "2 tbsp oil",
+      "2 tbsp flour",
+      "1 egg yolk",
+      "100 ml sour cream",
+      "1 tbsp lemon juice",
+      "salt and pepper"
+    ],
+    "steps": [
+      "Cut the veal into small cubes and the vegetables into small dice.",
+      "Sauté the onion in the oil, then add the meat and fry until it changes color.",
+      "Add the vegetables, cook for another five minutes, then sprinkle with the flour and stir.",
+      "Pour in about two liters of warm water, season with salt and pepper and simmer over low heat for about an hour.",
+      "In a cup whisk the egg yolk with the sour cream and lemon juice, then gradually add a few spoonfuls of the hot soup, stirring constantly.",
+      "Take the soup off the heat and stir in the liaison. Don't return it to the boil, or the yolk will curdle."
+    ],
+    "comments": [
+      {
+        "name": "Branka",
+        "when": "2 weeks ago",
+        "text": "Adding the soup to the yolk gradually is the key, the first time mine curdled because I rushed."
+      },
+      {
+        "name": "Dejan",
+        "when": "a month ago",
+        "text": "I also added a little chopped parsley at the end. Excellent."
+      }
+    ]
+  },
+  {
+    "id": "paradajz-corba",
+    "category": "supe-i-corbe",
+    "title": "Tomato Soup (Paradajz čorba)",
+    "intro": "This is the soup I adored as a child, with a little rice and lots of parsley. In summer I make it with fresh tomatoes, in winter with jarred tomato juice.",
+    "time": "40 min",
+    "yields": "4 servings",
+    "difficulty": "easy",
+    "ingredients": [
+      "1 kg ripe tomatoes",
+      "1 onion",
+      "2 tbsp oil",
+      "1 tbsp flour",
+      "50 g rice",
+      "1 tsp sugar",
+      "1 bunch of parsley",
+      "salt"
+    ],
+    "steps": [
+      "Pour boiling water over the tomatoes, peel and chop them.",
+      "Sauté the finely chopped onion in the oil, then sprinkle with the flour and stir briefly.",
+      "Add the tomatoes and cook for about ten minutes, until they break down. If you want a smooth soup, blend them.",
+      "Pour in about a liter of water, add the rinsed rice, the sugar and salt.",
+      "Cook for another 15 minutes, until the rice is tender.",
+      "Serve sprinkled with finely chopped parsley."
+    ],
+    "comments": [
+      {
+        "name": "Maja",
+        "when": "yesterday",
+        "text": "I made it with jarred juice and it was done in half an hour. The kids love it."
+      },
+      {
+        "name": "Ksenija",
+        "when": "3 days ago",
+        "text": "I used small noodles instead of rice, equally nice."
+      }
+    ]
+  },
+  {
+    "id": "corba-od-povrca",
+    "category": "supe-i-corbe",
+    "title": "Vegetable Soup (Čorba od povrća)",
+    "intro": "When the fridge holds a little of every vegetable, this soup happens. It is a bit different every time, and always good.",
+    "time": "50 min",
+    "yields": "6 servings",
+    "difficulty": "easy",
+    "ingredients": [
+      "1 onion",
+      "2 carrots",
+      "2 potatoes",
+      "1 zucchini",
+      "150 g green beans",
+      "100 g peas",
+      "3 tbsp oil",
+      "1 tbsp flour",
+      "1 tsp sweet paprika",
+      "1 bunch of parsley",
+      "salt and pepper"
+    ],
+    "steps": [
+      "Clean all the vegetables and cut them into small dice, and the green beans into small pieces.",
+      "Sauté the onion and carrots in the oil for about five minutes.",
+      "Add the remaining vegetables and cook for another five minutes, then sprinkle with the flour and paprika and stir.",
+      "Pour in about two liters of warm water, season with salt and pepper.",
+      "Simmer over low heat for about half an hour, until the vegetables are tender.",
+      "Sprinkle with chopped parsley and serve."
+    ],
+    "comments": [
+      {
+        "name": "Danijela",
+        "when": "2 weeks ago",
+        "text": "I added a little cauliflower too, it fit in nicely."
+      },
+      {
+        "name": "Petar",
+        "when": "a month ago",
+        "text": "With a spoonful of sour cream in the bowl it's perfect."
+      }
+    ]
+  },
+  {
+    "id": "riblja-corba",
+    "category": "supe-i-corbe",
+    "title": "Fish Soup (Riblja čorba)",
+    "intro": "My dad cooked the real fish soup in a cauldron on the Danube, and this is the stovetop version. Lots of onion and hot pepper, that's the whole secret.",
+    "time": "2 hours",
+    "yields": "6 servings",
+    "difficulty": "medium",
+    "ingredients": [
+      "1.5 kg river fish (carp and catfish)",
+      "1 kg onions",
+      "2 tbsp sweet paprika",
+      "2 tbsp tomato paste",
+      "1 hot chili pepper",
+      "2 bay leaves",
+      "salt"
+    ],
+    "steps": [
+      "Clean the fish, cut it into larger pieces, salt it and keep it in the fridge while you prepare the base.",
+      "Chop the onions finely, put them in a large pot, add about two and a half liters of water and cook for about an hour, until the onions have completely broken down.",
+      "Stir in the paprika, tomato paste, bay leaves and hot chili pepper.",
+      "Carefully add the fish, salt it and cook over medium heat for about 30 minutes.",
+      "Don't stir with a spoon so the fish doesn't fall apart, just shake the pot now and then."
+    ],
+    "comments": [
+      {
+        "name": "Željka",
+        "when": "3 days ago",
+        "text": "I added the fish heads for flavor and took them out afterwards. Thick and fragrant."
+      },
+      {
+        "name": "Vladimir",
+        "when": "2 weeks ago",
+        "text": "Shaking instead of stirring, just like my grandfather did. Hats off to the recipe."
+      }
+    ]
+  },
+  {
+    "id": "krem-supa-od-bundeve",
+    "category": "supe-i-corbe",
+    "title": "Creamy Pumpkin Soup (Krem supa od bundeve)",
+    "intro": "When pumpkin season starts, this is the first thing I cook. It's thick, lightly sweet and warms you like a blanket.",
+    "time": "45 min",
+    "yields": "4 servings",
+    "difficulty": "easy",
+    "ingredients": [
+      "800 g pumpkin",
+      "1 onion",
+      "2 carrots",
+      "1 potato",
+      "30 g butter",
+      "800 ml vegetable stock or water",
+      "100 ml heavy cream",
+      "1 pinch of nutmeg",
+      "salt and pepper"
+    ],
+    "steps": [
+      "Peel the pumpkin, remove the seeds and cut it into cubes. Do the same with the carrots and potato.",
+      "Sauté the chopped onion in the butter, then add the vegetables and cook for a few minutes.",
+      "Pour in the stock or water, add salt and simmer for about 25 minutes, until everything is tender.",
+      "Blend with an immersion blender until you have a smooth soup.",
+      "Stir in the cream, nutmeg and pepper and heat briefly, but don't let it boil."
+    ],
+    "comments": [
+      {
+        "name": "Tijana",
+        "when": "2 days ago",
+        "text": "I toasted the pumpkin seeds and sprinkled them on top, fantastic."
+      },
+      {
+        "name": "Ana",
+        "when": "a month ago",
+        "text": "Without the cream it's vegan and just as good."
+      }
+    ]
+  },
+  {
+    "id": "jagnjeca-corba",
+    "category": "supe-i-corbe",
+    "title": "Lamb Soup (Jagnjeća čorba)",
+    "intro": "Lamb soup is cooked for St. George's Day in our family, but we also make it whenever we get good lamb. It is pleasantly tangy and very refreshing.",
+    "time": "2 hours",
+    "yields": "6 servings",
+    "difficulty": "medium",
+    "ingredients": [
+      "600 g lamb",
+      "1 onion",
+      "2 carrots",
+      "1 parsley root",
+      "2 tbsp oil",
+      "1 tbsp flour",
+      "1 tsp sweet paprika",
+      "1 egg yolk",
+      "100 ml sour cream",
+      "1 tbsp vinegar",
+      "1 bunch of parsley",
+      "salt and pepper"
+    ],
+    "steps": [
+      "Cut the lamb into smaller pieces and the vegetables into small dice.",
+      "Sauté the onion in the oil, add the meat and fry until it changes color.",
+      "Add the vegetables, then sprinkle with the flour and paprika and stir.",
+      "Pour in about two liters of warm water, add salt and simmer over low heat for about an hour and a half, until the meat is tender.",
+      "Whisk the egg yolk with the sour cream and vinegar, then gradually add a few spoonfuls of the hot soup.",
+      "Take the soup off the heat, stir in the liaison and sprinkle with chopped parsley."
+    ],
+    "comments": [
+      {
+        "name": "Slađana",
+        "when": "2 weeks ago",
+        "text": "I cooked it with lamb neck and the meat was very tender."
+      },
+      {
+        "name": "Nikola",
+        "when": "a month ago",
+        "text": "The vinegar at the end gives it that authentic taste. Excellent."
+      }
+    ]
+  },
+  {
+    "id": "corba-od-sociva",
+    "category": "supe-i-corbe",
+    "title": "Lentil Soup (Čorba od sočiva)",
+    "intro": "Lentils don't need soaking, which makes this soup my quick fasting lunch. It is filling and cheap, and tastes as if it cooked all day.",
+    "time": "1 hour",
+    "yields": "5 servings",
+    "difficulty": "easy",
+    "ingredients": [
+      "300 g brown lentils",
+      "1 onion",
+      "1 carrot",
+      "2 garlic cloves",
+      "2 tbsp oil",
+      "1 tbsp tomato paste",
+      "1 tsp sweet paprika",
+      "2 bay leaves",
+      "salt and pepper"
+    ],
+    "steps": [
+      "Pick over the lentils and rinse them well in cold water.",
+      "Sauté the chopped onion and carrot in the oil, then add the garlic.",
+      "Take the pot off the heat and stir in the paprika and tomato paste.",
+      "Add the lentils and bay leaves, pour in about 1.5 liters of water and simmer over low heat for about 40 minutes, until the lentils are tender.",
+      "Season with salt and pepper near the end. If it's too thick, add a little water."
+    ],
+    "comments": [
+      {
+        "name": "Mirjana",
+        "when": "yesterday",
+        "text": "I added a teaspoon of caraway, it goes really well with lentils."
+      },
+      {
+        "name": "Stefan",
+        "when": "3 days ago",
+        "text": "The next day it thickens up and I eat it like a stew. Great recipe."
+      }
+    ]
+  },
+  {
+    "id": "sopska-salata",
+    "category": "salate-i-prilozi",
+    "title": "Shopska Salad (Šopska salata)",
+    "intro": "Shopska is the salad no summer lunch is complete without. What matters is ripe tomatoes and good, rich cheese.",
+    "time": "15 min",
+    "yields": "4 servings",
+    "difficulty": "easy",
+    "ingredients": [
+      "4 ripe tomatoes",
+      "2 cucumbers",
+      "2 bell peppers",
+      "1 onion",
+      "200 g white cheese",
+      "3 tbsp oil",
+      "1 tbsp vinegar",
+      "salt"
+    ],
+    "steps": [
+      "Wash the tomatoes, cucumbers and peppers and cut them into cubes.",
+      "Slice the onion into thin half moons or chop it finely.",
+      "Put the vegetables in a bowl, add salt, drizzle with the oil and vinegar and toss.",
+      "Grate or crumble the white cheese over the salad in a thick layer and serve right away."
+    ],
+    "comments": [
+      {
+        "name": "Gordana",
+        "when": "2 days ago",
+        "text": "I put parsley over the cheese, it looks nice and smells great."
+      },
+      {
+        "name": "Aleksandar",
+        "when": "2 weeks ago",
+        "text": "With roasted peppers instead of fresh ones it's even better."
+      }
+    ]
+  },
+  {
+    "id": "srpska-salata",
+    "category": "salate-i-prilozi",
+    "title": "Serbian Salad (Srpska salata)",
+    "intro": "The simplest salad in the world, but only if the vegetables are the real thing, straight from the market. The hot chili pepper is a must.",
+    "time": "15 min",
+    "yields": "4 servings",
+    "difficulty": "easy",
+    "ingredients": [
+      "4 tomatoes",
+      "1 cucumber",
+      "2 bell peppers",
+      "1 onion",
+      "1 hot chili pepper",
+      "3 tbsp oil",
+      "1 tbsp vinegar",
+      "salt"
+    ],
+    "steps": [
+      "Wash the vegetables and cut the tomato and cucumber into slices and the peppers into rings.",
+      "Slice the onion into thin rings and chop the chili pepper finely.",
+      "Put everything in a bowl and add salt.",
+      "Drizzle with the oil and vinegar, toss and leave for five minutes so the vegetables release their juices before serving."
+    ],
+    "comments": [
+      {
+        "name": "Zorica",
+        "when": "3 days ago",
+        "text": "It's best with grilled meat, and you mop up the juice from the bowl with bread."
+      },
+      {
+        "name": "Marko",
+        "when": "a month ago",
+        "text": "I used red onion, it's milder and looks nicer in the salad."
+      }
+    ]
+  },
+  {
+    "id": "salata-od-kiselog-kupusa",
+    "category": "salate-i-prilozi",
+    "title": "Sauerkraut Salad (Salata od kiselog kupusa)",
+    "intro": "In winter this is the salad served with every lunch. If you have cabbage from a homemade barrel, it needs almost nothing.",
+    "time": "10 min",
+    "yields": "4 servings",
+    "difficulty": "easy",
+    "ingredients": [
+      "500 g sauerkraut",
+      "3 tbsp oil",
+      "1 tsp sweet paprika",
+      "1 pinch of ground pepper",
+      "2 spring onions"
+    ],
+    "steps": [
+      "Cut the cabbage into thin strands. If it's too salty, rinse it briefly in cold water and drain well.",
+      "Slice the spring onions into rings.",
+      "Mix the cabbage and onions in a bowl, drizzle with the oil and toss.",
+      "Sprinkle with the paprika and pepper just before serving."
+    ],
+    "comments": [
+      {
+        "name": "Dragana",
+        "when": "2 weeks ago",
+        "text": "With beans you can't do without this salad."
+      },
+      {
+        "name": "Olivera",
+        "when": "a month ago",
+        "text": "I add a little grated carrot for color."
+      }
+    ]
+  },
+  {
+    "id": "krompir-salata",
+    "category": "salate-i-prilozi",
+    "title": "Potato Salad (Krompir salata)",
+    "intro": "Potato salad is my favorite side with breaded fish and schnitzel. Dress it while the potatoes are still warm so they soak up all the flavor.",
+    "time": "40 min",
+    "yields": "4 servings",
+    "difficulty": "easy",
+    "ingredients": [
+      "1 kg potatoes",
+      "1 red onion",
+      "4 tbsp oil",
+      "2 tbsp vinegar",
+      "1 bunch of parsley",
+      "salt and pepper"
+    ],
+    "steps": [
+      "Wash the potatoes and boil them in their skins in salted water for about 25 minutes, until tender.",
+      "Drain them, let them cool briefly, then peel and slice into rounds.",
+      "Slice the onion into thin half moons and chop the parsley finely.",
+      "While the potatoes are still warm, dress them with the oil and vinegar, add the onion, salt and pepper and toss gently.",
+      "Sprinkle with the parsley and let it sit for at least 15 minutes to blend before serving."
+    ],
+    "comments": [
+      {
+        "name": "Jovana",
+        "when": "3 days ago",
+        "text": "Dressing it while warm makes a huge difference, thanks for the tip."
+      },
+      {
+        "name": "Biljana",
+        "when": "2 weeks ago",
+        "text": "I add a little mustard to the dressing, the kids really like it."
+      }
+    ]
+  },
+  {
+    "id": "salata-od-pecenih-paprika",
+    "category": "salate-i-prilozi",
+    "title": "Roasted Pepper Salad (Salata od pečenih paprika)",
+    "intro": "The smell of roasting peppers in the kitchen is the smell of September to me. This salad keeps in the fridge for several days and only gets better.",
+    "time": "1 hour",
+    "yields": "6 servings",
+    "difficulty": "easy",
+    "ingredients": [
+      "1 kg red bell peppers",
+      "3 garlic cloves",
+      "4 tbsp oil",
+      "2 tbsp vinegar",
+      "1 bunch of parsley",
+      "salt"
+    ],
+    "steps": [
+      "Wash and dry the peppers and roast them in an oven preheated to 220 °C for about 30 minutes, turning them, until the skin blackens in spots.",
+      "Put the roasted peppers in a bowl, cover it and leave for 15 minutes to steam.",
+      "Peel the peppers and remove the seeds.",
+      "Arrange them in a dish, salt them and sprinkle with finely chopped garlic and parsley.",
+      "Drizzle with the oil and vinegar and let sit for at least half an hour before serving."
+    ],
+    "comments": [
+      {
+        "name": "Snežana",
+        "when": "yesterday",
+        "text": "Covering the bowl to let them steam is worth its weight in gold, the skin just slips off."
+      },
+      {
+        "name": "Nenad",
+        "when": "a month ago",
+        "text": "With white cheese and proja, that's a whole meal."
+      }
+    ]
+  },
+  {
+    "id": "mladi-krompir-iz-rerne",
+    "category": "salate-i-prilozi",
+    "title": "Oven-Roasted New Potatoes (Mladi krompir iz rerne)",
+    "intro": "As soon as new potatoes show up at the market, this is our side for everything. You don't even have to peel them, just scrub them well.",
+    "time": "50 min",
+    "yields": "4 servings",
+    "difficulty": "easy",
+    "ingredients": [
+      "1 kg new potatoes",
+      "4 tbsp oil",
+      "3 garlic cloves",
+      "1 tsp dried rosemary",
+      "3 spring onions",
+      "salt and pepper"
+    ],
+    "steps": [
+      "Preheat the oven to 200 °C.",
+      "Scrub the potatoes well with a brush and cut larger ones in half.",
+      "Toss them with the oil, crushed garlic, rosemary, salt and pepper.",
+      "Spread the potatoes in a pan in a single layer and roast for about 40 minutes, turning once, until golden and crisp.",
+      "Sprinkle with chopped spring onions and serve warm."
+    ],
+    "comments": [
+      {
+        "name": "Teodora",
+        "when": "2 days ago",
+        "text": "A single layer matters, when I crowd them they don't get crisp."
+      },
+      {
+        "name": "Petar",
+        "when": "2 weeks ago",
+        "text": "Before serving I added a little sour cream with garlic, excellent."
+      }
+    ]
+  },
+  {
+    "id": "grcka-salata",
+    "category": "salate-i-prilozi",
+    "title": "Greek Salad (Grčka salata)",
+    "intro": "I fell in love with this salad on a seaside holiday and have made it ever since whenever it's hot. With a piece of bread it's enough for a light dinner too.",
+    "time": "15 min",
+    "yields": "4 servings",
+    "difficulty": "easy",
+    "ingredients": [
+      "4 tomatoes",
+      "1 cucumber",
+      "1 green pepper",
+      "1 red onion",
+      "150 g feta cheese",
+      "50 g black olives",
+      "4 tbsp olive oil",
+      "1 tsp dried oregano",
+      "salt"
+    ],
+    "steps": [
+      "Cut the tomatoes and cucumber into larger pieces and the pepper and onion into rings.",
+      "Put the vegetables in a bowl, add the olives and salt lightly.",
+      "Drizzle with the olive oil and toss.",
+      "Top with the feta, either as one whole slab or coarsely crumbled, and sprinkle with oregano."
+    ],
+    "comments": [
+      {
+        "name": "Ivana",
+        "when": "3 days ago",
+        "text": "It's also great with our white cheese if you don't have feta."
+      },
+      {
+        "name": "Katarina",
+        "when": "a month ago",
+        "text": "A squeeze of lemon juice and it's perfect."
+      }
+    ]
+  },
+  {
+    "id": "salata-od-cvekle",
+    "category": "salate-i-prilozi",
+    "title": "Beet Salad (Salata od cvekle)",
+    "intro": "Beet salad is my grandmother's winter salad, which she always made to go with roasts. Make it a day ahead and it will taste even better.",
+    "time": "1 hour",
+    "yields": "6 servings",
+    "difficulty": "easy",
+    "ingredients": [
+      "1 kg beets",
+      "3 tbsp vinegar",
+      "2 tbsp oil",
+      "1 tsp sugar",
+      "1 tsp caraway seeds",
+      "salt"
+    ],
+    "steps": [
+      "Wash the beets and boil them in their skins for about 45 minutes, until a knife slides through easily.",
+      "Drain them, let them cool and peel them, preferably wearing gloves.",
+      "Cut them into thin rounds or strips.",
+      "Mix the vinegar, oil, sugar, salt and caraway with a little water and pour over the beets.",
+      "Leave in the fridge for at least a few hours before serving."
+    ],
+    "comments": [
+      {
+        "name": "Ljiljana",
+        "when": "2 weeks ago",
+        "text": "I roast mine in foil instead of boiling, it's sweeter."
+      },
+      {
+        "name": "Sanja",
+        "when": "a month ago",
+        "text": "A little grated horseradish on top and that's it."
+      }
+    ]
+  },
+  {
+    "id": "pogaca",
+    "category": "hleb-i-peciva",
+    "title": "Pogača (soft festive bread)",
+    "intro": "A soft pogača was on our table for every slava and every birthday. The dough loves a warm kitchen and a little patience.",
+    "time": "2 hours",
+    "yields": "1 large pogača",
+    "difficulty": "medium",
+    "ingredients": [
+      "1 kg all-purpose flour",
+      "1 cube of fresh yeast",
+      "600 ml lukewarm milk",
+      "100 ml oil",
+      "2 tsp salt",
+      "1 tsp sugar",
+      "1 egg for brushing"
+    ],
+    "steps": [
+      "Dissolve the yeast in a little of the lukewarm milk with the sugar and leave for about ten minutes until foamy.",
+      "Add the salt, the activated yeast, the rest of the milk and the oil to the flour, then knead for about ten minutes until the dough is smooth and soft.",
+      "Cover the dough and leave it in a warm place for about an hour, until doubled in size.",
+      "Knead the dough briefly, shape a round pogača and place it in a greased round baking pan. Leave for another 20 minutes to rise.",
+      "Brush it with the beaten egg.",
+      "Bake in an oven preheated to 200 °C for about 35 minutes, until golden. Cover it with a clean cloth while it cools so the crust stays soft."
+    ],
+    "comments": [
+      {
+        "name": "Radmila",
+        "when": "3 days ago",
+        "text": "A cloth over the hot pogača is an old trick, the crust comes out like cotton."
+      },
+      {
+        "name": "Bojana",
+        "when": "a month ago",
+        "text": "I sprinkled it with sesame seeds before baking and it looked beautiful."
+      }
+    ]
+  },
+  {
+    "id": "kiflice-sa-sirom",
+    "category": "hleb-i-peciva",
+    "title": "Cheese Crescent Rolls (Kiflice sa sirom)",
+    "intro": "Kiflice were the first thing I learned to knead and they always vanish in one afternoon. I make a double batch and freeze half.",
+    "time": "2 hours",
+    "yields": "32 pieces",
+    "difficulty": "medium",
+    "ingredients": [
+      "500 g flour",
+      "20 g fresh yeast",
+      "250 ml lukewarm milk",
+      "100 ml oil",
+      "1 tsp sugar",
+      "1 tsp salt",
+      "200 g soft white cheese",
+      "1 egg"
+    ],
+    "steps": [
+      "Dissolve the yeast in the lukewarm milk with the sugar and leave until foamy.",
+      "Add the flour, salt and oil and knead a soft dough, then leave it covered in a warm place for about 45 minutes.",
+      "Divide the dough into four parts and roll each into a circle, then cut it into eight triangles.",
+      "Put a little cheese on the wide end of each triangle and roll the crescent up toward the tip.",
+      "Arrange the crescents on a baking sheet lined with paper, brush them with the beaten egg and leave for another 15 minutes.",
+      "Bake in an oven preheated to 200 °C for about 20 minutes, until golden."
+    ],
+    "comments": [
+      {
+        "name": "Milica",
+        "when": "yesterday",
+        "text": "I filled half with cheese and half with jam. They were gone in an hour."
+      },
+      {
+        "name": "Danijela",
+        "when": "2 weeks ago",
+        "text": "Frozen and then reheated, they're like fresh."
+      }
+    ]
+  },
+  {
+    "id": "domaci-hleb",
+    "category": "hleb-i-peciva",
+    "title": "Homemade Bread (Domaći hleb)",
+    "intro": "Since I started baking bread at home, I rarely buy it. This recipe is simple and forgiving, perfect for a start.",
+    "time": "3 hours",
+    "yields": "1 loaf",
+    "difficulty": "medium",
+    "ingredients": [
+      "500 g white bread flour",
+      "7 g dry yeast",
+      "330 ml lukewarm water",
+      "10 g salt",
+      "1 tsp sugar",
+      "1 tbsp oil"
+    ],
+    "steps": [
+      "In a bowl mix the flour, dry yeast, sugar and salt.",
+      "Add the lukewarm water and oil and knead for about ten minutes, until the dough is smooth and elastic.",
+      "Cover the bowl and leave the dough in a warm place for about an hour and a half, until doubled in size.",
+      "Turn the dough out onto a floured surface, knead it briefly and shape a loaf. Put it in a baking pan or loaf tin and leave for another 40 minutes.",
+      "Preheat the oven to 220 °C and put a dish of water on the bottom for steam.",
+      "Score the top of the loaf with a knife and bake for about 35 minutes. The bread is done when it sounds hollow when you tap the bottom."
+    ],
+    "comments": [
+      {
+        "name": "Vesna",
+        "when": "3 days ago",
+        "text": "The dish of water gave a beautiful crust. It's the first time my bread has worked."
+      },
+      {
+        "name": "Dušan",
+        "when": "a month ago",
+        "text": "I used half whole wheat flour, I only added a bit more water."
+      }
+    ]
+  },
+  {
+    "id": "pogacice-sa-cvarcima",
+    "category": "hleb-i-peciva",
+    "title": "Pogačice with Cracklings (Pogačice sa čvarcima)",
+    "intro": "These little pogačice are my mother-in-law's specialty and there is no slava without them. It's a bit of work, but the flaky dough rewards the effort.",
+    "time": "3 hours",
+    "yields": "30 pieces",
+    "difficulty": "challenging",
+    "ingredients": [
+      "500 g flour",
+      "20 g fresh yeast",
+      "250 ml lukewarm milk",
+      "100 g sour cream",
+      "1 egg",
+      "1 tsp salt",
+      "1 tsp sugar",
+      "200 g ground pork cracklings"
+    ],
+    "steps": [
+      "Dissolve the yeast in the milk with the sugar and leave until foamy.",
+      "Add the flour, salt, sour cream and the egg white, saving the yolk for brushing. Knead a soft dough and let it rest for half an hour.",
+      "Roll the dough out into a rectangle, spread a third of the cracklings over it, fold it like a letter and leave for 20 minutes.",
+      "Repeat the rolling, spreading and folding two more times, until the cracklings are used up.",
+      "Roll the dough out one last time to a thickness of 2 cm, score the surface in a crosshatch pattern and cut out the pogačice with a glass or cutter.",
+      "Arrange them on a baking sheet, brush with the egg yolk and leave for 20 minutes. Bake in an oven preheated to 200 °C for about 25 minutes."
+    ],
+    "comments": [
+      {
+        "name": "Mirjana",
+        "when": "2 weeks ago",
+        "text": "The dough was really flaky, like from a bakery. It was worth the wait."
+      },
+      {
+        "name": "Zoran",
+        "when": "a month ago",
+        "text": "They're best lukewarm, with a glass of yogurt."
+      },
+      {
+        "name": "Branka",
+        "when": "a month ago",
+        "text": "I add a little pepper to the cracklings, it gives them something special."
+      }
+    ]
+  },
+  {
+    "id": "gibanica",
+    "category": "hleb-i-peciva",
+    "title": "Gibanica (cheese and phyllo pie)",
+    "intro": "Gibanica is what we welcome guests with, for breakfast or alongside lunch. This one is juicy and light, with plenty of cheese.",
+    "time": "1 hour",
+    "yields": "12 pieces",
+    "difficulty": "easy",
+    "ingredients": [
+      "500 g phyllo sheets for pie",
+      "500 g young white cheese",
+      "4 eggs",
+      "200 ml yogurt",
+      "150 ml oil",
+      "200 ml sparkling water",
+      "1 tsp salt"
+    ],
+    "steps": [
+      "Preheat the oven to 200 °C and grease a large baking pan.",
+      "Whisk the eggs, add the yogurt, sparkling water, half of the oil and the salt, then stir in the crumbled cheese.",
+      "Lay two sheets on the bottom of the pan and sprinkle them with oil.",
+      "Dip each following sheet in the filling, crinkle it lightly and arrange it in the pan, until all the sheets are used.",
+      "Pour the remaining filling over the top and drizzle with a little oil.",
+      "Bake for about 40 minutes, until the gibanica is golden and risen."
+    ],
+    "comments": [
+      {
+        "name": "Svetlana",
+        "when": "yesterday",
+        "text": "The sparkling water is the secret, it came out soft and airy."
+      },
+      {
+        "name": "Tamara",
+        "when": "3 days ago",
+        "text": "I let it stand for half an hour before cutting and the pieces were perfect."
+      }
+    ]
+  },
+  {
+    "id": "zeljanica",
+    "category": "hleb-i-peciva",
+    "title": "Zeljanica (spinach pie)",
+    "intro": "In spring, as soon as the first spinach arrives, I make zeljanica. It is light, fragrant and just as good warm or cold.",
+    "time": "75 min",
+    "yields": "10 pieces",
+    "difficulty": "easy",
+    "ingredients": [
+      "500 g phyllo sheets for pie",
+      "500 g spinach",
+      "300 g white cheese",
+      "3 eggs",
+      "200 ml yogurt",
+      "100 ml oil",
+      "1 bunch of spring onions",
+      "salt"
+    ],
+    "steps": [
+      "Wash the spinach, blanch it briefly in boiling water, drain and chop it. Squeeze it out well with your hands.",
+      "Chop the spring onions and mix them with the spinach, crumbled cheese, eggs and a little salt.",
+      "Preheat the oven to 200 °C and grease a baking pan.",
+      "Lay two sheets in the pan, sprinkle them with oil and spread over some of the filling. Repeat until the filling is used up, finishing with two sheets.",
+      "Whisk the yogurt with the remaining oil and pour it over the pie.",
+      "Bake for about 40 minutes, until golden."
+    ],
+    "comments": [
+      {
+        "name": "Maja",
+        "when": "2 weeks ago",
+        "text": "I made it with chard, also excellent."
+      },
+      {
+        "name": "Slađana",
+        "when": "a month ago",
+        "text": "Squeezing out the spinach matters, otherwise the sheets turn soggy."
+      }
+    ]
+  },
+  {
+    "id": "pita-sa-mesom",
+    "category": "hleb-i-peciva",
+    "title": "Meat Pie (Pita sa mesom)",
+    "intro": "This is our home version of a meat pie, coiled into a snail. It isn't bakery burek, but the family likes it more.",
+    "time": "75 min",
+    "yields": "8 pieces",
+    "difficulty": "medium",
+    "ingredients": [
+      "500 g thicker phyllo sheets for pie",
+      "500 g ground meat",
+      "2 onions",
+      "100 ml oil",
+      "1 tsp sweet paprika",
+      "200 ml sparkling water",
+      "1 tsp salt",
+      "pepper"
+    ],
+    "steps": [
+      "Sauté the finely chopped onion in a little oil, add the meat and fry until it crumbles. Season with salt, pepper and paprika and let it cool.",
+      "Preheat the oven to 200 °C and grease a round baking pan.",
+      "Spread out one sheet, sprinkle it with oil, lay a second one on top and spread some of the filling along the longer edge.",
+      "Roll the sheets into a log and coil it into a snail in the center of the pan. Repeat, continuing the spiral, until the sheets and filling are used up.",
+      "Pour the sparkling water mixed with the remaining oil over the pie.",
+      "Bake for about 40 minutes, until golden and crisp."
+    ],
+    "comments": [
+      {
+        "name": "Nikola",
+        "when": "3 days ago",
+        "text": "I served it with yogurt, like a proper breakfast."
+      },
+      {
+        "name": "Željka",
+        "when": "2 weeks ago",
+        "text": "The sparkling water over the top is a great idea, the sheets stayed soft inside."
+      }
+    ]
+  },
+  {
+    "id": "palacinke",
+    "category": "dorucak",
+    "title": "Palačinke (thin crepe-style pancakes)",
+    "intro": "Palačinke are the Sunday breakfast in our house, and the kids always fight over the last one. This batter makes thin, soft pancakes.",
+    "time": "40 min",
+    "yields": "15 pieces",
+    "difficulty": "easy",
+    "ingredients": [
+      "250 g flour",
+      "2 eggs",
+      "500 ml milk",
+      "100 ml sparkling water",
+      "1 tbsp sugar",
+      "1 pinch of salt",
+      "2 tbsp oil"
+    ],
+    "steps": [
+      "Whisk the eggs with the sugar and salt, then add the milk.",
+      "Gradually stir in the flour, whisking so no lumps remain.",
+      "Add the sparkling water and oil and let the batter rest for 15 minutes.",
+      "Heat a pan and brush it with a few drops of oil.",
+      "Pour in a little batter, tilt the pan so it spreads evenly and cook the pancake for about a minute on each side.",
+      "Fill as you like: jam, chocolate hazelnut spread, walnuts with sugar, or cheese."
+    ],
+    "comments": [
+      {
+        "name": "Jelena",
+        "when": "3 days ago",
+        "text": "The sparkling water makes them so much softer, I haven't made them without it since."
+      },
+      {
+        "name": "Aleksandar",
+        "when": "2 weeks ago",
+        "text": "I filled them with cheese and sour cream and baked them in the oven, for lunch."
+      }
+    ]
+  },
+  {
+    "id": "popara",
+    "category": "dorucak",
+    "title": "Popara (warm bread and milk with cheese)",
+    "intro": "Popara is the breakfast of my childhood, born from stale bread nobody wanted to throw away. I still make it today when I need something warm and simple.",
+    "time": "15 min",
+    "yields": "2 servings",
+    "difficulty": "easy",
+    "ingredients": [
+      "300 g stale bread",
+      "500 ml milk",
+      "40 g butter",
+      "150 g white cheese",
+      "1 pinch of salt"
+    ],
+    "steps": [
+      "Cut the bread into cubes.",
+      "Heat the milk with a little salt until it begins to boil.",
+      "Add the bread to the milk, take it off the heat and leave for a few minutes to swell.",
+      "Stir in the butter and crumbled cheese.",
+      "Serve right away, while it's warm."
+    ],
+    "comments": [
+      {
+        "name": "Zorica",
+        "when": "yesterday",
+        "text": "My grandmother made it with water and lard, but this one with milk is much better."
+      },
+      {
+        "name": "Dejan",
+        "when": "a month ago",
+        "text": "The kids like the sweet version, without cheese and with a little sugar."
+      }
+    ]
+  },
+  {
+    "id": "kacamak",
+    "category": "dorucak",
+    "title": "Kačamak (cornmeal porridge with kajmak)",
+    "intro": "Kačamak with kajmak and sour milk is a breakfast that holds you until lunch. Stir it vigorously, that is half the success.",
+    "time": "40 min",
+    "yields": "4 servings",
+    "difficulty": "medium",
+    "ingredients": [
+      "250 g cornmeal",
+      "1 l water",
+      "1 tsp salt",
+      "50 g butter",
+      "200 g kajmak (clotted cream)",
+      "400 ml sour milk"
+    ],
+    "steps": [
+      "Heat the salted water in a pot and, once it begins to boil, pour the cornmeal in a mound into the center. Do not stir.",
+      "Make a hole in the middle of the mound with a wooden spoon and cook over low heat for 20 minutes.",
+      "Pour some of the water off into a cup, then stir the kačamak vigorously and mash it with the spoon.",
+      "If needed, add back a little of the poured-off water and stir until you have a smooth, thick mass.",
+      "With a spoon dipped in butter, scoop the kačamak onto plates and top with kajmak. Serve with sour milk."
+    ],
+    "comments": [
+      {
+        "name": "Radmila",
+        "when": "2 weeks ago",
+        "text": "This is exactly how my mom cooked it in Šumadija. Thank you for the memory."
+      },
+      {
+        "name": "Petar",
+        "when": "a month ago",
+        "text": "I top mine with cracklings and a little lard, for cold days."
+      }
+    ]
+  },
+  {
+    "id": "ustipci",
+    "category": "dorucak",
+    "title": "Uštipci (fried dough puffs)",
+    "intro": "When uštipci are frying, the whole building knows it's Saturday morning at our place. They are soft inside and crisp outside.",
+    "time": "90 min",
+    "yields": "30 pieces",
+    "difficulty": "medium",
+    "ingredients": [
+      "500 g flour",
+      "20 g fresh yeast",
+      "400 ml lukewarm water",
+      "1 egg",
+      "1 tsp salt",
+      "1 tsp sugar",
+      "500 ml oil for frying"
+    ],
+    "steps": [
+      "Dissolve the yeast in a little of the lukewarm water with the sugar and leave until foamy.",
+      "Add the salt, egg, yeast and the rest of the water to the flour and stir with a spoon into a thick, sticky batter.",
+      "Cover the bowl and leave it in a warm place for about an hour, until the batter has risen and is bubbly.",
+      "Heat the oil in a deeper pot over medium heat.",
+      "Scoop out the batter with a spoon dipped in oil and lower it into the hot oil. Fry the uštipci until golden on all sides.",
+      "Lift them out onto paper towels to drain. Serve with cheese and kajmak, or with jam."
+    ],
+    "comments": [
+      {
+        "name": "Katarina",
+        "when": "3 days ago",
+        "text": "The spoon dipped in oil is the trick I was missing, the dough doesn't stick anymore."
+      },
+      {
+        "name": "Marija",
+        "when": "2 weeks ago",
+        "text": "The oil must not be too hot, or they stay raw in the middle. On medium heat they're perfect."
+      }
+    ]
+  },
+  {
+    "id": "przenice",
+    "category": "dorucak",
+    "title": "Prženice (French toast, Balkan style)",
+    "intro": "Prženice are the quickest way to turn stale bread into a favorite breakfast. We serve them with cheese and yogurt, and the kids like them with jam.",
+    "time": "20 min",
+    "yields": "6 pieces",
+    "difficulty": "easy",
+    "ingredients": [
+      "6 slices of day-old bread",
+      "3 eggs",
+      "100 ml milk",
+      "1 pinch of salt",
+      "100 ml oil for frying",
+      "150 g white cheese for serving"
+    ],
+    "steps": [
+      "In a shallow dish whisk the eggs with the milk and salt.",
+      "Heat the oil in a pan over medium heat.",
+      "Dip the bread slices in the egg on both sides so they soak up well.",
+      "Fry them for two minutes on each side, until golden.",
+      "Lift them out onto paper towels and serve warm, with the cheese."
+    ],
+    "comments": [
+      {
+        "name": "Nataša",
+        "when": "yesterday",
+        "text": "For the kids I add a little cinnamon and sugar to the eggs, they love it."
+      },
+      {
+        "name": "Stefan",
+        "when": "2 weeks ago",
+        "text": "Bread from two days ago is best, it doesn't fall apart."
+      }
+    ]
+  },
+  {
+    "id": "kajgana-sa-paprikom-i-sirom",
+    "category": "dorucak",
+    "title": "Scrambled Eggs with Peppers and Cheese (Kajgana sa paprikom i sirom)",
+    "intro": "Kajgana is my breakfast when I'm short on time but want something warm. The pepper and cheese turn it into a proper little meal.",
+    "time": "15 min",
+    "yields": "2 servings",
+    "difficulty": "easy",
+    "ingredients": [
+      "4 eggs",
+      "1 red pepper",
+      "1 spring onion",
+      "100 g white cheese",
+      "20 g butter",
+      "salt and pepper"
+    ],
+    "steps": [
+      "Cut the pepper into small dice and the spring onion into rings.",
+      "Sauté the pepper and onion in the butter for about five minutes, until soft.",
+      "Whisk the eggs with a little salt and pepper and pour them into the pan.",
+      "Stir gently over low heat until the eggs set but stay moist.",
+      "At the end stir in the crumbled cheese and serve right away."
+    ],
+    "comments": [
+      {
+        "name": "Ivana",
+        "when": "3 days ago",
+        "text": "I added a deseeded tomato too, excellent."
+      },
+      {
+        "name": "Vladimir",
+        "when": "a month ago",
+        "text": "Low heat is the key, never dry scrambled eggs again."
+      }
+    ]
+  },
+  {
+    "id": "mekike",
+    "category": "dorucak",
+    "title": "Mekike (fluffy fried dough)",
+    "intro": "Mekike made with yogurt are as soft as a little pillow, hence the name. With kajmak and cheese, Sunday breakfast is sorted.",
+    "time": "90 min",
+    "yields": "20 pieces",
+    "difficulty": "medium",
+    "ingredients": [
+      "500 g flour",
+      "7 g dry yeast",
+      "250 ml yogurt",
+      "200 ml lukewarm water",
+      "1 tsp salt",
+      "1 tsp sugar",
+      "500 ml oil for frying"
+    ],
+    "steps": [
+      "Mix the flour, dry yeast, sugar and salt.",
+      "Add the yogurt and lukewarm water and knead a soft dough that sticks slightly to your hands.",
+      "Cover the dough and leave it in a warm place for about an hour to rise.",
+      "With oiled hands pull off walnut-sized pieces of dough and stretch them into thin flat rounds.",
+      "Fry them in hot oil until golden on both sides, then lift them out onto paper towels."
+    ],
+    "comments": [
+      {
+        "name": "Biljana",
+        "when": "2 weeks ago",
+        "text": "Oiled hands are a lifesaver, that's how I shaped them nicely for the first time."
+      },
+      {
+        "name": "Nenad",
+        "when": "a month ago",
+        "text": "They're best with kajmak, while still hot."
+      }
+    ]
+  },
+  {
+    "id": "ovsena-kasa-sa-jabukom",
+    "category": "dorucak",
+    "title": "Oatmeal with Apple and Cinnamon (Ovsena kaša sa jabukom i cimetom)",
+    "intro": "Oatmeal is my autumn weekday breakfast. It's ready in ten minutes and smells like apple pie.",
+    "time": "15 min",
+    "yields": "1 serving",
+    "difficulty": "easy",
+    "ingredients": [
+      "60 g rolled oats",
+      "250 ml milk",
+      "1 apple",
+      "1/2 tsp cinnamon",
+      "1 tbsp honey",
+      "20 g walnuts"
+    ],
+    "steps": [
+      "Peel the apple and grate it or cut it into small dice.",
+      "In a small pot mix the oats, milk, apple and cinnamon.",
+      "Cook over low heat for about five minutes, stirring, until the porridge is thick and creamy.",
+      "Transfer to a bowl, drizzle with the honey and sprinkle with coarsely chopped walnuts."
+    ],
+    "comments": [
+      {
+        "name": "Tijana",
+        "when": "yesterday",
+        "text": "I make it with a pear when I have no apple, equally great."
+      },
+      {
+        "name": "Ana",
+        "when": "3 days ago",
+        "text": "I toast the walnuts in a dry pan for a few minutes, it makes a big difference."
+      }
+    ]
+  },
+  {
+    "id": "vanilice",
+    "category": "kolaci-i-torte",
+    "title": "Vanilice (vanilla jam sandwich cookies)",
+    "intro": "Vanilice were the first cake I made with my grandmother, when I was so little that all I could do was spread the jam. There is no slava or New Year without them.",
+    "time": "90 min",
+    "yields": "40 pieces",
+    "difficulty": "medium",
+    "ingredients": [
+      "500 g flour",
+      "250 g lard",
+      "150 g sugar",
+      "100 g ground walnuts",
+      "1 egg",
+      "1 sachet vanilla sugar",
+      "1 tsp grated lemon zest",
+      "200 g apricot jam",
+      "100 g powdered sugar"
+    ],
+    "steps": [
+      "Cream the lard with the sugar and vanilla sugar, then add the egg and lemon zest.",
+      "Stir in the walnuts and gradually the flour, and knead a smooth dough. Leave it in the fridge for half an hour.",
+      "Preheat the oven to 180 °C.",
+      "Roll out the dough to a thickness of about 5 mm and cut small cookies with a cutter.",
+      "Bake them for about 12 minutes, so they stay pale and don't brown.",
+      "When they've cooled, sandwich them in pairs with jam and roll them in powdered sugar. Leave them for a day to soften before serving."
+    ],
+    "comments": [
+      {
+        "name": "Gordana",
+        "when": "2 weeks ago",
+        "text": "They really are softer and nicer the next day. Patience pays off."
+      },
+      {
+        "name": "Milica",
+        "when": "a month ago",
+        "text": "I made them with butter instead of lard, they're a little more crumbly but excellent."
+      },
+      {
+        "name": "Snežana",
+        "when": "a month ago",
+        "text": "Pale vanilice are the real vanilice, good that you pointed that out."
+      }
+    ]
+  },
+  {
+    "id": "krofne",
+    "category": "kolaci-i-torte",
+    "title": "Krofne (Balkan doughnuts)",
+    "intro": "Krofne were a holiday when I was a child, and my mom made them only for special occasions. Now I make them, and there are never enough.",
+    "time": "2 hours",
+    "yields": "20 pieces",
+    "difficulty": "medium",
+    "ingredients": [
+      "500 g flour",
+      "25 g fresh yeast",
+      "250 ml lukewarm milk",
+      "2 egg yolks",
+      "50 g sugar",
+      "50 g melted butter",
+      "1 sachet vanilla sugar",
+      "1 pinch of salt",
+      "700 ml oil for frying",
+      "200 g jam"
+    ],
+    "steps": [
+      "Dissolve the yeast in a little milk with a teaspoon of sugar and leave until foamy.",
+      "Add the rest of the sugar, the vanilla sugar, salt, egg yolks, butter, yeast and milk to the flour, then knead for about ten minutes until the dough is smooth.",
+      "Cover it and leave in a warm place for about an hour, until doubled in size.",
+      "Roll out the dough to a thickness of 1.5 cm and cut circles with a glass. Leave them covered for another 20 minutes.",
+      "Fry the krofne in oil heated over medium heat, first with the lid on, top side up, then uncovered on the other side, until golden.",
+      "Drain them on paper towels, fill with jam using a piping bag and dust with powdered sugar if you like."
+    ],
+    "comments": [
+      {
+        "name": "Jovana",
+        "when": "3 days ago",
+        "text": "Covering the first side gives that white ring around the doughnut, just like from a pastry shop."
+      },
+      {
+        "name": "Marko",
+        "when": "2 weeks ago",
+        "text": "I filled them with chocolate hazelnut cream and they were gone in half an hour."
+      }
+    ]
+  },
+  {
+    "id": "strudla-sa-makom",
+    "category": "kolaci-i-torte",
+    "title": "Poppy Seed Strudel (Štrudla sa makom)",
+    "intro": "Poppy seed strudel is a must at our table for Christmas and Easter. This is a yeast dough, soft and thin, with plenty of filling.",
+    "time": "3 hours",
+    "yields": "2 strudels",
+    "difficulty": "challenging",
+    "ingredients": [
+      "500 g flour",
+      "20 g fresh yeast",
+      "250 ml lukewarm milk",
+      "80 g melted butter",
+      "2 egg yolks",
+      "50 g sugar for the dough",
+      "1 pinch of salt",
+      "250 g ground poppy seeds",
+      "150 g sugar for the filling",
+      "200 ml milk for the filling",
+      "1 tsp grated lemon zest"
+    ],
+    "steps": [
+      "Dissolve the yeast in a little lukewarm milk with a teaspoon of sugar and leave until foamy.",
+      "From the flour, sugar, salt, one egg yolk, butter, yeast and milk knead a soft dough and leave it in a warm place for an hour.",
+      "For the filling heat the milk with the sugar, take it off the heat, stir in the poppy seeds and lemon zest and let it cool.",
+      "Divide the dough in two and roll each piece into a rectangle about 5 mm thick.",
+      "Spread the filling, leaving the edges free, and roll up the strudels tightly. Place them seam side down in a baking pan and leave for another 30 minutes.",
+      "Brush them with the second beaten egg yolk and bake in an oven preheated to 180 °C for about 35 minutes. Slice only once they've cooled."
+    ],
+    "comments": [
+      {
+        "name": "Radmila",
+        "when": "2 weeks ago",
+        "text": "I pricked the strudel with a fork in a few places and it didn't burst. It's beautiful."
+      },
+      {
+        "name": "Ljiljana",
+        "when": "a month ago",
+        "text": "I also put a spoonful of plum jam in the filling, it adds juiciness."
+      }
+    ]
+  },
+  {
+    "id": "reform-torta",
+    "category": "kolaci-i-torte",
+    "title": "Reform Cake (Reform torta)",
+    "intro": "Reform cake is the queen of slava cakes in my family. It is a lot of work, but once you slice it you see that every minute was worth it.",
+    "time": "3 hours",
+    "yields": "12 pieces",
+    "difficulty": "challenging",
+    "ingredients": [
+      "8 egg whites",
+      "200 g sugar for the layers",
+      "200 g ground walnuts",
+      "1 tbsp flour",
+      "8 egg yolks",
+      "150 g sugar for the filling",
+      "200 g dark baking chocolate",
+      "250 g butter"
+    ],
+    "steps": [
+      "Preheat the oven to 170 °C. Beat the egg whites to stiff peaks, then gradually add the sugar and beat until glossy.",
+      "Mix the walnuts with the flour and gently fold them into the whites with a spatula.",
+      "Divide the mixture into four parts and bake each layer on baking paper, in a 26 cm pan, for about 15 minutes.",
+      "For the filling whisk the egg yolks with the sugar and cook over a bain-marie, stirring constantly, for about ten minutes until thickened. Add the chopped chocolate to melt and let it cool completely.",
+      "Beat the butter until fluffy and gradually add the cooled cream, beating all the while.",
+      "Spread the filling between the layers and over the cake. Leave the cake in the fridge for at least a few hours, ideally overnight."
+    ],
+    "comments": [
+      {
+        "name": "Olivera",
+        "when": "3 days ago",
+        "text": "The butter and the cream must be the same temperature, otherwise the filling curdles. I learned that the hard way."
+      },
+      {
+        "name": "Bojana",
+        "when": "2 weeks ago",
+        "text": "I made it for my daughter's birthday and everyone asked for the recipe."
+      }
+    ]
+  },
+  {
+    "id": "tufahije",
+    "category": "kolaci-i-torte",
+    "title": "Tufahije (stuffed poached apples)",
+    "intro": "Tufahije are an old, simple dessert of apples poached in syrup and stuffed with walnuts. They always remind me of my grandmother and her kitchen.",
+    "time": "1 hour",
+    "yields": "8 pieces",
+    "difficulty": "medium",
+    "ingredients": [
+      "8 medium tart apples",
+      "500 g sugar",
+      "1 l water",
+      "1 lemon",
+      "150 g ground walnuts",
+      "2 tbsp sugar for the filling",
+      "200 ml heavy cream for whipping"
+    ],
+    "steps": [
+      "Peel the apples and remove the cores with a knife or corer, so that they stay whole.",
+      "In a wide pot bring the water, sugar and lemon juice to a boil.",
+      "Lower the apples into the syrup and cook them for about ten minutes, turning them, until tender but not falling apart.",
+      "Carefully lift out the apples and cook the syrup for another ten minutes or so to thicken.",
+      "Mix the walnuts with the sugar and a few spoonfuls of the syrup and fill the apples.",
+      "Arrange them in a bowl, pour over the thick syrup, chill and serve with whipped cream."
+    ],
+    "comments": [
+      {
+        "name": "Sanja",
+        "when": "2 weeks ago",
+        "text": "I used Budimka apples and they held their shape perfectly."
+      },
+      {
+        "name": "Dušan",
+        "when": "a month ago",
+        "text": "My wife adds a cinnamon stick to the syrup, I recommend it."
+      }
+    ]
+  },
+  {
+    "id": "cupavci",
+    "category": "kolaci-i-torte",
+    "title": "Čupavci (chocolate coconut sponge squares)",
+    "intro": "Čupavci are the cake the kids in my house loved helping with the most, because everyone ends up covered in chocolate. They are always the first to disappear.",
+    "time": "2 hours",
+    "yields": "30 pieces",
+    "difficulty": "medium",
+    "ingredients": [
+      "4 eggs",
+      "200 g sugar",
+      "250 ml milk",
+      "100 ml oil",
+      "300 g flour",
+      "1 sachet baking powder",
+      "200 g dark baking chocolate",
+      "100 g butter",
+      "200 ml milk for the glaze",
+      "250 g shredded coconut"
+    ],
+    "steps": [
+      "Preheat the oven to 180 °C and line a baking pan of about 25 x 35 cm with baking paper.",
+      "Whisk the eggs with the sugar, then add the milk and oil. Stir in the flour mixed with the baking powder.",
+      "Pour the batter into the pan and bake for about 25 minutes. Let the sponge cool completely, then cut it into cubes.",
+      "For the glaze melt the chocolate, butter and milk over low heat, stirring.",
+      "Dip each cube in the warm glaze, then roll it in the coconut.",
+      "Arrange the čupavci on a tray and leave them to set."
+    ],
+    "comments": [
+      {
+        "name": "Danijela",
+        "when": "yesterday",
+        "text": "A sponge from the day before is much easier to dip, it doesn't crumble."
+      },
+      {
+        "name": "Teodora",
+        "when": "3 days ago",
+        "text": "I use two forks for dipping, it's faster and cleaner."
+      }
+    ]
+  },
+  {
+    "id": "urmasice",
+    "category": "kolaci-i-torte",
+    "title": "Urmašice (syrup-soaked walnut cookies)",
+    "intro": "Urmašice are small cookies soaked in syrup, the kind that go to every celebration. My aunt makes them best, and this is her recipe.",
+    "time": "90 min",
+    "yields": "35 pieces",
+    "difficulty": "medium",
+    "ingredients": [
+      "400 g flour",
+      "200 g butter",
+      "2 eggs",
+      "180 g sour cream",
+      "50 g sugar",
+      "50 g ground walnuts",
+      "1 sachet baking powder",
+      "500 g sugar for the syrup",
+      "500 ml water",
+      "1 lemon"
+    ],
+    "steps": [
+      "First make the syrup: boil the water, sugar and sliced lemon for about ten minutes, then let it cool completely.",
+      "Preheat the oven to 200 °C.",
+      "Cream the softened butter with the sugar, add the eggs and sour cream, then stir in the walnuts and the flour mixed with the baking powder.",
+      "Shape the dough into finger-sized logs and press each one over a fine grater to give them a pattern.",
+      "Arrange them in a baking pan and bake for about 20 minutes, until lightly golden.",
+      "Pour the cold syrup over the hot urmašice and leave them for a few hours to soak up the syrup."
+    ],
+    "comments": [
+      {
+        "name": "Mirjana",
+        "when": "2 weeks ago",
+        "text": "Cold syrup on a hot cake, that's the rule. They came out juicy, just like my aunt's."
+      },
+      {
+        "name": "Nataša",
+        "when": "a month ago",
+        "text": "I also make them with a little coconut in the dough, just as nice."
+      }
+    ]
+  },
+  {
+    "id": "plazma-torta",
+    "category": "kolaci-i-torte",
+    "title": "Plazma Torte (no-bake biscuit cake)",
+    "intro": "This is a cake that needs no baking and looks like you slaved all day. My daughter asks for it every birthday.",
+    "time": "4 hours",
+    "yields": "12 pieces",
+    "difficulty": "easy",
+    "ingredients": [
+      "300 g ground Plazma biscuits",
+      "1 l milk",
+      "2 sachets vanilla pudding mix",
+      "200 g sugar",
+      "250 g butter",
+      "100 g ground walnuts",
+      "200 ml heavy cream",
+      "100 g chocolate"
+    ],
+    "steps": [
+      "Cook a thick pudding from the milk, pudding mix and sugar according to the package directions, then leave it to cool completely, stirring now and then.",
+      "Beat the butter until fluffy and gradually add the cooled pudding.",
+      "Mix the ground biscuits with the walnuts.",
+      "Layer in a pan: biscuit mixture, then cream, and repeat until everything is used, with cream on top.",
+      "Whip the heavy cream and spread it over the cake, then grate the chocolate over it.",
+      "Leave the cake in the fridge for at least three hours before slicing."
+    ],
+    "comments": [
+      {
+        "name": "Maja",
+        "when": "3 days ago",
+        "text": "The easiest cake I've ever made, and everyone thinks it's from a pastry shop."
+      },
+      {
+        "name": "Ksenija",
+        "when": "2 weeks ago",
+        "text": "I moistened the biscuits a little with milk, it was even juicier."
+      }
+    ]
+  },
+  {
+    "id": "kolac-sa-visnjama",
+    "category": "kolaci-i-torte",
+    "title": "Sour Cherry Cake (Kolač sa višnjama)",
+    "intro": "This is my quick cake for guests who announce they're coming an hour ahead. Sour cherries from the freezer work just as well as fresh.",
+    "time": "1 hour",
+    "yields": "16 pieces",
+    "difficulty": "easy",
+    "ingredients": [
+      "4 eggs",
+      "200 g sugar",
+      "1 sachet vanilla sugar",
+      "200 ml yogurt",
+      "100 ml oil",
+      "300 g flour",
+      "1 sachet baking powder",
+      "400 g pitted sour cherries"
+    ],
+    "steps": [
+      "Preheat the oven to 180 °C and line a baking pan of about 25 x 35 cm with baking paper.",
+      "Whisk the eggs with the sugar and vanilla sugar until fluffy.",
+      "Add the yogurt and oil, then stir in the flour mixed with the baking powder.",
+      "Pour the batter into the pan and spread the cherries evenly over the top. If they are frozen, drain them first and toss them in a little flour.",
+      "Bake for 35 to 40 minutes, until a toothpick comes out dry.",
+      "Dust the cooled cake with powdered sugar and cut it into squares."
+    ],
+    "comments": [
+      {
+        "name": "Tamara",
+        "when": "yesterday",
+        "text": "The cherries tossed in flour didn't sink to the bottom, it makes a lovely cross-section."
+      },
+      {
+        "name": "Zorica",
+        "when": "a month ago",
+        "text": "I made it with apricots too, it's excellent."
+      }
+    ]
+  },
+  {
+    "id": "ajvar",
+    "category": "zimnica",
+    "title": "Ajvar (roasted red pepper spread)",
+    "intro": "Making ajvar is a family day for us, we all roast, peel and stir. It takes the whole day, but winter without it is out of the question.",
+    "time": "6 hours",
+    "yields": "8 small jars",
+    "difficulty": "challenging",
+    "ingredients": [
+      "5 kg red ajvar peppers",
+      "1 kg eggplants",
+      "400 ml oil",
+      "100 ml vinegar",
+      "4 garlic cloves",
+      "2 tbsp salt",
+      "1 tbsp sugar"
+    ],
+    "steps": [
+      "Wash the peppers and eggplants and roast them on the stove, on a grill or in an oven at 220 °C, until the skin blackens and comes loose.",
+      "Put the roasted vegetables in a pot, cover and leave them to steam, then peel them and remove the seeds. Leave them to drain in a colander.",
+      "Grind the vegetables in a meat grinder or chop them finely.",
+      "In a wide, heavy-bottomed pot heat half of the oil, add the ground vegetables and cook over medium heat, stirring constantly.",
+      "Gradually add the rest of the oil and cook for two to three hours, until the ajvar is thick and the oil starts to separate.",
+      "Near the end add the salt, sugar, vinegar and crushed garlic and cook for another ten minutes or so.",
+      "Spoon the hot ajvar into hot, clean jars, top with a little hot oil and seal immediately. Wrap the jars in a blanket and let them cool slowly."
+    ],
+    "comments": [
+      {
+        "name": "Branka",
+        "when": "a month ago",
+        "text": "Draining the peppers overnight cut an hour off the cooking."
+      },
+      {
+        "name": "Nenad",
+        "when": "a month ago",
+        "text": "We make it without garlic, but everything else is the same. A good recipe."
+      },
+      {
+        "name": "Ana",
+        "when": "2 weeks ago",
+        "text": "A long-handled spoon is a must, ajvar spatters like crazy."
+      }
+    ]
+  },
+  {
+    "id": "pindjur",
+    "category": "zimnica",
+    "title": "Pinđur (roasted pepper and tomato relish)",
+    "intro": "Pinđur is ajvar's faster cousin, made with tomatoes and more garlic. I like it even more, especially with proja and cheese.",
+    "time": "4 hours",
+    "yields": "6 jars",
+    "difficulty": "medium",
+    "ingredients": [
+      "2 kg red bell peppers",
+      "1 kg eggplants",
+      "1 kg ripe tomatoes",
+      "1 head of garlic",
+      "250 ml oil",
+      "50 ml vinegar",
+      "1 tbsp salt",
+      "1 tbsp sugar"
+    ],
+    "steps": [
+      "Roast the peppers and eggplants, leave them to steam, then peel and clean them.",
+      "Pour boiling water over the tomatoes, peel and chop them.",
+      "Chop the peppers and eggplants finely or blend them briefly, so a few small pieces remain.",
+      "Heat the oil in a pot, add the tomatoes and cook them for about ten minutes, then add the other vegetables.",
+      "Simmer over low heat for about an hour and a half, stirring often, until thick.",
+      "Add the salt, sugar, vinegar and crushed garlic and cook for another ten minutes. Spoon the hot pinđur into hot jars, seal and wrap in a blanket."
+    ],
+    "comments": [
+      {
+        "name": "Svetlana",
+        "when": "a month ago",
+        "text": "I added a hot chili pepper too, it's perfect."
+      },
+      {
+        "name": "Milica",
+        "when": "2 weeks ago",
+        "text": "It was my first time making preserves and it worked. Thanks for the clear instructions."
+      }
+    ]
+  },
+  {
+    "id": "mesana-tursija",
+    "category": "zimnica",
+    "title": "Mixed Pickles (Mešana turšija)",
+    "intro": "A colorful row of pickles on the pantry shelf is the loveliest sight of autumn to me. It's indispensable with roasts and sarma.",
+    "time": "3 hours",
+    "yields": "6 jars",
+    "difficulty": "medium",
+    "ingredients": [
+      "1 kg long green peppers",
+      "1 kg green tomatoes",
+      "1 head of cauliflower",
+      "500 g carrots",
+      "500 g small cucumbers",
+      "1 l vinegar (9%)",
+      "2 l water",
+      "150 g sugar",
+      "2 tbsp salt",
+      "1 tbsp whole black peppercorns",
+      "5 bay leaves"
+    ],
+    "steps": [
+      "Wash the vegetables. Prick the peppers with a fork, cut the tomatoes into quarters, break the cauliflower into florets and slice the carrots into rounds.",
+      "Wash the jars and lids well and dry them in the oven at 100 °C.",
+      "Pack the vegetables into the jars in colorful layers, adding peppercorns and bay leaves between them.",
+      "For the brine boil the water with the vinegar, sugar and salt, then let it cool slightly.",
+      "Pour the brine over the vegetables so they are completely covered and seal the jars.",
+      "Pasteurize the jars in a pot of water for about 15 minutes from the moment the water boils. Let them cool in the water and store in a cool place."
+    ],
+    "comments": [
+      {
+        "name": "Gordana",
+        "when": "a month ago",
+        "text": "The cauliflower stayed crunchy until spring. Excellent brine proportions."
+      },
+      {
+        "name": "Dejan",
+        "when": "a month ago",
+        "text": "I added slices of hot pepper to every jar."
+      }
+    ]
+  },
+  {
+    "id": "kiseli-kupus",
+    "category": "zimnica",
+    "title": "Sauerkraut (Kiseli kupus)",
+    "intro": "Fermenting cabbage is our autumn ritual, inherited from my grandfather. One barrel gives enough cabbage for sarma, podvarak and salad until spring.",
+    "time": "5 weeks",
+    "yields": "1 barrel of 30 l",
+    "difficulty": "challenging",
+    "ingredients": [
+      "15 kg heads of cabbage",
+      "600 g coarse non-iodized salt",
+      "about 12 l water",
+      "5 bay leaves",
+      "1 tbsp whole black peppercorns"
+    ],
+    "steps": [
+      "Remove the outer leaves from the heads, wash them and cut out the core with a knife, leaving a hole.",
+      "Fill the hole of each head with a spoonful of salt and pack the heads into the barrel hole side up, adding the bay leaves and peppercorns in between.",
+      "Dissolve the rest of the salt in the water and pour it over the cabbage so it is completely covered.",
+      "Put a clean board and a heavy stone on top of the heads, so the cabbage always stays under the brine.",
+      "During the first weeks, circulate the brine every few days: drain it through the tap at the bottom and pour it back over the top, so the cabbage ferments evenly.",
+      "The cabbage is ready in four to six weeks, depending on the temperature. Keep the barrel in a cool place."
+    ],
+    "comments": [
+      {
+        "name": "Zoran",
+        "when": "2 weeks ago",
+        "text": "We also add a few quinces to the barrel, the cabbage gets a lovely aroma."
+      },
+      {
+        "name": "Radmila",
+        "when": "a month ago",
+        "text": "Non-iodized salt is a must, with regular salt the cabbage goes soft."
+      }
+    ]
+  },
+  {
+    "id": "dzem-od-sljiva",
+    "category": "zimnica",
+    "title": "Plum Jam (Džem od šljiva)",
+    "intro": "When Požegača plum season comes, my house smells of cinnamon and plums for days. This jam is thick and not too sweet, just the way I like it.",
+    "time": "2 hours",
+    "yields": "5 jars",
+    "difficulty": "easy",
+    "ingredients": [
+      "2 kg Požegača plums",
+      "800 g sugar",
+      "1 lemon",
+      "1 tsp cinnamon",
+      "3 cloves"
+    ],
+    "steps": [
+      "Wash the plums, remove the pits and cut them into quarters.",
+      "Sprinkle them with the sugar and leave for an hour to release their juices.",
+      "Cook over medium heat, stirring often, for about an hour, until the jam thickens.",
+      "Near the end add the lemon juice, cinnamon and cloves. Test the consistency by dropping a little jam onto a cold plate: if it doesn't run, it's done.",
+      "Remove the cloves, spoon the hot jam into hot jars, seal them and turn them upside down until they cool."
+    ],
+    "comments": [
+      {
+        "name": "Vesna",
+        "when": "3 days ago",
+        "text": "The cold plate test never lies. Excellent jam."
+      },
+      {
+        "name": "Olivera",
+        "when": "a month ago",
+        "text": "I used a little less sugar and it kept well until winter."
+      }
+    ]
+  },
+  {
+    "id": "slatko-od-jagoda",
+    "category": "zimnica",
+    "title": "Strawberry Preserve (Slatko od jagoda)",
+    "intro": "Strawberry preserve was served to guests with a glass of cold water, as custom requires. Choose small, firm strawberries so they stay whole.",
+    "time": "1 hour",
+    "yields": "4 jars",
+    "difficulty": "medium",
+    "ingredients": [
+      "1 kg small firm strawberries",
+      "1 kg sugar",
+      "200 ml water",
+      "1 lemon",
+      "1 sachet vanilla sugar"
+    ],
+    "steps": [
+      "Wash the strawberries before removing the stems, then drain them.",
+      "Cook a syrup from the water and sugar until a drop of syrup starts to feel sticky between your fingers.",
+      "Lower the strawberries into the syrup and cook over medium heat without stirring, just shaking the pot now and then and skimming off the foam.",
+      "When the syrup thickens again, after about fifteen minutes, add the lemon juice and vanilla sugar.",
+      "Take the preserve off the heat, cover it with a damp cloth and leave it overnight.",
+      "The next day spoon it into clean, dry jars and seal."
+    ],
+    "comments": [
+      {
+        "name": "Ljiljana",
+        "when": "2 weeks ago",
+        "text": "The cloth overnight is that old secret, the strawberries stayed whole and shiny."
+      },
+      {
+        "name": "Katarina",
+        "when": "a month ago",
+        "text": "My grandmother made it like this with sour cherries too. Thanks for the recipe."
+      }
+    ]
+  }
+]

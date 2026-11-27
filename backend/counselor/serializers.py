@@ -14,4 +14,25 @@ class CounselorSessionSerializer(serializers.ModelSerializer):
     class Meta:
         model = ChatSession
         # Never expose secret_hash or resume_phrase_hash.
-        fields = ["id", "status", "created_at", "last_activity", "expires_at", "unread"]
+        fields = [
+            "id",
+            "status",
+            "created_at",
+            "last_activity",
+            "expires_at",
+            "unread",
+            "urgent_since",
+            "counselor_label",
+        ]
+
+
+class SessionNotesSerializer(serializers.ModelSerializer):
+    """What a counselor may edit on a session: a nickname and working notes."""
+
+    class Meta:
+        model = ChatSession
+        fields = ["counselor_label", "counselor_notes"]
+        extra_kwargs = {
+            "counselor_label": {"max_length": 60},
+            "counselor_notes": {"max_length": 4000},
+        }

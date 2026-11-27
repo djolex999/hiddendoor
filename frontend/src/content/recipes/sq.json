@@ -1,0 +1,2346 @@
+[
+  {
+    "id": "pita-sa-jabukama",
+    "category": "kolaci-i-torte",
+    "title": "Byrek me mollë",
+    "intro": "Ky është byreku që e bënte gjyshja ime çdo vjeshtë, sapo vilnin mollët. Sekreti janë mollët e thartha, me të ëmbla nuk del kurrë njësoj.",
+    "time": "75 min",
+    "yields": "8 copë",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "500 g petë byreku",
+      "1 kg molla të thartha",
+      "150 g sheqer",
+      "1 lugë çaji kanellë",
+      "100 ml vaj",
+      "50 g arra të bluara"
+    ],
+    "steps": [
+      "Ngroh furrën në 200 °C dhe lyje me vaj një tavë të mesme.",
+      "Qërojini mollët, grijini trashë dhe shtrydhini lehtë me duar që të mos lëshojnë shumë lëng.",
+      "Përziji mollët e grira me sheqerin, kanellën dhe arrat e bluara.",
+      "Në tavë vër dy petë, spërkati me vaj dhe shpërndaj një pjesë të mbushjes. Përsërite derisa të mbarojë mbushja dhe mbylle me dy petë.",
+      "Lyeje petën e sipërme me vaj dhe pritë byrekun në copa para pjekjes, kështu petët nuk thyhen.",
+      "Piqe rreth 40 minuta, derisa petët të marrin ngjyrë të artë. Lëre byrekun të ftohet pak para se ta shërbesh."
+    ],
+    "comments": [
+      {
+        "name": "Elira",
+        "when": "para 2 ditësh",
+        "text": "E bëra me mollë ajdared dhe doli shumë mirë. Herën tjetër do t'i vë pak më shumë kanellë."
+      },
+      {
+        "name": "Besnik",
+        "when": "para 2 javësh",
+        "text": "Prerja para pjekjes është e gjitha, copat dolën të bukura dhe të drejta."
+      },
+      {
+        "name": "Valbona",
+        "when": "para një muaji",
+        "text": "Mamaja ime në mbushje shton edhe pak simite që të thithë lëngun. Ia vlen ta provosh edhe kështu."
+      }
+    ]
+  },
+  {
+    "id": "proja-sa-sirom",
+    "category": "hleb-i-peciva",
+    "title": "Proja me djathë",
+    "intro": "Proja te ne ka qenë gjithmonë mëngjesi i fundjavës, e ngrohtë, me një gotë kos. Është gati për më pak se një orë dhe mbaron çdo herë.",
+    "time": "45 min",
+    "yields": "6 copë",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "300 g miell misri",
+      "3 vezë",
+      "200 ml kos",
+      "100 ml vaj",
+      "200 g djathë të bardhë",
+      "1 qese pluhur pjekjeje",
+      "1 lugë çaji kripë"
+    ],
+    "steps": [
+      "Ngroh furrën në 200 °C dhe veshe me letër furre një tavë me përmasa rreth 20 x 30 cm.",
+      "Në një enë të madhe rrah vezët, pastaj shto kosin dhe vajin dhe përziji mirë.",
+      "Përziji mielli e misrit me pluhurin e pjekjes dhe kripën, pastaj shtoji ngadalë përzierjes së lëngshme.",
+      "Thërmo djathin dhe përziji pjesën më të madhe në brumë, ndërsa pjesën tjetër ruaje për sipër.",
+      "Hidhe përzierjen në tavë, rrafshoje dhe spërkate me djathin që ka mbetur.",
+      "Piqe 30 deri në 35 minuta, derisa proja të marrë ngjyrë dhe kruese dhëmbësh të dalë e thatë."
+    ],
+    "comments": [
+      {
+        "name": "Arta",
+        "when": "dje",
+        "text": "Vura gjysmë kosi e gjysmë uji me gaz dhe doli shumë e shkrifët."
+      },
+      {
+        "name": "Fatmir",
+        "when": "para 3 ditësh",
+        "text": "Është më e mira kur është ende e vakët. Fëmijët hëngrën gjysmën e tavës në mëngjes."
+      }
+    ]
+  },
+  {
+    "id": "prebranac",
+    "category": "glavna-jela",
+    "title": "Fasule e pjekur (prebranac)",
+    "intro": "Prebranac është një gjellë e përmbajtur që gatuhej të premteve dhe në Natën e Krishtlindjes. Fasulet vëre në ujë një natë më parë, pjesa tjetër është vetëm durim.",
+    "time": "3 orë",
+    "yields": "6 porcione",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "500 g fasule të bardha",
+      "1 kg qepë të kuqe",
+      "2 lugë paprikë të kuqe pluhur",
+      "150 ml vaj",
+      "3 gjethe dafine",
+      "kripë dhe piper"
+    ],
+    "steps": [
+      "Zgjidhi fasulet, laji dhe lëri në ujë të ftohtë gjatë gjithë natës.",
+      "Kullo fasulet, hidh sipër ujë të ri dhe lëri të ziejnë, pastaj hidhe ujin e parë. Hidh përsëri ujë, shto dafinën dhe lëri të ziejnë rreth një orë e gjysmë, derisa të zbuten por të mos shkrihen.",
+      "Ndërsa ziejnë fasulet, prejë qepët në gjysmëhënëza të holla dhe zbute në vaj në zjarr të ulët rreth 30 minuta, derisa të bëhen të buta dhe të arta.",
+      "Hiqe qepën nga zjarri, përziji paprikën e kuqe, kripose dhe pipëroje.",
+      "Kullo fasulet dhe ruaj një filxhan nga uji i zierjes. Në një enë prej balte ose rezistente ndaj zjarrit rreshto shtresa fasule e qepë, me qepë edhe sipër.",
+      "Spërkati me pak ujë zierjeje dhe piqe në furrë të ngrohur në 200 °C rreth 40 minuta, derisa sipër të bëhet kore."
+    ],
+    "comments": [
+      {
+        "name": "Drita",
+        "when": "para 2 javësh",
+        "text": "E zbuta qepën gati një orë, nuk duhet nxituar. Shija është si e vjehrrës sime."
+      },
+      {
+        "name": "Agron",
+        "when": "para një muaji",
+        "text": "Të nesërmen është edhe më e mirë. Bëj sasi të dyfishtë dhe gjysmën e ngrij."
+      }
+    ]
+  },
+  {
+    "id": "sarma",
+    "category": "glavna-jela",
+    "title": "Sarma",
+    "intro": "Pa sarma nuk ka dimër në shtëpinë tonë. E bëj në një tenxhere të madhe, sepse gjithmonë gjendet dikush që troket pikërisht kur po gatuhet.",
+    "time": "4 orë",
+    "yields": "20 copë",
+    "difficulty": "e vështirë",
+    "ingredients": [
+      "1 kokë lakër turshi",
+      "600 g mish i grirë i përzier",
+      "100 g oriz",
+      "1 kokë qepë e kuqe",
+      "1 lugë paprikë të kuqe pluhur",
+      "200 g brinjë derri të tymosura",
+      "3 gjethe dafine",
+      "4 lugë vaj",
+      "1 lugë miell",
+      "kripë dhe piper"
+    ],
+    "steps": [
+      "Ndaji gjethet e lakrës turshi dhe holloji me thikë brinjët e trasha. Nëse lakra është shumë e kripur, shpëlaji gjethet me ujë të ftohtë.",
+      "Në dy lugë vaj zbute qepën e prerë imët, shto mishin dhe skuqe derisa të ndryshojë ngjyrë. Përziji orizin e larë, gjysmë luge paprikë të kuqe, piperin dhe pak kripë.",
+      "Në çdo gjethe vër një lugë mbushje, paloji anët dhe mbështille sarmën fort.",
+      "Pjesën e mbetur të lakrës pri dhe vëre në fund të një tenxhereje të madhe. Rreshto sarmat njëra pranë tjetrës dhe midis tyre vër brinjët dhe dafinën.",
+      "Hidh ujë aq sa sarmat të mbulohen, shtyp me një pjatë sipër dhe ziej në zjarr të ulët dy e gjysmë deri në tre orë.",
+      "Në fund me vajin që ka mbetur bëj një zaprashkë me miellin dhe paprikën e kuqe që ka mbetur, hollojë me pak lëng nga tenxherja dhe hidhe mbi sarma. Ziej edhe rreth dhjetë minuta."
+    ],
+    "comments": [
+      {
+        "name": "Blerta",
+        "when": "para 3 ditësh",
+        "text": "Unë pas zierjes e fus edhe gjysmë ore në furrë, sipër piqet bukur."
+      },
+      {
+        "name": "Ermal",
+        "when": "para 2 javësh",
+        "text": "E bëra për herë të parë vetë dhe më doli. Pjata sipër është e rëndësishme, përndryshe zbërthehen."
+      },
+      {
+        "name": "Mimoza",
+        "when": "para një muaji",
+        "text": "Në mbushje shtoj edhe pak proshutë të tymosur, e bën shumë më aromatike."
+      }
+    ]
+  },
+  {
+    "id": "svinjski-gulas",
+    "category": "glavna-jela",
+    "title": "Gulash me mish derri",
+    "intro": "Gulashi është një gjellë që nuk prishet nëse i jep kohë. Unë e shërbej gjithmonë me pure ose me bukë shtëpie për ta zhytur.",
+    "time": "2 orë",
+    "yields": "5 porcione",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "800 g kofshë derri",
+      "3 kokë qepë të kuqe",
+      "2 karota",
+      "1 spec i kuq",
+      "2 thelpinj hudhër",
+      "2 lugë paprikë të kuqe pluhur",
+      "1 lugë pure domatesh",
+      "3 lugë vaj",
+      "2 gjethe dafine",
+      "kripë dhe piper"
+    ],
+    "steps": [
+      "Pri mishin në kubikë rreth 3 cm dhe pri qepën imët.",
+      "Zbute qepën në vaj rreth dhjetë minuta, derisa të zbutet dhe të marrë ngjyrë.",
+      "Shto mishin dhe skuqe duke e përzier, derisa të ndryshojë ngjyrë nga të gjitha anët.",
+      "Hidh karotën e prerë, specin dhe hudhrën, pastaj hiqe tenxheren nga zjarri dhe përziji paprikën e kuqe dhe puren e domateve.",
+      "Kthe në zjarr, hidh ujë të ngrohtë sa të mbulojë mishin, shto dafinën, kripën dhe piperin.",
+      "Ziej me kapak në zjarr të ulët rreth një orë e gjysmë, duke e përzier herë pas here dhe duke shtuar ujë, derisa mishi të bëhet i butë e salca e trashë."
+    ],
+    "comments": [
+      {
+        "name": "Arben",
+        "when": "dje",
+        "text": "Mora zverk derri në vend të kofshës dhe mishi doli shumë i lëngshëm."
+      },
+      {
+        "name": "Lule",
+        "when": "para 2 javësh",
+        "text": "Paprika e kuqe patjetër jashtë zjarrit, një herë më dogji dhe gjithë gulashi doli i hidhur."
+      }
+    ]
+  },
+  {
+    "id": "punjene-paprike",
+    "category": "glavna-jela",
+    "title": "Speca të mbushur",
+    "intro": "Në verë, kur specat janë më të ëmblit, e gatuaj këtë të paktën një herë në javë. Janë më të mirët të nesërmen, kur salca vendoset bukur.",
+    "time": "2 orë",
+    "yields": "10 copë",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "10 speca të gjatë",
+      "500 g mish i grirë",
+      "100 g oriz",
+      "1 kokë qepë e kuqe",
+      "1 vezë",
+      "1 lugë paprikë të kuqe pluhur",
+      "700 ml lëng domatesh",
+      "2 lugë miell",
+      "3 lugë vaj",
+      "1 tufë majdanoz",
+      "kripë dhe piper"
+    ],
+    "steps": [
+      "Pri majën e specave me bishtin dhe hiqi farat.",
+      "Në një lugë vaj zbute shkurt qepën e prerë imët. Kur të ftohet, përzije me mishin, orizin e larë, vezën, majdanozin e prerë, gjysmën e paprikës së kuqe, kripën dhe piperin.",
+      "Mbushi specat, por jo deri në majë, sepse orizi fryhet. Mbylli me majën e prerë.",
+      "Rreshto specat në këmbë në një tenxhere, hidh lëngun e domateve dhe aq ujë sa të jenë pothuajse të mbuluar.",
+      "Ziej me kapak në zjarr të ulët rreth një orë e gjysmë.",
+      "Me vajin që ka mbetur bëj një zaprashkë me miellin dhe paprikën e kuqe që ka mbetur, hollojë me pak lëng dhe përzije në tenxhere. Ziej edhe rreth dhjetë minuta që salca të trashet."
+    ],
+    "comments": [
+      {
+        "name": "Teuta",
+        "when": "para 3 ditësh",
+        "text": "Unë pas i kaloj në furrë për gjysmë ore, marrin ngjyrë të bukur."
+      },
+      {
+        "name": "Dritan",
+        "when": "para një muaji",
+        "text": "I shërbej me kajmak të thartë, ashtu i shërbente gjyshja."
+      }
+    ]
+  },
+  {
+    "id": "musaka-od-krompira",
+    "category": "glavna-jela",
+    "title": "Musaka me patate",
+    "intro": "Musaka te ne është dreka e së dielës kur vijnë të gjithë. Nuk është e ndërlikuar, kërkon vetëm pak prerje dhe durim gjatë pjekjes.",
+    "time": "90 min",
+    "yields": "6 porcione",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "1,5 kg patate",
+      "500 g mish i grirë",
+      "1 kokë qepë e kuqe",
+      "3 vezë",
+      "300 ml qumësht",
+      "100 ml vaj",
+      "1 lugë çaji paprikë të kuqe pluhur",
+      "1 lugë çaji kripë",
+      "piper"
+    ],
+    "steps": [
+      "Ngroh furrën në 200 °C dhe lyeje tavën me vaj.",
+      "Në pak vaj zbute qepën e prerë imët, shto mishin dhe skuqe derisa të ndryshojë ngjyrë. Erëzoje me paprikë të kuqe, kripë dhe piper.",
+      "Qëroji patatet dhe pri në rrathë të hollë, pastaj kripi dhe spërkati me pak vaj.",
+      "Në tavë rreshto një shtresë patatesh, pastaj një shtresë mishi, dhe përsërite derisa të mbarojë gjithçka, me patate sipër.",
+      "Hidh gjysmë filxhani ujë, mbuloje tavën me letër alumini dhe piqe 30 minuta.",
+      "Rrah vezët me qumështin dhe një majë kripe, hiq letrën e aluminit dhe hidhe mbi musaka. Piqe edhe 25 deri në 30 minuta, derisa salca sipër të marrë ngjyrë."
+    ],
+    "comments": [
+      {
+        "name": "Albana",
+        "when": "para 2 ditësh",
+        "text": "Patatet i pres me rende për rrathë, shkon shpejt dhe të gjitha dalin me të njëjtën trashësi."
+      },
+      {
+        "name": "Gentian",
+        "when": "para 2 javësh",
+        "text": "Duhet lënë dhjetë minuta të pushojë para prerjes, pritet më bukur."
+      }
+    ]
+  },
+  {
+    "id": "pasulj-sa-kobasicom",
+    "category": "glavna-jela",
+    "title": "Fasule me sallam",
+    "intro": "Fasulet të enjteve ishin të detyrueshme te prindërit e mi dhe ajo traditë ka mbetur. Me sallam shtëpie është një gjellë e vërtetë dimri.",
+    "time": "3 orë",
+    "yields": "6 porcione",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "500 g fasule të bardha",
+      "300 g sallam i tymosur",
+      "1 kokë qepë e kuqe",
+      "1 karotë",
+      "2 thelpinj hudhër",
+      "1 lugë paprikë të kuqe pluhur",
+      "2 lugë miell",
+      "3 lugë vaj",
+      "2 gjethe dafine",
+      "kripë dhe piper"
+    ],
+    "steps": [
+      "Vëre fasulet në ujë të ftohtë gjatë gjithë natës.",
+      "Kullo, hidh ujë të ri, lëri të ziejnë dhe hidhe ujin e parë.",
+      "Hidh përsëri rreth dy litra ujë, shto qepën të tërë e të qëruar, karotën, hudhrën dhe dafinën dhe ziej në zjarr të ulët rreth dy orë.",
+      "Pri sallamin në rrathë dhe hidhe në fasule gjysmë ore para fundit të zierjes.",
+      "Në vaj bëj një zaprashkë me miellin, hiqe nga zjarri, përziji paprikën e kuqe dhe hollojë me pak lëng nga fasulet.",
+      "Hidhe zaprashkën në fasule, kripose, pipëroje dhe ziej edhe rreth dhjetë minuta."
+    ],
+    "comments": [
+      {
+        "name": "Fatjon",
+        "when": "para 3 ditësh",
+        "text": "Unë i gatuaj me brinjë të thara në vend të sallamit, njësoj shumë mirë."
+      },
+      {
+        "name": "Shpresa",
+        "when": "para një muaji",
+        "text": "Në fund shtoj pak majdanoz të prerë, i jep freski."
+      }
+    ]
+  },
+  {
+    "id": "domaci-cevapi",
+    "category": "glavna-jela",
+    "title": "Qebapa shtëpie",
+    "intro": "Qebapat e restorantit janë një gjë, por këto në tigan në shtëpi nuk i lënë aspak pas. E rëndësishme është që mishi të pushojë disa orë në frigorifer.",
+    "time": "3 orë",
+    "yields": "4 porcione",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "500 g mish viçi i grirë",
+      "300 g mish derri i grirë",
+      "2 thelpinj hudhër",
+      "100 ml ujë me gaz",
+      "1 lugë çaji sodë buke",
+      "1 lugë çaji paprikë të kuqe pluhur",
+      "2 lugë çaji kripë",
+      "1 lugë çaji piper i bluar",
+      "2 kokë qepë të kuqe për shërbim"
+    ],
+    "steps": [
+      "Në një enë vër të dy llojet e mishit, hudhrën e shtypur, kripën, piperin dhe paprikën e kuqe.",
+      "Tret sodën e bukës në ujin me gaz dhe hidhe në mish.",
+      "Gjuaje me duar të paktën dhjetë minuta, derisa përzierja të bëhet e lëmuar dhe ngjitëse.",
+      "Mbuloje enën dhe lëre në frigorifer të paktën dy orë, ose më mirë gjatë gjithë natës.",
+      "Me duar të lagura formo cilindra me gjatësi rreth 7 cm.",
+      "Piqi në një tigan grill shumë të nxehtë ose në skarë rreth 8 minuta, duke i kthyer që të piqen njëlloj. Shërbeji me qepë të prerë imët."
+    ],
+    "comments": [
+      {
+        "name": "Ardian",
+        "when": "dje",
+        "text": "I lashë gjatë gjithë natës dhe ndryshimi është i madh, janë shumë më të lëngshëm."
+      },
+      {
+        "name": "Lirije",
+        "when": "para 2 javësh",
+        "text": "Bëra edhe lepinja bashkë me to dhe ishte si në Sarajevë."
+      },
+      {
+        "name": "Ilir",
+        "when": "para një muaji",
+        "text": "Unë shtoj edhe pak mish qengji të grirë, por edhe kështu janë shumë të mirë."
+      }
+    ]
+  },
+  {
+    "id": "piletina-iz-rerne-sa-krompirom",
+    "category": "glavna-jela",
+    "title": "Pulë në furrë me patate",
+    "intro": "Ky është shpëtimi im në ditët e punës: gjithçka futet në një tavë dhe furra bën pjesën tjetër. Shtëpia pastaj merr erë rozmarine.",
+    "time": "75 min",
+    "yields": "4 porcione",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "1 kg kofshë dhe këmbë pule",
+      "1 kg patate",
+      "4 lugë vaj",
+      "3 thelpinj hudhër",
+      "1 lugë çaji paprikë të kuqe pluhur",
+      "1 lugë çaji rozmarinë të thatë",
+      "1 limon",
+      "kripë dhe piper"
+    ],
+    "steps": [
+      "Ngroh furrën në 200 °C.",
+      "Përziji vajin, hudhrën e shtypur, paprikën e kuqe, rozmarinën, lëngun e gjysmë limoni, kripën dhe piperin.",
+      "Qëroji patatet, pri në feta dhe shpërndaji në tavë.",
+      "Lyeje mirë pulën me marinadë, rreshtoje mbi patate dhe hidh marinadën e mbetur mbi patatet.",
+      "Hidh gjysmë filxhani ujë, mbuloje me letër alumini dhe piqe 30 minuta.",
+      "Hiqe letrën e aluminit dhe piqe edhe 30 deri në 35 minuta, derisa lëkura të bëhet krokante e patatet të buta. Para shërbimit shtrydh limonin e mbetur mbi pulë."
+    ],
+    "comments": [
+      {
+        "name": "Elira",
+        "when": "para 2 ditësh",
+        "text": "Shtova edhe disa kokë qepë të kuqe të prera në katër pjesë, u karamelizuan, shumë mirë."
+      },
+      {
+        "name": "Besnik",
+        "when": "para 3 ditësh",
+        "text": "E thjeshtë dhe e shijshme. Letra e aluminit në fillim është truku që mishi të mos thahet."
+      }
+    ]
+  },
+  {
+    "id": "spageti-bolonjeze",
+    "category": "glavna-jela",
+    "title": "Spageti bolonjeze",
+    "intro": "Kur askush nuk di çfarë të hajë për drekë, bëj bolonjeze dhe të gjithë janë të kënaqur. Salca mund të bëhet edhe një ditë më parë.",
+    "time": "1 orë",
+    "yields": "4 porcione",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "400 g spageti",
+      "400 g mish viçi i grirë",
+      "1 kokë qepë e kuqe",
+      "1 karotë",
+      "2 thelpinj hudhër",
+      "700 ml pasatë domatesh",
+      "2 lugë vaj ulliri",
+      "1 lugë çaji rigon",
+      "50 g parmixhano e grirë",
+      "kripë dhe piper"
+    ],
+    "steps": [
+      "Në vaj ulliri zbute qepën e prerë imët dhe karotën e grirë rreth pesë minuta.",
+      "Shto hudhrën, pastaj mishin, dhe skuqe duke e përzier derisa të thërrmohet dhe të ndryshojë ngjyrë.",
+      "Hidh pasatën, shto rigonin, kripën dhe piperin dhe ziej në zjarr të ulët rreth 40 minuta, duke e përzier herë pas here.",
+      "Ndërkohë ziej spagetin në shumë ujë të kripur sipas udhëzimeve në paketim.",
+      "Kullo makaronat dhe ruaj pak ujë zierjeje nëse salca duhet holluar.",
+      "Përziji spagetin me salcën dhe shërbeje të spërkatur me parmixhano."
+    ],
+    "comments": [
+      {
+        "name": "Valbona",
+        "when": "para 2 javësh",
+        "text": "Unë shtoj edhe një lugë çaji sheqer në salcë, ia heq thartësinë e domates."
+      },
+      {
+        "name": "Agron",
+        "when": "para një muaji",
+        "text": "Salca ngrihet shumë mirë, bëj gjithmonë sasi të dyfishtë."
+      }
+    ]
+  },
+  {
+    "id": "podvarak",
+    "category": "glavna-jela",
+    "title": "Podvarak",
+    "intro": "Podvarak është një gjellë që piqet gjatë, prandaj është e përkryer për fundjavat e ftohta. Lakra turshi nga fuçia i jep shijen e vërtetë.",
+    "time": "3 orë",
+    "yields": "6 porcione",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "1,5 kg lakër turshi",
+      "800 g plëndës derri",
+      "2 kokë qepë të kuqe",
+      "100 g proshutë e tymosur",
+      "1 lugë paprikë të kuqe pluhur",
+      "4 lugë vaj",
+      "3 gjethe dafine",
+      "1 lugë çaji kokrra piper"
+    ],
+    "steps": [
+      "Ngroh furrën në 180 °C. Pre lakrën në shirita të hollë dhe, nëse është shumë e kripur, shpëlaje.",
+      "Pre mishin në copa më të mëdha, kripose dhe skuqe në vaj nga të gjitha anët, pastaj nxirre.",
+      "Në të njëjtën yndyrë zbute qepën e prerë dhe proshutën, hiqi nga zjarri dhe përziji paprikën e kuqe.",
+      "Shto lakrën, dafinën dhe piperin, përziji dhe kalo në një enë më të madhe rezistente ndaj zjarrit.",
+      "Rreshto mishin mbi lakër, hidh rreth 300 ml ujë dhe mbuloje me letër alumini.",
+      "Piqe rreth dy orë, dhe gjysmë ore të fundit pa letër alumini, që lakra të marrë kore sipër."
+    ],
+    "comments": [
+      {
+        "name": "Teuta",
+        "when": "para 3 ditësh",
+        "text": "E bëra me mish gjeldeti për Krishtlindje, doli e mrekullueshme."
+      },
+      {
+        "name": "Besnik",
+        "when": "para 2 javësh",
+        "text": "Me proja dhe qumësht të thartë, më të mirë nuk ka."
+      }
+    ]
+  },
+  {
+    "id": "djuvec",
+    "category": "glavna-jela",
+    "title": "Gjuveç",
+    "intro": "Gjuveçi te ne është vera në një tavë. Kur perimet janë të freskëta nga pazari, nuk i duhet as mish.",
+    "time": "90 min",
+    "yields": "6 porcione",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "2 kokë qepë të kuqe",
+      "3 speca të gjatë",
+      "1 patëllxhan",
+      "1 kungull i njomë",
+      "4 domate",
+      "150 g oriz",
+      "100 ml vaj",
+      "1 lugë paprikë të kuqe pluhur",
+      "1 tufë majdanoz",
+      "kripë dhe piper"
+    ],
+    "steps": [
+      "Ngroh furrën në 180 °C.",
+      "Zbute në vaj qepën e prerë në gjysmëhënëza, pastaj shto specat e prerë në shirita dhe zbute edhe pesë minuta.",
+      "Shto patëllxhanin dhe kungullin e njomë të prerë në kubikë, kripose dhe zbute rreth dhjetë minuta.",
+      "Përziji orizin e larë dhe paprikën e kuqe, pastaj kalo gjithçka në një tavë.",
+      "Pre domatet në rrathë dhe rreshtoji mbi perime. Hidh rreth 400 ml ujë të ngrohtë.",
+      "Piqe rreth një orë, derisa orizi të zbutet dhe domatet të marrin ngjyrë. Spërkate me majdanoz të prerë para shërbimit."
+    ],
+    "comments": [
+      {
+        "name": "Arta",
+        "when": "dje",
+        "text": "Shtova edhe një grusht fasule të njoma të gjelbra, shkon shumë mirë."
+      },
+      {
+        "name": "Drita",
+        "when": "para një muaji",
+        "text": "E shërbeva me pulë të pjekur dhe të gjithë kërkuan edhe."
+      }
+    ]
+  },
+  {
+    "id": "pileci-paprikas",
+    "category": "glavna-jela",
+    "title": "Paprikash me pulë",
+    "intro": "Paprikashi me pulë ishte gjella e parë që mësova nga mamaja. Është më i mirë me makarona shtëpie ose me pure.",
+    "time": "75 min",
+    "yields": "4 porcione",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "1 kg këmbë pule",
+      "3 kokë qepë të kuqe",
+      "1 spec i gjatë",
+      "1 domate",
+      "2 lugë paprikë të kuqe pluhur",
+      "1 lugë miell",
+      "3 lugë vaj",
+      "kripë dhe piper"
+    ],
+    "steps": [
+      "Zbute në vaj qepën e prerë imët rreth dhjetë minuta, derisa të bëhet e tejdukshme.",
+      "Shto pulën dhe skuqe disa minuta nga të gjitha anët.",
+      "Hidh specin e prerë dhe domaten të qëruar e të copëtuar.",
+      "Hiqe tenxheren nga zjarri, spërkate me paprikën e kuqe dhe miellin dhe përziji mirë.",
+      "Hidh rreth 500 ml ujë të ngrohtë, kripose, pipëroje dhe ziej me kapak në zjarr të ulët rreth 45 minuta, derisa mishi të zbutet.",
+      "Nga fundi hiqe kapakun që salca të trashet."
+    ],
+    "comments": [
+      {
+        "name": "Blerta",
+        "when": "para 3 ditësh",
+        "text": "Në fund përziva një lugë kajmak të thartë, salca doli si kadife."
+      },
+      {
+        "name": "Ermal",
+        "when": "para 2 javësh",
+        "text": "Drekë e shpejtë dhe e sigurt, del gjithmonë."
+      }
+    ]
+  },
+  {
+    "id": "domaca-pileca-supa",
+    "category": "supe-i-corbe",
+    "title": "Supë shtëpie me pulë",
+    "intro": "Kjo supë gatuhej te ne të dielave dhe kur sëmurej dikush. Gatuaje ngadalë, kurrsesi të mos ziejë fort, dhe do të dalë e pastër si loti.",
+    "time": "2 orë",
+    "yields": "6 porcione",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "1 kg shpinë dhe krahë pule",
+      "2 karota",
+      "1 rrënjë majdanozi",
+      "1 copë selino",
+      "1 kokë qepë e kuqe",
+      "10 kokrra piper",
+      "100 g makarona shtëpie",
+      "1 tufë majdanoz",
+      "kripë"
+    ],
+    "steps": [
+      "Laje pulën, vëre në një tenxhere dhe hidh sipër rreth dy litra e gjysmë ujë të ftohtë.",
+      "Vëre në zjarr dhe, kur të fillojë të vlojë, hiqi shkumën me lugë.",
+      "Shto perimet e pastruara të tëra, qepën me lëkurë për ngjyrë dhe kokrrat e piperit.",
+      "Ziej në zjarr të ulët, aq sa të gurgullojë lehtë, rreth një orë e gjysmë. Kripose nga fundi.",
+      "Kullo supën, ndërsa mishin dhe karotat pri dhe ktheji në të.",
+      "Hidh makaronat dhe ziji disa minuta. Shërbeje të spërkatur me majdanoz të prerë."
+    ],
+    "comments": [
+      {
+        "name": "Elira",
+        "when": "para 2 ditësh",
+        "text": "Qepa me lëkurë jep një ngjyrë të artë të mrekullueshme, nuk e dija."
+      },
+      {
+        "name": "Fatmir",
+        "when": "para një muaji",
+        "text": "Nga mishi pastaj bëj sallatë me pulë, asgjë nuk hidhet."
+      }
+    ]
+  },
+  {
+    "id": "teleca-corba",
+    "category": "supe-i-corbe",
+    "title": "Çorbë me viçi",
+    "intro": "Çorba me viçi me lidhje nga e verdha e vezës dhe kajmaku është te ne një filxhan festiv. Nuk është e rëndë, vetëm duhet lidhur me kujdes në fund.",
+    "time": "90 min",
+    "yields": "6 porcione",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "500 g mish viçi",
+      "2 karota",
+      "1 rrënjë majdanozi",
+      "1/4 selino",
+      "1 kokë qepë e kuqe",
+      "2 lugë vaj",
+      "2 lugë miell",
+      "1 e verdhë veze",
+      "100 ml kajmak i thartë",
+      "1 lugë lëng limoni",
+      "kripë dhe piper"
+    ],
+    "steps": [
+      "Pre mishin në kubikë të vegjël dhe perimet në kubikë të imët.",
+      "Zbute qepën në vaj, pastaj shto mishin dhe skuqe derisa të ndryshojë ngjyrë.",
+      "Shto perimet, zbute edhe pesë minuta, pastaj spërkate me miell dhe përziji.",
+      "Hidh rreth dy litra ujë të ngrohtë, kripose, pipëroje dhe ziej në zjarr të ulët rreth një orë.",
+      "Në një filxhan rrah të verdhën e vezës me kajmakun dhe lëngun e limonit, pastaj shto ngadalë disa lugë çorbë të nxehtë, duke e përzier vazhdimisht.",
+      "Hiqe çorbën nga zjarri dhe përziji lidhjen. Mos e kthe të vlojë, që e verdha të mos ngjizet."
+    ],
+    "comments": [
+      {
+        "name": "Valbona",
+        "when": "para 2 javësh",
+        "text": "Shtimi i çorbës ngadalë në të verdhën është çelësi, herën e parë më ngjizi sepse nxitova."
+      },
+      {
+        "name": "Dritan",
+        "when": "para një muaji",
+        "text": "Shtova edhe pak majdanoz të prerë në fund. Shumë e mirë."
+      }
+    ]
+  },
+  {
+    "id": "paradajz-corba",
+    "category": "supe-i-corbe",
+    "title": "Çorbë me domate",
+    "intro": "Kjo është çorba që e adhuroja si fëmijë, me pak oriz dhe shumë majdanoz. Në verë e bëj me domate të freskëta, në dimër me lëng nga kavanozi.",
+    "time": "40 min",
+    "yields": "4 porcione",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "1 kg domate të pjekura",
+      "1 kokë qepë e kuqe",
+      "2 lugë vaj",
+      "1 lugë miell",
+      "50 g oriz",
+      "1 lugë çaji sheqer",
+      "1 tufë majdanoz",
+      "kripë"
+    ],
+    "steps": [
+      "Hidh ujë të vluar mbi domatet, qëroji dhe copëtoji.",
+      "Zbute në vaj qepën e prerë imët, pastaj spërkate me miell dhe përziji shkurt.",
+      "Shto domatet dhe ziej rreth dhjetë minuta, derisa të shkrihen. Nëse e do çorbën të lëmuar, bëje pure me blender.",
+      "Hidh rreth një litër ujë, shto orizin e larë, sheqerin dhe kripën.",
+      "Ziej edhe 15 minuta, derisa orizi të zbutet.",
+      "Shërbeje të spërkatur me majdanoz të prerë imët."
+    ],
+    "comments": [
+      {
+        "name": "Arta",
+        "when": "dje",
+        "text": "E bëra me lëng nga kavanozi, për gjysmë ore ishte gati. Fëmijëve u pëlqen."
+      },
+      {
+        "name": "Lule",
+        "when": "para 3 ditësh",
+        "text": "Në vend të orizit vura makarona të imta, njësoj mirë."
+      }
+    ]
+  },
+  {
+    "id": "corba-od-povrca",
+    "category": "supe-i-corbe",
+    "title": "Çorbë me perime",
+    "intro": "Kur në frigorifer mbetet pak nga çdo perime, lind kjo çorbë. Çdo herë del pak ndryshe, por gjithmonë e mirë.",
+    "time": "50 min",
+    "yields": "6 porcione",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "1 kokë qepë e kuqe",
+      "2 karota",
+      "2 patate",
+      "1 kungull i njomë",
+      "150 g fasule të njoma të gjelbra",
+      "100 g bizele",
+      "3 lugë vaj",
+      "1 lugë miell",
+      "1 lugë çaji paprikë të kuqe pluhur",
+      "1 tufë majdanoz",
+      "kripë dhe piper"
+    ],
+    "steps": [
+      "Pastro të gjitha perimet dhe pri në kubikë të vegjël, ndërsa fasulet e njoma në copëza.",
+      "Zbute në vaj qepën dhe karotën rreth pesë minuta.",
+      "Shto perimet e tjera dhe zbute edhe pesë minuta, pastaj spërkate me miell dhe paprikë të kuqe dhe përziji.",
+      "Hidh rreth dy litra ujë të ngrohtë, kripose dhe pipëroje.",
+      "Ziej në zjarr të ulët rreth gjysmë ore, derisa perimet të zbuten.",
+      "Spërkate me majdanoz të prerë dhe shërbeje."
+    ],
+    "comments": [
+      {
+        "name": "Albana",
+        "when": "para 2 javësh",
+        "text": "Shtova edhe pak lulelakër, u përshtat shkëlqyeshëm."
+      },
+      {
+        "name": "Gentian",
+        "when": "para një muaji",
+        "text": "Me një lugë kajmak të thartë në pjatë është e përkryer."
+      }
+    ]
+  },
+  {
+    "id": "riblja-corba",
+    "category": "supe-i-corbe",
+    "title": "Çorbë peshku",
+    "intro": "Çorbën e vërtetë të peshkut babai im e gatuante në kazan buzë Danubit, ndërsa kjo është versioni për sobë. Shumë qepë dhe spec i djegës, ky është gjithë sekreti.",
+    "time": "2 orë",
+    "yields": "6 porcione",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "1,5 kg peshk lumi (krap dhe som)",
+      "1 kg qepë të kuqe",
+      "2 lugë paprikë të kuqe pluhur",
+      "2 lugë pure domatesh",
+      "1 spec djegës",
+      "2 gjethe dafine",
+      "kripë"
+    ],
+    "steps": [
+      "Pastro peshkun, pre në copa më të mëdha, kripose dhe lëre në frigorifer sa të përgatitesh bazën.",
+      "Pre qepët imët, vëri në një tenxhere të madhe, hidh rreth dy litra e gjysmë ujë dhe ziej rreth një orë, derisa qepa të shkrihet krejt.",
+      "Përziji paprikën e kuqe, puren e domateve, dafinën dhe specin djegës.",
+      "Hidh peshkun me kujdes, kripose dhe ziej në zjarr mesatar rreth 30 minuta.",
+      "Mos e përziej me lugë që peshku të mos shkërmoqet, vetëm tund herë pas here tenxheren."
+    ],
+    "comments": [
+      {
+        "name": "Fatjon",
+        "when": "para 3 ditësh",
+        "text": "Shtova edhe kokat e peshkut për shije dhe pastaj i nxora. E trashë dhe aromatike."
+      },
+      {
+        "name": "Shpresa",
+        "when": "para 2 javësh",
+        "text": "Tundja në vend të përzierjes, si te gjyshi im. Të lumtë për recetën."
+      }
+    ]
+  },
+  {
+    "id": "krem-supa-od-bundeve",
+    "category": "supe-i-corbe",
+    "title": "Supë krem me kungull",
+    "intro": "Kur fillon stina e kungujve, kjo është gjëja e parë që gatuaj. Është e trashë, pak e ëmbël dhe ngroh si një batanije.",
+    "time": "45 min",
+    "yields": "4 porcione",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "800 g kungull",
+      "1 kokë qepë e kuqe",
+      "2 karota",
+      "1 patate",
+      "30 g gjalpë",
+      "800 ml supë perimesh ose ujë",
+      "100 ml krem gatimi",
+      "1 majë arrë moshke",
+      "kripë dhe piper"
+    ],
+    "steps": [
+      "Qëroje kungullin, hiq farat dhe pri në kubikë. Bëj të njëjtën gjë me karotën dhe patatet.",
+      "Zbute në gjalpë qepën e prerë, pastaj shto perimet dhe zbute disa minuta.",
+      "Hidh supën ose ujin, kripose dhe ziej rreth 25 minuta, derisa gjithçka të zbutet.",
+      "Bëje pure me blender dore derisa të dalë një supë e lëmuar.",
+      "Përziji kremin, arrën moshke dhe piperin dhe ngroje shkurt, por mos e lër të vlojë."
+    ],
+    "comments": [
+      {
+        "name": "Elira",
+        "when": "para 2 ditësh",
+        "text": "Skuqa farat e kungullit dhe i spërkata sipër, fenomenale."
+      },
+      {
+        "name": "Arben",
+        "when": "para një muaji",
+        "text": "Pa krem është më e lehtë dhe njësoj e mirë."
+      }
+    ]
+  },
+  {
+    "id": "jagnjeca-corba",
+    "category": "supe-i-corbe",
+    "title": "Çorbë me mish qengji",
+    "intro": "Çorba me mish qengji gatuhet te ne për Shën Gjergjin, por ne e bëjmë edhe sa herë gjejmë mish të mirë qengji. Është pak e thartë dhe shumë freskuese.",
+    "time": "2 orë",
+    "yields": "6 porcione",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "600 g mish qengji",
+      "1 kokë qepë e kuqe",
+      "2 karota",
+      "1 rrënjë majdanozi",
+      "2 lugë vaj",
+      "1 lugë miell",
+      "1 lugë çaji paprikë të kuqe pluhur",
+      "1 e verdhë veze",
+      "100 ml kajmak i thartë",
+      "1 lugë uthull",
+      "1 tufë majdanoz",
+      "kripë dhe piper"
+    ],
+    "steps": [
+      "Pre mishin e qengjit në copa më të vogla dhe perimet në kubikë.",
+      "Zbute qepën në vaj, shto mishin dhe skuqe derisa të ndryshojë ngjyrë.",
+      "Shto perimet, pastaj spërkate me miell dhe paprikë të kuqe dhe përziji.",
+      "Hidh rreth dy litra ujë të ngrohtë, kripose dhe ziej në zjarr të ulët rreth një orë e gjysmë, derisa mishi të zbutet.",
+      "Rrah të verdhën e vezës me kajmakun dhe uthullën, pastaj shto ngadalë disa lugë çorbë të nxehtë.",
+      "Hiqe çorbën nga zjarri, përziji lidhjen dhe spërkate me majdanoz të prerë."
+    ],
+    "comments": [
+      {
+        "name": "Blerta",
+        "when": "para 2 javësh",
+        "text": "E gatova me qafë qengji, mishi doli shumë i butë."
+      },
+      {
+        "name": "Ermal",
+        "when": "para një muaji",
+        "text": "Uthulla në fund i jep atë shijen e vërtetë. Shumë e mirë."
+      }
+    ]
+  },
+  {
+    "id": "corba-od-sociva",
+    "category": "supe-i-corbe",
+    "title": "Çorbë me thjerrëza",
+    "intro": "Thjerrëzat nuk kanë nevojë të njomen, prandaj kjo çorbë është dreka ime e shpejtë e përmbajtur. Ngopëse dhe e lirë, por e shijshme sikur është gatuar gjithë ditën.",
+    "time": "1 orë",
+    "yields": "5 porcione",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "300 g thjerrëza kafe",
+      "1 kokë qepë e kuqe",
+      "1 karotë",
+      "2 thelpinj hudhër",
+      "2 lugë vaj",
+      "1 lugë pure domatesh",
+      "1 lugë çaji paprikë të kuqe pluhur",
+      "2 gjethe dafine",
+      "kripë dhe piper"
+    ],
+    "steps": [
+      "Zgjidhi thjerrëzat dhe shpëlaji mirë me ujë të ftohtë.",
+      "Zbute në vaj qepën dhe karotën e prerë, pastaj shto hudhrën.",
+      "Hiqe nga zjarri, përziji paprikën e kuqe dhe puren e domateve.",
+      "Shto thjerrëzat dhe dafinën, hidh rreth 1,5 litra ujë dhe ziej në zjarr të ulët rreth 40 minuta, derisa thjerrëzat të zbuten.",
+      "Kripose dhe pipëroje nga fundi. Nëse është shumë e trashë, shto pak ujë."
+    ],
+    "comments": [
+      {
+        "name": "Arta",
+        "when": "dje",
+        "text": "Shtova një lugë çaji qimnon, shkon shumë bukur me thjerrëzat."
+      },
+      {
+        "name": "Fatmir",
+        "when": "para 3 ditësh",
+        "text": "Të nesërmen trashet dhe e ha si gjellë. Recetë e shkëlqyer."
+      }
+    ]
+  },
+  {
+    "id": "sopska-salata",
+    "category": "salate-i-prilozi",
+    "title": "Sallatë shopska",
+    "intro": "Shopska është sallata pa të cilën nuk kalon asnjë drekë vere te ne. E rëndësishme është që domatet të jenë të pjekura, dhe djathi i mirë e i yndyrshëm.",
+    "time": "15 min",
+    "yields": "4 porcione",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "4 domate të pjekura",
+      "2 kastravecë",
+      "2 speca të gjatë",
+      "1 kokë qepë e kuqe",
+      "200 g djathë të bardhë",
+      "3 lugë vaj",
+      "1 lugë uthull",
+      "kripë"
+    ],
+    "steps": [
+      "Laji domatet, kastravecët dhe specat dhe pri në kubikë.",
+      "Pre qepën në gjysmëhënëza të holla ose imët.",
+      "Vër perimet në një enë, kripose, hidh vajin dhe uthullën dhe përziji.",
+      "Sipër sallatës grij ose thërmo djathin e bardhë në një shtresë të trashë dhe shërbeje menjëherë."
+    ],
+    "comments": [
+      {
+        "name": "Elira",
+        "when": "para 2 ditësh",
+        "text": "Unë mbi djathë vë majdanoz, duket bukur dhe ka aromë të mirë."
+      },
+      {
+        "name": "Besnik",
+        "when": "para 2 javësh",
+        "text": "Me speca të pjekur në vend të të freskëve është edhe më e mirë."
+      }
+    ]
+  },
+  {
+    "id": "srpska-salata",
+    "category": "salate-i-prilozi",
+    "title": "Sallatë serbe",
+    "intro": "Sallata më e thjeshtë në botë, por vetëm nëse perimet janë të vërteta, nga pazari. Specat djegës janë të detyrueshëm.",
+    "time": "15 min",
+    "yields": "4 porcione",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "4 domate",
+      "1 kastravec",
+      "2 speca të gjatë",
+      "1 kokë qepë e kuqe",
+      "1 spec djegës",
+      "3 lugë vaj",
+      "1 lugë uthull",
+      "kripë"
+    ],
+    "steps": [
+      "Laji perimet dhe pri domatet e kastravecin në feta, e specat në rrathë.",
+      "Pre qepën në rrathë të hollë dhe specin djegës imët.",
+      "Vër gjithçka në një enë dhe kripose.",
+      "Hidh vajin dhe uthullën, përziji dhe lëre pesë minuta që perimet të lëshojnë lëng para shërbimit."
+    ],
+    "comments": [
+      {
+        "name": "Drita",
+        "when": "para 3 ditësh",
+        "text": "Është më e mira me skarë, dhe lëngun nga ena e pastron me bukë."
+      },
+      {
+        "name": "Agron",
+        "when": "para një muaji",
+        "text": "Vura qepë të kuqe, është më e butë dhe më e bukur në sallatë."
+      }
+    ]
+  },
+  {
+    "id": "salata-od-kiselog-kupusa",
+    "category": "salate-i-prilozi",
+    "title": "Sallatë me lakër turshi",
+    "intro": "Në dimër kjo është sallata pranë çdo dreke. Nëse ke lakër nga fuçia e shtëpisë, nuk i duhet pothuajse asgjë.",
+    "time": "10 min",
+    "yields": "4 porcione",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "500 g lakër turshi",
+      "3 lugë vaj",
+      "1 lugë çaji paprikë të kuqe pluhur",
+      "1 majë piper i bluar",
+      "2 kërcell qepë të njoma"
+    ],
+    "steps": [
+      "Pre lakrën në shirita të hollë. Nëse është shumë e kripur, shpëlaje shkurt me ujë të ftohtë dhe kulloje mirë.",
+      "Pre qepët e njoma në rrathë të vegjël.",
+      "Përziji lakrën dhe qepët në një enë, hidh vajin dhe përziji.",
+      "Spërkate me paprikë të kuqe dhe piper vetëm para shërbimit."
+    ],
+    "comments": [
+      {
+        "name": "Valbona",
+        "when": "para 2 javësh",
+        "text": "Me fasule nuk shkon pa këtë sallatë."
+      },
+      {
+        "name": "Dritan",
+        "when": "para një muaji",
+        "text": "Shtoj edhe pak karotë të grirë për ngjyrën."
+      }
+    ]
+  },
+  {
+    "id": "krompir-salata",
+    "category": "salate-i-prilozi",
+    "title": "Sallatë me patate",
+    "intro": "Sallata me patate është garnitura ime e preferuar me peshk të skuqur dhe shnicla. Hidhi salcën sa patatet janë ende të ngrohta, që të thithin gjithë shijen.",
+    "time": "40 min",
+    "yields": "4 porcione",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "1 kg patate",
+      "1 kokë qepë e kuqe",
+      "4 lugë vaj",
+      "2 lugë uthull",
+      "1 tufë majdanoz",
+      "kripë dhe piper"
+    ],
+    "steps": [
+      "Laji patatet dhe ziji me lëkurë në ujë të kripur rreth 25 minuta, derisa të zbuten.",
+      "Kullo, ftoji pak, qëroji dhe pri në rrathë.",
+      "Pre qepën në gjysmëhënëza të holla dhe majdanozin imët.",
+      "Sa janë ende të ngrohta, hidh mbi patate vajin dhe uthullën, shto qepën, kripën dhe piperin dhe përziji lehtë.",
+      "Spërkate me majdanoz dhe lëre të paktën 15 minuta që të përzihen shijet para shërbimit."
+    ],
+    "comments": [
+      {
+        "name": "Albana",
+        "when": "para 3 ditësh",
+        "text": "Hedhja e salcës kur janë të ngrohta bën ndryshim të madh, faleminderit për këshillën."
+      },
+      {
+        "name": "Gentian",
+        "when": "para 2 javësh",
+        "text": "Unë shtoj pak mustardë në salcë, fëmijëve u pëlqen shumë."
+      }
+    ]
+  },
+  {
+    "id": "salata-od-pecenih-paprika",
+    "category": "salate-i-prilozi",
+    "title": "Sallatë me speca të pjekur",
+    "intro": "Aroma e specave të pjekur në kuzhinë për mua është aroma e shtatorit. Kjo sallatë qëndron në frigorifer disa ditë dhe vetëm përmirësohet.",
+    "time": "1 orë",
+    "yields": "6 porcione",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "1 kg speca të kuq të gjatë",
+      "3 thelpinj hudhër",
+      "4 lugë vaj",
+      "2 lugë uthull",
+      "1 tufë majdanoz",
+      "kripë"
+    ],
+    "steps": [
+      "Laji specat, thaji dhe piqi në furrë të ngrohur në 220 °C rreth 30 minuta, duke i kthyer, derisa lëkura të nxihet në vende.",
+      "Vër specat e pjekur në një enë, mbuloje dhe lëri 15 minuta që të avullojnë.",
+      "Qëroji specat dhe pastroji nga farat.",
+      "Rreshtoji në një enë, kripose dhe spërkati me hudhër dhe majdanoz të prerë imët.",
+      "Hidh vajin dhe uthullën dhe lëre të paktën gjysmë ore para shërbimit."
+    ],
+    "comments": [
+      {
+        "name": "Teuta",
+        "when": "dje",
+        "text": "Mbulimi i enës që të avullojnë vlen flori, lëkura dalin vetë."
+      },
+      {
+        "name": "Ardian",
+        "when": "para një muaji",
+        "text": "Me djathë të bardhë dhe proja, është një vakt i tërë."
+      }
+    ]
+  },
+  {
+    "id": "mladi-krompir-iz-rerne",
+    "category": "salate-i-prilozi",
+    "title": "Patate të reja në furrë",
+    "intro": "Sapo patatet e reja shfaqen në pazar, kjo është te ne garnitura për gjithçka. Nuk ka nevojë as t'i qërosh, vetëm shpërlaji mirë.",
+    "time": "50 min",
+    "yields": "4 porcione",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "1 kg patate të reja",
+      "4 lugë vaj",
+      "3 thelpinj hudhër",
+      "1 lugë çaji rozmarinë të thatë",
+      "3 kërcell qepë të njoma",
+      "kripë dhe piper"
+    ],
+    "steps": [
+      "Ngroh furrën në 200 °C.",
+      "Laji patatet mirë me furçë dhe pri përgjysmë ato më të mëdhenj.",
+      "Përziji me vajin, hudhrën e shtypur, rozmarinën, kripën dhe piperin.",
+      "Shpërndaji patatet në tavë në një shtresë dhe piqi rreth 40 minuta, duke i kthyer një herë, derisa të bëhen të arta dhe krokante.",
+      "Spërkati me qepë të njoma të prera dhe shërbeji të ngrohta."
+    ],
+    "comments": [
+      {
+        "name": "Lirije",
+        "when": "para 2 ditësh",
+        "text": "Një shtresë është e rëndësishme, kur i mbledh bashkë nuk dalin krokante."
+      },
+      {
+        "name": "Ilir",
+        "when": "para 2 javësh",
+        "text": "Para shërbimit shtova pak kajmak të thartë me hudhër, shkëlqyeshëm."
+      }
+    ]
+  },
+  {
+    "id": "grcka-salata",
+    "category": "salate-i-prilozi",
+    "title": "Sallatë greke",
+    "intro": "Këtë sallatë e pëlqeva gjatë pushimeve në det dhe që atëherë e bëj sa herë ka vapë. Me një copë bukë është e mjaftueshme edhe si darkë e lehtë.",
+    "time": "15 min",
+    "yields": "4 porcione",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "4 domate",
+      "1 kastravec",
+      "1 spec i gjelbër",
+      "1 kokë qepë e kuqe",
+      "150 g djathë feta",
+      "50 g ullinj të zinj",
+      "4 lugë vaj ulliri",
+      "1 lugë çaji rigon të thatë",
+      "kripë"
+    ],
+    "steps": [
+      "Pre domatet dhe kastravecin në copa më të mëdha, e specin dhe qepën në rrathë.",
+      "Vër perimet në një enë, shto ullinjtë dhe kripose lehtë.",
+      "Hidh vajin e ullirit dhe përziji.",
+      "Sipër vër djathin feta në një copë të vetme ose të thërmuar trashë dhe spërkate me rigon."
+    ],
+    "comments": [
+      {
+        "name": "Elira",
+        "when": "para 3 ditësh",
+        "text": "Me djathin tonë të bardhë është po aq e shkëlqyer, nëse nuk ka feta."
+      },
+      {
+        "name": "Besnik",
+        "when": "para një muaji",
+        "text": "Një pikë lëng limoni dhe është e përkryer."
+      }
+    ]
+  },
+  {
+    "id": "salata-od-cvekle",
+    "category": "salate-i-prilozi",
+    "title": "Sallatë me panxhar",
+    "intro": "Panxhari është sallata e dimrit e gjyshes sime, që e bënte gjithmonë bashkë me mishin e pjekur. Bëje një ditë më parë dhe do të jetë edhe më e shijshme.",
+    "time": "1 orë",
+    "yields": "6 porcione",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "1 kg panxhar",
+      "3 lugë uthull",
+      "2 lugë vaj",
+      "1 lugë çaji sheqer",
+      "1 lugë çaji qimnon",
+      "kripë"
+    ],
+    "steps": [
+      "Laje panxharin dhe ziej me lëkurë rreth 45 minuta, derisa thika të kalojë lehtë nëpër të.",
+      "Kullo, ftoje dhe qëroje, më mirë me doreza.",
+      "Pre në rrathë të hollë ose shirita.",
+      "Përziji uthullën, vajin, sheqerin, kripën dhe qimnonin me pak ujë dhe hidhe mbi panxhar.",
+      "Lëre në frigorifer të paktën disa orë para shërbimit."
+    ],
+    "comments": [
+      {
+        "name": "Valbona",
+        "when": "para 2 javësh",
+        "text": "Unë e pjek në letër alumini në vend që ta ziej, është më e ëmbël."
+      },
+      {
+        "name": "Agron",
+        "when": "para një muaji",
+        "text": "Pak rrikë e grirë sipër, dhe kaq."
+      }
+    ]
+  },
+  {
+    "id": "pogaca",
+    "category": "hleb-i-peciva",
+    "title": "Pogaçe",
+    "intro": "Pogaçja e butë ka qenë në tryezën tonë për çdo festë dhe çdo ditëlindje. Brumi e do kuzhinën e ngrohtë dhe pak durim.",
+    "time": "2 orë",
+    "yields": "1 pogaçe e madhe",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "1 kg miell T-400",
+      "1 kub maja e freskët",
+      "600 ml qumësht i vakët",
+      "100 ml vaj",
+      "2 lugë çaji kripë",
+      "1 lugë çaji sheqer",
+      "1 vezë për lyerje"
+    ],
+    "steps": [
+      "Shpërbëj majanë në pak qumësht të vakët me sheqerin dhe lëre rreth dhjetë minuta që të krijojë shkumë.",
+      "Në miell shto kripën, majanë e ngritur, qumështin e mbetur dhe vajin, pastaj gjuaje rreth dhjetë minuta derisa brumi të bëhet i lëmuar dhe i butë.",
+      "Mbuloje brumin dhe lëre në një vend të ngrohtë rreth një orë, që të dyfishojë vëllimin.",
+      "Gjuaje shkurt brumin, formo një pogaçe të rrumbullakët dhe vëre në një tavë të rrumbullakët të lyer me vaj. Lëre edhe 20 minuta të rritet.",
+      "Lyeje me vezën e rrahur.",
+      "Piqe në furrë të ngrohur në 200 °C rreth 35 minuta, derisa të marrë ngjyrë. Mbuloje me një leckë të pastër ndërsa ftohet, që kora të mbetet e butë."
+    ],
+    "comments": [
+      {
+        "name": "Blerta",
+        "when": "para 3 ditësh",
+        "text": "Lecka mbi pogaçen e nxehtë është një truk i vjetër, kora del si pambuk."
+      },
+      {
+        "name": "Mimoza",
+        "when": "para një muaji",
+        "text": "Para pjekjes e spërkata me susam, doli e mrekullueshme."
+      }
+    ]
+  },
+  {
+    "id": "kiflice-sa-sirom",
+    "category": "hleb-i-peciva",
+    "title": "Kiflice me djathë",
+    "intro": "Kiflet janë gjëja e parë që mësova të gatuaj dhe mbarojnë brenda një pasditeje. I bëj të dyfishta dhe gjysmën e ngrij.",
+    "time": "2 orë",
+    "yields": "32 copë",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "500 g miell",
+      "20 g maja e freskët",
+      "250 ml qumësht i vakët",
+      "100 ml vaj",
+      "1 lugë çaji sheqer",
+      "1 lugë çaji kripë",
+      "200 g djathë të bardhë të butë",
+      "1 vezë"
+    ],
+    "steps": [
+      "Shpërbëj majanë në qumështin e vakët me sheqerin dhe lëre të krijojë shkumë.",
+      "Shto miellin, kripën dhe vajin dhe gatuaj një brumë të butë, pastaj lëre të mbuluar në një vend të ngrohtë rreth 45 minuta.",
+      "Ndaje brumin në katër pjesë dhe çdo pjesë hapje në një rreth, pastaj pri në tetë trekëndësha.",
+      "Në skajin më të gjerë të çdo trekëndëshi vër pak djathë dhe mbështille kiflen drejt majës.",
+      "Rreshto kiflet në një tavë të veshur me letër, lyeji me vezën e rrahur dhe lëri edhe 15 minuta.",
+      "Piqi në furrë të ngrohur në 200 °C rreth 20 minuta, derisa të marrin ngjyrë."
+    ],
+    "comments": [
+      {
+        "name": "Albana",
+        "when": "dje",
+        "text": "Gjysmën e mbusha me djathë dhe gjysmën me reçel. Mbaruan brenda një ore."
+      },
+      {
+        "name": "Gentian",
+        "when": "para 2 javësh",
+        "text": "Të ngrira e pastaj të ngrohura janë si të freskëta."
+      }
+    ]
+  },
+  {
+    "id": "domaci-hleb",
+    "category": "hleb-i-peciva",
+    "title": "Bukë shtëpie",
+    "intro": "Që kur e piqem bukën në shtëpi, rrallë e blej. Kjo recetë është e thjeshtë dhe i fal gabimet, e përkryer për fillim.",
+    "time": "3 orë",
+    "yields": "1 bukë",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "500 g miell i bardhë T-500",
+      "7 g maja e thatë",
+      "330 ml ujë i vakët",
+      "10 g kripë",
+      "1 lugë çaji sheqer",
+      "1 lugë vaj"
+    ],
+    "steps": [
+      "Në një enë përziji miellin, majanë e thatë, sheqerin dhe kripën.",
+      "Shto ujin e vakët dhe vajin dhe gatuaj rreth dhjetë minuta, derisa brumi të bëhet i lëmuar dhe elastik.",
+      "Mbuloje enën dhe lëre brumin në një vend të ngrohtë rreth një orë e gjysmë, derisa të dyfishojë vëllimin.",
+      "Hidhe brumin mbi një sipërfaqe të miellosur, gatuaje shkurt dhe formo një bukë. Vëre në një tavë ose kallëp dhe lëre edhe 40 minuta.",
+      "Ngroh furrën në 220 °C dhe në fund vër një enë me ujë për avull.",
+      "Pri majën e bukës me thikë dhe piqe rreth 35 minuta. Buka është gati kur tingëllon bosh kur i godet fundin."
+    ],
+    "comments": [
+      {
+        "name": "Arta",
+        "when": "para 3 ditësh",
+        "text": "Ena me ujë bëri një kore shumë të bukur. Për herë të parë më doli buka."
+      },
+      {
+        "name": "Arben",
+        "when": "para një muaji",
+        "text": "Vura gjysmën miell integral, vetëm shtova pak më shumë ujë."
+      }
+    ]
+  },
+  {
+    "id": "pogacice-sa-cvarcima",
+    "category": "hleb-i-peciva",
+    "title": "Pogaçica me cvarci",
+    "intro": "Këto pogaçica janë specialiteti i vjehrrës sime dhe pa to nuk ka festë. Kërkojnë pak punë, por brumi i shtresuar e shpërblen mundin.",
+    "time": "3 orë",
+    "yields": "30 copë",
+    "difficulty": "e vështirë",
+    "ingredients": [
+      "500 g miell",
+      "20 g maja e freskët",
+      "250 ml qumësht i vakët",
+      "100 g kajmak i thartë",
+      "1 vezë",
+      "1 lugë çaji kripë",
+      "1 lugë çaji sheqer",
+      "200 g cvarci (copëza të skuqura dhjami), të bluara"
+    ],
+    "steps": [
+      "Shpërbëj majanë në qumësht me sheqerin dhe lëre të krijojë shkumë.",
+      "Shto miellin, kripën, kajmakun dhe të bardhën e vezës, ndërsa të verdhën ruaje për lyerje. Gatuaj një brumë të butë dhe lëre gjysmë ore të pushojë.",
+      "Hapje brumin në një drejtkëndësh, lyeje me një të tretën e cvarceve, paloje si letër dhe lëre 20 minuta.",
+      "Përsërite hapjen, lyerjen dhe palosjen edhe dy herë, derisa të mbarojnë cvarcet.",
+      "Herën e fundit hapje brumin në trashësi 2 cm, prejë sipërfaqen në formë rrjete dhe pri pogaçicat me një gotë ose kallëp.",
+      "Rreshtoji në tavë, lyeji me të verdhën e vezës dhe lëri 20 minuta. Piqi në furrë të ngrohur në 200 °C rreth 25 minuta."
+    ],
+    "comments": [
+      {
+        "name": "Teuta",
+        "when": "para 2 javësh",
+        "text": "Brumi doli me shtresa të vërteta, si nga furra. Ia vlente pritja."
+      },
+      {
+        "name": "Dritan",
+        "when": "para një muaji",
+        "text": "Më të mirat janë të vakëta, me një gotë kos."
+      },
+      {
+        "name": "Lule",
+        "when": "para një muaji",
+        "text": "Unë shtoj edhe pak piper në cvarce, i jep diçka të veçantë."
+      }
+    ]
+  },
+  {
+    "id": "gibanica",
+    "category": "hleb-i-peciva",
+    "title": "Gibanicë",
+    "intro": "Gibanica është gjella me të cilën pritet te ne mikun, në mëngjes ose me drekë. Kjo është e lëngshme dhe e lehtë, me shumë djathë.",
+    "time": "1 orë",
+    "yields": "12 copë",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "500 g petë byreku",
+      "500 g djathë i njomë",
+      "4 vezë",
+      "200 ml kos",
+      "150 ml vaj",
+      "200 ml ujë me gaz",
+      "1 lugë çaji kripë"
+    ],
+    "steps": [
+      "Ngroh furrën në 200 °C dhe lyeje me vaj një tavë më të madhe.",
+      "Rrah vezët, shto kosin, ujin me gaz, gjysmën e vajit dhe kripën, pastaj përziji djathin e thërmuar.",
+      "Vër dy petë në fund të tavës dhe spërkati me vaj.",
+      "Çdo petë tjetër zhyte në mbushje, rrudhose lehtë dhe rreshtoje në tavë, derisa të mbarojnë petët.",
+      "Mbushjen e mbetur hidhe sipër dhe spërkate me pak vaj.",
+      "Piqe rreth 40 minuta, derisa gibanica të marrë ngjyrë e të ngrihet."
+    ],
+    "comments": [
+      {
+        "name": "Fatjon",
+        "when": "dje",
+        "text": "Uji me gaz është sekreti, doli e butë dhe e fryrë."
+      },
+      {
+        "name": "Shpresa",
+        "when": "para 3 ditësh",
+        "text": "E lashë gjysmë ore të pushojë para prerjes dhe copat dolën të përkryera."
+      }
+    ]
+  },
+  {
+    "id": "zeljanica",
+    "category": "hleb-i-peciva",
+    "title": "Byrek me spinaq",
+    "intro": "Në pranverë, sapo vjen spinaqi i parë, bëj byrek me spinaq. Është i lehtë, aromatik dhe njësoj i mirë i ngrohtë e i ftohtë.",
+    "time": "75 min",
+    "yields": "10 copë",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "500 g petë byreku",
+      "500 g spinaq",
+      "300 g djathë të bardhë",
+      "3 vezë",
+      "200 ml kos",
+      "100 ml vaj",
+      "1 tufë qepë të njoma",
+      "kripë"
+    ],
+    "steps": [
+      "Laje spinaqin, zjeje shkurt në ujë të vluar, kullo dhe pri. Shtrydhe mirë me duar.",
+      "Pre qepët e njoma dhe përziji me spinaqin, djathin e thërmuar, vezët dhe pak kripë.",
+      "Ngroh furrën në 200 °C dhe lyeje tavën me vaj.",
+      "Në tavë vër dy petë, spërkati me vaj dhe shpërndaj një pjesë të mbushjes. Përsërite derisa të mbarojë mbushja dhe mbylle me dy petë.",
+      "Rrah kosin me vajin e mbetur dhe hidhe mbi byrek.",
+      "Piqe rreth 40 minuta, derisa të marrë ngjyrë."
+    ],
+    "comments": [
+      {
+        "name": "Valbona",
+        "when": "para 2 javësh",
+        "text": "E bëra me mangold, po ashtu shumë mirë."
+      },
+      {
+        "name": "Besnik",
+        "when": "para një muaji",
+        "text": "Shtrydhja e spinaqit është e rëndësishme, përndryshe petët dalin të ngjitura."
+      }
+    ]
+  },
+  {
+    "id": "pita-sa-mesom",
+    "category": "hleb-i-peciva",
+    "title": "Byrek me mish",
+    "intro": "Ky është versioni ynë i shtëpisë i byrekut me mish, i mbështjellë në formë kërmilli. Nuk është byreku i furrës, por familja e do më shumë.",
+    "time": "75 min",
+    "yields": "8 copë",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "500 g petë më të trasha byreku",
+      "500 g mish i grirë",
+      "2 kokë qepë të kuqe",
+      "100 ml vaj",
+      "1 lugë çaji paprikë të kuqe pluhur",
+      "200 ml ujë me gaz",
+      "1 lugë çaji kripë",
+      "piper"
+    ],
+    "steps": [
+      "Në pak vaj zbute qepën e prerë imët, shto mishin dhe skuqe derisa të thërrmohet. Erëzoje me kripë, piper dhe paprikë të kuqe dhe lëre të ftohet.",
+      "Ngroh furrën në 200 °C dhe lyeje me vaj një tavë të rrumbullakët.",
+      "Shtro një petë, spërkate me vaj, mbi të vër një tjetër dhe përgjatë anës së gjatë shpërndaj një pjesë të mbushjes.",
+      "Mbështille petën në rrotull dhe ktheje në formë kërmilli në mes të tavës. Përsërite, duke vazhduar spiralen, derisa të mbarojnë petët dhe mbushja.",
+      "Hidh mbi byrek ujin me gaz të përzier me vajin e mbetur.",
+      "Piqe rreth 40 minuta, derisa të bëhet i artë dhe krokant."
+    ],
+    "comments": [
+      {
+        "name": "Ardian",
+        "when": "para 3 ditësh",
+        "text": "E shërbeva me kos, si një mëngjes i vërtetë."
+      },
+      {
+        "name": "Lirije",
+        "when": "para 2 javësh",
+        "text": "Uji me gaz sipër është ide e shkëlqyer, petët mbetën të buta brenda."
+      }
+    ]
+  },
+  {
+    "id": "palacinke",
+    "category": "dorucak",
+    "title": "Krepa",
+    "intro": "Krepat janë mëngjesi i së dielës në shtëpinë tonë, dhe fëmijët grinden gjithmonë për të fundit. Ky brumë jep krepa të holla dhe të buta.",
+    "time": "40 min",
+    "yields": "15 copë",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "250 g miell",
+      "2 vezë",
+      "500 ml qumësht",
+      "100 ml ujë me gaz",
+      "1 lugë sheqer",
+      "1 majë kripë",
+      "2 lugë vaj"
+    ],
+    "steps": [
+      "Rrah vezët me sheqerin dhe kripën, pastaj shto qumështin.",
+      "Përziji ngadalë miellin, duke e rrahur me një rrahëse që të mos mbeten gunga.",
+      "Shto ujin me gaz dhe vajin dhe lëre brumin të pushojë 15 minuta.",
+      "Ngroh tiganin dhe lyeje me disa pika vaj.",
+      "Hidh pak brumë, anoje tiganin që të përhapet njëtrajtësisht dhe piqe krepin rreth një minutë nga çdo anë.",
+      "Mbushje sipas dëshirës: reçel, krem çokollate, arra me sheqer ose djathë."
+    ],
+    "comments": [
+      {
+        "name": "Elira",
+        "when": "para 3 ditësh",
+        "text": "Uji me gaz i bën shumë më të buta, që atëherë nuk i kam bërë kurrë pa të."
+      },
+      {
+        "name": "Ilir",
+        "when": "para 2 javësh",
+        "text": "I mbusha me djathë dhe kajmak dhe i pjeka në furrë, për drekë."
+      }
+    ]
+  },
+  {
+    "id": "popara",
+    "category": "dorucak",
+    "title": "Popara",
+    "intro": "Popara është mëngjesi i fëmijërisë sime, e krijuar nga buka e vjetër që askush nuk donte ta hidhte. Edhe sot e bëj kur më duhet diçka e ngrohtë dhe e thjeshtë.",
+    "time": "15 min",
+    "yields": "2 porcione",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "300 g bukë e vjetër",
+      "500 ml qumësht",
+      "40 g gjalpë",
+      "150 g djathë të bardhë",
+      "1 majë kripë"
+    ],
+    "steps": [
+      "Pre bukën në kubikë.",
+      "Ngroh qumështin me pak kripë derisa të fillojë të vlojë.",
+      "Hidh bukën në qumësht, hiqe nga zjarri dhe lëre disa minuta të fryhet.",
+      "Përziji gjalpin dhe djathin e thërmuar.",
+      "Shërbeje menjëherë, ende të ngrohtë."
+    ],
+    "comments": [
+      {
+        "name": "Fatmir",
+        "when": "dje",
+        "text": "Gjyshja ime e bënte me ujë dhe me dhjamë, por kjo me qumësht është shumë më e mirë."
+      },
+      {
+        "name": "Mimoza",
+        "when": "para një muaji",
+        "text": "Fëmijët e duan variantin e ëmbël, pa djathë dhe me pak sheqer."
+      }
+    ]
+  },
+  {
+    "id": "kacamak",
+    "category": "dorucak",
+    "title": "Kaçamak",
+    "intro": "Kaçamaku me kajmak dhe qumësht të thartë është mëngjesi që të mban deri në drekë. Përziej fort, kjo është gjysma e suksesit.",
+    "time": "40 min",
+    "yields": "4 porcione",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "250 g miell misri",
+      "1 l ujë",
+      "1 lugë çaji kripë",
+      "50 g gjalpë",
+      "200 g kajmak",
+      "400 ml qumësht i thartë"
+    ],
+    "steps": [
+      "Në një tenxhere ngroh ujin e kripur dhe, kur të fillojë të vlojë, hidh miellin e misrit në një grumbull në mes. Mos e përziej.",
+      "Me një lugë druri bëj një gropë në mes të grumbullit dhe ziej në zjarr të ulët 20 minuta.",
+      "Hidh një pjesë të ujit në një filxhan, pastaj përziej kaçamakun fort dhe shtype me lugën e drurit.",
+      "Sipas nevojës kthe pak nga uji i hequr dhe përziej derisa të dalë një masë e lëmuar dhe e trashë.",
+      "Me një lugë të zhytur në gjalpë nxirr kaçamakun në pjata dhe sipër vër kajmak. Shërbeje me qumësht të thartë."
+    ],
+    "comments": [
+      {
+        "name": "Arta",
+        "when": "para 2 javësh",
+        "text": "Pikërisht kështu e gatuante nëna ime në Shumadi. Faleminderit për kujtimin."
+      },
+      {
+        "name": "Blerta",
+        "when": "para një muaji",
+        "text": "Unë e spërkas me cvarce dhe pak dhjamë, për ditët e ftohta."
+      }
+    ]
+  },
+  {
+    "id": "ustipci",
+    "category": "dorucak",
+    "title": "Petulla",
+    "intro": "Kur skuqen petullat, e gjithë ndërtesa e di që te ne është e shtunë në mëngjes. Janë të buta brenda dhe krokante jashtë.",
+    "time": "90 min",
+    "yields": "30 copë",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "500 g miell",
+      "20 g maja e freskët",
+      "400 ml ujë i vakët",
+      "1 vezë",
+      "1 lugë çaji kripë",
+      "1 lugë çaji sheqer",
+      "500 ml vaj për skuqje"
+    ],
+    "steps": [
+      "Shpërbëj majanë në pak ujë të vakët me sheqerin dhe lëre të krijojë shkumë.",
+      "Në miell shto kripën, vezën, majanë dhe ujin e mbetur dhe rrahe me lugë në një brumë të trashë e ngjitës.",
+      "Mbuloje enën dhe lëre në një vend të ngrohtë rreth një orë, derisa brumi të rritet dhe të bëhet plot flluska.",
+      "Ngroh vajin në një tenxhere më të thellë në zjarr mesatar.",
+      "Me një lugë të zhytur në vaj merr brumin dhe lëshoje në vajin e nxehtë. Skuqi petullat derisa të marrin ngjyrë nga të gjitha anët.",
+      "Nxirri në një shami kuzhine që të kullojnë. Shërbeji me djathë e kajmak ose me reçel."
+    ],
+    "comments": [
+      {
+        "name": "Elira",
+        "when": "para 3 ditësh",
+        "text": "Lugë e zhytur në vaj është truku që më mungonte, brumi nuk ngjitet më."
+      },
+      {
+        "name": "Agron",
+        "when": "para 2 javësh",
+        "text": "Vaji nuk duhet të jetë shumë i nxehtë, përndryshe në mes mbeten të papjekura. Në zjarr mesatar janë të përkryera."
+      }
+    ]
+  },
+  {
+    "id": "przenice",
+    "category": "dorucak",
+    "title": "Bukë e skuqur me vezë",
+    "intro": "Buka e skuqur me vezë është mënyra më e shpejtë që buka e vjetër të bëhet mëngjes i preferuar. Te ne shkon me djathë dhe kos, ndërsa fëmijët e duan me reçel.",
+    "time": "20 min",
+    "yields": "6 copë",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "6 feta bukë më e vjetër",
+      "3 vezë",
+      "100 ml qumësht",
+      "1 majë kripë",
+      "100 ml vaj për skuqje",
+      "150 g djathë të bardhë për shërbim"
+    ],
+    "steps": [
+      "Në një pjatë të thellë rrah vezët me qumështin dhe kripën.",
+      "Ngroh vajin në një tigan në zjarr mesatar.",
+      "Zhyti fetat e bukës në vezë nga të dyja anët, që të njomen mirë.",
+      "Skuqi nga dy minuta në çdo anë, derisa të marrin ngjyrë.",
+      "Nxirri në një shami kuzhine dhe shërbeji të ngrohta, me djathë."
+    ],
+    "comments": [
+      {
+        "name": "Fatmir",
+        "when": "dje",
+        "text": "Për fëmijët shtoj pak kanellë e sheqer në vezë, e adhurojnë."
+      },
+      {
+        "name": "Lule",
+        "when": "para 2 javësh",
+        "text": "Buka e dy ditëve më parë është më e mira, nuk shkërmoqet."
+      }
+    ]
+  },
+  {
+    "id": "kajgana-sa-paprikom-i-sirom",
+    "category": "dorucak",
+    "title": "Vezë të përziera me spec dhe djathë",
+    "intro": "Vezët e përziera janë mëngjesi im kur nuk kam kohë, por dua diçka të ngrohtë. Speci dhe djathi e bëjnë një vakt të vogël të vërtetë.",
+    "time": "15 min",
+    "yields": "2 porcione",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "4 vezë",
+      "1 spec i kuq",
+      "1 kërcell qepë të njoma",
+      "100 g djathë të bardhë",
+      "20 g gjalpë",
+      "kripë dhe piper"
+    ],
+    "steps": [
+      "Pre specin në kubikë të vegjël dhe qepën e njomë në rrathë të vegjël.",
+      "Në gjalpë zbute specin dhe qepën rreth pesë minuta, derisa të zbuten.",
+      "Rrah vezët me pak kripë e piper dhe hidhi në tigan.",
+      "Përziji lehtë në zjarr të ulët derisa vezët të ngjizen, por të mbeten të lëngshme.",
+      "Në fund përziji djathin e thërmuar dhe shërbeje menjëherë."
+    ],
+    "comments": [
+      {
+        "name": "Arta",
+        "when": "para 3 ditësh",
+        "text": "Shtova edhe një domate pa fara, shumë mirë."
+      },
+      {
+        "name": "Besnik",
+        "when": "para një muaji",
+        "text": "Zjarri i ulët është çelësi, asnjëherë më vezë të thata."
+      }
+    ]
+  },
+  {
+    "id": "mekike",
+    "category": "dorucak",
+    "title": "Mekike",
+    "intro": "Mekiket me kos janë të buta si jastëk, prandaj e kanë edhe emrin. Me kajmak e djathë, mëngjesi i së dielës është zgjidhur.",
+    "time": "90 min",
+    "yields": "20 copë",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "500 g miell",
+      "7 g maja e thatë",
+      "250 ml kos",
+      "200 ml ujë i vakët",
+      "1 lugë çaji kripë",
+      "1 lugë çaji sheqer",
+      "500 ml vaj për skuqje"
+    ],
+    "steps": [
+      "Përziji miellin, majanë e thatë, sheqerin dhe kripën.",
+      "Shto kosin dhe ujin e vakët dhe gatuaj një brumë të butë që ngjitet lehtë pas duarve.",
+      "Mbuloje brumin dhe lëre në një vend të ngrohtë rreth një orë që të rritet.",
+      "Me duar të lyera me vaj këput copa brumi sa një arrë dhe tërhiqi në petë të holla.",
+      "Skuqi në vaj të ngrohur derisa të marrin ngjyrë nga të dyja anët, pastaj nxirri në një shami kuzhine."
+    ],
+    "comments": [
+      {
+        "name": "Valbona",
+        "when": "para 2 javësh",
+        "text": "Duart e lyera me vaj shpëtojnë, kështu për herë të parë i formova bukur."
+      },
+      {
+        "name": "Dritan",
+        "when": "para një muaji",
+        "text": "Më të mirat janë me kajmak, sa janë ende të nxehta."
+      }
+    ]
+  },
+  {
+    "id": "ovsena-kasa-sa-jabukom",
+    "category": "dorucak",
+    "title": "Qull me tërshërë, mollë dhe kanellë",
+    "intro": "Qulli me tërshërë është mëngjesi im i vjeshtës në ditët e punës. Është gati për dhjetë minuta dhe ka aromë si byreku me mollë.",
+    "time": "15 min",
+    "yields": "1 porcion",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "60 g tërshërë në thërrime",
+      "250 ml qumësht",
+      "1 mollë",
+      "1/2 lugë çaji kanellë",
+      "1 lugë mjaltë",
+      "20 g arra"
+    ],
+    "steps": [
+      "Qëroje mollën dhe grije ose pre në kubikë të vegjël.",
+      "Në një tenxhere më të vogël përziji tërshërën, qumështin, mollën dhe kanellën.",
+      "Ziej në zjarr të ulët rreth pesë minuta, duke e përzier, derisa qulli të bëhet i trashë dhe kremoz.",
+      "Kalo në një tas, hidh mjaltin sipër dhe spërkate me arra të prera trashë."
+    ],
+    "comments": [
+      {
+        "name": "Elira",
+        "when": "dje",
+        "text": "E bëj edhe me dardhë kur nuk kam mollë, njësoj shumë mirë."
+      },
+      {
+        "name": "Ilir",
+        "when": "para 3 ditësh",
+        "text": "I skuq arrat në një tigan të thatë disa minuta, ndryshimi është i madh."
+      }
+    ]
+  },
+  {
+    "id": "vanilice",
+    "category": "kolaci-i-torte",
+    "title": "Vanilice",
+    "intro": "Vanilicet janë ëmbëlsira e parë që e bëra me gjyshen, kur isha aq e vogël sa vetëm i ngjitja me reçel. Pa to nuk ka festë as Vit të Ri.",
+    "time": "90 min",
+    "yields": "40 copë",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "500 g miell",
+      "250 g dhjamë derri",
+      "150 g sheqer",
+      "100 g arra të bluara",
+      "1 vezë",
+      "1 qese sheqer vanilje",
+      "1 lugë çaji lëkurë limoni të grirë",
+      "200 g reçel kajsie",
+      "100 g sheqer pluhur"
+    ],
+    "steps": [
+      "Rrah dhjamin me sheqerin dhe sheqerin vanilje, pastaj shto vezën dhe lëkurën e limonit.",
+      "Përziji arrat dhe ngadalë miellin, pastaj gatuaj një brumë të lëmuar. Lëre në frigorifer gjysmë ore.",
+      "Ngroh furrën në 180 °C.",
+      "Hapje brumin në trashësi rreth 5 mm dhe pri biskota të vogla me kallëp.",
+      "Piqi rreth 12 minuta, që të mbeten të çelëta dhe të mos marrin ngjyrë.",
+      "Kur të ftohen, bashko nga dy me reçel dhe rrokullisi në sheqer pluhur. Lëri një ditë të zbuten para shërbimit."
+    ],
+    "comments": [
+      {
+        "name": "Albana",
+        "when": "para 2 javësh",
+        "text": "Të nesërmen janë me të vërtetë më të buta dhe më të bukura. Durimi ia vlen."
+      },
+      {
+        "name": "Gentian",
+        "when": "para një muaji",
+        "text": "I bëra me gjalpë në vend të dhjamit, janë pak më të brishta por të shkëlqyera."
+      },
+      {
+        "name": "Teuta",
+        "when": "para një muaji",
+        "text": "Vanilicet e çelëta janë vanilice të vërteta, mirë që u theksua."
+      }
+    ]
+  },
+  {
+    "id": "krofne",
+    "category": "kolaci-i-torte",
+    "title": "Krofne",
+    "intro": "Krofnet ishin festë kur isha fëmijë, dhe mamaja i bënte vetëm për raste të veçanta. Tani i bëj unë dhe gjithmonë janë të paktë.",
+    "time": "2 orë",
+    "yields": "20 copë",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "500 g miell",
+      "25 g maja e freskët",
+      "250 ml qumësht i vakët",
+      "2 të verdha veze",
+      "50 g sheqer",
+      "50 g gjalpë i shkrirë",
+      "1 qese sheqer vanilje",
+      "1 majë kripë",
+      "700 ml vaj për skuqje",
+      "200 g marmelatë"
+    ],
+    "steps": [
+      "Shpërbëj majanë në pak qumësht me një lugë çaji sheqer dhe lëre të krijojë shkumë.",
+      "Në miell shto sheqerin e mbetur, sheqerin vanilje, kripën, të verdhat e vezëve, gjalpin, majanë dhe qumështin, pastaj gatuaj rreth dhjetë minuta derisa brumi të bëhet i lëmuar.",
+      "Mbuloje dhe lëre në një vend të ngrohtë rreth një orë që të dyfishojë vëllimin.",
+      "Hapje brumin në trashësi 1,5 cm dhe pri rrathë me një gotë. Lëri të mbuluar edhe 20 minuta.",
+      "Skuqi krofnet në vaj të ngrohur në zjarr mesatar, fillimisht me kapak nga ana e sipërme, pastaj pa kapak nga ana e poshtme, derisa të marrin ngjyrë.",
+      "Kullo në një shami kuzhine, mbushi me marmelatë me një qese pasticiere dhe spërkati me sheqer pluhur sipas dëshirës."
+    ],
+    "comments": [
+      {
+        "name": "Blerta",
+        "when": "para 3 ditësh",
+        "text": "Kapaku në anën e parë bën atë brezin e bardhë rreth krofnes, pikërisht si nga pastiçeria."
+      },
+      {
+        "name": "Ermal",
+        "when": "para 2 javësh",
+        "text": "I mbusha me krem çokollate, mbaruan për gjysmë ore."
+      }
+    ]
+  },
+  {
+    "id": "strudla-sa-makom",
+    "category": "kolaci-i-torte",
+    "title": "Strudel me lulëkuq",
+    "intro": "Strudeli me lulëkuq është i detyrueshëm te ne për Krishtlindje dhe Pashkë. Ky është brumë me maja, i butë dhe i hollë, me shumë mbushje.",
+    "time": "3 orë",
+    "yields": "2 strudel",
+    "difficulty": "e vështirë",
+    "ingredients": [
+      "500 g miell",
+      "20 g maja e freskët",
+      "250 ml qumësht i vakët",
+      "80 g gjalpë i shkrirë",
+      "2 të verdha veze",
+      "50 g sheqer për brumin",
+      "1 majë kripë",
+      "250 g lulëkuq i bluar",
+      "150 g sheqer për mbushjen",
+      "200 ml qumësht për mbushjen",
+      "1 lugë çaji lëkurë limoni të grirë"
+    ],
+    "steps": [
+      "Shpërbëj majanë në pak qumësht të vakët me një lugë çaji sheqer dhe lëre të krijojë shkumë.",
+      "Nga mielli, sheqeri, kripa, njëra e verdhë veze, gjalpi, maja dhe qumështi gatuaj një brumë të butë dhe lëre në një vend të ngrohtë një orë.",
+      "Për mbushjen ngroh qumështin me sheqerin, hiqe nga zjarri, përziji lulëkuqin dhe lëkurën e limonit dhe lëre të ftohet.",
+      "Ndaje brumin në dy pjesë dhe secilën hapje në një drejtkëndësh me trashësi rreth 5 mm.",
+      "Shpërndaj mbushjen, lër skajet të lira dhe mbështille strudelin fort. Vëri në tavë me ngjitjen poshtë dhe lëri edhe 30 minuta.",
+      "Lyeji me të verdhën tjetër të rrahur dhe piqi në furrë të ngrohur në 180 °C rreth 35 minuta. Pri vetëm kur të ftohen."
+    ],
+    "comments": [
+      {
+        "name": "Drita",
+        "when": "para 2 javësh",
+        "text": "E shpova strudelin me pirun në disa vende dhe nuk u çaril. Doli shumë e bukur."
+      },
+      {
+        "name": "Arben",
+        "when": "para një muaji",
+        "text": "Në mbushje vë edhe një lugë reçel kumbullash, i jep lëng."
+      }
+    ]
+  },
+  {
+    "id": "reform-torta",
+    "category": "kolaci-i-torte",
+    "title": "Torta Reform",
+    "intro": "Torta Reform është mbretëresha e tortave të festave në familjen time. Kërkon punë, por kur e pret, sheh se çdo minutë ia ka vlejtur.",
+    "time": "3 orë",
+    "yields": "12 copë",
+    "difficulty": "e vështirë",
+    "ingredients": [
+      "8 të bardha veze",
+      "200 g sheqer për kore",
+      "200 g arra të bluara",
+      "1 lugë miell",
+      "8 të verdha veze",
+      "150 g sheqer për mbushjen",
+      "200 g çokollatë për gatim",
+      "250 g gjalpë"
+    ],
+    "steps": [
+      "Ngroh furrën në 170 °C. Rrah të bardhat e vezëve në bore të fortë, pastaj shto ngadalë sheqerin dhe rrah derisa të bëhen të shndritshme.",
+      "Përziji arrat me miellin dhe përzieji lehtë në borën e vezëve me një lugë druri.",
+      "Ndaje përzierjen në katër pjesë dhe piq çdo kore mbi letër furre, në një kallëp me diametër 26 cm, rreth 15 minuta.",
+      "Për mbushjen rrah të verdhat me sheqerin dhe gatuaji në avull duke i përzier vazhdimisht rreth dhjetë minuta, derisa të trashen. Shto çokollatën e prerë që të shkrihet dhe lëre të ftohet krejtësisht.",
+      "Rrah gjalpin në shkumë dhe shto ngadalë kremën e ftohur, duke rrahur gjatë gjithë kohës.",
+      "Shpërndaj mbushjen midis koreve dhe sipër tortës. Lëre tortën në frigorifer të paktën disa orë, më mirë gjatë gjithë natës."
+    ],
+    "comments": [
+      {
+        "name": "Valbona",
+        "when": "para 3 ditësh",
+        "text": "Gjalpi dhe krema duhet të kenë të njëjtën temperaturë, përndryshe mbushja ngjizet. E mësova në mënyrën e vështirë."
+      },
+      {
+        "name": "Dritan",
+        "when": "para 2 javësh",
+        "text": "E bëra për ditëlindjen e vajzës, të gjithë pyetën për recetën."
+      }
+    ]
+  },
+  {
+    "id": "tufahije",
+    "category": "kolaci-i-torte",
+    "title": "Tufahije",
+    "intro": "Tufahijet janë një ëmbëlsirë e vjetër dhe e thjeshtë me mollë të zjera në shurup, të mbushura me arra. Mua më kujtojnë gjyshen dhe kuzhinën e saj.",
+    "time": "1 orë",
+    "yields": "8 copë",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "8 molla të mesme pak të thartë",
+      "500 g sheqer",
+      "1 l ujë",
+      "1 limon",
+      "150 g arra të bluara",
+      "2 lugë sheqer për mbushjen",
+      "200 ml krem gatimi për krem kantili"
+    ],
+    "steps": [
+      "Qëroji mollët dhe me thikë ose me heqëse bërthamash hiqi pjesën e mesit, që të mbeten të tëra.",
+      "Në një tenxhere të gjerë vër në zjarr ujin, sheqerin dhe lëngun e limonit.",
+      "Zhyti mollët në shurup dhe ziji rreth dhjetë minuta, duke i kthyer, derisa të zbuten por të mos shkrihen.",
+      "Nxirri mollët me kujdes, ndërsa shurupin ziej edhe rreth dhjetë minuta që të trashet.",
+      "Përziji arrat me sheqerin dhe me disa lugë shurup dhe mbushi mollët.",
+      "Rreshtoji në një enë, hidh shurupin e trashë sipër, ftoji dhe shërbeji me krem kantili."
+    ],
+    "comments": [
+      {
+        "name": "Lirije",
+        "when": "para 2 javësh",
+        "text": "Mora molla budimke dhe e mbajtën formën përsosur."
+      },
+      {
+        "name": "Ardian",
+        "when": "para një muaji",
+        "text": "Gruaja ime në shurup shton një copë kanellë, e rekomandoj."
+      }
+    ]
+  },
+  {
+    "id": "cupavci",
+    "category": "kolaci-i-torte",
+    "title": "Çupavci",
+    "intro": "Çupavcit janë ëmbëlsira që fëmijët në shtëpinë time e kanë dashur më shumë ta ndihmojnë, sepse të gjithë ngjiten me çokollatë. Mbarojnë gjithmonë të parët.",
+    "time": "2 orë",
+    "yields": "30 copë",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "4 vezë",
+      "200 g sheqer",
+      "250 ml qumësht",
+      "100 ml vaj",
+      "300 g miell",
+      "1 qese pluhur pjekjeje",
+      "200 g çokollatë për gatim",
+      "100 g gjalpë",
+      "200 ml qumësht për lyerje",
+      "250 g kokos"
+    ],
+    "steps": [
+      "Ngroh furrën në 180 °C dhe veshe me letër furre një tavë me përmasa rreth 25 x 35 cm.",
+      "Rrah vezët me sheqerin, pastaj shto qumështin dhe vajin. Përziji miellin me pluhurin e pjekjes.",
+      "Hidhe përzierjen në tavë dhe piqe rreth 25 minuta. Lëre biskotën të ftohet plotësisht, pastaj pre në kubikë.",
+      "Për lyerjen shkri çokollatën, gjalpin dhe qumështin në zjarr të ulët, duke i përzier.",
+      "Zhyt çdo kubik në salcën e ngrohtë, pastaj rrokullise në kokos.",
+      "Rreshto çupavcit në një tabaka dhe lëri të ngurtësohen."
+    ],
+    "comments": [
+      {
+        "name": "Shpresa",
+        "when": "dje",
+        "text": "Biskota e një dite më parë zhytet shumë më lehtë, nuk thërrmohet."
+      },
+      {
+        "name": "Fatjon",
+        "when": "para 3 ditësh",
+        "text": "Përdor dy pirunj për zhytje, shkon më shpejt dhe më pastër."
+      }
+    ]
+  },
+  {
+    "id": "urmasice",
+    "category": "kolaci-i-torte",
+    "title": "Hurmasha",
+    "intro": "Hurmashat janë një ëmbëlsirë e vogël e njomur në shurup, e llojit që çohet në çdo festë. Halla ime i bën më së miri, dhe kjo është receta e saj.",
+    "time": "90 min",
+    "yields": "35 copë",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "400 g miell",
+      "200 g gjalpë",
+      "2 vezë",
+      "180 g kajmak i thartë",
+      "50 g sheqer",
+      "50 g arra të bluara",
+      "1 qese pluhur pjekjeje",
+      "500 g sheqer për shurupin",
+      "500 ml ujë",
+      "1 limon"
+    ],
+    "steps": [
+      "Së pari ziej shurupin: ujin, sheqerin dhe limonin e prerë në rrathë ziji rreth dhjetë minuta, pastaj lëre të ftohet plotësisht.",
+      "Ngroh furrën në 200 °C.",
+      "Rrah gjalpin e zbutur me sheqerin, shto vezët dhe kajmakun, pastaj përziji arrat dhe miellin me pluhurin e pjekjes.",
+      "Nga brumi formo cilindra sa një gisht dhe shtyp secilin mbi një rende të imët që të marrin vija.",
+      "Rreshtoji në tavë dhe piqi rreth 20 minuta, derisa të marrin lehtë ngjyrë.",
+      "Hurmashat e nxehta hidhi me shurup të ftohtë dhe lëri disa orë që të thithin shurupin."
+    ],
+    "comments": [
+      {
+        "name": "Blerta",
+        "when": "para 2 javësh",
+        "text": "Shurup i ftohtë mbi ëmbëlsirë të nxehtë, ky është rregulli. Dolën të lëngshme si te halla."
+      },
+      {
+        "name": "Ermal",
+        "when": "para një muaji",
+        "text": "Unë i bëj edhe me pak kokos në brumë, njësoj bukur."
+      }
+    ]
+  },
+  {
+    "id": "plazma-torta",
+    "category": "kolaci-i-torte",
+    "title": "Torta Plazma",
+    "intro": "Kjo është torta që nuk piqet, por duket sikur je munduar gjithë ditën. Vajza ime e kërkon për çdo ditëlindje.",
+    "time": "4 orë",
+    "yields": "12 copë",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "300 g biskota Plazma të bluara",
+      "1 l qumësht",
+      "2 qese pudingu me vanilje",
+      "200 g sheqer",
+      "250 g gjalpë",
+      "100 g arra të bluara",
+      "200 ml krem gatimi",
+      "100 g çokollatë"
+    ],
+    "steps": [
+      "Nga qumështi, pudingu dhe sheqeri ziej një puding të trashë sipas udhëzimeve në qese, pastaj lëre të ftohet plotësisht, duke e përzier herë pas here.",
+      "Rrah gjalpin në shkumë dhe shto ngadalë pudingun e ftohur.",
+      "Përziji biskotat e bluara me arrat.",
+      "Në kallëp rreshto shtresa: përzierja e biskotave, pastaj krema, dhe përsërite derisa të mbarojë gjithçka, me kremën sipër.",
+      "Rrah kremin e gatimit dhe lyeje tortën, pastaj grij çokollatën sipër.",
+      "Lëre tortën në frigorifer të paktën tre orë para prerjes."
+    ],
+    "comments": [
+      {
+        "name": "Teuta",
+        "when": "para 3 ditësh",
+        "text": "Torta më e lehtë që kam bërë ndonjëherë, dhe të gjithë mendojnë se është nga pastiçeria."
+      },
+      {
+        "name": "Lule",
+        "when": "para 2 javësh",
+        "text": "E njoma pak biskotën me qumësht, doli edhe më e lëngshme."
+      }
+    ]
+  },
+  {
+    "id": "kolac-sa-visnjama",
+    "category": "kolaci-i-torte",
+    "title": "Ëmbëlsirë me vishnje",
+    "intro": "Kjo është ëmbëlsira ime e shpejtë për të ftuarit që lajmërojnë ardhjen një orë më parë. Vishnjet nga ngrirësi bëjnë punë njësoj mirë si të freskëtat.",
+    "time": "1 orë",
+    "yields": "16 copë",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "4 vezë",
+      "200 g sheqer",
+      "1 qese sheqer vanilje",
+      "200 ml kos",
+      "100 ml vaj",
+      "300 g miell",
+      "1 qese pluhur pjekjeje",
+      "400 g vishnje të pastruara"
+    ],
+    "steps": [
+      "Ngroh furrën në 180 °C dhe veshe me letër furre një tavë me përmasa rreth 25 x 35 cm.",
+      "Rrah vezët me sheqerin dhe sheqerin vanilje derisa të bëhen shkumë.",
+      "Shto kosin dhe vajin, pastaj përziji miellin me pluhurin e pjekjes.",
+      "Hidhe përzierjen në tavë dhe shpërndaj vishnjet njëtrajtësisht sipër. Nëse janë të ngrira, më parë kulloji dhe rrokullisi në pak miell.",
+      "Piqe 35 deri në 40 minuta, derisa kruese dhëmbësh të dalë e thatë.",
+      "Spërkate ëmbëlsirën e ftohur me sheqer pluhur dhe pre në kubikë."
+    ],
+    "comments": [
+      {
+        "name": "Albana",
+        "when": "dje",
+        "text": "Vishnjet e rrokullisura në miell nuk fundosën në fund, prerja del shumë e bukur."
+      },
+      {
+        "name": "Gentian",
+        "when": "para një muaji",
+        "text": "E bëra edhe me kajsi, shumë e mirë."
+      }
+    ]
+  },
+  {
+    "id": "ajvar",
+    "category": "zimnica",
+    "title": "Ajvar",
+    "intro": "Bërja e ajvarit është te ne një ditë familjare, të gjithë pjekim, qërojmë dhe përziejmë. Punë për gjithë ditën, por dimri pa të nuk vjen në pyetje.",
+    "time": "6 orë",
+    "yields": "8 kavanoza të vegjël",
+    "difficulty": "e vështirë",
+    "ingredients": [
+      "5 kg speca të kuq për ajvar",
+      "1 kg patëllxhanë",
+      "400 ml vaj",
+      "100 ml uthull",
+      "4 thelpinj hudhër",
+      "2 lugë kripë",
+      "1 lugë sheqer"
+    ],
+    "steps": [
+      "Laji specat dhe patëllxhanët dhe piqi mbi sobë, në skarë ose në furrë në 220 °C, derisa lëkura të nxihet dhe të shkëputet.",
+      "Vër perimet e pjekura në një enë, mbuloji dhe lëri të avullojnë, pastaj qëroji dhe pastroji nga farat. Lëri të kullojnë në një sitë.",
+      "Bluaji perimet në makinë mishi ose pri shumë imët.",
+      "Në një tenxhere të gjerë me fund të trashë ngroh gjysmën e vajit, shto perimet e bluara dhe ziej në zjarr mesatar duke i përzier vazhdimisht.",
+      "Shto ngadalë vajin e mbetur dhe ziej dy deri në tre orë, derisa ajvari të bëhet i trashë dhe vaji të fillojë të ndahet.",
+      "Nga fundi shto kripën, sheqerin, uthullën dhe hudhrën e shtypur dhe ziej edhe rreth dhjetë minuta.",
+      "Ajvarin e nxehtë hidhe në kavanoza të nxehtë e të pastër, sipër shto pak vaj të nxehtë dhe mbylli menjëherë. Mbështill kavanozët me batanije dhe lëri të ftohen ngadalë."
+    ],
+    "comments": [
+      {
+        "name": "Mimoza",
+        "when": "para një muaji",
+        "text": "Kullimi i specave gjatë gjithë natës ma shkurtoi gatimin me një orë."
+      },
+      {
+        "name": "Fatmir",
+        "when": "para një muaji",
+        "text": "Ne e bëjmë pa hudhër, por gjithçka tjetër njësoj. Recetë e mirë."
+      },
+      {
+        "name": "Arta",
+        "when": "para 2 javësh",
+        "text": "Luga me bisht të gjatë është e detyrueshme, ajvari spërkat si i çmendur."
+      }
+    ]
+  },
+  {
+    "id": "pindjur",
+    "category": "zimnica",
+    "title": "Pinxhur",
+    "intro": "Pinxhuri është kushëriri më i shpejtë i ajvarit, me domate dhe më shumë hudhër. Unë e dua edhe më shumë, sidomos me proja dhe djathë.",
+    "time": "4 orë",
+    "yields": "6 kavanoza",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "2 kg speca të kuq të gjatë",
+      "1 kg patëllxhanë",
+      "1 kg domate të pjekura",
+      "1 kokë hudhër",
+      "250 ml vaj",
+      "50 ml uthull",
+      "1 lugë kripë",
+      "1 lugë sheqer"
+    ],
+    "steps": [
+      "Piqi specat dhe patëllxhanët, lëri të avullojnë, pastaj qëroji dhe pastroji.",
+      "Hidh ujë të vluar mbi domatet, qëroji dhe copëtoji.",
+      "Pri specat dhe patëllxhanët imët ose bluaji shkurt me blender, që të mbeten pak copëza.",
+      "Në një tenxhere ngroh vajin, shto domatet dhe ziji rreth dhjetë minuta, pastaj shto perimet e tjera.",
+      "Ziej në zjarr të ulët rreth një orë e gjysmë, duke e përzier shpesh, derisa të trashet.",
+      "Shto kripën, sheqerin, uthullën dhe hudhrën e shtypur dhe ziej edhe dhjetë minuta. Pinxhurin e nxehtë hidhe në kavanoza të nxehtë, mbylli dhe mbështille me batanije."
+    ],
+    "comments": [
+      {
+        "name": "Drita",
+        "when": "para një muaji",
+        "text": "Shtova edhe një spec djegës, është i përkryer."
+      },
+      {
+        "name": "Valbona",
+        "when": "para 2 javësh",
+        "text": "E bëra për herë të parë turshinë dhe më doli. Faleminderit për udhëzimet e qarta."
+      }
+    ]
+  },
+  {
+    "id": "mesana-tursija",
+    "category": "zimnica",
+    "title": "Turshi të përziera",
+    "intro": "Turshia me ngjyra në raftin e kilerit është për mua pamja më e bukur e vjeshtës. Me mish të pjekur dhe sarma është e pazëvendësueshme.",
+    "time": "3 orë",
+    "yields": "6 kavanoza",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "1 kg speca të gjatë",
+      "1 kg domate të gjelbra",
+      "1 kokë lulelakër",
+      "500 g karota",
+      "500 g kastravecë të vegjël",
+      "1 l uthull (9%)",
+      "2 l ujë",
+      "150 g sheqer",
+      "2 lugë kripë",
+      "1 lugë kokrra piper",
+      "5 gjethe dafine"
+    ],
+    "steps": [
+      "Laji perimet. Shpo specat me pirun, pri domatet në katër pjesë, ndaje lulelakrën në lule të vogla dhe pri karotat në rrathë.",
+      "Laji mirë kavanozët dhe kapakët dhe thaji në furrë në 100 °C.",
+      "Rreshto perimet në kavanoza në shtresa shumëngjyrëshe, dhe midis tyre vër kokrrat e piperit dhe dafinën.",
+      "Për lëngun ziej ujin me uthullën, sheqerin dhe kripën, pastaj lëre të ftohet pak.",
+      "Hidh lëngun mbi perimet që të jenë plotësisht të mbuluara dhe mbyll kavanozët.",
+      "Pasterizo kavanozët në një tenxhere me ujë rreth 15 minuta nga çasti kur uji fillon të vlojë. Lëri të ftohen në ujë dhe ruaji në një vend të freskët."
+    ],
+    "comments": [
+      {
+        "name": "Elira",
+        "when": "para një muaji",
+        "text": "Lulelakra mbeti krokante deri në pranverë. Proporcion i shkëlqyer i lëngut."
+      },
+      {
+        "name": "Besnik",
+        "when": "para një muaji",
+        "text": "Shtova edhe rrathë spec djegës në çdo kavanoz."
+      }
+    ]
+  },
+  {
+    "id": "kiseli-kupus",
+    "category": "zimnica",
+    "title": "Lakër turshi",
+    "intro": "Turshia e lakrës është te ne një ritual vjeshte që e kemi trashëguar nga gjyshi. Nga një fuçi del lakër për sarma, podvarak dhe sallatë deri në pranverë.",
+    "time": "5 javë",
+    "yields": "1 fuçi 30 l",
+    "difficulty": "e vështirë",
+    "ingredients": [
+      "15 kg koka lakre",
+      "600 g kripë e trashë pa jod",
+      "rreth 12 l ujë",
+      "5 gjethe dafine",
+      "1 lugë kokrra piper"
+    ],
+    "steps": [
+      "Hiqi kokave gjethet e jashtme, laji dhe zhgropi bërthamën me thikë, duke lënë një vrimë.",
+      "Mbushe vrimën e çdo koke me një lugë kripë dhe rreshto kokat në fuçi, me vrimën nga lart, dhe midis tyre shto dafinën dhe piperin.",
+      "Kripën e mbetur shpërbëje në ujë dhe hidhe mbi lakër që të jetë plotësisht e mbuluar.",
+      "Mbi kokat vër një dërrasë të pastër dhe një gur të rëndë, që lakra të mbetet gjithmonë nën ujë.",
+      "Në javët e para ndërro ujin çdo disa ditë: lëshoje përmes çezmës në fund dhe hidhe përsëri nga lart, që lakra të fermentohet njëtrajtësisht.",
+      "Lakra është gati për katër deri në gjashtë javë, varësisht nga temperatura. Fuçinë ruaje në një vend të freskët."
+    ],
+    "comments": [
+      {
+        "name": "Lule",
+        "when": "para 2 javësh",
+        "text": "Ne shtojmë edhe disa ftonj në fuçi, lakra merr një aromë të mrekullueshme."
+      },
+      {
+        "name": "Agron",
+        "when": "para një muaji",
+        "text": "Kripa pa jod është e detyrueshme, me kripë të zakonshme lakra zbutet shumë."
+      }
+    ]
+  },
+  {
+    "id": "dzem-od-sljiva",
+    "category": "zimnica",
+    "title": "Reçel kumbullash",
+    "intro": "Kur vjen koha e kumbullave požegaçe, shtëpia ime për ditë merr erë kanellë e kumbulla. Ky reçel është i trashë dhe jo shumë i ëmbël, pikërisht siç e dua.",
+    "time": "2 orë",
+    "yields": "5 kavanoza",
+    "difficulty": "e lehtë",
+    "ingredients": [
+      "2 kg kumbulla požegaçe",
+      "800 g sheqer",
+      "1 limon",
+      "1 lugë çaji kanellë",
+      "3 karafil"
+    ],
+    "steps": [
+      "Laji kumbullat, hiq kokrrat dhe pri në katër pjesë.",
+      "Spërkati me sheqer dhe lëri një orë që të lëshojnë lëng.",
+      "Ziej në zjarr mesatar duke e përzier shpesh rreth një orë, derisa reçeli të trashet.",
+      "Nga fundi shto lëngun e limonit, kanellën dhe karafilin. Trashësinë kontrolloje duke pikuar pak reçel në një pjatë të ftohtë: nëse nuk përhapet, është gati.",
+      "Hiq karafilin, hidh reçelin e nxehtë në kavanoza të nxehtë, mbylli dhe ktheji përmbys derisa të ftohen."
+    ],
+    "comments": [
+      {
+        "name": "Dritan",
+        "when": "para 3 ditësh",
+        "text": "Prova në pjatë të ftohtë nuk të gënjen kurrë. Reçel i shkëlqyer."
+      },
+      {
+        "name": "Teuta",
+        "when": "para një muaji",
+        "text": "Vura pak më pak sheqer dhe qëndroi mirë deri në dimër."
+      }
+    ]
+  },
+  {
+    "id": "slatko-od-jagoda",
+    "category": "zimnica",
+    "title": "Reçel luleshtrydhesh (slatko)",
+    "intro": "Slatkoja me luleshtrydhe te ne u shërbehej të ftuarve me një gotë ujë të ftohtë, siç e kërkon rregulli. Zgjidh luleshtrydhe të vogla e të forta që të mbeten të tëra.",
+    "time": "1 orë",
+    "yields": "4 kavanoza",
+    "difficulty": "mesatare",
+    "ingredients": [
+      "1 kg luleshtrydhe të vogla e të forta",
+      "1 kg sheqer",
+      "200 ml ujë",
+      "1 limon",
+      "1 qese sheqer vanilje"
+    ],
+    "steps": [
+      "Laji luleshtrydhet para se t'u heqësh bishtat, pastaj kulloji.",
+      "Nga uji dhe sheqeri ziej një shurup, derisa një pikë shurupi mes gishtave të fillojë të ngjitet.",
+      "Zhyti luleshtrydhet në shurup dhe ziji në zjarr mesatar pa i përzier, vetëm tund herë pas here tenxheren dhe hiq shkumën.",
+      "Kur shurupi të trashet përsëri, pas pesëmbëdhjetë minutash, shto lëngun e limonit dhe sheqerin vanilje.",
+      "Hiqe slatkon nga zjarri, mbuloje me një leckë të lagur dhe lëre gjatë gjithë natës.",
+      "Të nesërmen hidhe në kavanoza të pastër e të thatë dhe mbylli."
+    ],
+    "comments": [
+      {
+        "name": "Fatjon",
+        "when": "para 2 javësh",
+        "text": "Lecka gjatë natës është pikërisht ajo e fshehta e vjetër, luleshtrydhet mbetën të tëra dhe të shndritshme."
+      },
+      {
+        "name": "Shpresa",
+        "when": "para një muaji",
+        "text": "Gjyshja ime e bënte kështu edhe me vishnje. Faleminderit për recetën."
+      }
+    ]
+  }
+]

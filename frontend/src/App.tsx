@@ -1,60 +1,59 @@
-import { useEffect, useState, type SubmitEvent } from "react";
+import { useEffect, useMemo, useState, type SubmitEvent } from "react";
 
 import { ApiError, resumeChat, type HelpCard } from "./api";
-import { FILLER_WORDS, FOOD_FORMS } from "./foodWords";
+import { fold, mightBePhrase, phraseFromInput } from "./foodWords";
 import { HelpView, type ChatState } from "./HelpView";
+import { detectLanguage, LANGUAGE_OPTIONS, LangContext, STRINGS, type Lang } from "./i18n";
 import { panic } from "./panic";
 import { Recipe } from "./Recipe";
-import { HOME_RECIPE, RECIPES, type Recipe as RecipeData } from "./recipes";
+import { RecipeList } from "./RecipeList";
+import { useRecipes, type Recipe as RecipeData } from "./recipes";
 
-/** Every word typed, fillers included. */
-function allWordsOf(query: string): string[] {
-  return query.toLocaleLowerCase("sr-Latn").split(/[^a-zčćđšž]+/).filter(Boolean);
+/** The recipe in the address bar (?r=pita-sa-jabukama), or null for home. */
+function recipeIdFromUrl(): string | null {
+  return new URLSearchParams(window.location.search).get("r");
 }
 
-/** Words that count for a phrase: fillers like "i" or "sa" dropped (same rule as the server). */
-function phraseWordsOf(allWords: string[]): string[] {
-  return allWords.filter((w) => !FILLER_WORDS.has(w));
-}
-
-/**
- * A real resume phrase: exactly four words, each a list word or one of its
- * case forms ("jaja" for "jaje"). Returns the list words, or null.
- */
-function resumeWords(words: string[]): string[] | null {
-  if (words.length !== 4) return null;
-  const canonical = words
-    .map((w) => FOOD_FORMS.get(w))
-    .filter((w): w is string => w !== undefined);
-  return canonical.length === 4 ? canonical : null;
+function searchRecipes(recipes: RecipeData[], query: string): RecipeData[] {
+  const q = fold(query.trim());
+  if (!q) return [];
+  return recipes.filter((r) => fold(r.title).includes(q));
 }
 
 /**
- * Could this be a phrase, even a mistyped or partial one? Then it must never
- * be written back onto the page.
- */
-function mightBePhrase(words: string[]): boolean {
-  return words.length >= 3 || words.some((w) => FOOD_FORMS.has(w));
-}
-
-function findRecipe(query: string): RecipeData | undefined {
-  const q = query.trim().toLocaleLowerCase("sr-Latn");
-  if (!q) return undefined;
-  return RECIPES.find((r) => r.title.toLocaleLowerCase("sr-Latn").includes(q));
-}
-
-/**
- * One page. Opening help never changes the URL or the title, so browser
- * history only ever shows the recipe site.
+ * Each recipe has its own address, so browser history lists real recipes.
+ * Opening help never changes the address or the title.
  */
 export function App() {
-  const [recipe, setRecipe] = useState<RecipeData>(HOME_RECIPE);
+  const [lang, setLang] = useState<Lang>(detectLanguage);
+  const t = STRINGS[lang];
+  const recipes = useRecipes(lang);
+
+  const [recipeId, setRecipeId] = useState<string | null>(recipeIdFromUrl);
+  const [results, setResults] = useState<RecipeData[] | null>(null);
   const [cards, setCards] = useState<HelpCard[] | null>(null);
   const [chat, setChat] = useState<ChatState>({ kind: "none" });
   const [query, setQuery] = useState("");
   const [searchNote, setSearchNote] = useState("");
 
   const helpOpen = cards !== null;
+  const recipe = recipes?.find((r) => r.id === recipeId) ?? null;
+
+  // Back and Forward move between recipes like on any website.
+  useEffect(() => {
+    const onPop = () => {
+      setRecipeId(recipeIdFromUrl());
+      setResults(null);
+    };
+    window.addEventListener("popstate", onPop);
+    return () => window.removeEventListener("popstate", onPop);
+  }, []);
+
+  // Title follows the recipe, never the help view.
+  useEffect(() => {
+    document.title = recipe ? `${recipe.title} | ${t.siteName}` : t.siteName;
+    document.documentElement.lang = LANGUAGE_OPTIONS.find((o) => o.code === lang)?.html ?? "sr";
+  }, [recipe, t.siteName, lang]);
 
   // Escape leaves help instantly on a keyboard.
   useEffect(() => {
@@ -75,8 +74,23 @@ export function App() {
     return () => document.removeEventListener("visibilitychange", onVisibility);
   }, []);
 
-  function showRecipe(next: RecipeData) {
-    setRecipe(next);
+  function openRecipe(id: string) {
+    window.history.pushState(null, "", `?r=${encodeURIComponent(id)}`);
+    setRecipeId(id);
+    setResults(null);
+    setSearchNote("");
+    window.scrollTo({ top: 0 });
+  }
+
+  function goHome() {
+    if (helpOpen) {
+      panic(); // while help is open, the wordmark doubles as the exit
+      return;
+    }
+    window.history.pushState(null, "", window.location.pathname);
+    setRecipeId(null);
+    setResults(null);
+    setSearchNote("");
     window.scrollTo({ top: 0 });
   }
 
@@ -86,90 +100,117 @@ export function App() {
     // Clear the box on every submit: a typed phrase must not stay on screen.
     const typed = query.trim();
     setQuery("");
-    const match = findRecipe(typed);
-    if (match) {
-      showRecipe(match);
-      return;
-    }
+    if (!typed) return;
+
     // The search box is also the way back into a chat. Only a real phrase is
-    // sent, so ordinary four-word searches never use up the server's limit.
-    const allWords = allWordsOf(typed);
-    const phrase = resumeWords(phraseWordsOf(allWords));
+    // sent, so ordinary searches never use up the server's limit.
+    const phrase = phraseFromInput(typed, lang);
     if (phrase) {
       try {
         await resumeChat(phrase.join("-"));
         setCards((prev) => prev ?? []);
         setChat({ kind: "open", resumePhrase: null });
+        if (!recipeId && recipes?.[0]) openRecipe(recipes[0].id);
         return;
       } catch (err) {
         if (err instanceof ApiError && err.status === 429) {
           // Busy, not wrong: she should not think she forgot her words.
-          setSearchNote("Pretraga je trenutno zauzeta. Pokušaj ponovo za minut.");
+          setSearchNote(t.searchBusy);
           return;
         }
         if (!(err instanceof ApiError)) {
-          setSearchNote("Pretraga trenutno ne radi. Pokušaj ponovo.");
+          setSearchNote(t.searchDown);
           return;
         }
       }
     }
-    // Never echo anything that could be a phrase, even a mistyped one. Judged
-    // on ALL typed words: "krofnee i koree" is three words, so it stays hidden.
-    setSearchNote(
-      !typed || mightBePhrase(allWords) ? "Nema takvog recepta." : `Nema recepta za „${typed}“.`,
-    );
+
+    const found = recipes ? searchRecipes(recipes, typed) : [];
+    if (found.length === 1 && found[0]) {
+      openRecipe(found[0].id);
+      return;
+    }
+    if (found.length > 1) {
+      setResults(found);
+      window.scrollTo({ top: 0 });
+      return;
+    }
+    // Never echo anything that could be a phrase, even a mistyped one.
+    setSearchNote(mightBePhrase(typed) ? t.noResult : t.noResultFor(typed));
   }
 
+  const langState = useMemo(() => ({ lang, t }), [lang, t]);
+  const help = helpOpen ? <HelpView cards={cards} chat={chat} onChatOpened={setChat} /> : null;
+
   return (
-    <div className="page">
-      <header className="site-head">
-        {/* While help is open, the wordmark doubles as the exit. */}
-        <button
-          type="button"
-          className="wordmark"
-          onClick={() => (helpOpen ? panic() : showRecipe(HOME_RECIPE))}
-        >
-          Sveska sa receptima
-        </button>
-        <form className="search" role="search" onSubmit={handleSearch}>
-          <input
-            type="text"
-            aria-label="Pretraži recepte"
-            placeholder="Pretraži recepte"
-            value={query}
-            onChange={(e) => setQuery(e.target.value)}
-            autoComplete="off"
-            autoCorrect="off"
-            autoCapitalize="off"
-            spellCheck={false}
-          />
-        </form>
-      </header>
-      {searchNote && <p className="search-note">{searchNote}</p>}
+    <LangContext.Provider value={langState}>
+      <div className="page">
+        <header className="site-head">
+          <button type="button" className="wordmark" onClick={goHome}>
+            {t.siteName}
+          </button>
+          <div className="head-tools">
+            <form className="search" role="search" onSubmit={handleSearch}>
+              <input
+                type="text"
+                aria-label={t.searchLabel}
+                placeholder={t.searchLabel}
+                value={query}
+                onChange={(e) => setQuery(e.target.value)}
+                autoComplete="off"
+                autoCorrect="off"
+                autoCapitalize="off"
+                spellCheck={false}
+              />
+            </form>
+            <select
+              className="lang-select"
+              aria-label={t.languageLabel}
+              value={lang}
+              onChange={(e) => setLang(e.target.value as Lang)}
+            >
+              {LANGUAGE_OPTIONS.map((o) => (
+                <option key={o.code} value={o.code}>
+                  {o.label}
+                </option>
+              ))}
+            </select>
+          </div>
+        </header>
+        {searchNote && <p className="search-note">{searchNote}</p>}
 
-      <main>
-        <Recipe
-          recipe={recipe}
-          onUnlocked={setCards}
-          help={
-            helpOpen ? <HelpView cards={cards} chat={chat} onChatOpened={setChat} /> : null
-          }
-        />
-      </main>
+        <main>
+          {recipe ? (
+            <Recipe recipe={recipe} onUnlocked={setCards} help={help} />
+          ) : recipes ? (
+            <>
+              {help}
+              <RecipeList recipes={recipes} results={results} onOpen={openRecipe} />
+            </>
+          ) : null}
+        </main>
 
-      <footer className="site-foot">
-        <h2>Još recepata</h2>
-        <ul>
-          {RECIPES.filter((r) => r.id !== recipe.id).map((r) => (
-            <li key={r.id}>
-              <button type="button" className="recipe-link" onClick={() => showRecipe(r)}>
-                {r.title}
-              </button>
-            </li>
-          ))}
-        </ul>
-        <p className="colophon">Recepti iz porodične sveske, prepisani za sve koji vole domaću kuhinju.</p>
-      </footer>
-    </div>
+        <footer className="site-foot">
+          {recipe && recipes && (
+            <>
+              <h2>{t.moreRecipes}</h2>
+              <ul>
+                {recipes
+                  .filter((r) => r.category === recipe.category && r.id !== recipe.id)
+                  .slice(0, 6)
+                  .map((r) => (
+                    <li key={r.id}>
+                      <button type="button" className="recipe-link" onClick={() => openRecipe(r.id)}>
+                        {r.title}
+                      </button>
+                    </li>
+                  ))}
+              </ul>
+            </>
+          )}
+          <p className="colophon">{t.colophon}</p>
+        </footer>
+      </div>
+    </LangContext.Provider>
   );
 }

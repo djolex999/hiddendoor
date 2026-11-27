@@ -16,6 +16,7 @@ from django.utils import timezone
 from config.crypto import hmac_hash
 
 from .models import ChatSession, Message, ResumeFailureWindow
+from .triage import schedule_triage
 from .words import FILLER_WORDS, FOOD_WORDS, WORD_FORMS
 
 SECRET_PURPOSE = "chat.secret"  # noqa: S105 (HMAC salt, not a password)
@@ -149,11 +150,25 @@ def add_message(session: ChatSession, sender: str, body: str) -> Message:
     message = Message.objects.create(session=session, sender=sender, body=body)
     session.last_activity = message.created_at
     update_fields = ["last_activity"]
-    if sender == Message.Sender.COUNSELOR and session.status == ChatSession.Status.WAITING:
-        session.status = ChatSession.Status.ACTIVE
-        update_fields.append("status")
+    if sender == Message.Sender.COUNSELOR:
+        if session.status == ChatSession.Status.WAITING:
+            session.status = ChatSession.Status.ACTIVE
+            update_fields.append("status")
+        if session.urgent_since is not None:
+            session.urgent_since = None  # a counselor answered: no longer unattended
+            update_fields.append("urgent_since")
     session.save(update_fields=update_fields)
+    if sender == Message.Sender.WOMAN:
+        schedule_triage(message)
     return message
+
+
+def needs_emergency_card(session: ChatSession) -> bool:
+    """Urgent message and no counselor reply for a while: show her the 192 card."""
+    if session.urgent_since is None:
+        return False
+    waited = (timezone.now() - session.urgent_since).total_seconds()
+    return waited >= settings.URGENT_ALERT_AFTER_SECONDS
 
 
 def close_session(session: ChatSession) -> None:

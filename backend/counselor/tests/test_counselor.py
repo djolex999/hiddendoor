@@ -100,3 +100,54 @@ def test_close_hides_session_and_blocks_new_messages(counselor_client, started_c
     assert woman.post(f"/api/chat/{sid}/messages", {"body": "x"}, format="json").status_code == 409
     reply = counselor_client.post(f"/api/c/sessions/{sid}/messages", {"body": "x"}, format="json")
     assert reply.status_code == 409
+
+
+# Notes
+
+
+def test_counselor_can_save_a_nickname_and_notes(counselor_client, started_chat):
+    sid = started_chat["session_id"]
+    response = counselor_client.patch(
+        f"/api/c/sessions/{sid}/notes",
+        {"counselor_label": "Ana (nadimak)", "counselor_notes": "Prvi kontakt, plan bezbednosti."},
+        format="json",
+    )
+    assert response.status_code == 200
+
+    listed = counselor_client.get("/api/c/sessions").json()
+    assert listed[0]["counselor_label"] == "Ana (nadimak)"
+    thread = counselor_client.get(f"/api/c/sessions/{sid}/messages").json()
+    assert thread["notes"]["counselor_notes"] == "Prvi kontakt, plan bezbednosti."
+
+
+def test_she_never_sees_the_notes(client, counselor_client, started_chat):
+    sid = started_chat["session_id"]
+    counselor_client.patch(
+        f"/api/c/sessions/{sid}/notes", {"counselor_notes": "tajna beleska"}, format="json"
+    )
+    woman = APIClient()
+    woman.credentials(HTTP_X_SESSION_SECRET=started_chat["secret"])
+    assert "tajna" not in woman.get(f"/api/chat/{sid}/messages").content.decode()
+
+
+def test_notes_are_deleted_with_the_chat(client, counselor_client, started_chat):
+    sid = started_chat["session_id"]
+    counselor_client.patch(f"/api/c/sessions/{sid}/notes", {"counselor_notes": "x"}, format="json")
+    woman = APIClient()
+    woman.credentials(HTTP_X_SESSION_SECRET=started_chat["secret"])
+    woman.post(f"/api/chat/{sid}/end")
+    assert not ChatSession.objects.filter(counselor_notes="x").exists()
+
+
+def test_notes_need_a_counselor_and_have_limits(client, counselor_client, started_chat):
+    sid = started_chat["session_id"]
+    assert (
+        client.patch(
+            f"/api/c/sessions/{sid}/notes", {"counselor_notes": "x"}, format="json"
+        ).status_code
+        == 401
+    )
+    too_long = counselor_client.patch(
+        f"/api/c/sessions/{sid}/notes", {"counselor_label": "a" * 61}, format="json"
+    )
+    assert too_long.status_code == 400

@@ -32,3 +32,66 @@ def test_no_form_means_two_words():
 )
 def test_case_forms_normalize_to_list_words(typed, expected):
     assert normalize_resume_phrase(typed) == expected
+
+
+# Every language
+
+
+def test_every_language_has_105_aligned_words_and_no_ambiguity():
+    from chat.phrase_languages import LANGUAGE_FORMS, LANGUAGE_WORDS, build_language_forms
+
+    assert set(LANGUAGE_WORDS) == {"sr", "hr", "bs", "cnr", "sl", "mk", "sq", "en"}
+    for language in LANGUAGE_WORDS:
+        assert build_language_forms(language) == LANGUAGE_FORMS[language]
+
+
+@pytest.mark.parametrize(
+    ("language", "typed", "serbian"),
+    [
+        ("hr", "rajčice, kruha i kave", None),  # 3 words: not a phrase
+        ("hr", "rajčice kruha kave mlijeka", "paradajz-hleb-kafa-mleko"),
+        ("sl", "jabolka in breskve, kruh, med", "jabuka-breskva-hleb-med"),
+        ("mk", "јаболкото лимонот питата квасец", "jabuka-limun-pita-kvasac"),
+        ("sq", "molla dhe kafen, buke, veze", "jabuka-kafa-hleb-jaje"),
+        ("sq", "Mollë kafe bukë vezë", "jabuka-kafa-hleb-jaje"),
+        ("en", "strawberries and tomatoes, beans, honey", "jagoda-paradajz-pasulj-med"),
+    ],
+)
+def test_phrases_in_every_language_map_to_serbian(language, typed, serbian):
+    from chat.phrase_languages import FILLERS, LANGUAGE_FORMS, LANGUAGE_WORDS, fold
+
+    words = [w for w in fold(typed).replace(",", " ").split() if w not in FILLERS[language]]
+    forms = LANGUAGE_FORMS[language]
+    if serbian is None:
+        assert len(words) != 4
+        return
+    assert "-".join(LANGUAGE_WORDS["sr"][forms[w]] for w in words) == serbian
+
+
+def test_typescript_forms_match_python_exactly(tmp_path):
+    """Run the generated TypeScript in Node and compare every form, every language."""
+    import json
+    import shutil
+    import subprocess
+
+    from chat.phrase_languages import LANGUAGE_FORMS
+
+    node = shutil.which("node")
+    if node is None:
+        pytest.skip("node not installed")
+    module = tmp_path / "foodWords.ts"
+    module.write_text(FRONTEND_FILE.read_text())
+    script = (
+        f"import('{module.as_uri()}').then(m => {{"
+        "const out = {};"
+        f"for (const l of {json.dumps(list(LANGUAGE_FORMS))}) "
+        "out[l] = Object.fromEntries(m.formsOf(l));"
+        "console.log(JSON.stringify(out)); })"
+    )
+    result = subprocess.run(  # noqa: S603 (fixed args, test only)
+        [node, "--experimental-strip-types", "--no-warnings", "-e", script],
+        capture_output=True,
+        text=True,
+        check=True,
+    )
+    assert json.loads(result.stdout) == LANGUAGE_FORMS

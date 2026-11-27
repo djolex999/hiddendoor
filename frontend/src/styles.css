@@ -101,9 +101,31 @@ h3 {
   color: var(--ink);
 }
 
+.head-tools {
+  display: flex;
+  flex: 1 1 14rem;
+  gap: 0.5rem;
+  justify-content: flex-end;
+  max-width: 24rem;
+}
+
 .search {
-  flex: 1 1 12rem;
-  max-width: 18rem;
+  flex: 1 1 10rem;
+}
+
+.lang-select {
+  flex: none;
+  padding: 0.4rem 0.5rem;
+  border: 1.5px solid var(--grid);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--graphite);
+  font-size: 0.9rem;
+}
+
+.lang-select:focus {
+  border-color: var(--ink-soft);
+  outline: none;
 }
 
 .search input {
@@ -204,6 +226,46 @@ h3 {
   margin: -0.5rem 0 0.75rem;
   color: var(--pencil);
   font-size: 0.95rem;
+}
+
+/* Category above a recipe title */
+
+.crumb {
+  margin: 0 0 0.35rem;
+  color: var(--pencil);
+  font-size: 0.95rem;
+}
+
+/* Recipe lists (home and search results) */
+
+.list-title {
+  margin: 1.5rem 0 0.75rem;
+  font-size: clamp(1.9rem, 6vw, 2.4rem);
+}
+
+.recipe-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.recipe-links li {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 0.35rem 0;
+  border-bottom: 1px dashed var(--grid);
+}
+
+.recipe-links .recipe-link {
+  text-align: left;
+}
+
+.recipe-meta {
+  flex: none;
+  color: var(--pencil);
+  font-size: 0.9rem;
 }
 
 /* Ingredient checklist (also the secret door) */
@@ -493,6 +555,35 @@ h3 {
   margin: 0;
   color: var(--pencil);
   font-size: 0.9rem;
+}
+
+/* Immediate-danger card: the one loud element, shown only when needed. */
+
+.emergency {
+  margin: 0.75rem 0;
+  padding: 1rem 1.1rem;
+  border: 2px solid var(--margin);
+  border-radius: 8px;
+  background: #fff;
+}
+
+.emergency p {
+  margin: 0 0 0.5rem;
+}
+
+.emergency-title {
+  font-weight: 700;
+  color: var(--margin);
+}
+
+.emergency-call {
+  display: inline-block;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  background: var(--margin);
+  color: #fff;
+  font-weight: 700;
+  text-decoration: none;
 }
 
 /* When the tab is hidden (app switcher snapshot), help simply is not there. */

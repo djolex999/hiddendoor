@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 
 import { ApiError, startChat, type HelpCard } from "./api";
 import { Chat } from "./Chat";
+import { useLang } from "./i18n";
 import { panic } from "./panic";
 
 export type ChatState = { kind: "none" } | { kind: "open"; resumePhrase: string | null };
@@ -22,6 +23,7 @@ function plain(markdown: string): string {
  * Everything inside carries .help-only so it disappears when the tab hides.
  */
 export function HelpView({ cards, chat, onChatOpened }: Props) {
+  const { t } = useLang();
   const [error, setError] = useState("");
   const ref = useRef<HTMLElement>(null);
 
@@ -35,20 +37,16 @@ export function HelpView({ cards, chat, onChatOpened }: Props) {
       const started = await startChat();
       onChatOpened({ kind: "open", resumePhrase: started.resumePhrase });
     } catch (err) {
-      setError(
-        err instanceof ApiError && err.status === 403
-          ? "Prošlo je previše vremena. Otvori savete ponovo."
-          : "Nije uspelo. Pokušaj ponovo.",
-      );
+      setError(err instanceof ApiError && err.status === 403 ? t.startExpired : t.startFailed);
     }
   }
 
   return (
-    <section ref={ref} className="help help-only" aria-label="Saveti">
+    <section ref={ref} className="help help-only" aria-label={t.helpTitle}>
       <div className="help-head">
-        <h2>Saveti iz sveske</h2>
+        <h2>{t.helpTitle}</h2>
         <button type="button" className="quiet-link" onClick={panic}>
-          Sakrij savete
+          {t.hideTips}
         </button>
       </div>
 
@@ -67,9 +65,9 @@ export function HelpView({ cards, chat, onChatOpened }: Props) {
         <Chat resumePhrase={chat.resumePhrase} />
       ) : (
         <div className="start">
-          <p>Imaš pitanje? Piši nam ovde, odgovara prava osoba.</p>
+          <p>{t.askPrompt}</p>
           <button type="button" className="ink-button" onClick={handleStart}>
-            Napiši nam
+            {t.writeToUs}
           </button>
           {error && <p className="form-error">{error}</p>}
         </div>

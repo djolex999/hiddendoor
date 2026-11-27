@@ -86,6 +86,45 @@ cd backend && uv run --env-file .env python manage.py purge_expired
 5. The exit button deletes the chat on the server and reloads the recipe with
    `location.replace`, so it adds no history entry.
 
+## Languages
+
+The cover site and help cards come in 8 languages: `sr` (Serbian, default),
+`hr`, `bs`, `cnr`, `sl`, `mk`, `sq` and `en`. The API details are in `API.md`.
+
+1. **Help cards:** each card has a `language` field in the Django admin, and you
+   can filter the list by language. The same slug (for example `sos-linija`)
+   exists once per language. A data migration seeded the seven non-Serbian
+   languages with placeholder text.
+2. **SOS card outside Serbia:** it intentionally has no phone numbers, only
+   placeholders like `[upiši broj]`. Someone must verify each hotline and fill
+   it in through the admin. Never guess a hotline number.
+3. **Resume phrase:** still 4 food words, hashed on the server in Serbian. The
+   site shows the phrase in the visitor's language, using 105 food words per
+   language aligned by position with the Serbian list in
+   `backend/chat/phrase_languages.py`. It converts what she types back to
+   Serbian, accepts case forms, missing diacritics (`c` for `č`, `e` for `ë`)
+   and small filler words. If a phrase does not match the current language, the
+   site tries every other language.
+4. **Frontend word lists are generated.** After changing the word lists, run:
+
+   ```bash
+   cd backend && uv run python manage.py export_food_words
+   ```
+
+   This writes `frontend/src/foodWords.ts`. A backend test fails if that file is
+   stale. Another test runs the TypeScript in Node and checks it matches the
+   Python lists exactly.
+5. **Cover site:** a language picker sits in the header. The chosen language is
+   kept in memory only, never stored, and the default comes from the browser
+   language. There are 60 recipes, one JSON file per language in
+   `frontend/src/content/recipes/<lang>.json`, and each language loads only when
+   it is chosen. Every recipe has its own address (`?r=recipe-id`), so browser
+   history lists real recipes. Opening help never changes the address or the
+   title. Ingredient order must be identical in every language, because the
+   ingredient checklist is the secret door.
+6. **Translations are drafts** made for the demo. Native speakers must review
+   them before any real use.
+
 ## What we promise, and its limits
 
 - **On her device:** no cookies, no web storage, no service worker; the URL

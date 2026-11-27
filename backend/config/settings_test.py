@@ -11,5 +11,8 @@ os.environ.setdefault("DOOR_SEQUENCE", "3,1,4,1")
 os.environ.setdefault("COUNSELOR_PASSWORD", "test-counselor-pass")
 os.environ.setdefault("SECURE_SSL_REDIRECT", "false")
 os.environ.setdefault("NUM_PROXIES", "0")
+# Tests run triage inline and never call the real API.
+os.environ["TRIAGE_IN_BACKGROUND"] = "false"
+os.environ["ANTHROPIC_API_KEY"] = ""
 
 from .settings import *  # noqa: E402, F403

@@ -1,28 +1,31 @@
 import { useEffect, useRef, useState, type SubmitEvent } from "react";
 
 import { ApiError, getMessages, sendMessage, type Message, type SessionStatus } from "./api";
+import { EMERGENCY_NUMBER } from "./emergency";
+import { displayPhrase } from "./foodWords";
+import { LANGUAGE_OPTIONS, useLang } from "./i18n";
 
 const POLL_MS = 2000;
-// How the counselor appears in the thread. Ordinary on purpose.
-const COUNSELOR_NAME = "Vesna";
 
 interface Props {
   /** Shown once right after starting a chat; null after a resume. */
   resumePhrase: string | null;
 }
 
-function timeOf(iso: string): string {
-  return new Date(iso).toLocaleTimeString("sr-Latn-RS", { hour: "2-digit", minute: "2-digit" });
-}
-
 /** The counselor chat, dressed as the comment thread under a recipe. */
 export function Chat({ resumePhrase }: Props) {
+  const { lang, t } = useLang();
   const [messages, setMessages] = useState<Message[]>([]);
   const [status, setStatus] = useState<SessionStatus>("waiting");
   const [gone, setGone] = useState(false);
+  const [alert, setAlert] = useState(false);
   const [draft, setDraft] = useState("");
   const [error, setError] = useState("");
   const lastId = useRef(0);
+
+  const locale = LANGUAGE_OPTIONS.find((o) => o.code === lang)?.html ?? "sr-Latn";
+  const timeOf = (iso: string) =>
+    new Date(iso).toLocaleTimeString(locale, { hour: "2-digit", minute: "2-digit" });
 
   function append(incoming: Message[]) {
     const fresh = incoming.filter((m) => m.id > lastId.current);
@@ -40,6 +43,7 @@ export function Chat({ resumePhrase }: Props) {
       try {
         const data = await getMessages(lastId.current);
         setStatus(data.status);
+        setAlert(data.alert === true);
         append(data.messages);
       } catch (err) {
         if (err instanceof ApiError && err.status === 403) {
@@ -66,16 +70,12 @@ export function Chat({ resumePhrase }: Props) {
       append([await sendMessage(body)]);
       setDraft("");
     } catch (err) {
-      setError(
-        err instanceof ApiError && err.status === 409
-          ? "Komentari su zatvoreni."
-          : "Komentar nije poslat. Pokušaj ponovo.",
-      );
+      setError(err instanceof ApiError && err.status === 409 ? t.closed : t.sendFailed);
     }
   }
 
   if (gone) {
-    return <p className="thread-status">Ovaj razgovor više ne postoji.</p>;
+    return <p className="thread-status">{t.gone}</p>;
   }
 
   const closed = status === "closed";
@@ -84,15 +84,14 @@ export function Chat({ resumePhrase }: Props) {
     <div className="thread">
       {resumePhrase && (
         <div className="shopping-list">
-          <p className="shopping-title">Lista za kupovinu</p>
+          <p className="shopping-title">{t.shoppingTitle}</p>
           <ul>
-            {resumePhrase.split("-").map((word) => (
+            {/* The server's Serbian words, shown in her language. */}
+            {displayPhrase(resumePhrase, lang).map((word) => (
               <li key={word}>{word}</li>
             ))}
           </ul>
-          <p className="shopping-hint">
-            Ove četiri reči upisane u pretragu vraćaju te na ovaj razgovor.
-          </p>
+          <p className="shopping-hint">{t.shoppingHint}</p>
         </div>
       )}
 
@@ -100,7 +99,9 @@ export function Chat({ resumePhrase }: Props) {
         {messages.map((m) => (
           <li key={m.id} className={`comment ${m.sender === "woman" ? "is-mine" : ""}`}>
             <p className="comment-head">
-              <span className="comment-name">{m.sender === "woman" ? "Ti" : COUNSELOR_NAME}</span>
+              <span className="comment-name">
+                {m.sender === "woman" ? t.you : t.counselorName}
+              </span>
               <time className="comment-when">{timeOf(m.created_at)}</time>
             </p>
             {/* Plain text: React escapes it. Never render as HTML. */}
@@ -109,17 +110,24 @@ export function Chat({ resumePhrase }: Props) {
         ))}
       </ol>
 
-      <p className="thread-status">
-        {closed
-          ? "Komentari su zatvoreni."
-          : status === "waiting"
-            ? "Komentar je primljen. Odgovor stiže uskoro."
-            : ""}
-      </p>
+      <p className="thread-status">{closed ? t.closed : status === "waiting" ? t.waiting : ""}</p>
+
+      {alert && (
+        // She decides whether to call. Nothing ever calls anyone for her.
+        <div className="emergency" role="alert">
+          <p className="emergency-title">{t.emergencyTitle}</p>
+          <p>{t.emergencyText}</p>
+          {EMERGENCY_NUMBER[lang] && (
+            <a className="emergency-call" href={`tel:${EMERGENCY_NUMBER[lang]}`}>
+              {t.emergencyCall(EMERGENCY_NUMBER[lang] ?? "")}
+            </a>
+          )}
+        </div>
+      )}
 
       <form className="composer" onSubmit={handleSend}>
         <label className="composer-label" htmlFor="comment-box">
-          Ostavi komentar
+          {t.leaveComment}
         </label>
         <textarea
           id="comment-box"
@@ -138,7 +146,7 @@ export function Chat({ resumePhrase }: Props) {
           }}
         />
         <button type="submit" className="ink-button" disabled={closed || !draft.trim()}>
-          Objavi komentar
+          {t.publish}
         </button>
         {error && <p className="form-error">{error}</p>}
       </form>

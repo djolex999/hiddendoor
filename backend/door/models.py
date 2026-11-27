@@ -1,17 +1,26 @@
 from django.db import models
 
+from .languages import DEFAULT_LANGUAGE, LANGUAGES
+
 
 class HelpCard(models.Model):
     """A short help text shown after the door opens. Edited in the admin."""
 
-    slug = models.SlugField(unique=True)
+    language = models.CharField(
+        max_length=5, choices=LANGUAGES, default=DEFAULT_LANGUAGE, db_index=True
+    )
+    # Same slug in every language ("sos-linija"), so one card has one identity.
+    slug = models.SlugField()
     title = models.CharField(max_length=120)
     body = models.TextField(help_text="Markdown. No raw HTML.")
     order = models.PositiveSmallIntegerField(default=0)
     is_active = models.BooleanField(default=True)
 
     class Meta:
-        ordering = ["order", "id"]
+        ordering = ["language", "order", "id"]
+        constraints = [
+            models.UniqueConstraint(fields=["language", "slug"], name="helpcard_language_slug")
+        ]
 
     def __str__(self) -> str:
-        return self.title
+        return f"[{self.language}] {self.title}"

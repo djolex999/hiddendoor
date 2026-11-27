@@ -24,6 +24,24 @@ Every `/api/` response carries `Cache-Control: no-store`,
 Errors use DRF's shape: `{"detail": "..."}` or, for validation errors,
 `{"field": ["message"]}`. `429` means rate limited: wait a minute.
 
+## Languages
+
+The cover site supports 8 languages. Use these codes in the `language` field:
+
+| Code | Language |
+|---|---|
+| `sr` | Srpski (default) |
+| `hr` | Hrvatski |
+| `bs` | Bosanski |
+| `cnr` | Crnogorski |
+| `sl` | Slovenščina |
+| `mk` | Македонски |
+| `sq` | Shqip |
+| `en` | English |
+
+The language you send to `POST /api/u/` decides the language of the help cards
+it returns (see below).
+
 ---
 
 ## Woman side (anonymous)
@@ -36,8 +54,13 @@ The tap sequence lives only on the server. Taps are numbered from 1.
 POST /api/u/
 Content-Type: application/json
 
-{"sequence": [3, 1, 4, 1]}
+{"sequence": [3, 1, 4, 1], "language": "sq"}
 ```
+
+`language` is optional. The help cards in the `200` response are written in that
+language. A missing or unknown `language` means Serbian (`sr`). If a language has
+no active cards, the response falls back to Serbian too. A wrong sequence still
+returns `204` with no body, whatever the language.
 
 Right sequence, `200`:
 
@@ -97,7 +120,9 @@ Content-Type: application/json
 {"resume_phrase": "kivi bundeva Borovnica-jabuka"}
 ```
 
-Case and separators do not matter (spaces, dashes, anything not a letter).
+Case and separators do not matter (spaces, dashes, anything not a letter). The
+client sends the Serbian words, since the cover site converts what she types
+back to Serbian first.
 
 `200`:
 

@@ -32,6 +32,8 @@ export interface Message {
 export interface MessagesResponse {
   status: SessionStatus;
   messages: Message[];
+  /** One of her messages signals immediate danger and no counselor has replied yet. */
+  alert?: boolean;
 }
 
 export interface StartedChat {
@@ -102,13 +104,14 @@ function chatRequest(suffix: string, init: RequestInit = {}): Request {
 // Door
 
 /**
- * Send the collected tap sequence. Returns the help cards if it opened the
+ * Send the collected tap sequence (and the site's language, for the cards).
+ * Returns the help cards if it opened the
  * door, or null if not (wrong sequence: the server answers 204 with nothing).
  * Throws ApiError 429 when rate limited.
  */
-export async function unlock(sequence: number[]): Promise<HelpCard[] | null> {
+export async function unlock(sequence: number[], language = "sr"): Promise<HelpCard[] | null> {
   const response = await fetch(
-    buildRequest("/api/u/", { method: "POST", body: JSON.stringify({ sequence }) }),
+    buildRequest("/api/u/", { method: "POST", body: JSON.stringify({ sequence, language }) }),
   );
   if (response.status === 204) return null;
   if (!response.ok) throw new ApiError(response.status, `Request failed (${response.status})`);

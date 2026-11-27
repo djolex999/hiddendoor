@@ -8,6 +8,7 @@ from rest_framework.views import APIView
 
 from config.throttles import UnlockThrottle
 
+from .languages import DEFAULT_LANGUAGE, pick_language
 from .models import HelpCard
 from .serializers import HelpCardSerializer, UnlockSerializer
 from .signing import make_unlock_token
@@ -19,7 +20,7 @@ def _canonical(sequence: list[int] | tuple[int, ...]) -> str:
 
 class UnlockView(APIView):
     """
-    POST /api/u/ {sequence: number[]}
+    POST /api/u/ {sequence: number[], language?: string}
 
     Right sequence: 200 with an unlock token and the help cards.
     Anything else (wrong, malformed, empty): 204 with no body, so a curious
@@ -39,7 +40,12 @@ class UnlockView(APIView):
         if not constant_time_compare(submitted, _canonical(settings.DOOR_SEQUENCE)):
             return Response(status=status.HTTP_204_NO_CONTENT)
 
-        cards = HelpCard.objects.filter(is_active=True)
+        # The site sends its language; unknown or missing means Serbian.
+        # A language with no cards yet also falls back to Serbian.
+        language = pick_language(request.data.get("language"))
+        cards = HelpCard.objects.filter(is_active=True, language=language)
+        if not cards.exists():
+            cards = HelpCard.objects.filter(is_active=True, language=DEFAULT_LANGUAGE)
         return Response(
             {
                 "unlock_token": make_unlock_token(),
