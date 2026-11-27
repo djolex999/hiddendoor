@@ -227,3 +227,7 @@ five:
 - The hosting edge logs IPs, and spyware on her device defeats any website.
 - One shared counselor password, with no counselor accounts or audit log yet.
 - LLM urgency triage can miss or over-flag, so it only prioritizes and never acts. Partners can turn the AI check off (`AI_TRIAGE_ENABLED`); with it on, message text goes to Anthropic (see PRIVACY.md).
+
+## License
+
+MIT, see [LICENSE](LICENSE). Hidden Door is meant to be given away: a partner organization can run, change and host it for free.
