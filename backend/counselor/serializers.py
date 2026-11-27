@@ -23,6 +23,7 @@ class CounselorSessionSerializer(serializers.ModelSerializer):
             "unread",
             "urgent_since",
             "counselor_label",
+            "topic",
         ]
 
 

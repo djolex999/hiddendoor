@@ -13,4 +13,4 @@ class UnlockSerializer(serializers.Serializer):
 class HelpCardSerializer(serializers.ModelSerializer):
     class Meta:
         model = HelpCard
-        fields = ["slug", "title", "body"]
+        fields = ["slug", "topic", "title", "body"]

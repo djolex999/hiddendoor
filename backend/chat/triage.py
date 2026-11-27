@@ -48,6 +48,7 @@ DANGER_STEMS: tuple[str, ...] = (
     "prebi",
     "hitno",
     "upomoc",
+    "policij",
     "ubicu se",
     # sl
     "ubil",
@@ -66,6 +67,7 @@ DANGER_STEMS: tuple[str, ...] = (
     "дави",
     "заклучи",
     "итно",
+    "полициј",
     # sq
     "vras",
     "thike",
@@ -74,6 +76,8 @@ DANGER_STEMS: tuple[str, ...] = (
     "mbyt",
     "ndihme",
     "urgjent",
+    "policin",
+    "policia",
     # en
     "kill",
     "knife",
@@ -83,6 +87,7 @@ DANGER_STEMS: tuple[str, ...] = (
     "strangl",
     "locked in",
     "emergency",
+    "police",
 )
 
 SYSTEM_PROMPT = (

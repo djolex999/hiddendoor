@@ -39,7 +39,7 @@ class StartChatView(APIView):
         if not is_valid_unlock_token(serializer.validated_data["unlock_token"]):
             return Response({"detail": "Unlock expired."}, status=status.HTTP_403_FORBIDDEN)
 
-        creds = services.start_session()
+        creds = services.start_session(serializer.validated_data.get("topic", ""))
         return Response(
             {
                 "session_id": creds.session.id,

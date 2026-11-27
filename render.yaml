@@ -63,6 +63,44 @@ services:
       - key: ANTHROPIC_API_KEY
         sync: false
 
+  # Deletes expired chats every 15 minutes, also when no counselor is logged
+  # in. Render cron jobs are paid (starter plan); without it, expired chats
+  # are still deleted on the next chat start or counselor list load.
+  - type: cron
+    name: hiddendoor-purge
+    runtime: python
+    plan: starter
+    schedule: "*/15 * * * *"
+    rootDir: backend
+    buildCommand: pip install uv && uv sync --frozen --no-dev
+    startCommand: uv run python manage.py purge_expired
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.13"
+      - key: DEBUG
+        value: "false"
+      - key: NUM_PROXIES
+        value: "1"
+      - key: DATABASE_URL
+        fromDatabase:
+          name: hiddendoor-db
+          property: connectionString
+      - key: SECRET_KEY
+        fromService:
+          type: web
+          name: hiddendoor-api
+          envVarKey: SECRET_KEY
+      - key: DOOR_SEQUENCE
+        fromService:
+          type: web
+          name: hiddendoor-api
+          envVarKey: DOOR_SEQUENCE
+      - key: COUNSELOR_PASSWORD
+        fromService:
+          type: web
+          name: hiddendoor-api
+          envVarKey: COUNSELOR_PASSWORD
+
   # Public cover site (Milica)
   - type: web
     name: hiddendoor-web
@@ -78,6 +116,11 @@ services:
       - key: VITE_API_URL
         value: https://hiddendoor-api.onrender.com
     headers:
+      # Nothing from this site stays in the browser's disk cache, including
+      # the help chunk that only loads after the door opens.
+      - path: /*
+        name: Cache-Control
+        value: no-store
       - path: /*
         name: Referrer-Policy
         value: no-referrer

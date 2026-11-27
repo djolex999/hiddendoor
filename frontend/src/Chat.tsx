@@ -1,8 +1,15 @@
 import { useEffect, useRef, useState, type SubmitEvent } from "react";
 
-import { ApiError, getMessages, sendMessage, type Message, type SessionStatus } from "./api";
-import { EMERGENCY_NUMBER } from "./emergency";
+import {
+  ApiError,
+  getMessages,
+  sendMessage,
+  type Message,
+  type SessionStatus,
+} from "./api";
+import { EmergencyCard } from "./EmergencyCard";
 import { displayPhrase } from "./foodWords";
+import { HELP_STRINGS } from "./helpStrings";
 import { LANGUAGE_OPTIONS, useLang } from "./i18n";
 
 const POLL_MS = 2000;
@@ -14,18 +21,27 @@ interface Props {
 
 /** The counselor chat, dressed as the comment thread under a recipe. */
 export function Chat({ resumePhrase }: Props) {
-  const { lang, t } = useLang();
+  const { lang } = useLang();
+  const h = HELP_STRINGS[lang];
   const [messages, setMessages] = useState<Message[]>([]);
   const [status, setStatus] = useState<SessionStatus>("waiting");
   const [gone, setGone] = useState(false);
   const [alert, setAlert] = useState(false);
+  // She asked about the police: show her the number to call herself, now.
+  // Counselors cannot send anyone; they do not know where she is.
+  const [askedPolice, setAskedPolice] = useState(false);
   const [draft, setDraft] = useState("");
   const [error, setError] = useState("");
+  const [sending, setSending] = useState(false);
   const lastId = useRef(0);
 
-  const locale = LANGUAGE_OPTIONS.find((o) => o.code === lang)?.html ?? "sr-Latn";
+  const locale =
+    LANGUAGE_OPTIONS.find((o) => o.code === lang)?.html ?? "sr-Latn";
   const timeOf = (iso: string) =>
-    new Date(iso).toLocaleTimeString(locale, { hour: "2-digit", minute: "2-digit" });
+    new Date(iso).toLocaleTimeString(locale, {
+      hour: "2-digit",
+      minute: "2-digit",
+    });
 
   function append(incoming: Message[]) {
     const fresh = incoming.filter((m) => m.id > lastId.current);
@@ -47,7 +63,8 @@ export function Chat({ resumePhrase }: Props) {
         append(data.messages);
       } catch (err) {
         if (err instanceof ApiError && err.status === 403) {
-          setGone(true); // expired or deleted: stop polling
+          // Ended, expired, or resumed somewhere else (the secret rotated).
+          setGone(true);
           return;
         }
       }
@@ -61,46 +78,60 @@ export function Chat({ resumePhrase }: Props) {
     };
   }, []);
 
-  async function handleSend(event: SubmitEvent<HTMLFormElement>) {
-    event.preventDefault();
-    const body = draft.trim();
-    if (!body) return;
+  async function send(body: string) {
+    const text = body.trim();
+    if (!text || sending) return;
     setError("");
+    setSending(true);
     try {
-      append([await sendMessage(body)]);
+      append([await sendMessage(text)]);
       setDraft("");
     } catch (err) {
-      setError(err instanceof ApiError && err.status === 409 ? t.closed : t.sendFailed);
+      setError(
+        err instanceof ApiError && err.status === 409 ? h.closed : h.sendFailed,
+      );
+    } finally {
+      setSending(false);
     }
   }
 
+  function handleSend(event: SubmitEvent<HTMLFormElement>) {
+    event.preventDefault();
+    void send(draft);
+  }
+
   if (gone) {
-    return <p className="thread-status">{t.gone}</p>;
+    return <p className="thread-status">{h.gone}</p>;
   }
 
   const closed = status === "closed";
+  // One tap sends a whole sentence: for when typing is too slow or too risky.
+  const quickReplies = [h.qrCantTalk, h.qrHeIsNear, h.qrCallPolice, h.qrLater];
 
   return (
     <div className="thread">
       {resumePhrase && (
         <div className="shopping-list">
-          <p className="shopping-title">{t.shoppingTitle}</p>
+          <p className="shopping-title">{h.shoppingTitle}</p>
           <ul>
             {/* The server's Serbian words, shown in her language. */}
             {displayPhrase(resumePhrase, lang).map((word) => (
               <li key={word}>{word}</li>
             ))}
           </ul>
-          <p className="shopping-hint">{t.shoppingHint}</p>
+          <p className="shopping-hint">{h.shoppingHint}</p>
         </div>
       )}
 
       <ol className="comments" aria-live="polite">
         {messages.map((m) => (
-          <li key={m.id} className={`comment ${m.sender === "woman" ? "is-mine" : ""}`}>
+          <li
+            key={m.id}
+            className={`comment ${m.sender === "woman" ? "is-mine" : ""}`}
+          >
             <p className="comment-head">
               <span className="comment-name">
-                {m.sender === "woman" ? t.you : t.counselorName}
+                {m.sender === "woman" ? h.you : h.counselorName}
               </span>
               <time className="comment-when">{timeOf(m.created_at)}</time>
             </p>
@@ -110,24 +141,38 @@ export function Chat({ resumePhrase }: Props) {
         ))}
       </ol>
 
-      <p className="thread-status">{closed ? t.closed : status === "waiting" ? t.waiting : ""}</p>
+      <p className="thread-status">
+        {closed ? h.closed : status === "waiting" ? h.waiting : ""}
+      </p>
 
-      {alert && (
-        // She decides whether to call. Nothing ever calls anyone for her.
-        <div className="emergency" role="alert">
-          <p className="emergency-title">{t.emergencyTitle}</p>
-          <p>{t.emergencyText}</p>
-          {EMERGENCY_NUMBER[lang] && (
-            <a className="emergency-call" href={`tel:${EMERGENCY_NUMBER[lang]}`}>
-              {t.emergencyCall(EMERGENCY_NUMBER[lang] ?? "")}
-            </a>
-          )}
+      {(alert || askedPolice) && <EmergencyCard />}
+
+      {!closed && (
+        <div
+          className="quick-replies"
+          role="group"
+          aria-label={h.quickRepliesLabel}
+        >
+          {quickReplies.map((text) => (
+            <button
+              key={text}
+              type="button"
+              className="quick-reply"
+              disabled={sending}
+              onClick={() => {
+                if (text === h.qrCallPolice) setAskedPolice(true);
+                void send(text);
+              }}
+            >
+              {text}
+            </button>
+          ))}
         </div>
       )}
 
       <form className="composer" onSubmit={handleSend}>
         <label className="composer-label" htmlFor="comment-box">
-          {t.leaveComment}
+          {h.leaveComment}
         </label>
         <textarea
           id="comment-box"
@@ -136,7 +181,10 @@ export function Chat({ resumePhrase }: Props) {
           maxLength={2000}
           rows={3}
           disabled={closed}
+          // Keep the phone keyboard from learning and later suggesting what she wrote.
           autoComplete="off"
+          autoCorrect="off"
+          autoCapitalize="off"
           spellCheck={false}
           onKeyDown={(e) => {
             if (e.key === "Enter" && !e.shiftKey) {
@@ -145,8 +193,12 @@ export function Chat({ resumePhrase }: Props) {
             }
           }}
         />
-        <button type="submit" className="ink-button" disabled={closed || !draft.trim()}>
-          {t.publish}
+        <button
+          type="submit"
+          className="ink-button"
+          disabled={closed || sending || !draft.trim()}
+        >
+          {h.publish}
         </button>
         {error && <p className="form-error">{error}</p>}
       </form>

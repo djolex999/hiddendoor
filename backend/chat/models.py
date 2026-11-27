@@ -11,6 +11,8 @@ from django.conf import settings
 from django.db import models
 from django.utils import timezone
 
+from door.languages import CHAT_TOPICS
+
 
 def default_expiry():
     return timezone.now() + timedelta(hours=settings.CHAT_SESSION_LIFETIME_HOURS)
@@ -51,6 +53,9 @@ class ChatSession(models.Model):
     # Counselor-only working notes. Never returned to her endpoints. Deleted
     # with the session (exit, close + 15 min, or 24h): a nickname, not her name.
     counselor_label = models.CharField(max_length=60, blank=True)
+    # The path she picked after the door ("control", "danger", "grooming"), so
+    # counselors know which protocol applies. Empty when she skipped it.
+    topic = models.CharField(max_length=10, choices=CHAT_TOPICS, blank=True)
     counselor_notes = models.TextField(max_length=4000, blank=True)
 
     objects = ChatSessionQuerySet.as_manager()

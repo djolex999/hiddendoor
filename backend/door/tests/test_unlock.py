@@ -16,7 +16,9 @@ def test_right_sequence_returns_token_and_cards(client):
     assert response.status_code == 200
     data = response.json()
     assert is_valid_unlock_token(data["unlock_token"])
-    assert [c["slug"] for c in data["cards"]] == ["nisi-sama", "sos-linija", "tvoj-telefon"]
+    # 3 base cards first, then the 4 path cards (control, danger, grooming).
+    assert [c["slug"] for c in data["cards"]][:3] == ["nisi-sama", "sos-linija", "tvoj-telefon"]
+    assert len(data["cards"]) == 7
     assert "0800 300 339" in data["cards"][1]["body"]
 
 
@@ -93,7 +95,7 @@ def test_unlock_returns_cards_in_the_requested_language(client, language, first_
     response = client.post("/api/u/", {"sequence": RIGHT, "language": language}, format="json")
     assert response.status_code == 200
     cards = response.json()["cards"]
-    assert len(cards) == 3
+    assert len(cards) == 7
     assert cards[0]["title"] == first_title
 
 

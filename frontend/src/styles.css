@@ -452,6 +452,58 @@ h3 {
   color: var(--margin);
 }
 
+/* Three paths after the door opens */
+
+.paths {
+  display: grid;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+
+.paths-question {
+  margin: 0 0 0.25rem;
+  font-family: var(--serif);
+  font-size: 1.25rem;
+}
+
+.path-button {
+  padding: 0.8rem 1rem;
+  border: 1.5px solid var(--ink-soft);
+  border-radius: 8px;
+  background: #fff;
+  color: var(--ink);
+  font-weight: 600;
+  text-align: left;
+}
+
+.path-button.quiet {
+  border-color: var(--grid);
+  color: var(--pencil);
+  font-weight: 400;
+}
+
+/* Quick replies above the comment box */
+
+.quick-replies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.5rem 0;
+}
+
+.quick-reply {
+  padding: 0.4rem 0.75rem;
+  border: 1.5px solid var(--grid);
+  border-radius: 999px;
+  background: #fff;
+  color: var(--graphite);
+  font-size: 0.95rem;
+}
+
+.quick-reply:disabled {
+  opacity: 0.5;
+}
+
 /* Resume phrase as a shopping list */
 
 .shopping-list {

@@ -5,8 +5,8 @@ from .models import HelpCard
 
 @admin.register(HelpCard)
 class HelpCardAdmin(admin.ModelAdmin):
-    list_display = ["title", "language", "slug", "order", "is_active"]
+    list_display = ["title", "language", "topic", "slug", "order", "is_active"]
     list_editable = ["order", "is_active"]
-    list_filter = ["language", "is_active"]
+    list_filter = ["language", "topic", "is_active"]
     prepopulated_fields = {"slug": ["title"]}
     search_fields = ["title", "body"]

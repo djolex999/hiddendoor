@@ -1,13 +1,63 @@
-import { useEffect, useMemo, useState, type SubmitEvent } from "react";
+import {
+  Component,
+  lazy,
+  Suspense,
+  useEffect,
+  useMemo,
+  useState,
+  type ReactNode,
+  type SubmitEvent,
+} from "react";
 
 import { ApiError, resumeChat, type HelpCard } from "./api";
 import { fold, mightBePhrase, phraseFromInput } from "./foodWords";
-import { HelpView, type ChatState } from "./HelpView";
-import { detectLanguage, LANGUAGE_OPTIONS, LangContext, STRINGS, type Lang } from "./i18n";
-import { panic } from "./panic";
+import type { ChatState } from "./HelpView";
+import {
+  detectLanguage,
+  LANGUAGE_OPTIONS,
+  LangContext,
+  STRINGS,
+  type Lang,
+} from "./i18n";
+import {
+  IDLE_EXIT_MS,
+  markActivity,
+  panic,
+  setHelpOpen,
+  softExit,
+} from "./panic";
 import { Recipe } from "./Recipe";
 import { RecipeList } from "./RecipeList";
 import { useRecipes, type Recipe as RecipeData } from "./recipes";
+
+// Help (cards, chat, all help text) is its own chunk, fetched only after the
+// door opens: the recipe page's main bundle contains nothing about help.
+const HelpView = lazy(() =>
+  import("./HelpView").then((m) => ({ default: m.HelpView })),
+);
+
+/**
+ * If the help chunk cannot load (weak signal, or a new deploy changed its
+ * name), close help quietly so she sees the recipe, never a white page.
+ */
+class HelpBoundary extends Component<
+  { onFail: () => void; children: ReactNode },
+  { failed: boolean }
+> {
+  override state = { failed: false };
+
+  static getDerivedStateFromError() {
+    return { failed: true };
+  }
+
+  override componentDidCatch() {
+    this.props.onFail();
+  }
+
+  override render() {
+    return this.state.failed ? null : this.props.children;
+  }
+}
 
 /** The recipe in the address bar (?r=pita-sa-jabukama), or null for home. */
 function recipeIdFromUrl(): string | null {
@@ -52,8 +102,28 @@ export function App() {
   // Title follows the recipe, never the help view.
   useEffect(() => {
     document.title = recipe ? `${recipe.title} | ${t.siteName}` : t.siteName;
-    document.documentElement.lang = LANGUAGE_OPTIONS.find((o) => o.code === lang)?.html ?? "sr";
+    document.documentElement.lang =
+      LANGUAGE_OPTIONS.find((o) => o.code === lang)?.html ?? "sr";
   }, [recipe, t.siteName, lang]);
+
+  // Walked away with help open: quietly return to the recipe. Not panic():
+  // the chat is kept, so she can come back with her four words.
+  useEffect(() => {
+    setHelpOpen(helpOpen);
+    if (!helpOpen) return;
+    let timer = setTimeout(softExit, IDLE_EXIT_MS);
+    const reset = () => {
+      markActivity();
+      clearTimeout(timer);
+      timer = setTimeout(softExit, IDLE_EXIT_MS);
+    };
+    const events = ["pointerdown", "keydown", "scroll", "touchstart"] as const;
+    events.forEach((e) => window.addEventListener(e, reset, { passive: true }));
+    return () => {
+      clearTimeout(timer);
+      events.forEach((e) => window.removeEventListener(e, reset));
+    };
+  }, [helpOpen]);
 
   // Escape leaves help instantly on a keyboard.
   useEffect(() => {
@@ -140,7 +210,13 @@ export function App() {
   }
 
   const langState = useMemo(() => ({ lang, t }), [lang, t]);
-  const help = helpOpen ? <HelpView cards={cards} chat={chat} onChatOpened={setChat} /> : null;
+  const help = helpOpen ? (
+    <HelpBoundary onFail={() => setCards(null)}>
+      <Suspense fallback={null}>
+        <HelpView cards={cards} chat={chat} onChatOpened={setChat} />
+      </Suspense>
+    </HelpBoundary>
+  ) : null;
 
   return (
     <LangContext.Provider value={langState}>
@@ -185,7 +261,11 @@ export function App() {
           ) : recipes ? (
             <>
               {help}
-              <RecipeList recipes={recipes} results={results} onOpen={openRecipe} />
+              <RecipeList
+                recipes={recipes}
+                results={results}
+                onOpen={openRecipe}
+              />
             </>
           ) : null}
         </main>
@@ -196,11 +276,17 @@ export function App() {
               <h2>{t.moreRecipes}</h2>
               <ul>
                 {recipes
-                  .filter((r) => r.category === recipe.category && r.id !== recipe.id)
+                  .filter(
+                    (r) => r.category === recipe.category && r.id !== recipe.id,
+                  )
                   .slice(0, 6)
                   .map((r) => (
                     <li key={r.id}>
-                      <button type="button" className="recipe-link" onClick={() => openRecipe(r.id)}>
+                      <button
+                        type="button"
+                        className="recipe-link"
+                        onClick={() => openRecipe(r.id)}
+                      >
                         {r.title}
                       </button>
                     </li>

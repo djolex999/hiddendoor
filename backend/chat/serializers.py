@@ -1,10 +1,13 @@
 from rest_framework import serializers
 
+from door.languages import CHAT_TOPICS
+
 from .models import Message
 
 
 class StartChatSerializer(serializers.Serializer):
     unlock_token = serializers.CharField(max_length=200)
+    topic = serializers.ChoiceField(choices=CHAT_TOPICS, required=False, allow_blank=True)
 
 
 class ResumeChatSerializer(serializers.Serializer):

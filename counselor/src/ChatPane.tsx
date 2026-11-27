@@ -23,6 +23,7 @@ export function ChatPane({ sessionId, onClosed }: Props) {
   const [messages, setMessages] = useState<Message[]>([]);
   const [status, setStatus] = useState<SessionStatus | null>(null);
   const [urgent, setUrgent] = useState(false);
+  const [topic, setTopic] = useState<string>("");
   const [draft, setDraft] = useState("");
   const [error, setError] = useState("");
   const [gone, setGone] = useState(false);
@@ -51,6 +52,7 @@ export function ChatPane({ sessionId, onClosed }: Props) {
         const data = await getMessages(sessionId, lastId.current);
         setStatus(data.status);
         setUrgent(data.urgent === true);
+        setTopic(data.topic ?? "");
         append(data.messages);
         if (!notesLoaded.current && data.notes) {
           notesLoaded.current = true;
@@ -130,6 +132,7 @@ export function ChatPane({ sessionId, onClosed }: Props) {
         </button>
       </header>
 
+      {topic === "grooming" && <p className="grooming-note">{t.grooming18}</p>}
       {urgent && (
         <p className="urgent-banner" role="alert">
           {t.urgentBanner}

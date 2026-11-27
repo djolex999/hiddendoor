@@ -15,6 +15,8 @@ export interface CounselorSession {
   unread: number;
   /** Set when one of her messages signals immediate danger; null otherwise. */
   urgent_since: string | null;
+  /** The path she picked after the door; "" when she skipped it. */
+  topic: "" | "control" | "danger" | "grooming";
   /** Private nickname set by counselors; empty when unset. */
   counselor_label: string;
 }
@@ -31,6 +33,8 @@ export interface MessagesResponse {
   messages: Message[];
   /** Counselor view only: the chat is flagged urgent until a counselor replies. */
   urgent?: boolean;
+  /** The path she picked after the door ("" when skipped). */
+  topic?: "" | "control" | "danger" | "grooming";
   /** Private counselor nickname and notes for this chat. */
   notes?: CounselorNotes;
 }

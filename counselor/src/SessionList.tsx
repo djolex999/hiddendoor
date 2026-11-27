@@ -1,4 +1,4 @@
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { playUrgentAlert } from "./alertSound";
 
@@ -43,6 +43,23 @@ export function SessionList({ selectedId, onSelect }: Props) {
     null,
   );
 
+  // While any chat is urgent, the browser tab title blinks so a counselor in
+  // another tab or window notices it too.
+  const anyUrgent = sessions.some((s) => s.urgent_since !== null);
+  useEffect(() => {
+    if (!anyUrgent) return;
+    const base = document.title;
+    let on = false;
+    const timer = setInterval(() => {
+      on = !on;
+      document.title = on ? `(!) ${t.urgent}` : base;
+    }, 1000);
+    return () => {
+      clearInterval(timer);
+      document.title = base;
+    };
+  }, [anyUrgent, t.urgent]);
+
   return (
     <aside className="sidebar">
       <h2>{t.sessions}</h2>
@@ -61,6 +78,7 @@ export function SessionList({ selectedId, onSelect }: Props) {
             >
               {s.urgent_since && <span className="urgent-badge">{t.urgent}</span>}
               <span className="session-id">{s.counselor_label || `#${s.id.slice(0, 8)}`}</span>
+              {s.topic && <span className={`topic topic-${s.topic}`}>{t.topics[s.topic]}</span>}
               <span className={`status status-${s.status}`}>{t.status[s.status]}</span>
               {s.unread > 0 && <span className="badge">{s.unread}</span>}
               <span className="muted small">{timeAgo(s.last_activity, t)}</span>

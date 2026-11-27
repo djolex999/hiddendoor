@@ -10,8 +10,14 @@
 
 const BASE_URL: string = import.meta.env.VITE_API_URL ?? "http://localhost:8000";
 
+export type HelpTopic = "general" | "control" | "danger" | "grooming";
+/** The path she picks after the door opens. */
+export type ChatTopic = Exclude<HelpTopic, "general">;
+
 export interface HelpCard {
   slug: string;
+  /** "general" cards show on every path; the others only on their own path. */
+  topic: HelpTopic;
   title: string;
   /** Markdown written by the team in the admin. Render as text, or with a
    *  markdown renderer that does NOT allow raw HTML. */
@@ -123,12 +129,12 @@ export async function unlock(sequence: number[], language = "sr"): Promise<HelpC
 // Chat
 
 /** Needs a successful unlock() in the last 10 minutes. 403 = unlock expired. */
-export async function startChat(): Promise<StartedChat> {
+export async function startChat(topic?: ChatTopic): Promise<StartedChat> {
   if (!state.unlockToken) throw new Error("Door is not unlocked");
   const data = await send<{ session_id: string; secret: string; resume_phrase: string }>(
     buildRequest("/api/chat/start", {
       method: "POST",
-      body: JSON.stringify({ unlock_token: state.unlockToken }),
+      body: JSON.stringify({ unlock_token: state.unlockToken, topic: topic ?? "" }),
     }),
   );
   state.sessionId = data.session_id;

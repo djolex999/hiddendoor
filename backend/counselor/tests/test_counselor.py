@@ -1,7 +1,9 @@
 import time
+from datetime import timedelta
 from unittest import mock
 
 import pytest
+from django.utils import timezone
 from rest_framework.test import APIClient
 
 from chat.models import ChatSession
@@ -151,3 +153,11 @@ def test_notes_need_a_counselor_and_have_limits(client, counselor_client, starte
         f"/api/c/sessions/{sid}/notes", {"counselor_label": "a" * 61}, format="json"
     )
     assert too_long.status_code == 400
+
+
+def test_session_list_deletes_expired_chats(counselor_client, started_chat):
+    ChatSession.objects.filter(pk=started_chat["session_id"]).update(
+        expires_at=timezone.now() - timedelta(minutes=1)
+    )
+    assert counselor_client.get("/api/c/sessions").status_code == 200
+    assert not ChatSession.objects.filter(pk=started_chat["session_id"]).exists()

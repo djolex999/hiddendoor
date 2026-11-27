@@ -60,7 +60,7 @@ def purge_expired() -> int:
     return per_model.get("chat.ChatSession", 0)
 
 
-def start_session() -> NewCredentials:
+def start_session(topic: str = "") -> NewCredentials:
     purge_expired()  # lazy cleanup, so we do not depend on a cron job
     secret, secret_hash = _new_secret()
     # Phrase collisions are rare but possible; the unique index catches them.
@@ -69,6 +69,7 @@ def start_session() -> NewCredentials:
         try:
             with transaction.atomic():
                 session = ChatSession.objects.create(
+                    topic=topic,
                     secret_hash=secret_hash,
                     resume_phrase_hash=hmac_hash(phrase, RESUME_PURPOSE),
                 )

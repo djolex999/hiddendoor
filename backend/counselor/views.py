@@ -52,6 +52,12 @@ class SessionListView(CounselorView, generics.ListAPIView):
     serializer_class = CounselorSessionSerializer
     pagination_class = None
 
+    def list(self, request: Request, *args, **kwargs) -> Response:
+        # Counselors poll this list constantly, so expired chats are deleted
+        # within seconds even when nobody starts a new chat.
+        services.purge_expired()
+        return super().list(request, *args, **kwargs)
+
     def get_queryset(self):
         # One SQL query: LEFT JOIN messages + COUNT ... FILTER (WHERE ...),
         # grouped per session. No N+1, so no prefetch_related needed.
@@ -90,6 +96,7 @@ class SessionMessagesView(CounselorView):
                 "status": session.status,
                 "messages": MessageSerializer(messages, many=True).data,
                 "urgent": session.urgent_since is not None,
+                "topic": session.topic,
                 "notes": SessionNotesSerializer(session).data,
             }
         )
