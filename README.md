@@ -40,7 +40,7 @@ Python 3.13 via [uv](https://docs.astral.sh/uv/), Node 22, pnpm 12, Docker.
 ## Local setup
 
 ```bash
-# 1. Database (Postgres 16 on host port 5433)
+# 1. Database (Postgres 16 on host port 5434)
 docker compose up -d
 
 # 2. Backend

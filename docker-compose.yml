@@ -7,8 +7,9 @@ services:
       POSTGRES_PASSWORD: hiddendoor
       POSTGRES_DB: hiddendoor
     ports:
-      # Host port 5433 because 5432 is often taken by a local Postgres.
-      - "5433:5432"
+      # Host port 5434: 5432 is often a local Postgres and 5433 is used by
+      # another local project.
+      - "127.0.0.1:5434:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
     healthcheck:
